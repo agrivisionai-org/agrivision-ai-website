@@ -6,12 +6,11 @@ import {
   TrendingUp,
   CloudRain,
   Leaf,
-  DollarSign,
+  Tag,
   Globe2,
-  Users,
-  BarChart3,
   Cpu,
-  ArrowUpRight,
+  Layers,
+  Rocket,
   ArrowDownRight,
 } from 'lucide-react';
 
@@ -22,7 +21,7 @@ export function Dashboard() {
       <div className="container-narrow">
         <div className="max-w-3xl">
           <Reveal>
-            <SectionEyebrow>Analytics dashboard</SectionEyebrow>
+            <SectionEyebrow>Analytics dashboard · prototype</SectionEyebrow>
           </Reveal>
           <Reveal delay={0.1}>
             <h2 className="mt-6 text-balance font-display text-display-lg text-ink-900">
@@ -32,16 +31,23 @@ export function Dashboard() {
           </Reveal>
           <Reveal delay={0.2}>
             <p className="mt-5 text-base leading-relaxed text-ink-700">
-              A unified control plane for yield, weather, crop health, market prices, farmer
-              performance, revenue, and AI prediction throughput.
+              A preview of the unified control plane we&rsquo;re building — yield, weather, crop health,
+              market prices, and AI capabilities. Everything below is a{' '}
+              <span className="font-semibold text-ink-900">prototype with sample data</span>, not live
+              figures.
             </p>
+          </Reveal>
+          <Reveal delay={0.25}>
+            <span className="mt-5 inline-flex items-center gap-2 rounded-full border border-brand-sun/30 bg-brand-sun/10 px-3 py-1.5 text-xs font-semibold text-brand-sun">
+              <span className="h-1.5 w-1.5 rounded-full bg-brand-sun" /> Prototype · sample data
+            </span>
           </Reveal>
         </div>
 
         <Reveal delay={0.25}>
           <div className="mt-14 grid gap-4 lg:grid-cols-12">
             {/* Yield trends */}
-            <Widget icon={TrendingUp} title="Yield trends" badge="+12.3%" badgeTrend="up" className="lg:col-span-5 lg:row-span-2">
+            <Widget icon={TrendingUp} title="Yield trends" badge="sample" className="lg:col-span-5 lg:row-span-2">
               <YieldChart />
             </Widget>
 
@@ -56,28 +62,28 @@ export function Dashboard() {
             </Widget>
 
             {/* Market prices */}
-            <Widget icon={DollarSign} title="Market prices" className="lg:col-span-4">
+            <Widget icon={Tag} title="Market prices" className="lg:col-span-4">
               <MarketTable />
             </Widget>
 
             {/* Country insights */}
-            <Widget icon={Globe2} title="Country insights" badge="3 active" className="lg:col-span-3">
+            <Widget icon={Globe2} title="Country insights" badge="3 target" className="lg:col-span-3">
               <CountryList />
             </Widget>
 
-            {/* Farmer performance */}
-            <Widget icon={Users} title="Farmer performance" className="lg:col-span-5">
-              <FarmerPerf />
+            {/* Build status */}
+            <Widget icon={Layers} title="Build status" badge="MVP" className="lg:col-span-5">
+              <BuildStatus />
             </Widget>
 
-            {/* Revenue */}
-            <Widget icon={BarChart3} title="Revenue" badge="MRR" className="lg:col-span-3">
-              <RevenueBlock />
+            {/* Launch progress */}
+            <Widget icon={Rocket} title="Launch progress" badge="Phase 1" className="lg:col-span-3">
+              <LaunchProgress />
             </Widget>
 
-            {/* AI predictions */}
-            <Widget icon={Cpu} title="AI predictions" badge="Live" className="lg:col-span-4">
-              <AIPredictions />
+            {/* AI capabilities */}
+            <Widget icon={Cpu} title="AI capabilities" badge="sample" className="lg:col-span-4">
+              <AICapabilities />
             </Widget>
           </div>
         </Reveal>
@@ -124,7 +130,6 @@ function Widget({
                 : 'border-ink-900/[0.07] bg-ink-50 text-ink-700'
             }`}
           >
-            {badgeTrend === 'up' && <ArrowUpRight className="h-3 w-3" />}
             {badgeTrend === 'down' && <ArrowDownRight className="h-3 w-3" />}
             {badge}
           </span>
@@ -282,11 +287,11 @@ function Donut({ value, label }: { value: number; label: string }) {
 
 function MarketTable() {
   const rows = [
-    { c: 'Wheat', p: '$284', d: '+2.4%', up: true },
-    { c: 'Rice', p: '$412', d: '+0.8%', up: true },
-    { c: 'Maize', p: '$198', d: '-1.2%', up: false },
-    { c: 'Cotton', p: '$1,820', d: '+3.6%', up: true },
-    { c: 'Coffee', p: '$3,140', d: '-0.4%', up: false },
+    { c: 'Wheat', p: '284 /t', d: '+2.4%', up: true },
+    { c: 'Rice', p: '412 /t', d: '+0.8%', up: true },
+    { c: 'Maize', p: '198 /t', d: '-1.2%', up: false },
+    { c: 'Cotton', p: '1,820 /t', d: '+3.6%', up: true },
+    { c: 'Coffee', p: '3,140 /t', d: '-0.4%', up: false },
   ];
   return (
     <div className="divide-y divide-ink-900/[0.07]">
@@ -332,58 +337,79 @@ function CountryList() {
   );
 }
 
-function FarmerPerf() {
-  const bars = [22, 38, 56, 72, 88, 94, 78, 64, 58, 70, 82, 90];
+function BuildStatus() {
+  const built = ['Crop advisory', 'Pest intelligence', 'Market insights', 'Dashboard'];
+  const planned = ['Yield prediction', 'IoT', 'Smart irrigation'];
   return (
     <div>
       <div className="flex items-baseline gap-3">
-        <div className="font-display text-3xl font-semibold text-ink-900">
-          <CountUp to={4.82} format={(n) => n.toFixed(2)} suffix="/5" />
-        </div>
-        <span className="text-xs text-brand-primary">+0.18 this quarter</span>
+        <div className="font-display text-2xl font-semibold text-ink-900">MVP in development</div>
       </div>
-      <div className="text-xs text-ink-500">Avg farmer satisfaction</div>
-      <div className="mt-4 flex h-20 items-end gap-1.5">
-        {bars.map((b, i) => (
-          <motion.div
-            key={i}
-            initial={{ scaleY: 0 }}
-            whileInView={{ scaleY: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: i * 0.04, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-            className="flex-1 origin-bottom rounded-sm bg-gradient-to-t from-brand-primary to-brand-secondary"
-            style={{ height: `${b}%` }}
-          />
-        ))}
+      <div className="text-xs text-ink-500">Modules across build &amp; roadmap</div>
+      <div className="mt-4 grid grid-cols-2 gap-4">
+        <div>
+          <div className="mb-2 flex items-center gap-1.5 text-[10px] font-semibold uppercase tracking-wider text-brand-primary">
+            <span className="h-1.5 w-1.5 rounded-full bg-brand-primary" /> Built
+          </div>
+          <div className="space-y-1.5">
+            {built.map((m) => (
+              <div key={m} className="flex items-center gap-2 text-[11px] text-ink-700">
+                <span className="h-1.5 w-1.5 rounded-full bg-brand-primary" /> {m}
+              </div>
+            ))}
+          </div>
+        </div>
+        <div>
+          <div className="mb-2 flex items-center gap-1.5 text-[10px] font-semibold uppercase tracking-wider text-brand-sun">
+            <span className="h-1.5 w-1.5 rounded-full bg-brand-sun" /> Planned
+          </div>
+          <div className="space-y-1.5">
+            {planned.map((m) => (
+              <div key={m} className="flex items-center gap-2 text-[11px] text-ink-700">
+                <span className="h-1.5 w-1.5 rounded-full border border-ink-300" /> {m}
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );
 }
 
-function RevenueBlock() {
+function LaunchProgress() {
+  const steps: { l: string; status: 'done' | 'active' | 'next' }[] = [
+    { l: 'Research', status: 'done' },
+    { l: 'Build', status: 'active' },
+    { l: 'Launch', status: 'next' },
+  ];
   return (
     <div>
-      <div className="font-display text-3xl font-semibold text-ink-900">
-        $<CountUp to={4.12} format={(n) => n.toFixed(2)} suffix="M" />
-      </div>
-      <div className="text-xs text-ink-600">Monthly recurring revenue</div>
-      <div className="mt-3 inline-flex items-center gap-1 rounded-full bg-brand-primary/10 px-2 py-0.5 text-[10px] text-brand-primary">
-        <ArrowUpRight className="h-3 w-3" /> +28% MoM
-      </div>
-      <div className="mt-4 space-y-1.5">
-        {[
-          { l: 'Enterprise', v: 62 },
-          { l: 'SMB', v: 26 },
-          { l: 'Consumer', v: 12 },
-        ].map((s) => (
-          <div key={s.l}>
-            <div className="flex justify-between text-[10px] text-ink-500">
-              <span>{s.l}</span>
-              <span>{s.v}%</span>
-            </div>
-            <div className="mt-1 h-1 overflow-hidden rounded-full bg-ink-100">
-              <div className="h-full bg-brand-primary" style={{ width: `${s.v}%` }} />
-            </div>
+      <div className="font-display text-2xl font-semibold text-ink-900">Currently building</div>
+      <div className="text-xs text-ink-600">Research → Build → Launch</div>
+      <div className="mt-4 space-y-3">
+        {steps.map((s) => (
+          <div key={s.l} className="flex items-center gap-2.5 text-sm">
+            <span
+              className={`h-2.5 w-2.5 rounded-full ${
+                s.status === 'done'
+                  ? 'bg-brand-primary'
+                  : s.status === 'active'
+                  ? 'bg-brand-sun ring-2 ring-brand-sun/30'
+                  : 'border border-ink-300'
+              }`}
+            />
+            <span className="text-ink-800">{s.l}</span>
+            <span
+              className={`ml-auto text-[10px] font-semibold uppercase tracking-wider ${
+                s.status === 'done'
+                  ? 'text-brand-primary'
+                  : s.status === 'active'
+                  ? 'text-brand-sun'
+                  : 'text-ink-400'
+              }`}
+            >
+              {s.status === 'done' ? 'Done' : s.status === 'active' ? 'Active' : 'Next'}
+            </span>
           </div>
         ))}
       </div>
@@ -391,23 +417,30 @@ function RevenueBlock() {
   );
 }
 
-function AIPredictions() {
+function AICapabilities() {
+  const caps: { l: string; status: 'MVP' | 'Roadmap' }[] = [
+    { l: 'Crop advisory', status: 'MVP' },
+    { l: 'Disease detection', status: 'Roadmap' },
+    { l: 'Weather', status: 'Roadmap' },
+    { l: 'Yield prediction', status: 'Roadmap' },
+  ];
   return (
     <div>
-      <div className="font-display text-3xl font-semibold text-ink-900">
-        <CountUp to={1.28} format={(n) => n.toFixed(2)} suffix="M" />
-      </div>
-      <div className="text-xs text-ink-600">AI calls in last 24h</div>
+      <div className="font-display text-2xl font-semibold text-ink-900">AI powered</div>
+      <div className="text-xs text-ink-600">Capability status · sample</div>
       <div className="mt-4 space-y-2">
-        {[
-          { l: 'Crop recommendation', v: 412000 },
-          { l: 'Disease detection', v: 286000 },
-          { l: 'Weather forecast', v: 354000 },
-          { l: 'Yield prediction', v: 228000 },
-        ].map((p) => (
+        {caps.map((p) => (
           <div key={p.l} className="flex items-center justify-between text-xs">
             <span className="text-ink-700">{p.l}</span>
-            <span className="tabular-nums text-ink-900">{(p.v / 1000).toFixed(0)}K</span>
+            <span
+              className={`inline-flex items-center rounded-full border px-2 py-0.5 text-[10px] font-semibold ${
+                p.status === 'MVP'
+                  ? 'border-brand-primary/30 bg-brand-primary/10 text-brand-primary'
+                  : 'border-ink-900/[0.07] bg-ink-50 text-ink-600'
+              }`}
+            >
+              {p.status}
+            </span>
           </div>
         ))}
       </div>

@@ -96,17 +96,18 @@ export function Capabilities() {
             <div className="card-surface flex h-full flex-col justify-between p-7">
               <div>
                 <div className="text-xs font-semibold uppercase tracking-[0.18em] text-brand-primary">
-                  Built to scale
+                  Building to scale
                 </div>
                 <h3 className="mt-4 font-display text-2xl font-semibold text-ink-900">
-                  Production-grade since day one.
+                  Engineering for production from day one.
                 </h3>
+                <p className="mt-2 text-xs text-ink-500">Design targets we&rsquo;re building toward.</p>
               </div>
               <div className="mt-8 grid grid-cols-2 gap-3">
-                <Mini label="Latency p99" value="<120ms" />
-                <Mini label="Uptime SLO" value="99.98%" />
-                <Mini label="Languages" value="38" />
-                <Mini label="ISO 27001" value="certified" />
+                <Mini label="Latency target" value="<150ms" />
+                <Mini label="Uptime goal" value="99.9%" />
+                <Mini label="Languages planned" value="10+" />
+                <Mini label="Security" value="SOC 2 (planned)" />
               </div>
             </div>
           </Reveal>

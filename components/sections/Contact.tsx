@@ -8,9 +8,9 @@ import { Mail, ArrowUpRight, MessageSquare, Handshake, Briefcase, CheckCircle2 }
 const PATHS = [
   {
     icon: MessageSquare,
-    title: 'Request a demo',
-    body: 'See YieldAI Global in action with your data and crops.',
-    cta: 'Book demo',
+    title: 'Request early access',
+    body: 'Preview the YieldAI Global early build and tell us what you need.',
+    cta: 'Request access',
     href: '#contact-form',
   },
   {
@@ -18,14 +18,14 @@ const PATHS = [
     title: 'Partnerships',
     body: 'Cooperatives, agribusinesses, distributors — let&rsquo;s build together.',
     cta: 'Partner with us',
-    href: 'mailto:hello@agrivisionai.com',
+    href: 'mailto:hello@agrivisionai.org',
   },
   {
     icon: Briefcase,
     title: 'Investor relations',
     body: 'For investors and capital partners interested in our journey.',
     cta: 'Contact IR',
-    href: 'mailto:hello@agrivisionai.com',
+    href: 'mailto:hello@agrivisionai.org',
   },
 ];
 
@@ -81,13 +81,13 @@ export function Contact() {
               <div className="mt-8 space-y-4">
                 <ContactInfo
                   label="General"
-                  email="hello@agrivisionai.com"
+                  email="hello@agrivisionai.org"
                 />
                 <ContactInfo
                   label="Product support"
-                  email="support@yieldaiglobal.com"
+                  email="support@agrivisionai.org"
                 />
-                <ContactInfo label="Careers" email="careers@agrivisionai.com" />
+                <ContactInfo label="Careers" email="careers@agrivisionai.org" />
               </div>
             </div>
           </Reveal>

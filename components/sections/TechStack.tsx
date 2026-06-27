@@ -25,7 +25,7 @@ export function TechStack() {
       <Reveal>
         <div className="container-narrow">
           <div className="text-center text-xs font-semibold uppercase tracking-[0.22em] text-ink-400">
-            Built on a modern, production-grade stack
+Building on a modern, production-grade stack
           </div>
         </div>
 

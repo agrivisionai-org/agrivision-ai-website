@@ -4,9 +4,9 @@ import { Github, Linkedin, Twitter, Mail, Instagram, ArrowRight } from 'lucide-r
 const SOCIALS = [
   { Icon: Linkedin, href: 'https://www.linkedin.com/company/113249948/', label: 'AGRIVISION AI on LinkedIn' },
   { Icon: Twitter, href: 'https://x.com/yieldaiglobal', label: 'YieldAI Global on X' },
-  { Icon: Instagram, href: 'https://www.instagram.com/yieldai.global', label: 'YieldAI Global on Instagram' },
-  { Icon: Github, href: 'https://github.com/golamarivijesh-glitch', label: 'AGRIVISION AI on GitHub' },
-  { Icon: Mail, href: 'mailto:hello@agrivisionai.com', label: 'Email AGRIVISION AI' },
+  { Icon: Instagram, href: 'https://www.instagram.com/agrivisionai.inc/', label: 'AGRIVISION AI on Instagram' },
+  { Icon: Github, href: 'https://github.com/agrivisionai-org', label: 'AGRIVISION AI on GitHub' },
+  { Icon: Mail, href: 'mailto:hello@agrivisionai.org', label: 'Email AGRIVISION AI' },
 ];
 
 const COLS = [
@@ -40,9 +40,9 @@ const COLS = [
   {
     title: 'Contact',
     links: [
-      { label: 'hello@agrivisionai.com', href: 'mailto:hello@agrivisionai.com' },
-      { label: 'support@yieldaiglobal.com', href: 'mailto:support@yieldaiglobal.com' },
-      { label: 'careers@agrivisionai.com', href: 'mailto:careers@agrivisionai.com' },
+      { label: 'hello@agrivisionai.org', href: 'mailto:hello@agrivisionai.org' },
+      { label: 'support@agrivisionai.org', href: 'mailto:support@agrivisionai.org' },
+      { label: 'careers@agrivisionai.org', href: 'mailto:careers@agrivisionai.org' },
     ],
   },
 ];
@@ -58,15 +58,15 @@ export function Footer() {
           <div className="flex flex-col items-start justify-between gap-6 lg:flex-row lg:items-center">
             <div>
               <h3 className="font-display text-3xl font-semibold text-white sm:text-4xl">
-                Get started with YieldAI Global.
+                YieldAI Global is in development.
               </h3>
               <p className="mt-3 max-w-md text-sm text-white/80">
-                Bring intelligent decision-making to your fields — across the USA, India, and Canada.
+                Join the early-access list and help shape what we build — for the USA, India, and Canada.
               </p>
             </div>
             <div className="flex items-center gap-3">
               <a href="#contact" className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-ink-900 transition-transform hover:-translate-y-0.5">
-                Book a demo <ArrowRight className="h-4 w-4" />
+                Request early access <ArrowRight className="h-4 w-4" />
               </a>
               <a href="#products" className="inline-flex items-center gap-2 rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10">
                 Explore products
@@ -122,8 +122,8 @@ export function Footer() {
             <a href="#" className="hover:text-ink-900">Security</a>
             <span className="hidden sm:inline text-ink-300">•</span>
             <span className="inline-flex items-center gap-1.5">
-              <span className="h-1.5 w-1.5 rounded-full bg-brand-primary animate-pulse" />
-              All systems operational
+              <span className="h-1.5 w-1.5 rounded-full bg-brand-sun animate-pulse" />
+              Building YieldAI Global
             </span>
           </div>
         </div>

@@ -55,7 +55,7 @@ export function Careers() {
             </Reveal>
             <Reveal delay={0.3}>
               <div className="mt-8 flex flex-wrap items-center gap-3">
-                <a href="mailto:careers@agrivisionai.com" className="btn-primary">
+                <a href="mailto:careers@agrivisionai.org" className="btn-primary">
                   Apply <ArrowUpRight className="h-4 w-4" />
                 </a>
                 <a href="#" className="btn-secondary">
@@ -63,11 +63,11 @@ export function Careers() {
                 </a>
               </div>
               <a
-                href="mailto:careers@agrivisionai.com"
+                href="mailto:careers@agrivisionai.org"
                 className="mt-6 inline-flex items-center gap-2 text-sm text-ink-600 hover:text-ink-900"
               >
                 <Mail className="h-4 w-4 text-brand-primary" />
-                careers@agrivisionai.com
+                careers@agrivisionai.org
               </a>
             </Reveal>
           </div>

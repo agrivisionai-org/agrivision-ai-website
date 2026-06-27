@@ -3,6 +3,7 @@ import { Footer } from '@/components/Footer';
 import { Hero } from '@/components/sections/Hero';
 import { About } from '@/components/sections/About';
 import { Products } from '@/components/sections/Products';
+import { AgriSphere } from '@/components/sections/AgriSphere';
 import { FieldScene } from '@/components/sections/FieldScene';
 import { FarmerExperience } from '@/components/sections/FarmerExperience';
 import { Capabilities } from '@/components/sections/Capabilities';
@@ -22,6 +23,7 @@ export default function Home() {
       <TechStack />
       <About />
       <Products />
+      <AgriSphere />
       <section id="field" aria-label="Smart field"><FieldScene /></section>
       <section id="farmer" aria-label="Farmer experience"><FarmerExperience /></section>
       <Capabilities />

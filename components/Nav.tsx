@@ -8,8 +8,8 @@ import { Logo } from './Logo';
 const NAV_LINKS = [
   { href: '#about', label: 'About' },
   { href: '#products', label: 'Products' },
+  { href: '#agrisphere', label: 'AgriSphere' },
   { href: '#farmer', label: 'For Farmers' },
-  { href: '#dashboard', label: 'Dashboard' },
   { href: '#careers', label: 'Careers' },
 ];
 
@@ -60,8 +60,8 @@ export function Nav() {
               <a href="#contact" className="btn-ghost px-3">
                 Book demo
               </a>
-              <a href="#products" className="btn-primary px-4 py-2 text-sm">
-                Get started <ArrowUpRight className="h-3.5 w-3.5" />
+              <a href="#contact" className="btn-primary px-4 py-2 text-sm">
+                Request early access <ArrowUpRight className="h-3.5 w-3.5" />
               </a>
             </div>
 
@@ -96,7 +96,7 @@ export function Nav() {
                 </a>
               ))}
               <a href="#contact" onClick={() => setOpen(false)} className="btn-primary mt-3 w-full">
-                Get started
+                Request early access
               </a>
             </div>
           </motion.div>

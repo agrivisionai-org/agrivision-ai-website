@@ -25,17 +25,17 @@ const FOCUS_AREAS = [
 ];
 
 const TIMELINE = [
-  { year: '2023', title: 'AGRIVISION AI founded', body: 'Vision: an AI-first AgriTech company building intelligent products for global agriculture.' },
-  { year: '2024', title: 'First AI models deployed', body: 'Crop intelligence and yield-prediction models reach production with farmers across India.' },
-  { year: '2025', title: 'YieldAI Global launches in India', body: 'Flagship platform ships with predictive farming, voice assistant, and government services.' },
-  { year: '2026', title: 'Expansion to USA + Canada', body: 'YieldAI Global lands in North America — 92K+ farmers, 8M+ predictions served.' },
+  { year: '2026', title: 'AGRIVISION AI founded', body: 'A founder-led, AI-first AgriTech company set out to build intelligent agriculture products.' },
+  { year: 'Now', title: 'Building YieldAI Global · MVP', body: 'Crop advisory, pest intelligence, market insights, and a dashboard — in active development.' },
+  { year: 'Next', title: 'Early access & pilots', body: 'Opening early access and preparing pilot programs for the USA, India, and Canada; AgriSphere learning platform in development.' },
+  { year: 'Roadmap', title: 'Planned modules', body: 'CropVision, AgriSense (IoT), yield prediction, and smart irrigation — planned for future implementation.' },
 ];
 
 const STATS = [
-  { label: 'Active markets · USA · IN · CA', to: 3, suffix: '' },
-  { label: 'AI models in production', to: 38, suffix: '+' },
-  { label: 'Platform requests / mo', to: 36, suffix: 'M+' },
-  { label: 'Avg uptime', to: 99.98, suffix: '%', decimals: 2 },
+  { label: 'Product status', value: 'Beta Release' },
+  { label: 'Launch progress', value: 'Phase 1' },
+  { label: 'Deployment', value: 'Pilot Ready' },
+  { label: 'Innovation', value: 'AI Powered' },
 ];
 
 export function About() {
@@ -104,10 +104,10 @@ export function About() {
                     Company timeline
                   </div>
                   <div className="mt-1 font-display text-2xl font-semibold text-ink-900">
-                    From idea to global platform
+                    From idea to MVP
                   </div>
                 </div>
-                <span className="chip">Founded 2023</span>
+                <span className="chip">Founded 2026</span>
               </div>
 
               <ol className="relative mt-8 space-y-7 border-l border-ink-900/[0.07] pl-6">
@@ -137,11 +137,7 @@ export function About() {
                 {STATS.map((s) => (
                   <div key={s.label} className="rounded-xl bg-ink-50 p-3.5">
                     <div className="font-display text-xl font-semibold text-ink-900">
-                      <CountUp
-                        to={s.to}
-                        suffix={s.suffix}
-                        format={s.decimals ? (n) => n.toFixed(s.decimals) : undefined}
-                      />
+                      {s.value}
                     </div>
                     <div className="text-[11px] text-ink-500">{s.label}</div>
                   </div>

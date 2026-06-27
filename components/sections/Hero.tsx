@@ -1,15 +1,23 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { ArrowRight, Globe2, Activity, Users, Cpu } from 'lucide-react';
+import { ArrowRight, Globe2, Layers, Hammer, Rocket } from 'lucide-react';
 import { CountUp } from '../primitives';
 import { FarmerWorking } from './FarmerWorking';
 
-const HERO_STATS = [
-  { label: 'Active markets', to: 3, suffix: '', icon: Globe2 },
-  { label: 'AI predictions', to: 8.4, suffix: 'M', decimals: 1, icon: Activity },
-  { label: 'Farmers on platform', to: 92000, format: (n: number) => Math.round(n / 1000) + 'K+', icon: Users },
-  { label: 'AI requests / day', to: 1.2, suffix: 'M', decimals: 1, icon: Cpu },
+// Honest, pre-launch positioning — stage & scope, not traction.
+type HeroStat = {
+  label: string;
+  icon: React.ComponentType<{ className?: string }>;
+  value?: string;
+  to?: number;
+  suffix?: string;
+};
+const HERO_STATS: HeroStat[] = [
+  { label: 'Current stage', value: 'Early Access', icon: Rocket },
+  { label: 'Product status', value: 'Beta', icon: Hammer },
+  { label: 'Roadmap', value: 'Active Dev', icon: Layers },
+  { label: 'Availability', value: 'Global Vision', icon: Globe2 },
 ];
 
 export function Hero() {
@@ -38,7 +46,7 @@ export function Hero() {
         >
           <span className="h-1.5 w-1.5 rounded-full bg-brand-primary shadow-[0_0_8px_1px_rgba(15,107,62,0.6)]" />
           <span className="text-xs font-semibold uppercase tracking-[0.12em] text-ink-600">
-            AI-first AgriTech · YieldAI Global is live
+            AI-first AgriTech · building YieldAI Global
           </span>
         </motion.div>
 
@@ -59,8 +67,8 @@ export function Hero() {
           transition={{ duration: 0.9, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
           className="mx-auto mt-6 max-w-2xl text-balance text-center text-base leading-relaxed text-ink-600 sm:text-lg"
         >
-          We build intelligent agriculture products that transform how crops are managed, decisions
-          are made, and farming ecosystems operate — across the USA, India, and Canada.
+          We&rsquo;re building intelligent agriculture products to transform how crops are managed and
+          decisions are made — designed for the USA, India, and Canada.
         </motion.p>
 
         <motion.div
@@ -76,7 +84,7 @@ export function Hero() {
             Book a demo
           </a>
           <a href="#farmer" className="btn-ghost ml-1">
-            See how farmers use it →
+            See how farmers will use it →
           </a>
         </motion.div>
 
@@ -102,14 +110,12 @@ export function Hero() {
             >
               <div className="flex items-center justify-between">
                 <s.icon className="h-4 w-4 text-brand-primary" />
-                <span className="text-[10px] font-semibold uppercase tracking-wider text-ink-400">Live</span>
+                <span className="text-[10px] font-semibold uppercase tracking-wider text-brand-sun">
+                  Pre-launch
+                </span>
               </div>
               <div className="mt-3 font-display text-3xl font-semibold tracking-tight text-ink-900">
-                <CountUp
-                  to={s.to}
-                  suffix={s.suffix}
-                  format={s.format ? s.format : s.decimals ? (n) => n.toFixed(s.decimals) : undefined}
-                />
+                {s.value ? s.value : <CountUp to={s.to as number} suffix={s.suffix} />}
               </div>
               <div className="mt-1 text-xs text-ink-500">{s.label}</div>
             </motion.div>

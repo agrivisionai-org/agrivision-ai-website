@@ -7,7 +7,7 @@ import { Linkedin, Twitter, Mail } from 'lucide-react';
 const FOUNDER = {
   linkedin: 'https://www.linkedin.com/in/vijesh-reddy-golamari/',
   x: 'https://x.com/yieldaiglobal',
-  email: 'mailto:hello@agrivisionai.com',
+  email: 'mailto:hello@agrivisionai.org',
   photo: '/founder.jpg',
 };
 
@@ -45,12 +45,12 @@ export function Team() {
                 Founder, CEO & AI Architect
               </div>
               <h3 className="mt-4 font-display text-5xl font-semibold tracking-tight text-ink-900">
-                Vijesh Reddy
+                Vijesh Reddy Golamari
               </h3>
               <p className="mt-6 max-w-xl text-base leading-relaxed text-ink-700">
                 Vijesh founded AGRIVISION AI to bring AI-first product thinking to global agriculture.
                 A builder by craft and a systems thinker by training, he leads product, AI, and
-                platform engineering — shipping intelligent agriculture products from the ground up.
+                platform engineering — building intelligent agriculture products from the ground up.
               </p>
 
               <blockquote className="mt-8 border-l-2 border-brand-primary/60 bg-ink-50 pl-5 py-3">
@@ -59,7 +59,7 @@ export function Team() {
                   modern software. We&rsquo;re here to change that, one intelligent product at a
                   time.&rdquo;
                 </p>
-                <footer className="mt-2 text-xs text-ink-500">— Vijesh Reddy</footer>
+                <footer className="mt-2 text-xs text-ink-500">— Vijesh Reddy Golamari</footer>
               </blockquote>
 
               <div className="mt-7 flex items-center gap-2">
@@ -67,7 +67,7 @@ export function Team() {
                   href={FOUNDER.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Vijesh Reddy on LinkedIn"
+                  aria-label="Vijesh Reddy Golamari on LinkedIn"
                   className="rounded-xl border border-ink-900/[0.07] bg-ink-50 p-2.5 text-ink-700 transition-all hover:border-ink-900/[0.12] hover:text-brand-primary"
                 >
                   <Linkedin className="h-4 w-4" />
@@ -83,7 +83,7 @@ export function Team() {
                 </a>
                 <a
                   href={FOUNDER.email}
-                  aria-label="Email Vijesh Reddy"
+                  aria-label="Email Vijesh Reddy Golamari"
                   className="rounded-xl border border-ink-900/[0.07] bg-ink-50 p-2.5 text-ink-700 transition-all hover:border-ink-900/[0.12] hover:text-brand-primary"
                 >
                   <Mail className="h-4 w-4" />
@@ -92,7 +92,7 @@ export function Team() {
 
               <div className="mt-8 inline-flex items-center gap-2 rounded-full border border-ink-900/[0.07] bg-ink-50 px-3 py-1.5 text-xs text-ink-700">
                 <span className="h-1.5 w-1.5 rounded-full bg-brand-primary animate-pulse" />
-                AGRIVISION AI · Founded 2023
+                AGRIVISION AI · Founded 2026
               </div>
             </div>
           </div>
@@ -112,7 +112,7 @@ function FounderPortrait() {
         // eslint-disable-next-line @next/next/no-img-element
         <img
           src={FOUNDER.photo}
-          alt="Vijesh Reddy, Founder & CEO of AGRIVISION AI"
+          alt="Vijesh Reddy Golamari, Founder & CEO of AGRIVISION AI"
           onError={() => setImgError(true)}
           className="h-full w-full object-cover"
         />
@@ -138,7 +138,7 @@ function FounderPortrait() {
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
       <div className="absolute bottom-5 left-5 right-5 rounded-2xl border border-white/20 bg-white/85 p-3 backdrop-blur-sm">
         <div className="flex items-center justify-between text-[10px] text-ink-600">
-          <span className="font-semibold text-ink-900">Vijesh Reddy</span>
+          <span className="font-semibold text-ink-900">Vijesh Reddy Golamari</span>
           <span>CEO · AGRIVISION AI</span>
         </div>
       </div>

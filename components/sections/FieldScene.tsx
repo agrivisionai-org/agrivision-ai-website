@@ -21,7 +21,7 @@ export function FieldScene() {
       <div className="container-narrow">
         <div className="mx-auto max-w-3xl text-center">
           <Reveal>
-            <SectionEyebrow>Smart field · live AI</SectionEyebrow>
+            <SectionEyebrow>Smart field · on the roadmap</SectionEyebrow>
           </Reveal>
           <Reveal delay={0.1}>
             <h2 className="mt-6 text-balance font-display text-display-lg text-ink-900">
@@ -31,8 +31,9 @@ export function FieldScene() {
           </Reveal>
           <Reveal delay={0.2}>
             <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-ink-700">
-              YieldAI Global ties together drone imagery, soil sensors, and smart irrigation into one
-              live decision layer for every farm.
+              Our roadmap vision: YieldAI Global will tie together drone imagery, soil sensors, and
+              smart irrigation into one decision layer. The scene below is a concept of where
+              we&rsquo;re headed — these capabilities are planned, not yet built.
             </p>
           </Reveal>
         </div>
@@ -62,9 +63,14 @@ function Capability({
 }) {
   return (
     <div className="card-surface p-6">
-      <span className="flex h-10 w-10 items-center justify-center rounded-xl border border-ink-900/[0.07] bg-gradient-to-br from-brand-primary/15 to-transparent text-brand-primary">
-        <Icon className="h-4 w-4" />
-      </span>
+      <div className="flex items-center justify-between">
+        <span className="flex h-10 w-10 items-center justify-center rounded-xl border border-ink-900/[0.07] bg-gradient-to-br from-brand-primary/15 to-transparent text-brand-primary">
+          <Icon className="h-4 w-4" />
+        </span>
+        <span className="inline-flex items-center gap-1.5 rounded-full border border-brand-sun/30 bg-brand-sun/10 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-brand-sun">
+          Roadmap
+        </span>
+      </div>
       <h3 className="mt-4 text-base font-semibold text-ink-900">{title}</h3>
       <p className="mt-2 text-sm leading-relaxed text-ink-600">{body}</p>
     </div>

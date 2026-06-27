@@ -36,14 +36,14 @@ export function Services() {
           </Reveal>
           <Reveal delay={0.1}>
             <h2 className="mt-6 text-balance font-display text-display-lg text-ink-900">
-              An end-to-end AI services layer for{' '}
+              The AI services layer we&rsquo;re building for{' '}
               <span className="gradient-text-green">modern agriculture</span>.
             </h2>
           </Reveal>
           <Reveal delay={0.2}>
             <p className="mt-5 text-base leading-relaxed text-ink-700">
-              From advisory to procurement to enterprise AI — we operate the services that make the
-              products work.
+              From advisory to procurement to enterprise AI — the services we&rsquo;re building to power
+              the products. Planned offerings, rolling out with the roadmap.
             </p>
           </Reveal>
         </div>

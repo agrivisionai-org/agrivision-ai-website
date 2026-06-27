@@ -185,14 +185,14 @@ export function FarmerWorking({ className = '' }: { className?: string }) {
       {/* floating telemetry chips */}
       <FloatChip className="left-4 top-4 sm:left-6 sm:top-6">
         <span className="h-1.5 w-1.5 rounded-full bg-brand-primary" />
-        Field 07 · plowing · 4.2 km/h
+        Vision · autonomous field
       </FloatChip>
       <FloatChip className="right-4 top-4 sm:right-6 sm:top-6">
         <span className="h-1.5 w-1.5 rounded-full bg-brand-sun" />
-        Soil moisture optimal
+        Roadmap · smart irrigation
       </FloatChip>
       <FloatChip className="bottom-4 right-4 sm:bottom-6 sm:right-6">
-        🌱 12,480 seeds drilled today
+        🌱 Concept preview
       </FloatChip>
     </div>
   );

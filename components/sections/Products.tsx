@@ -15,31 +15,48 @@ import {
   Eye,
   Wifi,
   Cog,
+  Droplets,
+  GraduationCap,
+  BookOpen,
+  Compass,
+  Wand2,
 } from 'lucide-react';
+
+// Flagship MVP — what we're building now (safe, current scope)
+const MVP_FEATURES = [
+  { icon: Wheat, label: 'Crop Advisory' },
+  { icon: Activity, label: 'Pest Intelligence' },
+  { icon: Sparkles, label: 'Market Insights' },
+  { icon: TrendingUp, label: 'Dashboard' },
+];
+
+// Flagship roadmap — planned capabilities (not yet built)
+const ROADMAP_FEATURES = [
+  { icon: TrendingUp, label: 'Yield Prediction' },
+  { icon: CloudRain, label: 'Weather Intelligence' },
+  { icon: Bug, label: 'Disease Detection' },
+  { icon: Mic, label: 'Voice Assistant' },
+  { icon: Wifi, label: 'IoT Sensors' },
+  { icon: Droplets, label: 'Smart Irrigation' },
+];
 
 const PRODUCTS = [
   {
     name: 'YieldAI Global',
-    tagline: 'Flagship',
-    description: 'AI-powered agriculture intelligence platform.',
+    tagline: 'Flagship · MVP',
+    status: 'In development',
+    description:
+      'An AI-powered agriculture platform we are building now — crop advisory, pest intelligence, market insights, and a dashboard, with IoT and yield prediction on the roadmap.',
     accent: '#5DBB63',
-    features: [
-      { icon: Wheat, label: 'Crop Recommendation' },
-      { icon: TrendingUp, label: 'Yield Prediction' },
-      { icon: CloudRain, label: 'Weather Intelligence' },
-      { icon: Bug, label: 'Disease Detection' },
-      { icon: Activity, label: 'Pest Monitoring' },
-      { icon: Mic, label: 'Voice Assistant' },
-      { icon: Building2, label: 'Government Services' },
-      { icon: Sparkles, label: 'Market Analytics' },
-    ],
-    metric: { value: '8.4M+', label: 'Predictions / mo' },
+    features: MVP_FEATURES,
+    metric: { value: 'MVP', label: 'In development' },
     href: '#contact',
   },
   {
     name: 'CropVision',
-    tagline: 'Computer vision',
-    description: 'Computer vision platform for crop health and disease monitoring.',
+    tagline: 'Roadmap',
+    status: 'Planned',
+    description: 'Computer-vision module for crop health and disease monitoring — planned for future implementation.',
     accent: '#0A84FF',
     features: [
       { icon: Eye, label: 'Field imagery analysis' },
@@ -47,13 +64,14 @@ const PRODUCTS = [
       { icon: Activity, label: 'Stress detection' },
       { icon: Sparkles, label: 'On-device inference' },
     ],
-    metric: { value: '98.7%', label: 'Detection accuracy' },
+    metric: { value: 'Roadmap', label: 'Planned capability' },
     href: '#contact',
   },
   {
     name: 'AgriSense',
-    tagline: 'IoT + AI',
-    description: 'IoT + AI monitoring platform for farms, soil, irrigation, and microclimate.',
+    tagline: 'Roadmap · IoT',
+    status: 'Planned',
+    description: 'IoT + AI monitoring for farms, soil, irrigation, and microclimate — planned for future implementation.',
     accent: '#5DBB63',
     features: [
       { icon: Wifi, label: 'Sensor fabric' },
@@ -61,13 +79,14 @@ const PRODUCTS = [
       { icon: CloudRain, label: 'Microclimate intel' },
       { icon: Cog, label: 'Edge automation' },
     ],
-    metric: { value: '42K+', label: 'Devices online' },
+    metric: { value: 'Roadmap', label: 'Planned capability' },
     href: '#contact',
   },
   {
     name: 'FarmOS',
-    tagline: 'Operations',
-    description: 'Farm operations and management system for enterprises and cooperatives.',
+    tagline: 'Concept',
+    status: 'Early design',
+    description: 'Concept for a farm operations and management system for enterprises and cooperatives.',
     accent: '#0A84FF',
     features: [
       { icon: Cog, label: 'Workflow automation' },
@@ -75,8 +94,23 @@ const PRODUCTS = [
       { icon: Building2, label: 'Multi-farm ops' },
       { icon: Sparkles, label: 'AI assistant' },
     ],
-    metric: { value: '600+', label: 'Enterprises onboarded' },
+    metric: { value: 'Concept', label: 'Early design' },
     href: '#contact',
+  },
+  {
+    name: 'AgriSphere',
+    tagline: 'In development',
+    status: 'In development',
+    description: 'Agricultural learning platform — courses in hydroponics, organic farming, smart AgTech, and permaculture.',
+    accent: '#0F6B3E',
+    features: [
+      { icon: BookOpen, label: 'Course library' },
+      { icon: Compass, label: 'Explore tracks' },
+      { icon: Wand2, label: 'Agri Studio' },
+      { icon: GraduationCap, label: 'Expert-led' },
+    ],
+    metric: { value: 'MVP', label: 'In development' },
+    href: '#agrisphere',
   },
 ];
 
@@ -98,27 +132,28 @@ export function Products() {
             </Reveal>
             <Reveal delay={0.2}>
               <p className="mt-5 max-w-xl text-base leading-relaxed text-ink-700">
-                A product family spanning intelligence, vision, IoT, and operations — built on the same
-                AI fabric.
+                A product family we&rsquo;re building — intelligence, vision, IoT, and operations — on a
+                shared AI fabric. Some are in development; others are on the roadmap.
               </p>
             </Reveal>
           </div>
           <Reveal delay={0.25}>
             <a href="#contact" className="btn-secondary">
-              All products
+              See the roadmap
               <ArrowUpRight className="h-4 w-4" />
             </a>
           </Reveal>
         </div>
 
-        <div className="mt-14 grid gap-5 lg:grid-cols-12">
-          {/* Flagship */}
-          <Reveal delay={0.1} className="lg:col-span-12">
-            <FlagshipCard p={PRODUCTS[0]} />
-          </Reveal>
+        {/* Flagship */}
+        <Reveal delay={0.1} className="mt-14 block">
+          <FlagshipCard p={PRODUCTS[0]} />
+        </Reveal>
 
+        {/* Secondary products + AgriSphere */}
+        <div className="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {PRODUCTS.slice(1).map((p, i) => (
-            <Reveal key={p.name} delay={0.15 + i * 0.08} className="lg:col-span-4">
+            <Reveal key={p.name} delay={0.15 + i * 0.08}>
               <ProductCard p={p} />
             </Reveal>
           ))}
@@ -142,12 +177,12 @@ function FlagshipCard({ p }: { p: (typeof PRODUCTS)[number] }) {
         }}
       />
       <div className="relative">
-        <div className="flex items-center gap-2">
-          <span
-            className="chip"
-            style={{ borderColor: `${p.accent}55`, color: p.accent }}
-          >
+        <div className="flex flex-wrap items-center gap-2">
+          <span className="chip" style={{ borderColor: `${p.accent}55`, color: p.accent }}>
             <Sparkles className="h-3 w-3" /> {p.tagline}
+          </span>
+          <span className="inline-flex items-center gap-1.5 rounded-full border border-brand-sun/30 bg-brand-sun/10 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-brand-sun">
+            <span className="h-1.5 w-1.5 rounded-full bg-brand-sun" /> {p.status}
           </span>
         </div>
         <h3 className="mt-5 font-display text-4xl font-semibold tracking-tight text-ink-900">
@@ -155,8 +190,12 @@ function FlagshipCard({ p }: { p: (typeof PRODUCTS)[number] }) {
         </h3>
         <p className="mt-3 max-w-md text-base text-ink-700">{p.description}</p>
 
-        <div className="mt-7 grid grid-cols-2 gap-2 sm:grid-cols-2">
-          {p.features.map((f) => (
+        {/* MVP — building now */}
+        <div className="mt-7 text-[11px] font-semibold uppercase tracking-wider text-brand-primary">
+          In the MVP · building now
+        </div>
+        <div className="mt-3 grid grid-cols-2 gap-2">
+          {MVP_FEATURES.map((f) => (
             <div
               key={f.label}
               className="flex items-center gap-2.5 rounded-xl border border-ink-900/[0.07] bg-ink-50 px-3 py-2.5"
@@ -167,11 +206,27 @@ function FlagshipCard({ p }: { p: (typeof PRODUCTS)[number] }) {
           ))}
         </div>
 
+        {/* Roadmap — planned */}
+        <div className="mt-5 text-[11px] font-semibold uppercase tracking-wider text-ink-500">
+          On the roadmap · planned
+        </div>
+        <div className="mt-3 flex flex-wrap gap-1.5">
+          {ROADMAP_FEATURES.map((f) => (
+            <span
+              key={f.label}
+              className="inline-flex items-center gap-1.5 rounded-full border border-dashed border-ink-900/15 bg-white px-2.5 py-1 text-[11px] font-medium text-ink-500"
+            >
+              <f.icon className="h-3 w-3" />
+              {f.label}
+            </span>
+          ))}
+        </div>
+
         <div className="mt-8 flex items-center gap-3">
-          <a href={p.href} className="btn-primary">
-            Explore platform <ArrowUpRight className="h-4 w-4" />
+          <a href="#contact" className="btn-primary">
+            Request early access <ArrowUpRight className="h-4 w-4" />
           </a>
-          <a href="#contact" className="btn-ghost">Talk to product team →</a>
+          <a href="#contact" className="btn-ghost">Talk to the team →</a>
         </div>
       </div>
 
@@ -226,10 +281,10 @@ function ProductVisual({ accent }: { accent: string }) {
   return (
     <div className="relative h-full min-h-[300px] rounded-2xl border border-ink-900/[0.07] bg-ink-50 p-5">
       <div className="flex items-center justify-between text-[10px] uppercase tracking-wider text-ink-500">
-        <span>Crop intelligence · live</span>
+        <span>Crop intelligence · concept preview</span>
         <span className="inline-flex items-center gap-1.5">
-          <span className="h-1.5 w-1.5 rounded-full bg-brand-primary animate-pulse" />
-          streaming
+          <span className="h-1.5 w-1.5 rounded-full bg-brand-sun" />
+          mockup
         </span>
       </div>
 
@@ -258,14 +313,14 @@ function ProductVisual({ accent }: { accent: string }) {
 
       {/* Recommendations */}
       <div className="mt-5 space-y-2 rounded-xl border border-ink-900/[0.07] bg-white p-3">
-        <div className="text-[10px] uppercase tracking-wider text-ink-500">AI recommendation</div>
+        <div className="text-[10px] uppercase tracking-wider text-ink-500">AI recommendation · concept</div>
         <div className="text-sm font-medium text-ink-900">
-          Apply targeted nitrogen at 18kg/ha for plot 7 — projected +9.2% yield.
+          Targeted nitrogen guidance per plot — an example of what we&rsquo;re building.
         </div>
         <div className="flex items-center gap-2">
-          <span className="text-[10px] text-brand-primary">Confidence 94%</span>
+          <span className="text-[10px] text-brand-primary">MVP in development</span>
           <span className="h-1 flex-1 overflow-hidden rounded-full bg-ink-100">
-            <span className="block h-full w-[94%] bg-gradient-to-r from-brand-primary to-brand-secondary" />
+            <span className="block h-full w-2/3 bg-gradient-to-r from-brand-primary to-brand-secondary" />
           </span>
         </div>
       </div>

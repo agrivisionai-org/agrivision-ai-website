@@ -25,7 +25,7 @@ export function FarmerExperience() {
         <div className="grid gap-14 lg:grid-cols-[1.05fr_1fr] lg:items-center">
           <div>
             <Reveal>
-              <SectionEyebrow>Built for the farmer</SectionEyebrow>
+              <SectionEyebrow>Designed for the farmer</SectionEyebrow>
             </Reveal>
             <Reveal delay={0.1}>
               <h2 className="mt-6 text-balance font-display text-display-lg text-ink-900">
@@ -35,9 +35,9 @@ export function FarmerExperience() {
             </Reveal>
             <Reveal delay={0.2}>
               <p className="mt-5 max-w-lg text-base leading-relaxed text-ink-700">
-                YieldAI Global was designed with farmers — not just for them. Voice-first,
-                multilingual, and field-tested across three countries — every screen answers a real
-                question a farmer asks at sunrise.
+                We&rsquo;re designing YieldAI Global with farmers — not just for them. Voice-first and
+                multilingual, designed for the USA, India, and Canada. The screens below are an
+                early product concept.
               </p>
             </Reveal>
 
@@ -52,13 +52,13 @@ export function FarmerExperience() {
             <Reveal delay={0.5}>
               <div className="mt-10 flex flex-wrap items-center gap-3">
                 <span className="chip">
-                  <Mic className="h-3 w-3" /> Voice in 38 languages
+                  <Mic className="h-3 w-3" /> Multilingual voice · planned
                 </span>
                 <span className="chip">
-                  <CheckCircle2 className="h-3 w-3 text-brand-primary" /> Works offline
+                  <CheckCircle2 className="h-3 w-3 text-brand-sun" /> Offline · planned
                 </span>
                 <span className="chip">
-                  <CheckCircle2 className="h-3 w-3 text-brand-primary" /> SMS fallback
+                  <CheckCircle2 className="h-3 w-3 text-brand-sun" /> SMS fallback · planned
                 </span>
               </div>
             </Reveal>

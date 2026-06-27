@@ -47,8 +47,9 @@ export function Sustainability() {
             </Reveal>
             <Reveal delay={0.2}>
               <p className="mt-5 max-w-lg text-base leading-relaxed text-ink-700">
-                Using AI and predictive agriculture to reduce unnecessary pesticide usage — without
-                compromising yield.
+                We&rsquo;re building AI and predictive models to reduce unnecessary pesticide usage —
+                without compromising yield. The figures below are modelled projections, not results
+                yet.
               </p>
             </Reveal>
 
@@ -86,35 +87,35 @@ function ImpactDashboard() {
           <div className="flex items-center gap-2">
             <Leaf className="h-4 w-4 text-brand-primary" />
             <span className="text-xs font-semibold uppercase tracking-wider text-ink-600">
-              Sustainability impact · 2026
+              Projected impact · model
             </span>
           </div>
           <span className="chip">
-            <span className="h-1.5 w-1.5 rounded-full bg-brand-primary animate-pulse" />
-            Live
+            <span className="h-1.5 w-1.5 rounded-full bg-brand-sun" />
+            Projection
           </span>
         </div>
 
         {/* Big numbers */}
         <div className="mt-7 grid grid-cols-2 gap-3">
           <ImpactStat
-            label="Pesticide reduction"
+            label="Projected pesticide reduction"
             value={<><CountUp to={37} suffix="%" /></>}
             color="text-brand-primary"
           />
           <ImpactStat
-            label="Water saved"
+            label="Projected water saved"
             value={<><CountUp to={2.4} format={(n) => n.toFixed(1)} suffix="B L" /></>}
             color="text-brand-accent"
           />
           <ImpactStat
-            label="Carbon offset"
+            label="Projected carbon offset"
             value={<><CountUp to={184} suffix="K t" /></>}
             color="text-brand-primary"
           />
           <ImpactStat
-            label="Farms enrolled"
-            value={<><CountUp to={91} suffix="K+" /></>}
+            label="Pilot farms · target"
+            value={<><CountUp to={10} suffix="K" /></>}
             color="text-brand-accent"
           />
         </div>
@@ -123,9 +124,9 @@ function ImpactDashboard() {
         <div className="mt-8 rounded-2xl border border-ink-900/[0.07] bg-ink-50 p-5">
           <div className="flex items-center justify-between">
             <span className="text-xs font-semibold uppercase tracking-wider text-ink-600">
-              Input reduction by quarter
+              Projected input reduction
             </span>
-            <span className="text-[11px] text-brand-primary">vs. baseline</span>
+            <span className="text-[11px] text-brand-sun">modelled</span>
           </div>
 
           <div className="mt-5 flex items-end gap-3 h-32">

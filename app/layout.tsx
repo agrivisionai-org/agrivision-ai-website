@@ -1,5 +1,9 @@
 import type { Metadata, Viewport } from 'next';
+import Script from 'next/script';
 import './globals.css';
+
+const GA_ID = 'G-DFX8SDNRYV';
+const CLARITY_ID = 'xdmyfpauf4';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://agrivisionai.org'),
@@ -7,8 +11,8 @@ export const metadata: Metadata = {
     default: 'AGRIVISION AI — Building the Future of Agriculture with AI',
     template: '%s · AGRIVISION AI',
   },
-  description:
-    'AGRIVISION AI builds intelligent agriculture products and predictive systems. Flagship YieldAI Global delivers crop intelligence, yield prediction, and AI decision-making for the global agriculture ecosystem.',
+    description:
+    'AGRIVISION AI is building intelligent agriculture products and predictive systems. Our flagship, YieldAI Global, is in development — crop advisory, pest intelligence, and AI decision-making, with IoT and yield prediction on the roadmap.',
   keywords: [
     'AgriTech',
     'AI Agriculture',
@@ -58,6 +62,27 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="min-h-screen bg-paper font-sans text-ink-900 antialiased">
         {children}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_ID}');
+          `}
+        </Script>
+        <Script id="clarity-init" strategy="afterInteractive">
+          {`
+            (function(c,l,a,r,i,t,y){
+              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+              t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+              y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "${CLARITY_ID}");
+          `}
+        </Script>
       </body>
     </html>
   );
