@@ -2,11 +2,12 @@
 
 import { useState } from 'react';
 import { Reveal, SectionEyebrow, GradientOrb } from '../primitives';
-import { Linkedin, Twitter, Mail } from 'lucide-react';
+import { Linkedin, Twitter, Mail, Github } from 'lucide-react';
 
 const FOUNDER = {
   linkedin: 'https://www.linkedin.com/in/vijesh-reddy-golamari/',
   x: 'https://x.com/yieldaiglobal',
+  github: 'https://github.com/agrivisionai-org',
   email: 'mailto:hello@agrivisionai.org',
   photo: '/founder.jpg',
 };
@@ -80,6 +81,15 @@ export function Team() {
                   className="rounded-xl border border-ink-900/[0.07] bg-ink-50 p-2.5 text-ink-700 transition-all hover:border-ink-900/[0.12] hover:text-brand-primary"
                 >
                   <Twitter className="h-4 w-4" />
+                </a>
+                <a
+                  href={FOUNDER.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="AGRIVISION AI on GitHub"
+                  className="rounded-xl border border-ink-900/[0.07] bg-ink-50 p-2.5 text-ink-700 transition-all hover:border-ink-900/[0.12] hover:text-brand-primary"
+                >
+                  <Github className="h-4 w-4" />
                 </a>
                 <a
                   href={FOUNDER.email}
