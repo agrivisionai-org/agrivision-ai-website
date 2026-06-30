@@ -49,9 +49,11 @@ export function Team() {
                 Vijesh Reddy Golamari
               </h3>
               <p className="mt-6 max-w-xl text-base leading-relaxed text-ink-700">
-                Vijesh founded AGRIVISION AI to bring AI-first product thinking to global agriculture.
-                A builder by craft and a systems thinker by training, he leads product, AI, and
-                platform engineering — building intelligent agriculture products from the ground up.
+                Vijesh Reddy Golamari is the sole founder of AGRIVISION AI (Agrivisionai Inc),
+                headquartered in Detroit, Michigan. He founded the company to bring AI-first product
+                thinking to global agriculture, and leads product, AI, and platform engineering —
+                building intelligent agriculture products, including the flagship platform YieldAI Global,
+                from the ground up.
               </p>
 
               <blockquote className="mt-8 border-l-2 border-brand-primary/60 bg-ink-50 pl-5 py-3">

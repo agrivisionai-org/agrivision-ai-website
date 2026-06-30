@@ -17,7 +17,10 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
       },
     ],
-    sitemap: 'https://agrivisionai.org/sitemap.xml',
+    sitemap: [
+      'https://agrivisionai.org/sitemap.xml',
+      'https://agrivisionai.org/image-sitemap.xml',
+    ],
     host: 'https://agrivisionai.org',
   };
 }
