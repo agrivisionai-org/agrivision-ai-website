@@ -12,6 +12,23 @@ const FOUNDER = {
   photo: '/founder.jpg',
 };
 
+const LEADERSHIP = [
+  {
+    name: 'Bhanu Prakash',
+    role: 'Product Lead',
+    initials: 'BP',
+    accent: '#0F6B3E',
+    blurb: 'Leads product for YieldAI Global — shaping the roadmap and turning farmer feedback into features that ship.',
+  },
+  {
+    name: 'Bala Sleeva Thirumala Reddy',
+    role: 'Business Strategist',
+    initials: 'BR',
+    accent: '#0A84FF',
+    blurb: 'Drives business strategy — market positioning, partnerships, and the path from live product to real adoption.',
+  },
+];
+
 export function Team() {
   return (
     <section id="team" className="relative overflow-hidden py-28 sm:py-36">
@@ -109,6 +126,29 @@ export function Team() {
             </div>
           </div>
         </Reveal>
+
+        <div className="mt-16 grid gap-6 sm:grid-cols-2">
+          {LEADERSHIP.map((m, i) => (
+            <Reveal key={m.name} delay={0.15 + i * 0.08}>
+              <div className="group flex h-full items-start gap-5 rounded-3xl border border-ink-900/[0.07] bg-white p-6 transition-all hover:border-brand-primary/30 hover:shadow-[0_24px_60px_-30px_rgba(15,107,62,0.25)]">
+                <div
+                  className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl font-display text-xl font-semibold text-white"
+                  style={{ background: `linear-gradient(135deg, ${m.accent} 0%, ${m.accent}99 100%)` }}
+                  aria-hidden="true"
+                >
+                  {m.initials}
+                </div>
+                <div>
+                  <div className="text-[11px] font-semibold uppercase tracking-[0.16em] text-brand-primary">
+                    {m.role}
+                  </div>
+                  <h3 className="mt-1.5 font-display text-xl font-semibold text-ink-900">{m.name}</h3>
+                  <p className="mt-2.5 text-sm leading-relaxed text-ink-600">{m.blurb}</p>
+                </div>
+              </div>
+            </Reveal>
+          ))}
+        </div>
       </div>
     </section>
   );
