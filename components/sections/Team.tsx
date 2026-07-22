@@ -18,6 +18,7 @@ const LEADERSHIP = [
     role: 'Product Lead',
     initials: 'BP',
     accent: '#0F6B3E',
+    photo: '/team/bhanu-prakash.jpg',
     blurb: 'Leads product for YieldAI Global — shaping the roadmap and turning farmer feedback into features that ship.',
   },
   {
@@ -25,6 +26,7 @@ const LEADERSHIP = [
     role: 'Business Strategist',
     initials: 'BR',
     accent: '#0A84FF',
+    photo: '/team/bala-sleeva-thirumala-reddy.jpg',
     blurb: 'Drives business strategy — market positioning, partnerships, and the path from live product to real adoption.',
   },
 ];
@@ -132,11 +134,19 @@ export function Team() {
             <Reveal key={m.name} delay={0.15 + i * 0.08}>
               <div className="group flex h-full items-start gap-5 rounded-3xl border border-ink-900/[0.07] bg-white p-6 transition-all hover:border-brand-primary/30 hover:shadow-[0_24px_60px_-30px_rgba(15,107,62,0.25)]">
                 <div
-                  className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl font-display text-xl font-semibold text-white"
+                  className="flex h-20 w-20 shrink-0 items-center justify-center overflow-hidden rounded-2xl font-display text-xl font-semibold text-white"
                   style={{ background: `linear-gradient(135deg, ${m.accent} 0%, ${m.accent}99 100%)` }}
-                  aria-hidden="true"
                 >
-                  {m.initials}
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={m.photo}
+                    alt={`${m.name}, ${m.role} at AGRIVISION AI`}
+                    className="h-full w-full object-cover object-top"
+                    onError={(e) => {
+                      e.currentTarget.style.display = 'none';
+                      e.currentTarget.parentElement!.textContent = m.initials;
+                    }}
+                  />
                 </div>
                 <div>
                   <div className="text-[11px] font-semibold uppercase tracking-[0.16em] text-brand-primary">
