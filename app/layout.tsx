@@ -8,11 +8,11 @@ const CLARITY_ID = 'xdmyfpauf4';
 export const metadata: Metadata = {
   metadataBase: new URL('https://agrivisionai.org'),
   title: {
-    default: 'AGRIVISION AI — Building the Future of Agriculture with AI',
+    default: 'AGRIVISION AI — AI Farming Assistant (YieldAI Global)',
     template: '%s · AGRIVISION AI',
   },
     description:
-    'AGRIVISION AI is building intelligent agriculture products and predictive systems. Our flagship, YieldAI Global, is in development — crop advisory, pest intelligence, and AI decision-making, with IoT and yield prediction on the roadmap.',
+    'AGRIVISION AI builds intelligent agriculture products. Our flagship, YieldAI Global, is live in India, the USA & Canada — AI crop advice, live market prices, weather, and government-scheme guidance in the farmer\'s own language.',
   keywords: [
     'AgriTech',
     'AI Agriculture',
@@ -61,7 +61,7 @@ const organizationSchema = {
   },
   image: 'https://agrivisionai.org/opengraph-image.png',
   description:
-    'AI-first technology company building intelligent products for global agriculture. Flagship: YieldAI Global — AI-powered crop intelligence for extension workers across 40+ countries and 70+ languages.',
+    'AI-first technology company building intelligent products for global agriculture. Flagship: YieldAI Global — AI-powered crop intelligence for extension workers across 40+ countries, built to work multilingually.',
   disambiguatingDescription:
     'AGRIVISION AI (Agrivisionai Inc) is a Detroit, Michigan-based company founded in 2026 by sole founder Vijesh Reddy Golamari. It is not affiliated with any other similarly named agricultural-technology project or company.',
   foundingDate: '2026-05-01',
@@ -150,7 +150,7 @@ const founderSchema = {
   familyName: 'Golamari',
   jobTitle: 'Founder, CEO & AI Architect',
   description:
-    'Sole founder and CEO of AGRIVISION AI (Agrivisionai Inc), a Detroit, Michigan AI agriculture company founded in 2026.',
+    'Sole founder and CEO of AGRIVISION AI (Agrivisionai Inc), a Detroit, Michigan AI agriculture company founded in 2026, and a Generative AI Engineer and Technical Lead at Symplore Inc.',
   image: {
     '@type': 'ImageObject',
     url: 'https://agrivisionai.org/founder.jpg',
@@ -160,7 +160,10 @@ const founderSchema = {
     caption: 'Vijesh Reddy Golamari, Founder & CEO of AGRIVISION AI',
     representativeOfPage: true,
   },
-  worksFor: { '@id': 'https://agrivisionai.org#organization' },
+  worksFor: [
+    { '@id': 'https://agrivisionai.org#organization' },
+    { '@type': 'Organization', name: 'Symplore Inc' },
+  ],
   sameAs: [
     'https://www.linkedin.com/in/vijesh-reddy-golamari/',
     'https://www.wikidata.org/wiki/Q140381399',
@@ -186,9 +189,9 @@ const productsSchema = {
         applicationCategory: 'BusinessApplication',
         applicationSubCategory: 'AgTech · Crop Intelligence',
         operatingSystem: 'Web',
-        url: 'https://agrivisionai.org/#products',
+        url: 'https://agrivisionai.org/products/yieldai-global',
         description:
-          'Flagship AI-powered agriculture platform, currently in development — crop advisory, pest intelligence, market insights, and a dashboard, with IoT sensors and yield prediction on the roadmap.',
+          'Flagship AI-powered agriculture platform, live in India, the USA & Canada — AI crop advice, live government market prices, weather, and government-scheme guidance in the farmer\'s own language. Available at https://yieldaiglobal.com.',
         publisher: { '@id': 'https://agrivisionai.org#organization' },
         creator: { '@id': 'https://agrivisionai.org#organization' },
       },
@@ -203,7 +206,7 @@ const productsSchema = {
         applicationCategory: 'BusinessApplication',
         applicationSubCategory: 'AgTech · Computer Vision',
         operatingSystem: 'Web',
-        url: 'https://agrivisionai.org/#products',
+        url: 'https://agrivisionai.org/products/cropvision',
         description:
           'Planned computer-vision module for crop health and disease monitoring — field-imagery analysis, disease classification, and crop-stress detection.',
         publisher: { '@id': 'https://agrivisionai.org#organization' },
@@ -220,7 +223,7 @@ const productsSchema = {
         applicationCategory: 'BusinessApplication',
         applicationSubCategory: 'AgTech · IoT',
         operatingSystem: 'Web',
-        url: 'https://agrivisionai.org/#products',
+        url: 'https://agrivisionai.org/products/agrisense',
         description:
           'Planned IoT and AI monitoring for farms, soil, irrigation, and microclimate — real-time sensor telemetry, microclimate intelligence, and edge automation.',
         publisher: { '@id': 'https://agrivisionai.org#organization' },
@@ -237,7 +240,7 @@ const productsSchema = {
         applicationCategory: 'BusinessApplication',
         applicationSubCategory: 'AgTech · Farm Management',
         operatingSystem: 'Web',
-        url: 'https://agrivisionai.org/#products',
+        url: 'https://agrivisionai.org/products/farmos',
         description:
           'Early-stage concept for a farm operations and management system for enterprises and cooperatives — workflow automation, multi-farm operations, and an AI assistant.',
         publisher: { '@id': 'https://agrivisionai.org#organization' },

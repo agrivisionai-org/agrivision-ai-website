@@ -13,28 +13,29 @@ const COLS = [
   {
     title: 'Products',
     links: [
-      { label: 'YieldAI Global', href: '#products' },
-      { label: 'CropVision', href: '#products' },
-      { label: 'AgriSense', href: '#products' },
-      { label: 'FarmOS', href: '#products' },
+      { label: 'YieldAI Global', href: '/products/yieldai-global' },
+      { label: 'CropVision', href: '/products/cropvision' },
+      { label: 'AgriSense', href: '/products/agrisense' },
+      { label: 'FarmOS', href: '/products/farmos' },
     ],
   },
   {
     title: 'Company',
     links: [
-      { label: 'About', href: '#about' },
-      { label: 'Careers', href: '#careers' },
-      { label: 'Press', href: '#' },
-      { label: 'Investors', href: '#contact' },
+      { label: 'About', href: '/about' },
+      { label: 'Careers', href: '/careers' },
+      { label: 'Press', href: '/press' },
+      { label: 'Investors', href: '/contact' },
     ],
   },
   {
     title: 'Resources',
     links: [
-      { label: 'Documentation', href: '#' },
-      { label: 'API Reference', href: '#' },
-      { label: 'Changelog', href: '#' },
-      { label: 'Trust & Security', href: '#' },
+      { label: 'Blog', href: '/blog' },
+      { label: 'FAQ', href: '/faq' },
+      { label: 'Products', href: '/products' },
+      { label: 'GitHub', href: 'https://github.com/agrivisionai-org' },
+      { label: 'Build Notes', href: 'https://www.linkedin.com/newsletters/7476661645046378496/' },
     ],
   },
   {
@@ -58,17 +59,17 @@ export function Footer() {
           <div className="flex flex-col items-start justify-between gap-6 lg:flex-row lg:items-center">
             <div>
               <h3 className="font-display text-3xl font-semibold text-white sm:text-4xl">
-                YieldAI Global is in development.
+                YieldAI Global is live.
               </h3>
               <p className="mt-3 max-w-md text-sm text-white/80">
-                Join the early-access list and help shape what we build — for the USA, India, and Canada.
+                AI crop advice, live market prices, weather, and scheme guidance in your language — available now in the USA, India, and Canada. Start a free trial.
               </p>
             </div>
             <div className="flex items-center gap-3">
-              <a href="#contact" className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-ink-900 transition-transform hover:-translate-y-0.5">
-                Request early access <ArrowRight className="h-4 w-4" />
+              <a href="https://yieldaiglobal.com" target="_blank" rel="noopener" className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-ink-900 transition-transform hover:-translate-y-0.5">
+                Start Free Trial <ArrowRight className="h-4 w-4" />
               </a>
-              <a href="#products" className="inline-flex items-center gap-2 rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10">
+              <a href="/products" className="inline-flex items-center gap-2 rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10">
                 Explore products
               </a>
             </div>
@@ -100,11 +101,16 @@ export function Footer() {
 
           {COLS.map((c) => (
             <div key={c.title}>
-              <h4 className="text-xs font-semibold uppercase tracking-[0.18em] text-ink-400">{c.title}</h4>
+              <h4 className="text-xs font-semibold uppercase tracking-[0.18em] text-ink-500">{c.title}</h4>
               <ul className="mt-5 space-y-3">
                 {c.links.map((l) => (
                   <li key={l.label}>
-                    <a href={l.href} className="text-sm text-ink-600 transition-colors hover:text-ink-900">
+                    <a
+                      href={l.href}
+                      target={l.href.startsWith('http') ? '_blank' : undefined}
+                      rel={l.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                      className="text-sm text-ink-600 transition-colors hover:text-ink-900"
+                    >
                       {l.label}
                     </a>
                   </li>
@@ -115,15 +121,14 @@ export function Footer() {
         </div>
 
         <div className="mt-16 flex flex-col items-start justify-between gap-4 border-t border-ink-900/[0.07] pt-8 sm:flex-row sm:items-center">
-          <p className="text-xs text-ink-400">© {new Date().getFullYear()} AGRIVISION AI. All rights reserved.</p>
-          <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-ink-400">
-            <a href="#" className="hover:text-ink-900">Privacy</a>
-            <a href="#" className="hover:text-ink-900">Terms</a>
-            <a href="#" className="hover:text-ink-900">Security</a>
+          <p className="text-xs text-ink-500">© {new Date().getFullYear()} AGRIVISION AI. All rights reserved.</p>
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-ink-500">
+            <a href="/privacy" className="hover:text-ink-900">Privacy</a>
+            <a href="/terms" className="hover:text-ink-900">Terms</a>
             <span className="hidden sm:inline text-ink-300">•</span>
             <span className="inline-flex items-center gap-1.5">
-              <span className="h-1.5 w-1.5 rounded-full bg-brand-sun animate-pulse" />
-              Building YieldAI Global
+              <span className="h-1.5 w-1.5 rounded-full bg-brand-primary animate-pulse" />
+              YieldAI Global is live
             </span>
           </div>
         </div>

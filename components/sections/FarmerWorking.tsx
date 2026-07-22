@@ -192,7 +192,7 @@ export function FarmerWorking({ className = '' }: { className?: string }) {
         Roadmap · smart irrigation
       </FloatChip>
       <FloatChip className="bottom-4 right-4 sm:bottom-6 sm:right-6">
-        🌱 Concept preview
+        🌱 YieldAI Global · live
       </FloatChip>
     </div>
   );

@@ -6,11 +6,11 @@ import { Menu, X, ArrowUpRight } from 'lucide-react';
 import { Logo } from './Logo';
 
 const NAV_LINKS = [
-  { href: '#about', label: 'About' },
-  { href: '#products', label: 'Products' },
-  { href: '#agrisphere', label: 'AgriSphere' },
-  { href: '#farmer', label: 'For Farmers' },
-  { href: '#careers', label: 'Careers' },
+  { href: '/about', label: 'About' },
+  { href: '/products', label: 'Products' },
+  { href: '/blog', label: 'Blog' },
+  { href: '/press', label: 'Press' },
+  { href: '/careers', label: 'Careers' },
 ];
 
 export function Nav() {
@@ -23,6 +23,21 @@ export function Nav() {
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
+
+  // Lock body scroll + close on Escape while the mobile menu is open.
+  useEffect(() => {
+    if (!open) return;
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setOpen(false);
+    };
+    window.addEventListener('keydown', onKey);
+    return () => {
+      document.body.style.overflow = prev;
+      window.removeEventListener('keydown', onKey);
+    };
+  }, [open]);
 
   return (
     <>
@@ -40,7 +55,7 @@ export function Nav() {
                 : 'border-ink-900/[0.06] bg-white/70 backdrop-blur-md'
             }`}
           >
-            <a href="#" aria-label="AGRIVISION AI">
+            <a href="/" aria-label="AGRIVISION AI">
               <Logo />
             </a>
 
@@ -57,17 +72,17 @@ export function Nav() {
             </nav>
 
             <div className="hidden items-center gap-2 lg:flex">
-              <a href="#contact" className="btn-ghost px-3">
-                Book demo
+              <a href="/contact" className="btn-ghost px-3">
+                Contact us
               </a>
-              <a href="#contact" className="btn-primary px-4 py-2 text-sm">
-                Request early access <ArrowUpRight className="h-3.5 w-3.5" />
+              <a href="https://yieldaiglobal.com" target="_blank" rel="noopener" className="btn-primary px-4 py-2 text-sm">
+                Start Free Trial <ArrowUpRight className="h-3.5 w-3.5" />
               </a>
             </div>
 
             <button
               onClick={() => setOpen((v) => !v)}
-              className="rounded-xl border border-ink-900/10 bg-white p-2 lg:hidden"
+              className="flex h-11 w-11 items-center justify-center rounded-xl border border-ink-900/10 bg-white lg:hidden"
               aria-label="Toggle menu"
             >
               {open ? <X className="h-4 w-4 text-ink-900" /> : <Menu className="h-4 w-4 text-ink-900" />}
@@ -95,8 +110,8 @@ export function Nav() {
                   {l.label}
                 </a>
               ))}
-              <a href="#contact" onClick={() => setOpen(false)} className="btn-primary mt-3 w-full">
-                Request early access
+              <a href="https://yieldaiglobal.com" target="_blank" rel="noopener" onClick={() => setOpen(false)} className="btn-primary mt-3 w-full">
+                Start Free Trial
               </a>
             </div>
           </motion.div>

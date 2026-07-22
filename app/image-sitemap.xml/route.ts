@@ -13,7 +13,7 @@ const ENTRIES: ImageEntry[] = [
     page: `${BASE}/`,
     images: [
       { loc: `${BASE}/logo-square.png`, title: 'AGRIVISION AI logo' },
-      { loc: `${BASE}/opengraph-image.png`, title: 'AGRIVISION AI — building YieldAI Global' },
+      { loc: `${BASE}/opengraph-image.png`, title: 'AGRIVISION AI — YieldAI Global is live' },
       { loc: `${BASE}/founder.jpg`, title: 'Vijesh Reddy Golamari, Founder & CEO of AGRIVISION AI' },
     ],
   },

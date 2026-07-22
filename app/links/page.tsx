@@ -3,7 +3,7 @@ import { Logo } from '@/components/Logo';
 import { Globe, Linkedin, Twitter, Instagram, Github, Mail, Newspaper, User, Sprout } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Links · AGRIVISION AI',
+  title: { absolute: 'Links · AGRIVISION AI' },
   description: 'All AGRIVISION AI channels in one place — website, LinkedIn, newsletter, GitHub, and more.',
 };
 
@@ -67,9 +67,9 @@ const LINKS: LinkItem[] = [
   },
   {
     Icon: Sprout,
-    label: 'YieldAI Global — early access',
-    sub: 'Join the launch list',
-    href: 'https://agrivisionai.org/#contact',
+    label: 'YieldAI Global — try it free',
+    sub: 'Live in India, USA & Canada',
+    href: 'https://yieldaiglobal.com',
     accent: 'green',
   },
   {
@@ -133,7 +133,7 @@ export default function LinksPage() {
         </ul>
 
         <p className="mt-10 text-center text-xs text-ink-400">
-          © {new Date().getFullYear()} AGRIVISION AI · Founded 2026
+          © {new Date().getFullYear()} AGRIVISION AI · Founded May 2026
         </p>
       </div>
     </main>

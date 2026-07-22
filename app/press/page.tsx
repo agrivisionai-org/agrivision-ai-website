@@ -4,10 +4,26 @@ import { press } from './press-data';
 import { Globe, Mail, Linkedin, Twitter, Github, Newspaper, Download, Building2, User } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Press & Media Kit',
+  title: 'Press Kit — Logos, Fact Sheet, Founder Bio & Quotes',
   description:
-    'Press resources for AGRIVISION AI — company boilerplate, fact sheet, founder bio, quotes, brand assets, and media contact. Building YieldAI Global, AI crop intelligence for global agriculture.',
+    'Everything to cover AGRIVISION AI: company boilerplate, fact sheet, founder bio, quotes, press release, and downloadable logos. Its product YieldAI Global — an AI farming assistant — is live in India, the USA & Canada.',
   alternates: { canonical: 'https://agrivisionai.org/press' },
+  openGraph: {
+    type: 'website',
+    url: 'https://agrivisionai.org/press',
+    title: 'Press & Media Kit · AGRIVISION AI',
+    description:
+      'Press resources for AGRIVISION AI — boilerplate, fact sheet, founder bio, quotes, brand assets, and media contact.',
+    siteName: 'AGRIVISION AI',
+    images: [{ url: 'https://agrivisionai.org/opengraph-image.png', width: 1200, height: 630, alt: 'AGRIVISION AI — press & media kit' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@yieldaiglobal',
+    title: 'AGRIVISION AI — Press & Media Kit',
+    description: 'Boilerplate, fact sheet, founder bio, quotes, and brand assets.',
+    images: ['https://agrivisionai.org/opengraph-image.png'],
+  },
 };
 
 const SECTION = 'mx-auto w-full max-w-4xl px-5';
@@ -95,6 +111,24 @@ export default function PressPage() {
         </div>
       </section>
 
+      {/* Press release */}
+      <section className={`${SECTION} py-8`}>
+        <h2 className="mb-5 font-display text-2xl font-semibold text-ink-900">Press release</h2>
+        <article className="rounded-2xl border border-ink-900/[0.08] bg-white p-6 sm:p-8">
+          <h3 className="font-display text-xl font-semibold leading-snug text-ink-900 sm:text-2xl">
+            {press.pressRelease.headline}
+          </h3>
+          <p className="mt-3 text-sm font-medium leading-relaxed text-ink-600">
+            {press.pressRelease.subhead}
+          </p>
+          <div className="mt-5 space-y-4 border-t border-ink-900/[0.06] pt-5">
+            {press.pressRelease.body.split('\n\n').map((para, i) => (
+              <p key={i} className="text-sm leading-relaxed text-ink-700" dangerouslySetInnerHTML={{ __html: linkify(para) }} />
+            ))}
+          </div>
+        </article>
+      </section>
+
       {/* Founder */}
       <section className={`${SECTION} py-8`}>
         <h2 className="mb-5 font-display text-2xl font-semibold text-ink-900">Founder</h2>
@@ -110,10 +144,11 @@ export default function PressPage() {
           </div>
           <p className="mt-4 text-sm leading-relaxed text-ink-700">
             Vijesh Reddy Golamari (born 2000, Hyderabad, India) is the founder, CEO, and AI Architect of
-            AGRIVISION AI. He moved to the United States in January 2023 to pursue a master&rsquo;s degree.
-            He brings five years building production AI systems &mdash; LLM evaluation and red-teaming at Google,
-            LLaMA 3 fine-tuning and CLIP multimodal vision at Meta, enterprise generative AI and RAG at Citi,
-            and end-to-end machine learning at Flipkart.
+            AGRIVISION AI, and a Generative AI Engineer and Technical Lead at Symplore Inc. He moved to the
+            United States in January 2023 to pursue a master&rsquo;s degree.
+            He brings five years building production AI systems &mdash; LLM evaluation and red-teaming,
+            open-weight model fine-tuning and CLIP multimodal vision, enterprise generative AI and RAG,
+            and end-to-end machine learning.
           </p>
           <a href="https://www.linkedin.com/in/vijesh-reddy-golamari/" target="_blank" rel="noopener noreferrer" className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-brand-primary hover:underline">
             <Linkedin className="h-4 w-4" /> LinkedIn profile
@@ -177,7 +212,7 @@ export default function PressPage() {
         <div className="inline-flex items-center gap-2 text-xs text-ink-500">
           <Building2 className="h-3.5 w-3.5" /> AGRIVISION AI · Agrivisionai Inc · Detroit, Michigan
         </div>
-        <p className="mt-2 text-xs text-ink-400">© {new Date().getFullYear()} AGRIVISION AI. Press materials may be reproduced for editorial coverage.</p>
+        <p className="mt-2 text-xs text-ink-500">© {new Date().getFullYear()} AGRIVISION AI. Press materials may be reproduced for editorial coverage.</p>
       </footer>
     </main>
   );

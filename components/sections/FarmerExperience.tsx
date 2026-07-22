@@ -35,9 +35,9 @@ export function FarmerExperience() {
             </Reveal>
             <Reveal delay={0.2}>
               <p className="mt-5 max-w-lg text-base leading-relaxed text-ink-700">
-                We&rsquo;re designing YieldAI Global with farmers — not just for them. Voice-first and
-                multilingual, designed for the USA, India, and Canada. The screens below are an
-                early product concept.
+                We built YieldAI Global with farmers — not just for them. Multilingual and
+                live in the USA, India, and Canada, designed for 40+ countries. The screens below are an
+                illustrative preview — try the real thing free at yieldaiglobal.com.
               </p>
             </Reveal>
 

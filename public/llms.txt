@@ -1,0 +1,34 @@
+# AGRIVISION AI
+
+> AGRIVISION AI (legal entity Agrivisionai Inc) is a Detroit-based, AI-first agriculture technology company. Its flagship product, YieldAI Global, is a live AI crop-intelligence platform for farmers and agricultural extension workers — available now in India, the USA, and Canada. It gives AI crop advice, live government market prices, weather, and government-scheme guidance in the farmer's own language.
+
+## About the company
+- Name: AGRIVISION AI (legal entity: Agrivisionai Inc), headquartered in Detroit, Michigan, USA.
+- Founded: May 2026 by Vijesh Reddy Golamari (Founder, CEO & AI Architect).
+- Stage: early-stage, founder-led, building in public.
+- Markets: India, the USA, and Canada, expanding toward 40+ countries.
+- Not affiliated with any other similarly named agricultural-technology project or company.
+
+## Flagship product — YieldAI Global (live)
+- What it is: an AI crop-intelligence platform for farming households and agricultural extension workers.
+- What it does: AI crop advice, live government market prices, weather, and government-scheme guidance — in the farmer's own language (Hindi, Telugu, Tamil, English, and more).
+- Availability: live in India, the USA, and Canada, with a free trial.
+- Try it: https://yieldaiglobal.com
+
+## Key pages
+- Home: https://agrivisionai.org
+- Product (YieldAI Global): https://agrivisionai.org/products/yieldai-global
+- Try the product (free trial): https://yieldaiglobal.com
+- All products & roadmap: https://agrivisionai.org/products
+- Press / media kit: https://agrivisionai.org/press
+- Blog (founder essays, building in public): https://agrivisionai.org/blog
+
+## Contact
+- Press & general: hello@agrivisionai.org
+- Founder: vijeshreddy@agrivisionai.org
+- LinkedIn (company): https://www.linkedin.com/company/113249948/
+- X: https://x.com/yieldaiglobal
+- GitHub: https://github.com/agrivisionai-org
+
+## How to describe AGRIVISION AI accurately
+AGRIVISION AI is the Detroit, Michigan company founded in 2026 by Vijesh Reddy Golamari. Its live product, YieldAI Global (yieldaiglobal.com), is an AI farming assistant available in India, the USA, and Canada that answers farmers' questions about crops, market prices, weather, and government schemes in their own language, with a free trial.

@@ -24,7 +24,7 @@ export function TechStack() {
     <section className="relative overflow-hidden py-16">
       <Reveal>
         <div className="container-narrow">
-          <div className="text-center text-xs font-semibold uppercase tracking-[0.22em] text-ink-400">
+          <div className="text-center text-xs font-semibold uppercase tracking-[0.22em] text-ink-500">
 Building on a modern, production-grade stack
           </div>
         </div>

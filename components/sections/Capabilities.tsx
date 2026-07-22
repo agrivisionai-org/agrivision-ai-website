@@ -104,10 +104,10 @@ export function Capabilities() {
                 <p className="mt-2 text-xs text-ink-500">Design targets we&rsquo;re building toward.</p>
               </div>
               <div className="mt-8 grid grid-cols-2 gap-3">
-                <Mini label="Latency target" value="<150ms" />
-                <Mini label="Uptime goal" value="99.9%" />
-                <Mini label="Languages planned" value="10+" />
-                <Mini label="Security" value="SOC 2 (planned)" />
+                <Mini label="Performance" value="Low-latency" />
+                <Mini label="Reliability" value="Core goal" />
+                <Mini label="Languages" value="Multilingual" />
+                <Mini label="Security" value="Privacy-first" />
               </div>
             </div>
           </Reveal>

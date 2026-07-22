@@ -26,21 +26,22 @@ const FOCUS_AREAS = [
 
 const TIMELINE = [
   { year: '2026', title: 'AGRIVISION AI founded', body: 'A founder-led, AI-first AgriTech company set out to build intelligent agriculture products.' },
-  { year: 'Now', title: 'Building YieldAI Global · MVP', body: 'Crop advisory, pest intelligence, market insights, and a dashboard — in active development.' },
-  { year: 'Next', title: 'Early access & pilots', body: 'Opening early access and preparing pilot programs for the USA, India, and Canada; AgriSphere learning platform in development.' },
+  { year: 'Now', title: 'YieldAI Global is live', body: 'AI crop advice, live government market prices, weather, and scheme guidance — live in the USA, India, and Canada.' },
+  { year: 'Next', title: 'Grow & expand', body: 'Scaling YieldAI Global toward 40+ countries with deeper crop intelligence.' },
   { year: 'Roadmap', title: 'Planned modules', body: 'CropVision, AgriSense (IoT), yield prediction, and smart irrigation — planned for future implementation.' },
 ];
 
 const STATS = [
-  { label: 'Product status', value: 'Beta Release' },
-  { label: 'Launch progress', value: 'Phase 1' },
-  { label: 'Deployment', value: 'Pilot Ready' },
+  { label: 'Flagship product', value: 'Live' },
+  { label: 'Available in', value: '3 countries' },
+  { label: 'Interface', value: 'Multilingual' },
   { label: 'Innovation', value: 'AI Powered' },
 ];
 
 export function About() {
   return (
     <section id="about" className="relative overflow-hidden py-28 sm:py-36">
+      <div className="mesh-soft pointer-events-none absolute inset-0 -z-10" />
       <GradientOrb className="-left-40 top-40" color="#0F6B3E" size={500} />
 
       <div className="container-narrow">
@@ -107,7 +108,7 @@ export function About() {
                     From idea to MVP
                   </div>
                 </div>
-                <span className="chip">Founded 2026</span>
+                <span className="chip">Founded May 2026</span>
               </div>
 
               <ol className="relative mt-8 space-y-7 border-l border-ink-900/[0.07] pl-6">

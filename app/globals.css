@@ -16,6 +16,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
     text-rendering: optimizeLegibility;
   }
 
@@ -29,6 +30,8 @@
     background: rgba(15, 107, 62, 0.16);
     color: #0F6B3E;
   }
+
+  p { text-wrap: pretty; }
 
   ::-webkit-scrollbar { width: 10px; height: 10px; }
   ::-webkit-scrollbar-track { background: #ECEFE8; }
@@ -134,6 +137,65 @@
     background-size: 56px 56px;
     mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 35%, transparent 80%);
   }
+
+  /* ── Premium 3D tilt ─────────────────────────────────────────── */
+  .tilt-3d { perspective: 1200px; }
+  .tilt-3d__inner {
+    position: relative;
+    transform: rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+    transform-style: preserve-3d;
+    transition: transform 500ms cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: transform;
+  }
+  /* children lift toward the viewer for parallax depth */
+  .tilt-layer { transform: translateZ(40px); transform-style: preserve-3d; }
+  .tilt-layer-lg { transform: translateZ(70px); transform-style: preserve-3d; }
+  .tilt-3d__glare {
+    position: absolute; inset: 0; border-radius: inherit; pointer-events: none;
+    background: radial-gradient(circle at var(--mx, 50%) var(--my, 50%), rgba(255,255,255,0.45), transparent 45%);
+    mix-blend-mode: overlay; opacity: 0.6;
+  }
+
+  /* ── Atmospheric depth (premium hero backdrop) ───────────────── */
+  .mesh-hero {
+    background:
+      radial-gradient(38% 44% at 18% 12%, rgba(93,187,99,0.28), transparent 62%),
+      radial-gradient(34% 40% at 84% 8%, rgba(10,132,255,0.14), transparent 60%),
+      radial-gradient(40% 48% at 76% 76%, rgba(255,92,43,0.10), transparent 64%),
+      radial-gradient(46% 52% at 40% 96%, rgba(15,107,62,0.12), transparent 66%);
+  }
+  .grain {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)'/%3E%3C/svg%3E");
+    opacity: 0.035; mix-blend-mode: overlay;
+  }
+
+  /* softer atmospheric wash for interior sections */
+  .mesh-soft {
+    background:
+      radial-gradient(40% 50% at 12% 0%, rgba(15,107,62,0.08), transparent 60%),
+      radial-gradient(38% 48% at 90% 20%, rgba(10,132,255,0.07), transparent 60%);
+  }
+
+  /* premium card depth: gentle 3D lift + top sheen highlight */
+  .card-surface { transform: translateZ(0); }
+  .card-surface::before {
+    content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none;
+    background: linear-gradient(180deg, rgba(255,255,255,0.55), transparent 34%);
+    opacity: 0; transition: opacity 500ms ease;
+  }
+  .card-surface:hover { transform: translateY(-4px); }
+  .card-surface:hover::before { opacity: 0.7; }
+}
+
+@layer utilities {
+  /* accessible, premium focus ring */
+  a:focus-visible, button:focus-visible, [role="button"]:focus-visible, summary:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px #F4F6F1, 0 0 0 4px rgba(15,107,62,0.55);
+    border-radius: 10px;
+  }
+  /* button press feedback */
+  .btn-primary:active, .btn-green:active, .btn-secondary:active { transform: translateY(0) scale(0.98); }
 }
 
 @layer utilities {
@@ -151,4 +213,6 @@
     transition-duration: 0.001ms !important;
     scroll-behavior: auto !important;
   }
+  .tilt-3d__inner { transform: none !important; }
+  .tilt-3d__glare { display: none !important; }
 }

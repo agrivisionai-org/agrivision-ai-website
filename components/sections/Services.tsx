@@ -71,7 +71,7 @@ function ServiceCard({
 }) {
   return (
     <motion.a
-      href="#contact"
+      href="/contact"
       whileHover={{ y: -4 }}
       transition={{ duration: 0.4 }}
       className="card-surface group block h-full p-6"

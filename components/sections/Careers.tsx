@@ -58,8 +58,8 @@ export function Careers() {
                 <a href="mailto:careers@agrivisionai.org" className="btn-primary">
                   Apply <ArrowUpRight className="h-4 w-4" />
                 </a>
-                <a href="#" className="btn-secondary">
-                  View open roles
+                <a href="mailto:careers@agrivisionai.org?subject=Interested%20in%20joining%20AGRIVISION%20AI" className="btn-secondary">
+                  Express interest
                 </a>
               </div>
               <a

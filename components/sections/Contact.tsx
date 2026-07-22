@@ -8,10 +8,10 @@ import { Mail, ArrowUpRight, MessageSquare, Handshake, Briefcase, CheckCircle2 }
 const PATHS = [
   {
     icon: MessageSquare,
-    title: 'Request early access',
-    body: 'Preview the YieldAI Global early build and tell us what you need.',
-    cta: 'Request access',
-    href: '#contact-form',
+    title: 'Try YieldAI Global',
+    body: 'Our flagship product is live in India, the USA & Canada. Start a free trial.',
+    cta: 'Start free trial',
+    href: 'https://yieldaiglobal.com',
   },
   {
     icon: Handshake,
@@ -32,6 +32,7 @@ const PATHS = [
 export function Contact() {
   return (
     <section id="contact" className="relative overflow-hidden py-28 sm:py-36">
+      <div className="mesh-soft pointer-events-none absolute inset-0 -z-10" />
       <GradientOrb className="left-1/2 -translate-x-1/2 top-20" color="#0F6B3E" size={700} />
       <div className="container-narrow">
         <div className="text-center">
@@ -128,10 +129,13 @@ function ContactForm() {
         className="flex h-full flex-col items-center justify-center rounded-2xl border border-brand-secondary/30 bg-brand-primary/10 p-10 text-center"
       >
         <CheckCircle2 className="h-10 w-10 text-brand-primary" />
-        <h4 className="mt-4 font-display text-xl font-semibold text-ink-900">Message received.</h4>
-        <p className="mt-2 text-sm text-ink-700">We&rsquo;ll get back to you within one business day.</p>
+        <h4 className="mt-4 font-display text-xl font-semibold text-ink-900">Opening your email…</h4>
+        <p className="mt-2 text-sm text-ink-700">
+          Finish sending in your email app — or write us directly at{' '}
+          <a href="mailto:hello@agrivisionai.org" className="font-medium text-brand-primary hover:underline">hello@agrivisionai.org</a>.
+        </p>
         <button onClick={() => setSent(false)} className="mt-6 btn-ghost">
-          Send another →
+          Back to form →
         </button>
       </motion.div>
     );
@@ -142,25 +146,34 @@ function ContactForm() {
       id="contact-form"
       onSubmit={(e) => {
         e.preventDefault();
+        const fd = new FormData(e.currentTarget);
+        const get = (k: string) => String(fd.get(k) || '');
+        const subject = `[agrivisionai.org] ${get('reason') || 'Inquiry'}${get('name') ? ' — ' + get('name') : ''}`;
+        const body = `Name: ${get('name')}\nEmail: ${get('email')}\nCompany: ${get('company')}\nReason: ${get('reason')}\n\n${get('message')}`;
         setSent(true);
+        const a = document.createElement('a');
+        a.href = `mailto:hello@agrivisionai.org?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        a.click();
       }}
       className="space-y-4"
     >
       <div className="grid gap-4 sm:grid-cols-2">
-        <Field label="Full name" type="text" placeholder="Jane Doe" required />
-        <Field label="Email" type="email" placeholder="jane@company.com" required />
+        <Field label="Full name" name="name" type="text" placeholder="Jane Doe" autoComplete="name" required />
+        <Field label="Email" name="email" type="email" placeholder="jane@company.com" autoComplete="email" required />
       </div>
-      <Field label="Company" type="text" placeholder="Company Inc." />
+      <Field label="Company" name="company" type="text" placeholder="Company Inc." autoComplete="organization" />
       <FieldSelect
         label="Reason for contact"
-        options={['Request a demo', 'Partnership', 'Investor relations', 'Press', 'Other']}
+        name="reason"
+        options={['General inquiry', 'Partnership', 'Investor relations', 'Press', 'Other']}
       />
-      <FieldTextarea label="Message" placeholder="Tell us a bit about your needs." />
+      <FieldTextarea label="Message" name="message" placeholder="Tell us a bit about your needs." />
       <button type="submit" className="btn-primary mt-2 w-full justify-center">
         Send message <ArrowUpRight className="h-4 w-4" />
       </button>
       <p className="text-center text-[10px] text-ink-500">
-        By submitting, you agree to our privacy policy.
+        This opens your email app to send to hello@agrivisionai.org. See our{' '}
+        <a href="/privacy" className="underline hover:text-brand-primary">privacy policy</a>.
       </p>
     </form>
   );
@@ -179,11 +192,11 @@ function Field(props: React.InputHTMLAttributes<HTMLInputElement> & { label: str
   );
 }
 
-function FieldSelect({ label, options }: { label: string; options: string[] }) {
+function FieldSelect({ label, name, options }: { label: string; name?: string; options: string[] }) {
   return (
     <label className="block">
       <span className="text-[11px] font-semibold uppercase tracking-wider text-ink-500">{label}</span>
-      <select className="mt-1.5 block w-full rounded-xl border border-ink-900/[0.12] bg-white px-4 py-3 text-sm text-ink-900 outline-none transition-colors focus:border-brand-primary/50 focus:ring-1 focus:ring-brand-primary/30">
+      <select name={name} className="mt-1.5 block w-full rounded-xl border border-ink-900/[0.12] bg-white px-4 py-3 text-sm text-ink-900 outline-none transition-colors focus:border-brand-primary/50 focus:ring-1 focus:ring-brand-primary/30">
         {options.map((o) => (
           <option key={o} className="bg-white">
             {o}
@@ -194,11 +207,12 @@ function FieldSelect({ label, options }: { label: string; options: string[] }) {
   );
 }
 
-function FieldTextarea({ label, placeholder }: { label: string; placeholder?: string }) {
+function FieldTextarea({ label, name, placeholder }: { label: string; name?: string; placeholder?: string }) {
   return (
     <label className="block">
       <span className="text-[11px] font-semibold uppercase tracking-wider text-ink-500">{label}</span>
       <textarea
+        name={name}
         rows={4}
         placeholder={placeholder}
         className="mt-1.5 block w-full resize-none rounded-xl border border-ink-900/[0.12] bg-white px-4 py-3 text-sm text-ink-900 placeholder-ink-400 outline-none transition-colors focus:border-brand-primary/50 focus:ring-1 focus:ring-brand-primary/30"

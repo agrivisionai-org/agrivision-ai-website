@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { Reveal, SectionEyebrow, GradientOrb } from '../primitives';
+import { Tilt } from '../Tilt';
 import {
   ArrowUpRight,
   Sparkles,
@@ -16,10 +17,6 @@ import {
   Wifi,
   Cog,
   Droplets,
-  GraduationCap,
-  BookOpen,
-  Compass,
-  Wand2,
 } from 'lucide-react';
 
 // Flagship MVP — what we're building now (safe, current scope)
@@ -43,18 +40,18 @@ const ROADMAP_FEATURES = [
 const PRODUCTS = [
   {
     name: 'YieldAI Global',
-    tagline: 'Flagship · MVP',
-    status: 'In development',
+    tagline: 'Flagship · Live',
+    status: 'Live',
     description:
-      'An AI-powered agriculture platform we are building now — crop advisory, pest intelligence, market insights, and a dashboard, with IoT and yield prediction on the roadmap.',
+      'Our live AI agriculture platform — AI crop advice, live government market prices, weather, and scheme guidance in the farmer’s own language. Available now in India, the USA, and Canada, with more capabilities on the roadmap.',
     accent: '#5DBB63',
     features: MVP_FEATURES,
-    metric: { value: 'MVP', label: 'In development' },
-    href: '#contact',
+    metric: { value: 'Live', label: 'India · USA · Canada' },
+    href: '/products/yieldai-global',
   },
   {
     name: 'CropVision',
-    tagline: 'Roadmap',
+    tagline: 'YieldAI roadmap',
     status: 'Planned',
     description: 'Computer-vision module for crop health and disease monitoring — planned for future implementation.',
     accent: '#0A84FF',
@@ -65,11 +62,11 @@ const PRODUCTS = [
       { icon: Sparkles, label: 'On-device inference' },
     ],
     metric: { value: 'Roadmap', label: 'Planned capability' },
-    href: '#contact',
+    href: '/products/cropvision',
   },
   {
     name: 'AgriSense',
-    tagline: 'Roadmap · IoT',
+    tagline: 'YieldAI roadmap · IoT',
     status: 'Planned',
     description: 'IoT + AI monitoring for farms, soil, irrigation, and microclimate — planned for future implementation.',
     accent: '#5DBB63',
@@ -80,11 +77,11 @@ const PRODUCTS = [
       { icon: Cog, label: 'Edge automation' },
     ],
     metric: { value: 'Roadmap', label: 'Planned capability' },
-    href: '#contact',
+    href: '/products/agrisense',
   },
   {
     name: 'FarmOS',
-    tagline: 'Concept',
+    tagline: 'YieldAI roadmap',
     status: 'Early design',
     description: 'Concept for a farm operations and management system for enterprises and cooperatives.',
     accent: '#0A84FF',
@@ -95,50 +92,36 @@ const PRODUCTS = [
       { icon: Sparkles, label: 'AI assistant' },
     ],
     metric: { value: 'Concept', label: 'Early design' },
-    href: '#contact',
-  },
-  {
-    name: 'AgriSphere',
-    tagline: 'In development',
-    status: 'In development',
-    description: 'Agricultural learning platform — courses in hydroponics, organic farming, smart AgTech, and permaculture.',
-    accent: '#0F6B3E',
-    features: [
-      { icon: BookOpen, label: 'Course library' },
-      { icon: Compass, label: 'Explore tracks' },
-      { icon: Wand2, label: 'Agri Studio' },
-      { icon: GraduationCap, label: 'Expert-led' },
-    ],
-    metric: { value: 'MVP', label: 'In development' },
-    href: '#agrisphere',
+    href: '/products/farmos',
   },
 ];
 
 export function Products() {
   return (
     <section id="products" className="relative overflow-hidden py-28 sm:py-36">
+      <div className="mesh-soft pointer-events-none absolute inset-0 -z-10" />
       <GradientOrb className="-right-40 top-40" color="#0A84FF" size={500} />
       <div className="container-narrow">
         <div className="flex flex-col items-start justify-between gap-6 lg:flex-row lg:items-end">
           <div className="max-w-2xl">
             <Reveal>
-              <SectionEyebrow>Our Products</SectionEyebrow>
+              <SectionEyebrow>Our Product</SectionEyebrow>
             </Reveal>
             <Reveal delay={0.1}>
               <h2 className="mt-6 text-balance font-display text-display-lg text-ink-900">
-                Products we are building for{' '}
+                One platform for{' '}
                 <span className="gradient-text-green">global agriculture</span>.
               </h2>
             </Reveal>
             <Reveal delay={0.2}>
               <p className="mt-5 max-w-xl text-base leading-relaxed text-ink-700">
-                A product family we&rsquo;re building — intelligence, vision, IoT, and operations — on a
-                shared AI fabric. Some are in development; others are on the roadmap.
+                Our flagship product, YieldAI Global, is live. CropVision, AgriSense, and
+                FarmOS are planned modules that extend it.
               </p>
             </Reveal>
           </div>
           <Reveal delay={0.25}>
-            <a href="#contact" className="btn-secondary">
+            <a href="/contact" className="btn-secondary">
               See the roadmap
               <ArrowUpRight className="h-4 w-4" />
             </a>
@@ -150,8 +133,11 @@ export function Products() {
           <FlagshipCard p={PRODUCTS[0]} />
         </Reveal>
 
-        {/* Secondary products + AgriSphere */}
-        <div className="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        {/* Planned modules + separate learning platform */}
+        <div className="mt-12 text-xs font-semibold uppercase tracking-[0.18em] text-ink-500">
+          Planned modules &amp; a separate learning platform
+        </div>
+        <div className="mt-4 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {PRODUCTS.slice(1).map((p, i) => (
             <Reveal key={p.name} delay={0.15 + i * 0.08}>
               <ProductCard p={p} />
@@ -165,10 +151,9 @@ export function Products() {
 
 function FlagshipCard({ p }: { p: (typeof PRODUCTS)[number] }) {
   return (
-    <motion.div
-      whileHover={{ y: -4 }}
-      transition={{ duration: 0.4 }}
-      className="card-surface relative grid gap-8 p-7 sm:p-10 lg:grid-cols-[1.2fr_1fr]"
+    <Tilt max={4} glare className="rounded-2xl">
+    <div
+      className="tilt-layer card-surface relative grid gap-8 p-7 sm:p-10 lg:grid-cols-[1.2fr_1fr]"
     >
       <div
         className="pointer-events-none absolute inset-0 opacity-50"
@@ -181,8 +166,8 @@ function FlagshipCard({ p }: { p: (typeof PRODUCTS)[number] }) {
           <span className="chip" style={{ borderColor: `${p.accent}55`, color: p.accent }}>
             <Sparkles className="h-3 w-3" /> {p.tagline}
           </span>
-          <span className="inline-flex items-center gap-1.5 rounded-full border border-brand-sun/30 bg-brand-sun/10 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-brand-sun">
-            <span className="h-1.5 w-1.5 rounded-full bg-brand-sun" /> {p.status}
+          <span className="inline-flex items-center gap-1.5 rounded-full border border-brand-primary/30 bg-brand-primary/10 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-brand-primary">
+            <span className="h-1.5 w-1.5 rounded-full bg-brand-primary" /> {p.status}
           </span>
         </div>
         <h3 className="mt-5 font-display text-4xl font-semibold tracking-tight text-ink-900">
@@ -192,7 +177,7 @@ function FlagshipCard({ p }: { p: (typeof PRODUCTS)[number] }) {
 
         {/* MVP — building now */}
         <div className="mt-7 text-[11px] font-semibold uppercase tracking-wider text-brand-primary">
-          In the MVP · building now
+          Live now
         </div>
         <div className="mt-3 grid grid-cols-2 gap-2">
           {MVP_FEATURES.map((f) => (
@@ -223,15 +208,16 @@ function FlagshipCard({ p }: { p: (typeof PRODUCTS)[number] }) {
         </div>
 
         <div className="mt-8 flex items-center gap-3">
-          <a href="#contact" className="btn-primary">
-            Request early access <ArrowUpRight className="h-4 w-4" />
+          <a href="https://yieldaiglobal.com" target="_blank" rel="noopener" className="btn-primary">
+            Start Free Trial <ArrowUpRight className="h-4 w-4" />
           </a>
-          <a href="#contact" className="btn-ghost">Talk to the team →</a>
+          <a href="/products/yieldai-global" className="btn-ghost">Explore YieldAI Global →</a>
         </div>
       </div>
 
       <ProductVisual accent={p.accent} />
-    </motion.div>
+    </div>
+    </Tilt>
   );
 }
 
@@ -281,10 +267,10 @@ function ProductVisual({ accent }: { accent: string }) {
   return (
     <div className="relative h-full min-h-[300px] rounded-2xl border border-ink-900/[0.07] bg-ink-50 p-5">
       <div className="flex items-center justify-between text-[10px] uppercase tracking-wider text-ink-500">
-        <span>Crop intelligence · concept preview</span>
+        <span>Crop intelligence · YieldAI Global</span>
         <span className="inline-flex items-center gap-1.5">
-          <span className="h-1.5 w-1.5 rounded-full bg-brand-sun" />
-          mockup
+          <span className="h-1.5 w-1.5 rounded-full bg-brand-primary" />
+          live · illustrative view
         </span>
       </div>
 
@@ -313,14 +299,14 @@ function ProductVisual({ accent }: { accent: string }) {
 
       {/* Recommendations */}
       <div className="mt-5 space-y-2 rounded-xl border border-ink-900/[0.07] bg-white p-3">
-        <div className="text-[10px] uppercase tracking-wider text-ink-500">AI recommendation · concept</div>
+        <div className="text-[10px] uppercase tracking-wider text-ink-500">AI answer · example</div>
         <div className="text-sm font-medium text-ink-900">
-          Targeted nitrogen guidance per plot — an example of what we&rsquo;re building.
+          Ask about your crop, today&rsquo;s mandi price, weather, or a government scheme — answered from live data, in your language.
         </div>
         <div className="flex items-center gap-2">
-          <span className="text-[10px] text-brand-primary">MVP in development</span>
+          <span className="text-[10px] font-semibold text-brand-primary">Live in India · USA · Canada</span>
           <span className="h-1 flex-1 overflow-hidden rounded-full bg-ink-100">
-            <span className="block h-full w-2/3 bg-gradient-to-r from-brand-primary to-brand-secondary" />
+            <span className="block h-full w-full bg-gradient-to-r from-brand-primary to-brand-secondary" />
           </span>
         </div>
       </div>
