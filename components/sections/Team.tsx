@@ -15,11 +15,11 @@ const FOUNDER = {
 const LEADERSHIP = [
   {
     name: 'Bhanu Prakash',
-    role: 'Product Lead',
+    role: 'Product Analyst',
     initials: 'BP',
     accent: '#0F6B3E',
     photo: '/team/bhanu-prakash.jpg',
-    blurb: 'Leads product for YieldAI Global — shaping the roadmap and turning farmer feedback into features that ship.',
+    blurb: 'Turns farmer feedback and product data into insights that shape YieldAI Global — what works, what breaks, what ships next.',
   },
   {
     name: 'Bala Sleeva Thirumala Reddy',
