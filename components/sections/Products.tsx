@@ -133,17 +133,65 @@ export function Products() {
           <FlagshipCard p={PRODUCTS[0]} />
         </Reveal>
 
-        {/* Planned modules + separate learning platform */}
+        {/* Planned modules */}
         <div className="mt-12 text-xs font-semibold uppercase tracking-[0.18em] text-ink-500">
-          Planned modules &amp; a separate learning platform
+          Planned modules
         </div>
-        <div className="mt-4 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-4 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {PRODUCTS.slice(1).map((p, i) => (
             <Reveal key={p.name} delay={0.15 + i * 0.08}>
               <ProductCard p={p} />
             </Reveal>
           ))}
         </div>
+
+        {/* Venture: BuildVaillant */}
+        <div className="mt-14 text-xs font-semibold uppercase tracking-[0.18em] text-ink-500">
+          Also from Agrivisionai Inc
+        </div>
+        <Reveal delay={0.1} className="mt-4 block">
+          <a
+            href="https://buildvaillant.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group card-surface relative grid gap-7 overflow-hidden p-7 sm:p-9 lg:grid-cols-[1.4fr_1fr] lg:items-center"
+          >
+            <div
+              className="pointer-events-none absolute inset-0 opacity-40"
+              style={{ background: 'radial-gradient(circle at 85% 15%, #0A84FF22, transparent 55%)' }}
+            />
+            <div className="relative">
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="chip" style={{ borderColor: '#0A84FF55', color: '#0A84FF' }}>
+                  Web &amp; product development
+                </span>
+                <span className="inline-flex items-center gap-1.5 rounded-full border border-brand-primary/30 bg-brand-primary/10 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-brand-primary">
+                  <span className="h-1.5 w-1.5 rounded-full bg-brand-primary" /> Live
+                </span>
+              </div>
+              <h3 className="mt-4 font-display text-3xl font-semibold tracking-tight text-ink-900">
+                BuildVaillant
+              </h3>
+              <p className="mt-3 max-w-lg text-base leading-relaxed text-ink-700">
+                Our venture beyond the farm — websites, web apps, and digital products for businesses
+                worldwide, designed and shipped, then managed for 365 days under a written contract.
+                We build it. Then we stay.
+              </p>
+              <span className="mt-6 inline-flex items-center gap-2 rounded-full border border-ink-900/[0.08] bg-white px-5 py-3 text-sm font-semibold text-ink-900 transition-all group-hover:border-brand-primary/40 group-hover:text-brand-primary">
+                Visit buildvaillant.com
+                <ArrowUpRight className="h-4 w-4" />
+              </span>
+            </div>
+            <div className="relative overflow-hidden rounded-2xl border border-ink-900/[0.06]">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/buildvaillant-logo.jpg"
+                alt="BuildVaillant — Dream. Build. Deliver."
+                className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+              />
+            </div>
+          </a>
+        </Reveal>
       </div>
     </section>
   );

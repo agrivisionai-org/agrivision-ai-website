@@ -25,6 +25,7 @@ const COLS = [
       { label: 'About', href: '/about' },
       { label: 'Careers', href: '/careers' },
       { label: 'Press', href: '/press' },
+      { label: 'BuildVaillant', href: 'https://buildvaillant.com' },
       { label: 'Investors', href: '/contact' },
     ],
   },

@@ -15,6 +15,9 @@
 - Availability: live in India, the USA, and Canada, with a free trial.
 - Try it: https://yieldaiglobal.com
 
+## Ventures
+- BuildVaillant (https://buildvaillant.com): a venture of Agrivisionai Inc — a web & product development studio that designs websites, web apps, and digital products for businesses worldwide, then manages them for 365 days under a written contract.
+
 ## Key pages
 - Home: https://agrivisionai.org
 - Product (YieldAI Global): https://agrivisionai.org/products/yieldai-global
