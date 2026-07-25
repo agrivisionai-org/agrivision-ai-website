@@ -51,17 +51,17 @@ const PRODUCTS = [
   },
   {
     name: 'CropVision',
-    tagline: 'YieldAI roadmap',
-    status: 'Planned',
-    description: 'Computer-vision module for crop health and disease monitoring — planned for future implementation.',
+    tagline: 'YieldAI module',
+    status: 'Live',
+    description: 'Photograph a plant and get a likely disease, an honest confidence level, and what to do next — live inside YieldAI Global.',
     accent: '#0A84FF',
     features: [
-      { icon: Eye, label: 'Field imagery analysis' },
-      { icon: Bug, label: 'Disease classification' },
-      { icon: Activity, label: 'Stress detection' },
-      { icon: Sparkles, label: 'On-device inference' },
+      { icon: Eye, label: 'Photo diagnosis' },
+      { icon: Bug, label: 'Disease detection' },
+      { icon: Activity, label: 'Confidence-first' },
+      { icon: Sparkles, label: 'In your language' },
     ],
-    metric: { value: 'Roadmap', label: 'Planned capability' },
+    metric: { value: 'Live', label: 'Inside YieldAI Global' },
     href: '/products/cropvision',
   },
   {
@@ -115,8 +115,8 @@ export function Products() {
             </Reveal>
             <Reveal delay={0.2}>
               <p className="mt-5 max-w-xl text-base leading-relaxed text-ink-700">
-                Our flagship product, YieldAI Global, is live. CropVision, AgriSense, and
-                FarmOS are planned modules that extend it.
+                Our flagship product, YieldAI Global, is live — and so is CropVision, its
+                computer-vision layer. AgriSense and FarmOS are planned modules that extend it.
               </p>
             </Reveal>
           </div>
@@ -133,9 +133,9 @@ export function Products() {
           <FlagshipCard p={PRODUCTS[0]} />
         </Reveal>
 
-        {/* Planned modules */}
+        {/* Modules & roadmap */}
         <div className="mt-12 text-xs font-semibold uppercase tracking-[0.18em] text-ink-500">
-          Planned modules
+          Modules &amp; roadmap
         </div>
         <div className="mt-4 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {PRODUCTS.slice(1).map((p, i) => (

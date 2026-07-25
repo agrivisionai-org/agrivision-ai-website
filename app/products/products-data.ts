@@ -116,82 +116,87 @@ export const products: Product[] = [
     "slug": "cropvision",
     "name": "CropVision",
     "category": "YieldAI module · computer vision",
-    "status": "Planned (roadmap)",
-    "metaTitle": "CropVision — AI Crop Disease Detection (Planned) | AGRIVISION AI",
-    "metaDescription": "A planned computer-vision module from AGRIVISION AI, designed to analyze field imagery, classify plant disease, and flag crop stress. On our roadmap.",
-    "heroHeadline": "CropVision: computer vision for plant health, in the making",
-    "heroSub": "A planned vision module designed to read field imagery, classify plant disease, and flag crop stress early — built to run even at the edge of connectivity.",
+    "status": "Live",
+    "liveUrl": "https://yieldaiglobal.com",
+    "metaTitle": "CropVision — AI Crop Disease Detection | AGRIVISION AI",
+    "metaDescription": "CropVision is the computer-vision layer inside YieldAI Global. Photograph a plant and get a likely disease, a clear confidence level, and what to do next \u2014 live in India, the USA and Canada.",
+    "heroHeadline": "CropVision: point your phone at the plant",
+    "heroSub": "The computer-vision layer inside YieldAI Global. Photograph a leaf and get a likely diagnosis, an honest confidence level, and a clear next step \u2014 in your own language.",
     "overview": [
-      "CropVision is a computer-vision module we plan to build for crop health and disease monitoring. The vision is simple: point a phone, drone, or field camera at a plant and get an honest read on what's happening — what disease may be present, where stress is showing, and how confident the model is. It is intended to become the visual layer beneath our wider AGRIVISION AI product family.",
-      "Today, CropVision is on our roadmap. It has not been built yet — there is no app to download, no model in production, and no field data behind it. What follows describes the capabilities we intend to design, not features that exist. We're sharing the direction early because we'd rather be transparent about where we're headed than quiet about it.",
-      "When we do build it, CropVision is designed to fold into the same AI fabric as our flagship work, so that imagery, advisory, and field context can eventually inform one another. Our north star is to put credible plant-health vision into the hands of farmers, agronomists, and extension workers across the 40+ countries we aim to serve."
+      "CropVision is the vision layer of YieldAI Global, and it is live today. Point a phone at an affected plant and CropVision reads the image, returns the disease it believes it is seeing, and tells you how confident it is \u2014 rather than handing back a single unexplained answer. It ships as the Disease Detection module inside YieldAI Global, so it sits alongside crop advice, pest prediction, weather and market prices in one place.",
+      "The design rule is confidence before cleverness. A plant-health call made from a single photograph carries real uncertainty, so CropVision surfaces that uncertainty instead of hiding it: unclear reads are flagged as unclear, and anything approaching a chemical or dosage decision routes the farmer to their local agriculture extension officer or Krishi Vigyan Kendra. A confident wrong answer can cost an entire season, and we would rather be useful and honest than impressive and wrong.",
+      "Because CropVision runs inside YieldAI Global, a diagnosis does not end at the diagnosis. The same assistant can explain the symptoms in the farmer\u2019s own language, point to the relevant government scheme, and show what the crop is fetching at market today. It is available now in India, the USA and Canada on the YieldAI Global free trial."
     ],
     "capabilities": [
       {
-        "title": "Field-imagery analysis",
-        "description": "Designed to analyze photos and field imagery — from a phone, drone, or fixed camera — and turn raw visuals into structured, plot-level signals about plant condition."
-      },
-      {
-        "title": "Plant disease classification",
-        "description": "Planned to classify common crop diseases from leaf and canopy imagery, returning a likely diagnosis alongside a clear confidence level rather than a single unexplained answer."
-      },
-      {
-        "title": "Crop-stress detection",
-        "description": "Will be built to surface early signs of stress — from nutrient deficiency to water and heat stress — so issues can be addressed before they take hold across a field."
-      },
-      {
-        "title": "On-device (edge) inference",
-        "description": "Designed to run inference on-device at the edge, so the module can stay useful in low-connectivity fields where uploading imagery to the cloud isn't practical."
+        "title": "Photo-based disease detection",
+        "description": "Photograph a leaf or canopy from an ordinary phone and CropVision returns the most likely disease, with the visible symptoms that led to that read."
       },
       {
         "title": "Confidence-first results",
-        "description": "Planned to communicate uncertainty honestly — flagging low-confidence reads and unclear cases instead of overstating what the model can see."
+        "description": "Every read comes with a confidence level. Low-confidence and ambiguous cases are flagged as such rather than dressed up as certainty."
       },
       {
-        "title": "Part of one fabric",
-        "description": "Intended to integrate with the broader AGRIVISION AI platform, so visual findings can eventually feed crop advisory and field decisions in one place."
+        "title": "Symptoms explained, not just named",
+        "description": "Results describe what the model is reacting to \u2014 mottling, spotting, distortion, discolouration \u2014 so a farmer can check the reasoning against the plant in front of them."
+      },
+      {
+        "title": "Next steps in your language",
+        "description": "Guidance continues in any of YieldAI Global\u2019s 13 languages, so the diagnosis and the advice arrive in the language the farmer actually thinks in."
+      },
+      {
+        "title": "Safety rule built in",
+        "description": "For chemical treatments and dosages, CropVision points to a local extension officer or Krishi Vigyan Kendra instead of guessing. No exceptions."
+      },
+      {
+        "title": "Part of one platform",
+        "description": "A diagnosis flows straight into the rest of YieldAI Global \u2014 pest prediction, weather, market prices and the farm record \u2014 rather than living in a separate app."
       }
     ],
     "audience": [
       {
         "title": "Farmers",
-        "description": "Growers who want a fast, in-field way to check what's wrong with a plant — designed to work from a phone, even where connectivity is thin."
+        "description": "Growers who want a fast, in-field read on what is wrong with a plant, from the phone already in their pocket."
       },
       {
         "title": "Agronomists & extension workers",
-        "description": "Advisors who scout many fields and need a consistent, confidence-aware second opinion on disease and stress to support their own judgment."
+        "description": "Advisors scouting many fields who want a consistent, confidence-aware second opinion to support \u2014 not replace \u2014 their own judgment."
       },
       {
         "title": "Cooperatives & agribusinesses",
-        "description": "Co-ops and agribusinesses that want a standardized visual health signal across many farms and crops as part of a wider intelligence stack."
+        "description": "Co-ops and agribusinesses that want a standardised visual health signal across many farms and crops as part of a wider intelligence stack."
       }
     ],
     "roadmap": [
-      "Define the scope and target crops, diseases, and stress types CropVision is intended to cover",
-      "Assemble and validate the field-imagery and labeled datasets needed to train credible models",
-      "Prototype disease classification and crop-stress detection, with confidence reporting from day one",
-      "Develop on-device (edge) inference so the module can run reliably in low-connectivity fields",
-      "Pilot CropVision with farmers, agronomists, and partners, then integrate it into the wider AGRIVISION AI platform"
+      "Widen crop and disease coverage beyond the currently supported set",
+      "Improve accuracy on early-stage and overlapping symptoms, where a single photo is hardest to read",
+      "Add crop-stress detection for nutrient, water and heat stress alongside disease",
+      "Explore on-device inference so the module stays useful in low-connectivity fields",
+      "Publish real accuracy figures once we have field-validated results worth standing behind"
     ],
     "faq": [
       {
         "q": "Is CropVision available today?",
-        "a": "No. CropVision is on our roadmap and has not been built yet — there is no app, no live model, and no users. Everything on this page describes capabilities we intend to design, not features that exist today."
+        "a": "Yes. CropVision is live as the Disease Detection module inside YieldAI Global, available in India, the USA and Canada. You can use it on the 30-day free trial at yieldaiglobal.com."
       },
       {
-        "q": "What will CropVision actually do?",
-        "a": "It is planned as a computer-vision module for crop health: designed to analyze field imagery, classify plant disease, detect crop stress, and run on-device at the edge. These are intended capabilities, not current ones."
+        "q": "What does CropVision actually do?",
+        "a": "You photograph an affected plant and it returns the most likely disease, the visible symptoms behind that read, and a confidence level \u2014 then continues with guidance in your own language inside YieldAI Global."
       },
       {
-        "q": "Do you have accuracy numbers or results to share?",
-        "a": "Not yet, and we won't invent them. CropVision hasn't been trained or tested in the field, so there are no metrics, benchmarks, or customer results — we'll share real performance only once there's a real product behind it."
+        "q": "Do you have accuracy numbers to share?",
+        "a": "Not yet, and we will not invent them. CropVision is live but early, and we would rather publish field-validated accuracy once we have results worth standing behind than quote a number we cannot defend."
       },
       {
-        "q": "How can I follow CropVision or get involved early?",
-        "a": "Reach out through AGRIVISION AI. We're an early-stage, founder-led company based in Detroit, and we're glad to talk with farmers, agronomists, cooperatives, and partners who want to help shape what CropVision becomes."
+        "q": "Will it tell me which chemical to spray?",
+        "a": "No, and that is deliberate. For chemical treatments and dosages CropVision directs you to your local agriculture extension officer or Krishi Vigyan Kendra. A wrong dosage recommendation can cost a season, so we do not guess."
+      },
+      {
+        "q": "Do I need a separate app for CropVision?",
+        "a": "No. CropVision is part of YieldAI Global, so disease detection sits alongside crop advice, pest prediction, weather, government schemes and market prices in the same place."
       }
     ],
-    "ogAlt": "CropVision by AGRIVISION AI — a planned computer-vision module for crop health and plant disease monitoring, currently on the roadmap."
+    "ogAlt": "CropVision by AGRIVISION AI \u2014 live AI crop disease detection inside YieldAI Global, with confidence-first results."
   },
   {
     "slug": "agrisense",

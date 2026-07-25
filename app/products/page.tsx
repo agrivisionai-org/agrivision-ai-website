@@ -11,7 +11,7 @@ const ICONS: Record<string, typeof Sparkles> = { sparkles: Sparkles, eye: Eye, w
 export const metadata: Metadata = {
   title: { absolute: 'Products — AGRIVISION AI' },
   description:
-    'The AGRIVISION AI product family: YieldAI Global, CropVision, AgriSense, and FarmOS — AI products for global agriculture, in development and on our roadmap.',
+    'The AGRIVISION AI product family: YieldAI Global and CropVision are live; AgriSense and FarmOS are on our roadmap — AI products for global agriculture.',
   alternates: { canonical: `${BASE}/products` },
   openGraph: {
     type: 'website',

@@ -28,7 +28,7 @@ const TIMELINE = [
   { year: '2026', title: 'AGRIVISION AI founded', body: 'A founder-led, AI-first AgriTech company set out to build intelligent agriculture products.' },
   { year: 'Now', title: 'YieldAI Global is live', body: 'AI crop advice, live government market prices, weather, and scheme guidance — live in the USA, India, and Canada.' },
   { year: 'Next', title: 'Grow & expand', body: 'Scaling YieldAI Global toward 40+ countries with deeper crop intelligence.' },
-  { year: 'Roadmap', title: 'Planned modules', body: 'CropVision, AgriSense (IoT), yield prediction, and smart irrigation — planned for future implementation.' },
+  { year: 'Roadmap', title: 'Planned modules', body: 'AgriSense (IoT), deeper yield prediction, and smart irrigation — planned for future implementation.' },
 ];
 
 const STATS = [

@@ -11,9 +11,17 @@
 
 ## Flagship product — YieldAI Global (live)
 - What it is: an AI crop-intelligence platform for farming households and agricultural extension workers.
-- What it does: AI crop advice, live government market prices, weather, and government-scheme guidance — in the farmer's own language (Hindi, Telugu, Tamil, English, and more).
-- Availability: live in India, the USA, and Canada, with a free trial.
+- What it does: AI crop advice, live government market prices, weather, and government-scheme guidance — in the farmer's own language (13 languages, including Hindi, Bengali, Telugu, Tamil, Kannada, Marathi, Punjabi, Gujarati, Malayalam, Odia, English, Spanish and French).
+- Platform modules (15): Dashboard, My Farms, Soil Analysis, Crop Recommendation, Profit Prediction, Weather Intelligence, Pest Prediction, Disease Detection, Market Prices, Store Locator, Drone Marketplace, Notifications, Farm Calendar, Farm History, Analytics.
+- Coverage: 54 crops. Market prices come from government sources — mandi data in India, USDA in the USA, StatCan in Canada.
+- Availability: live in India, the USA, and Canada. 30-day free trial, then $9.99/month.
 - Try it: https://yieldaiglobal.com
+
+## CropVision (live)
+- What it is: the computer-vision layer inside YieldAI Global, shipped as its Disease Detection module.
+- What it does: photograph a plant and get the likely disease, the visible symptoms behind that read, and an honest confidence level — then guidance in the farmer's own language.
+- Safety rule: for chemical treatments and dosages it directs farmers to a local agriculture extension officer or Krishi Vigyan Kendra rather than guessing.
+- More: https://agrivisionai.org/products/cropvision
 
 ## Ventures
 - BuildVaillant (https://buildvaillant.com): a venture of Agrivisionai Inc — a web & product development studio that designs websites, web apps, and digital products for businesses worldwide, then manages them for 365 days under a written contract.

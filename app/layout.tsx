@@ -208,7 +208,7 @@ const productsSchema = {
         operatingSystem: 'Web',
         url: 'https://agrivisionai.org/products/cropvision',
         description:
-          'Planned computer-vision module for crop health and disease monitoring — field-imagery analysis, disease classification, and crop-stress detection.',
+          'Live computer-vision module inside YieldAI Global — photograph a plant for a likely disease diagnosis with an honest confidence level and clear next steps.',
         publisher: { '@id': 'https://agrivisionai.org#organization' },
         creator: { '@id': 'https://agrivisionai.org#organization' },
       },
