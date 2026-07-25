@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Nav } from '@/components/Nav';
 import { Footer } from '@/components/Footer';
 import { About } from '@/components/sections/About';
+import { Purpose } from '@/components/sections/Purpose';
 import { Team } from '@/components/sections/Team';
 import { Sustainability } from '@/components/sections/Sustainability';
 
@@ -33,6 +34,7 @@ export default function AboutPage() {
     <main className="relative pt-24">
       <Nav />
       <About />
+      <Purpose />
       <Team />
       <Sustainability />
       <Footer />

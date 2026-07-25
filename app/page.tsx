@@ -3,6 +3,7 @@ import { Footer } from '@/components/Footer';
 import { Hero } from '@/components/sections/Hero';
 import { Products } from '@/components/sections/Products';
 import { FarmerExperience } from '@/components/sections/FarmerExperience';
+import { Grounding } from '@/components/sections/Grounding';
 import { Capabilities } from '@/components/sections/Capabilities';
 import { TechStack } from '@/components/sections/TechStack';
 
@@ -14,6 +15,7 @@ export default function Home() {
       <TechStack />
       <Products />
       <section id="farmer" aria-label="Farmer experience"><FarmerExperience /></section>
+      <Grounding />
       <Capabilities />
       <Footer />
     </main>
