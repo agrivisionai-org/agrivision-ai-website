@@ -1,8 +1,17 @@
 'use client';
 
-import { motion } from 'framer-motion';
-import { Reveal, SectionEyebrow, CountUp, GradientOrb } from '../primitives';
-import { Bug, ShieldCheck, Target, BarChart3, Leaf } from 'lucide-react';
+import { Reveal, SectionEyebrow, GradientOrb } from '../primitives';
+import {
+  Bug,
+  ShieldCheck,
+  Target,
+  BarChart3,
+  Leaf,
+  CalendarX,
+  ScanLine,
+  Droplets,
+  FlaskConical,
+} from 'lucide-react';
 
 const FEATURES = [
   {
@@ -22,8 +31,36 @@ const FEATURES = [
   },
   {
     icon: BarChart3,
-    title: 'Sustainability Analytics',
-    body: 'Track input reduction, runoff impact, and ROI per season.',
+    title: 'Season Analytics',
+    body: 'Keep a record of what you applied, when, and what it cost.',
+  },
+];
+
+/** The mechanism — each row is a real decision a live module informs. */
+const MECHANISM = [
+  {
+    icon: CalendarX,
+    decision: 'When to spray',
+    module: 'Pest Prediction',
+    effect: 'Spray on a forecast signal instead of a fixed calendar.',
+  },
+  {
+    icon: ScanLine,
+    decision: 'Where to spray',
+    module: 'CropVision',
+    effect: 'Catch disease early from a photo and treat the affected plot, not the whole field.',
+  },
+  {
+    icon: Droplets,
+    decision: 'When to irrigate',
+    module: 'Weather Intelligence',
+    effect: 'Schedule watering against evapotranspiration and the forecast, not habit.',
+  },
+  {
+    icon: FlaskConical,
+    decision: 'What to feed',
+    module: 'Soil Analysis',
+    effect: 'Apply against what the soil actually lacks rather than a default dose.',
   },
 ];
 
@@ -47,9 +84,9 @@ export function Sustainability() {
             </Reveal>
             <Reveal delay={0.2}>
               <p className="mt-5 max-w-lg text-base leading-relaxed text-ink-700">
-                We&rsquo;re building AI and predictive models to reduce unnecessary pesticide usage —
-                without compromising yield. The figures below are modelled projections, not results
-                yet.
+                Most wasted input comes from a decision made on a calendar or a habit rather than on
+                a signal. YieldAI Global exists to put a signal behind those decisions — so a farmer
+                sprays, waters and feeds when the crop actually needs it.
               </p>
             </Reveal>
 
@@ -71,7 +108,7 @@ export function Sustainability() {
           </div>
 
           <Reveal delay={0.2}>
-            <ImpactDashboard />
+            <MechanismPanel />
           </Reveal>
         </div>
       </div>
@@ -79,111 +116,56 @@ export function Sustainability() {
   );
 }
 
-function ImpactDashboard() {
+function MechanismPanel() {
   return (
     <div className="glass-strong relative rounded-3xl p-1.5">
       <div className="rounded-[22px] border border-ink-900/[0.07] bg-white p-7">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between gap-3">
           <div className="flex items-center gap-2">
             <Leaf className="h-4 w-4 text-brand-primary" />
             <span className="text-xs font-semibold uppercase tracking-wider text-ink-600">
-              Projected impact · model
+              How less gets used
             </span>
           </div>
           <span className="chip">
-            <span className="h-1.5 w-1.5 rounded-full bg-brand-sun" />
-            Projection
+            <span className="h-1.5 w-1.5 rounded-full bg-brand-primary" />
+            Live modules
           </span>
         </div>
 
-        {/* Big numbers */}
-        <div className="mt-7 grid grid-cols-2 gap-3">
-          <ImpactStat
-            label="Projected pesticide reduction"
-            value={<><CountUp to={37} suffix="%" /></>}
-            color="text-brand-primary"
-          />
-          <ImpactStat
-            label="Projected water saved"
-            value={<><CountUp to={2.4} format={(n) => n.toFixed(1)} suffix="B L" /></>}
-            color="text-brand-accent"
-          />
-          <ImpactStat
-            label="Projected carbon offset"
-            value={<><CountUp to={184} suffix="K t" /></>}
-            color="text-brand-primary"
-          />
-          <ImpactStat
-            label="Pilot farms · target"
-            value={<><CountUp to={10} suffix="K" /></>}
-            color="text-brand-accent"
-          />
+        <div className="mt-7 space-y-3">
+          {MECHANISM.map((m) => (
+            <div
+              key={m.decision}
+              className="flex items-start gap-4 rounded-2xl border border-ink-900/[0.07] bg-ink-50 p-4"
+            >
+              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white text-brand-primary shadow-[0_2px_10px_-6px_rgba(20,23,28,0.35)]">
+                <m.icon className="h-4 w-4" />
+              </span>
+              <div>
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="text-sm font-semibold text-ink-900">{m.decision}</span>
+                  <span className="rounded-full border border-brand-primary/25 bg-brand-primary/10 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-brand-primary">
+                    {m.module}
+                  </span>
+                </div>
+                <p className="mt-1.5 text-xs leading-relaxed text-ink-600">{m.effect}</p>
+              </div>
+            </div>
+          ))}
         </div>
 
-        {/* Bar chart */}
-        <div className="mt-8 rounded-2xl border border-ink-900/[0.07] bg-ink-50 p-5">
-          <div className="flex items-center justify-between">
-            <span className="text-xs font-semibold uppercase tracking-wider text-ink-600">
-              Projected input reduction
-            </span>
-            <span className="text-[11px] text-brand-sun">modelled</span>
+        <div className="mt-6 rounded-2xl border border-ink-900/[0.07] bg-white p-5">
+          <div className="text-xs font-semibold uppercase tracking-wider text-ink-600">
+            On the numbers
           </div>
-
-          <div className="mt-5 flex items-end gap-3 h-32">
-            {[
-              { q: 'Q1', base: 100, ai: 78 },
-              { q: 'Q2', base: 100, ai: 71 },
-              { q: 'Q3', base: 100, ai: 66 },
-              { q: 'Q4', base: 100, ai: 61 },
-            ].map((d, i) => (
-              <div key={d.q} className="flex flex-1 flex-col items-center">
-                <div className="relative flex h-full w-full items-end gap-1">
-                  <motion.div
-                    initial={{ height: 0 }}
-                    whileInView={{ height: '100%' }}
-                    viewport={{ once: true }}
-                    transition={{ delay: i * 0.1, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-                    className="flex-1 rounded-t-md bg-ink-100"
-                  />
-                  <motion.div
-                    initial={{ height: 0 }}
-                    whileInView={{ height: `${d.ai}%` }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.2 + i * 0.1, duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-                    className="flex-1 rounded-t-md bg-gradient-to-t from-brand-primary to-brand-secondary"
-                  />
-                </div>
-                <span className="mt-2 text-[10px] text-ink-500">{d.q}</span>
-              </div>
-            ))}
-          </div>
-          <div className="mt-4 flex items-center gap-4 text-[10px] text-ink-500">
-            <span className="inline-flex items-center gap-1.5">
-              <span className="h-2 w-2 rounded-sm bg-ink-200" /> Baseline
-            </span>
-            <span className="inline-flex items-center gap-1.5">
-              <span className="h-2 w-2 rounded-sm bg-brand-secondary" /> With YieldAI Global
-            </span>
-          </div>
+          <p className="mt-2 text-sm leading-relaxed text-ink-700">
+            We haven&rsquo;t measured the aggregate effect across farms yet, so we don&rsquo;t publish
+            a percentage. When we have field data worth standing behind, we&rsquo;ll publish the
+            result and the method behind it.
+          </p>
         </div>
       </div>
-    </div>
-  );
-}
-
-function ImpactStat({
-  label,
-  value,
-  color,
-}: {
-  label: string;
-  value: React.ReactNode;
-  color: string;
-}) {
-  return (
-    <div className="rounded-2xl border border-ink-900/[0.07] bg-ink-50 p-5">
-      <div className={`font-display text-3xl font-semibold tabular-nums ${color}`}>{value}</div>
-      <div className="mt-1 text-xs text-ink-600">{label}</div>
     </div>
   );
 }
