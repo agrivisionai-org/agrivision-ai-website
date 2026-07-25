@@ -141,6 +141,10 @@ export function Team() {
                   <img
                     src={m.photo}
                     alt={`${m.name}, ${m.role} at AGRIVISION AI`}
+                    width={240}
+                    height={300}
+                    loading="lazy"
+                    decoding="async"
                     className="h-full w-full object-cover object-top"
                     onError={(e) => {
                       e.currentTarget.style.display = 'none';
