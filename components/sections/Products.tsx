@@ -177,6 +177,10 @@ export function Products() {
                 worldwide, designed and shipped, then managed for 365 days under a written contract.
                 We build it. Then we stay.
               </p>
+              <div className="mt-4 inline-flex items-center gap-2 rounded-full border border-ink-900/[0.07] bg-ink-50 px-3.5 py-1.5 text-xs font-medium text-ink-700">
+                <span className="h-1.5 w-1.5 rounded-full" style={{ background: '#0A84FF' }} />
+                The revenue engine that funds our agriculture work
+              </div>
               <span className="mt-6 inline-flex items-center gap-2 rounded-full border border-ink-900/[0.08] bg-white px-5 py-3 text-sm font-semibold text-ink-900 transition-all group-hover:border-brand-primary/40 group-hover:text-brand-primary">
                 Visit buildvaillant.com
                 <ArrowUpRight className="h-4 w-4" />

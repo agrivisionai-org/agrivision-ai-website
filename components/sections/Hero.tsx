@@ -18,7 +18,7 @@ const HERO_STATS: HeroStat[] = [
   { label: 'YieldAI Global', value: 'Live', icon: Rocket },
   { label: 'Available in', value: 'IN · US · CA', icon: Globe2 },
   { label: 'Market prices', value: 'Live data', icon: Layers },
-  { label: 'Interface', value: 'Multilingual', icon: Hammer },
+  { label: 'Languages', value: '13', icon: Hammer },
 ];
 
 export function Hero() {

@@ -34,7 +34,7 @@ const TIMELINE = [
 const STATS = [
   { label: 'Flagship product', value: 'Live' },
   { label: 'Available in', value: '3 countries' },
-  { label: 'Interface', value: 'Multilingual' },
+  { label: 'Languages', value: '13' },
   { label: 'Innovation', value: 'AI Powered' },
 ];
 
