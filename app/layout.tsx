@@ -218,12 +218,12 @@ const productsSchema = {
       position: 3,
       item: {
         '@type': 'SoftwareApplication',
-        '@id': 'https://agrivisionai.org#product-agrisense',
-        name: 'AgriSense',
+        '@id': 'https://agrivisionai.org#product-fieldsense',
+        name: 'FieldSense',
         applicationCategory: 'BusinessApplication',
         applicationSubCategory: 'AgTech · IoT',
         operatingSystem: 'Web',
-        url: 'https://agrivisionai.org/products/agrisense',
+        url: 'https://agrivisionai.org/products/fieldsense',
         description:
           'Planned IoT and AI monitoring for farms, soil, irrigation, and microclimate — real-time sensor telemetry, microclimate intelligence, and edge automation.',
         publisher: { '@id': 'https://agrivisionai.org#organization' },
@@ -235,12 +235,12 @@ const productsSchema = {
       position: 4,
       item: {
         '@type': 'SoftwareApplication',
-        '@id': 'https://agrivisionai.org#product-farmos',
-        name: 'FarmOS',
+        '@id': 'https://agrivisionai.org#product-fieldops',
+        name: 'FieldOps',
         applicationCategory: 'BusinessApplication',
         applicationSubCategory: 'AgTech · Farm Management',
         operatingSystem: 'Web',
-        url: 'https://agrivisionai.org/products/farmos',
+        url: 'https://agrivisionai.org/products/fieldops',
         description:
           'Early-stage concept for a farm operations and management system for enterprises and cooperatives — workflow automation, multi-farm operations, and an AI assistant.',
         publisher: { '@id': 'https://agrivisionai.org#organization' },

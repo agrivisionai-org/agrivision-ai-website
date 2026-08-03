@@ -65,7 +65,7 @@ const PRODUCTS = [
     href: '/products/cropvision',
   },
   {
-    name: 'AgriSense',
+    name: 'FieldSense',
     tagline: 'YieldAI roadmap · IoT',
     status: 'Planned',
     description: 'IoT + AI monitoring for farms, soil, irrigation, and microclimate — planned for future implementation.',
@@ -77,10 +77,10 @@ const PRODUCTS = [
       { icon: Cog, label: 'Edge automation' },
     ],
     metric: { value: 'Roadmap', label: 'Planned capability' },
-    href: '/products/agrisense',
+    href: '/products/fieldsense',
   },
   {
-    name: 'FarmOS',
+    name: 'FieldOps',
     tagline: 'YieldAI roadmap',
     status: 'Early design',
     description: 'Concept for a farm operations and management system for enterprises and cooperatives.',
@@ -92,7 +92,7 @@ const PRODUCTS = [
       { icon: Sparkles, label: 'AI assistant' },
     ],
     metric: { value: 'Concept', label: 'Early design' },
-    href: '/products/farmos',
+    href: '/products/fieldops',
   },
 ];
 
@@ -116,7 +116,7 @@ export function Products() {
             <Reveal delay={0.2}>
               <p className="mt-5 max-w-xl text-base leading-relaxed text-ink-700">
                 Our flagship product, YieldAI Global, is live — and so is CropVision, its
-                computer-vision layer. AgriSense and FarmOS are planned modules that extend it.
+                computer-vision layer. FieldSense and FieldOps are planned modules that extend it.
               </p>
             </Reveal>
           </div>

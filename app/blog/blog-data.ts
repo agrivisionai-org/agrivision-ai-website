@@ -51,7 +51,7 @@ export const posts: BlogPost[] = [
         "paragraphs": [
           "YieldAI Global is the product we're building first: an AI crop intelligence platform designed for agricultural extension workers and the farming households they serve. The mission of AGRIVISION AI is broader than one product — AI-first tools for global agriculture, designed for more than 40 countries and multilingual by design — but YieldAI Global is where that mission has to prove itself.",
           "The shape we're building toward is a voice-first, multilingual assistant for the field: AI crop advisory grounded in agronomic sources, live weather and pest-and-disease alerts, real-time market-price intelligence, and the ability to turn an extension worker's spoken field notes into a structured visit report. We're designing it around specialized agents — a crop advisor, market intelligence, weather, and field visit — rather than one monolithic chatbot, because the workflows are genuinely different.",
-          "Beyond YieldAI Global, we have a roadmap I'll describe honestly as a roadmap, not a product line: CropVision (a planned vision module for crop and disease imagery), AgriSense (planned IoT sensing), and FarmOS (an early-stage operations concept). These are directions, not deliverables. I'd rather name them as ideas than dress them up as features that exist."
+          "Beyond YieldAI Global, we have a roadmap I'll describe honestly as a roadmap, not a product line: CropVision (a planned vision module for crop and disease imagery), FieldSense (planned IoT sensing), and FieldOps (an early-stage operations concept). These are directions, not deliverables. I'd rather name them as ideas than dress them up as features that exist."
         ]
       },
       {

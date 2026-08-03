@@ -25,8 +25,8 @@ export type Product = {
 export const productVisual: Record<string, { accent: string; iconKey: string }> = {
   'yieldai-global': { accent: '#5DBB63', iconKey: 'sparkles' },
   cropvision: { accent: '#0A84FF', iconKey: 'eye' },
-  agrisense: { accent: '#0F6B3E', iconKey: 'wifi' },
-  farmos: { accent: '#0A84FF', iconKey: 'cog' },
+  fieldsense: { accent: '#0F6B3E', iconKey: 'wifi' },
+  fieldops: { accent: '#0A84FF', iconKey: 'cog' },
 };
 
 export const products: Product[] = [
@@ -199,18 +199,18 @@ export const products: Product[] = [
     "ogAlt": "CropVision by AGRIVISION AI \u2014 live AI crop disease detection inside YieldAI Global, with confidence-first results."
   },
   {
-    "slug": "agrisense",
-    "name": "AgriSense",
+    "slug": "fieldsense",
+    "name": "FieldSense",
     "category": "YieldAI module · IoT sensing",
     "status": "Planned (roadmap, IoT)",
-    "metaTitle": "AgriSense — Farm IoT Sensing | AGRIVISION AI",
-    "metaDescription": "AgriSense is a planned IoT + AI sensing layer from AGRIVISION AI — a sensor fabric for soil, irrigation, and microclimate. In development on our roadmap.",
-    "heroHeadline": "AgriSense — a sensing layer we're designing for the field",
+    "metaTitle": "FieldSense — Farm IoT Sensing | AGRIVISION AI",
+    "metaDescription": "FieldSense is a planned IoT + AI sensing layer from AGRIVISION AI — a sensor fabric for soil, irrigation, and microclimate. In development on our roadmap.",
+    "heroHeadline": "FieldSense — a sensing layer we're designing for every plot",
     "heroSub": "A planned IoT and AI monitoring fabric for soil, irrigation, and microclimate — being designed to turn the conditions in a field into signals a farmer can act on.",
     "overview": [
-      "AgriSense is a planned product on the AGRIVISION AI roadmap — an IoT and AI sensing layer that we intend to lay across the farm like a nervous system. The vision is a fabric of low-cost sensors reading soil moisture, temperature, salinity, irrigation flow, and microclimate, streaming back to a single view that helps farmers and agronomists understand what's actually happening in the ground.",
-      "Most farm decisions today are made on intuition and the occasional spot check. We're designing AgriSense to close that gap — to give every plot a continuous, honest signal, and to let AI turn that telemetry into early warnings and concrete next steps. The intent is intelligence that reaches the parts of the field a person can't walk every day.",
-      "To be clear about where this stands: AgriSense is not yet built. It is planned and in active design as part of our product family, alongside our flagship YieldAI Global. What follows describes the capabilities we intend to build, not features that exist today."
+      "FieldSense is a planned product on the AGRIVISION AI roadmap — an IoT and AI sensing layer that we intend to lay across the farm like a nervous system. The vision is a fabric of low-cost sensors reading soil moisture, temperature, salinity, irrigation flow, and microclimate, streaming back to a single view that helps farmers and agronomists understand what's actually happening in the ground.",
+      "Most farm decisions today are made on intuition and the occasional spot check. We're designing FieldSense to close that gap — to give every plot a continuous, honest signal, and to let AI turn that telemetry into early warnings and concrete next steps. The intent is intelligence that reaches the parts of the field a person can't walk every day.",
+      "To be clear about where this stands: FieldSense is not yet built. It is planned and in active design as part of our product family, alongside our flagship YieldAI Global. What follows describes the capabilities we intend to build, not features that exist today."
     ],
     "capabilities": [
       {
@@ -235,7 +235,7 @@ export const products: Product[] = [
       },
       {
         "title": "One field view",
-        "description": "Planned to feed the wider AGRIVISION AI fabric, so AgriSense readings can inform crop advisory and yield models in one connected picture of the farm."
+        "description": "Planned to feed the wider AGRIVISION AI fabric, so FieldSense readings can inform crop advisory and yield models in one connected picture of the farm."
       }
     ],
     "audience": [
@@ -257,40 +257,40 @@ export const products: Product[] = [
       "Phase 2 — Build the telemetry pipeline: reliable ingestion of real-time readings into a single field view, designed to hold up in low-connectivity environments.",
       "Phase 3 — Develop microclimate intelligence: AI models that interpret local conditions and turn raw readings into early warnings and recommendations.",
       "Phase 4 — Add edge automation: on-device inference and local triggers, such as irrigation adjustments, that work even when the network doesn't.",
-      "Phase 5 — Integrate with the AGRIVISION AI fabric so AgriSense data informs crop advisory and yield prediction, then open early-access field pilots."
+      "Phase 5 — Integrate with the AGRIVISION AI fabric so FieldSense data informs crop advisory and yield prediction, then open early-access field pilots."
     ],
     "faq": [
       {
-        "q": "Is AgriSense available today?",
-        "a": "No. AgriSense is a planned product on our roadmap and is not yet built. There is no hardware to buy, no app to use, and no live deployments. We're sharing the vision and intended capabilities early; we'll be honest at every step about when any of it is ready to try."
+        "q": "Is FieldSense available today?",
+        "a": "No. FieldSense is a planned product on our roadmap and is not yet built. There is no hardware to buy, no app to use, and no live deployments. We're sharing the vision and intended capabilities early; we'll be honest at every step about when any of it is ready to try."
       },
       {
-        "q": "What exactly is AgriSense meant to do?",
+        "q": "What exactly is FieldSense meant to do?",
         "a": "It's designed to be an IoT and AI sensing layer for the farm — a fabric of sensors reading soil, irrigation, and microclimate, with real-time telemetry and edge automation. The goal is to turn field conditions into clear signals and early warnings. These are intended capabilities, not features that exist yet."
       },
       {
-        "q": "Will AgriSense require internet on the farm?",
+        "q": "Will FieldSense require internet on the farm?",
         "a": "We're designing it to work in low-connectivity settings. The plan is to run inference at the edge so core monitoring and automation keep functioning even when the network is intermittent. Final connectivity requirements will be determined as we build and pilot the hardware."
       },
       {
-        "q": "How does AgriSense relate to AGRIVISION AI's other products?",
-        "a": "AgriSense is one product in a family being built on a shared AI fabric. It's planned to feed telemetry into the broader platform — including our flagship YieldAI Global — so sensing data can inform crop advisory and yield models. The integrated experience is part of the roadmap, not something available now. To follow progress or join future field pilots, reach out through agrivisionai.org."
+        "q": "How does FieldSense relate to AGRIVISION AI's other products?",
+        "a": "FieldSense is one product in a family being built on a shared AI fabric. It's planned to feed telemetry into the broader platform — including our flagship YieldAI Global — so sensing data can inform crop advisory and yield models. The integrated experience is part of the roadmap, not something available now. To follow progress or join future field pilots, reach out through agrivisionai.org."
       }
     ],
-    "ogAlt": "AgriSense by AGRIVISION AI — a planned IoT and AI sensing fabric for soil, irrigation, and microclimate, shown as a connected field monitoring concept."
+    "ogAlt": "FieldSense by AGRIVISION AI — a planned IoT and AI sensing fabric for soil, irrigation, and microclimate, shown as a connected field monitoring concept."
   },
   {
-    "slug": "farmos",
-    "name": "FarmOS",
+    "slug": "fieldops",
+    "name": "FieldOps",
     "category": "YieldAI module · farm operations",
     "status": "Early-stage concept",
-    "metaTitle": "FarmOS — Farm Operations Platform | AGRIVISION AI",
+    "metaTitle": "FieldOps — Farm Operations Platform | AGRIVISION AI",
     "metaDescription": "An early-stage concept from AGRIVISION AI — a planned farm operations platform for agribusinesses and cooperatives, with workflows and an AI assistant.",
-    "heroHeadline": "FarmOS: one operating system for the whole farm enterprise",
+    "heroHeadline": "FieldOps: one operations layer for the whole farm enterprise",
     "heroSub": "An early-stage concept from AGRIVISION AI for a unified operations and management platform — designed for agribusinesses and cooperatives running farming at scale.",
     "overview": [
-      "FarmOS is the earliest-stage idea in the AGRIVISION AI product family — a concept we are actively designing, not a product you can use today. We are sharing it openly because we believe the people who will eventually rely on it should help shape it from the start.",
-      "The vision is straightforward: agribusinesses and cooperatives run on a patchwork of spreadsheets, paper records, and disconnected apps. FarmOS is being designed as a single operations layer that ties together the day-to-day work of running multiple farms — the schedules, the inputs, the costs, the yields — and puts an AI assistant on top of all of it. Where our flagship products focus on field-level intelligence, FarmOS is intended to focus on the operation as a business.",
+      "FieldOps is the earliest-stage idea in the AGRIVISION AI product family — a concept we are actively designing, not a product you can use today. We are sharing it openly because we believe the people who will eventually rely on it should help shape it from the start.",
+      "The vision is straightforward: agribusinesses and cooperatives run on a patchwork of spreadsheets, paper records, and disconnected apps. FieldOps is being designed as a single operations layer that ties together the day-to-day work of running multiple farms — the schedules, the inputs, the costs, the yields — and puts an AI assistant on top of all of it. Where our flagship products focus on field-level intelligence, FieldOps is intended to focus on the operation as a business.",
       "Everything described on this page is intent and early design. Nothing here is live, in production, or available for purchase. As the concept matures we will move pieces onto a real roadmap, and we will keep this page honest about exactly where things stand."
     ],
     "capabilities": [
@@ -330,7 +330,7 @@ export const products: Product[] = [
       },
       {
         "title": "Farm operations managers",
-        "description": "The people responsible for schedules, inputs, labor, and margins day to day — the ones FarmOS is ultimately being designed to serve."
+        "description": "The people responsible for schedules, inputs, labor, and margins day to day — the ones FieldOps is ultimately being designed to serve."
       }
     ],
     "roadmap": [
@@ -342,23 +342,23 @@ export const products: Product[] = [
     ],
     "faq": [
       {
-        "q": "Is FarmOS available today?",
-        "a": "No. FarmOS is an early-stage concept — the earliest stage of any product in the AGRIVISION AI family. It is in concept and early design only. There is no product to sign up for, no live version, no users, and no pricing. We are sharing the vision openly while we design it."
+        "q": "Is FieldOps available today?",
+        "a": "No. FieldOps is an early-stage concept — the earliest stage of any product in the AGRIVISION AI family. It is in concept and early design only. There is no product to sign up for, no live version, no users, and no pricing. We are sharing the vision openly while we design it."
       },
       {
-        "q": "How is FarmOS different from your other products?",
-        "a": "Our flagship products focus on field-level intelligence — crop advisory, pest intelligence, and market insights. FarmOS is being designed for the business side of farming: workflows, costs, yields, and multi-farm operations, with an AI assistant on top. It is also at an earlier stage than those products."
+        "q": "How is FieldOps different from your other products?",
+        "a": "Our flagship products focus on field-level intelligence — crop advisory, pest intelligence, and market insights. FieldOps is being designed for the business side of farming: workflows, costs, yields, and multi-farm operations, with an AI assistant on top. It is also at an earlier stage than those products."
       },
       {
-        "q": "Who is FarmOS being designed for?",
+        "q": "Who is FieldOps being designed for?",
         "a": "It is intended for agribusinesses and agri-cooperatives that run farming at scale across many sites, and for the operations managers within them. If that describes your organization, we would value your input as we shape the concept."
       },
       {
-        "q": "Can I influence what FarmOS becomes?",
+        "q": "Can I influence what FieldOps becomes?",
         "a": "Yes — that is exactly why we publish concepts this early. AGRIVISION AI is a Detroit-based startup founded in 2026 by sole founder and CEO Vijesh Reddy Golamari, and we are building our products with the people who will use them. You can reach the team to share how your operation works and what would actually help."
       }
     ],
-    "ogAlt": "FarmOS by AGRIVISION AI — an early-stage concept for a farm operations and management platform for agribusinesses and cooperatives."
+    "ogAlt": "FieldOps by AGRIVISION AI — an early-stage concept for a farm operations and management platform for agribusinesses and cooperatives."
   }
 ];
 
