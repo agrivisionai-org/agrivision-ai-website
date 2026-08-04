@@ -51,6 +51,10 @@ export const products: Product[] = [
         "description": "Delivers context-aware guidance on planting, nutrition, and crop care, tailored to a farmer's location, crop, and growing conditions — in their own language."
       },
       {
+        "title": "Photo disease detection",
+        "description": "CropVision, the platform's vision layer, reads a photograph of an affected plant and returns the likely disease with an honest confidence level rather than a single unexplained answer."
+      },
+      {
         "title": "Live market prices",
         "description": "Surfaces live government market prices so farmers and cooperatives can decide what to grow and when to sell, benchmarked against official sources."
       },
@@ -59,16 +63,12 @@ export const products: Product[] = [
         "description": "Brings weather and government-scheme guidance to farmers, helping them plan around conditions and access the support programs they're eligible for."
       },
       {
-        "title": "In the farmer's language",
-        "description": "Works multilingually so guidance reaches farmers in the language they actually speak, across India, the USA, and Canada today."
-      },
-      {
         "title": "Yield prediction & weather forecasting",
-        "description": "Live: forecasting that anticipates yields and weather risk, so decisions can be made with foresight rather than after the fact."
+        "description": "Forecasting that anticipates yields and weather risk, so decisions can be made with foresight rather than after the fact."
       },
       {
-        "title": "Built for many languages",
-        "description": "Designed from the start to work multilingually across 40+ countries, so guidance can reach farmers in the language they actually speak."
+        "title": "Voice assistant, in the farmer's language",
+        "description": "Ask out loud and get an answer back in the language you actually speak — 13 today across India, the USA, and Canada, designed from the start to reach 40+ countries."
       }
     ],
     "audience": [
@@ -94,7 +94,7 @@ export const products: Product[] = [
     "faq": [
       {
         "q": "Is YieldAI Global available today?",
-        "a": "Yes. YieldAI Global is live and available now in India, the USA, and Canada at yieldaiglobal.com, where you can start a free trial. It delivers AI crop advice, live government market prices, weather, and government-scheme guidance in the farmer's own language. AGRIVISION AI remains an early-stage, founder-led company and continues to add capabilities on its roadmap."
+        "a": "Yes. YieldAI Global is live and available now in India, the USA, and Canada at yieldaiglobal.com, where you can start a free trial. It delivers AI crop advice, live government market prices, weather and forecasting, government-scheme guidance, yield prediction, photo-based disease detection through CropVision, and a voice assistant — in the farmer's own language. AGRIVISION AI remains an early-stage, founder-led company and continues to add capabilities on its roadmap."
       },
       {
         "q": "What is in YieldAI Global today?",
