@@ -42,7 +42,7 @@ export const products: Product[] = [
     "heroSub": "Our flagship product is live in India, the USA, and Canada — AI crop advice, live government market prices, weather, and government-scheme guidance, in the farmer's own language. Start a free trial.",
     "overview": [
       "YieldAI Global is the flagship product of AGRIVISION AI, and it's live. It's an AI-powered agriculture platform that brings practical crop intelligence to the people who grow the world's food and the people who advise them — available now at yieldaiglobal.com.",
-      "The idea is straightforward: take the kind of agronomic insight that's usually locked behind cost, distance, or language, and make it available through one accessible platform. Today it delivers AI crop advice, live government market prices, weather, and government-scheme guidance — all in the farmer's own language. Our roadmap extends toward yield prediction, disease detection from field imagery, IoT sensors, and smart irrigation.",
+      "The idea is straightforward: take the kind of agronomic insight that's usually locked behind cost, distance, or language, and make it available through one accessible platform. Today it delivers AI crop advice, live government market prices, weather and forecasting, government-scheme guidance, yield prediction, a voice assistant, and photo-based disease detection through CropVision — all in the farmer's own language. Our roadmap extends toward IoT sensors and smart irrigation.",
       "We're an early-stage, founder-led company based in Detroit, Michigan. YieldAI Global is live first in the USA, India, and Canada, and we're working to reach farmers, agronomists, and extension workers across 40+ countries. You can start a free trial today at yieldaiglobal.com."
     ],
     "capabilities": [
@@ -63,8 +63,8 @@ export const products: Product[] = [
         "description": "Works multilingually so guidance reaches farmers in the language they actually speak, across India, the USA, and Canada today."
       },
       {
-        "title": "Yield prediction & weather intelligence",
-        "description": "On our roadmap: forecasting tools designed to anticipate yields and weather risk so decisions can be made with more foresight."
+        "title": "Yield prediction & weather forecasting",
+        "description": "Live: forecasting that anticipates yields and weather risk, so decisions can be made with foresight rather than after the fact."
       },
       {
         "title": "Built for many languages",
@@ -86,9 +86,8 @@ export const products: Product[] = [
       }
     ],
     "roadmap": [
-      "Live now: AI crop advice, live government market prices, weather, and government-scheme guidance — in the farmer's own language, across India, the USA, and Canada.",
-      "Next on the roadmap: yield prediction and deeper weather intelligence to support forward-looking decisions.",
-      "Planned: AI disease detection from field imagery and a voice assistant for hands-free, low-literacy access.",
+      "Live now: AI crop advice, live government market prices, weather and forecasting, government-scheme guidance, and photo-based disease detection through CropVision — in the farmer's own language, across India, the USA, and Canada.",
+      "Also live: yield prediction for forward-looking decisions, and a voice assistant for hands-free, low-literacy access.",
       "Planned: IoT sensor integration and smart irrigation to connect the platform to conditions on the ground.",
       "Longer-term vision: scaling crop intelligence across 40+ countries for farmers and extension workers worldwide."
     ],
@@ -98,8 +97,8 @@ export const products: Product[] = [
         "a": "Yes. YieldAI Global is live and available now in India, the USA, and Canada at yieldaiglobal.com, where you can start a free trial. It delivers AI crop advice, live government market prices, weather, and government-scheme guidance in the farmer's own language. AGRIVISION AI remains an early-stage, founder-led company and continues to add capabilities on its roadmap."
       },
       {
-        "q": "What will be in the first version?",
-        "a": "The MVP we're building focuses on four capabilities: crop advisory, pest intelligence, market insights, and a dashboard that brings them together. Yield prediction, weather intelligence, disease detection, a voice assistant, IoT sensors, and smart irrigation are planned for later stages on our roadmap."
+        "q": "What is in YieldAI Global today?",
+        "a": "It is live with crop advisory, pest intelligence, market insights, weather and forecasting, government-scheme guidance, yield prediction, a voice assistant, photo-based disease detection through CropVision, and a dashboard that brings them together. IoT sensors and smart irrigation are planned for later stages on our roadmap."
       },
       {
         "q": "Who is YieldAI Global being built for?",

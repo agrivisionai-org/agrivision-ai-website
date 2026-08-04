@@ -1,8 +1,9 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import { Reveal, SectionEyebrow, GradientOrb } from '../primitives';
-import { Linkedin, Twitter, Mail, Github } from 'lucide-react';
+import { Linkedin, Twitter, Mail, Github, ArrowRight } from 'lucide-react';
 
 const FOUNDER = {
   linkedin: 'https://www.linkedin.com/in/vijesh-reddy-golamari/',
@@ -19,7 +20,7 @@ const LEADERSHIP = [
     initials: 'BP',
     accent: '#0F6B3E',
     photo: '/team/bhanu-prakash.jpg',
-    blurb: 'Turns farmer feedback and product data into insights that shape YieldAI Global — what works, what breaks, what ships next.',
+    blurb: 'Advises on the product from the farmer\'s side — a non-technical read on what people keep asking for and where YieldAI Global loses them.',
   },
   {
     name: 'Bala Sleeva Thirumala Reddy',
@@ -121,9 +122,17 @@ export function Team() {
                 </a>
               </div>
 
-              <div className="mt-8 inline-flex items-center gap-2 rounded-full border border-ink-900/[0.07] bg-ink-50 px-3 py-1.5 text-xs text-ink-700">
-                <span className="h-1.5 w-1.5 rounded-full bg-brand-primary animate-pulse" />
-                AGRIVISION AI · Founded May 2026
+              <div className="mt-8 flex flex-wrap items-center gap-3">
+                <Link
+                  href="/founder"
+                  className="inline-flex items-center gap-1.5 rounded-full border border-ink-900/[0.07] bg-white px-4 py-1.5 text-xs font-semibold text-ink-800 transition-colors hover:border-brand-primary/40 hover:text-brand-primary"
+                >
+                  Full founder profile <ArrowRight className="h-3.5 w-3.5" />
+                </Link>
+                <div className="inline-flex items-center gap-2 rounded-full border border-ink-900/[0.07] bg-ink-50 px-3 py-1.5 text-xs text-ink-700">
+                  <span className="h-1.5 w-1.5 rounded-full bg-brand-primary animate-pulse" />
+                  AGRIVISION AI · Founded May 2026
+                </div>
               </div>
             </div>
           </div>

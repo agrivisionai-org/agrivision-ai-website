@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import { Reveal, SectionEyebrow, GradientOrb } from '../primitives';
 import { Tilt } from '../Tilt';
 import {
@@ -11,6 +12,7 @@ import {
   Wheat,
   Mic,
   Building2,
+  LayoutDashboard,
   TrendingUp,
   Activity,
   Eye,
@@ -19,20 +21,22 @@ import {
   Droplets,
 } from 'lucide-react';
 
-// Flagship MVP — what we're building now (safe, current scope)
+// Flagship — what is live today. Disease Detection is CropVision, which ships
+// as a module inside YieldAI Global, so it belongs here rather than on the roadmap.
 const MVP_FEATURES = [
   { icon: Wheat, label: 'Crop Advisory' },
   { icon: Activity, label: 'Pest Intelligence' },
+  { icon: Bug, label: 'Disease Detection' },
+  { icon: CloudRain, label: 'Weather & Schemes' },
   { icon: Sparkles, label: 'Market Insights' },
-  { icon: TrendingUp, label: 'Dashboard' },
+  { icon: TrendingUp, label: 'Yield Prediction' },
+  { icon: Mic, label: 'Voice Assistant' },
+  { icon: LayoutDashboard, label: 'Dashboard' },
 ];
 
-// Flagship roadmap — planned capabilities (not yet built)
+// Flagship roadmap — the only capabilities not yet built. Everything above
+// ships today inside YieldAI Global.
 const ROADMAP_FEATURES = [
-  { icon: TrendingUp, label: 'Yield Prediction' },
-  { icon: CloudRain, label: 'Weather Intelligence' },
-  { icon: Bug, label: 'Disease Detection' },
-  { icon: Mic, label: 'Voice Assistant' },
   { icon: Wifi, label: 'IoT Sensors' },
   { icon: Droplets, label: 'Smart Irrigation' },
 ];
@@ -121,10 +125,10 @@ export function Products() {
             </Reveal>
           </div>
           <Reveal delay={0.25}>
-            <a href="/contact" className="btn-secondary">
+            <Link href="/contact" className="btn-secondary">
               See the roadmap
               <ArrowUpRight className="h-4 w-4" />
-            </a>
+            </Link>
           </Reveal>
         </div>
 
@@ -267,7 +271,7 @@ function FlagshipCard({ p }: { p: (typeof PRODUCTS)[number] }) {
           <a href="https://yieldaiglobal.com" target="_blank" rel="noopener" className="btn-primary">
             Start Free Trial <ArrowUpRight className="h-4 w-4" />
           </a>
-          <a href="/products/yieldai-global" className="btn-ghost">Explore YieldAI Global →</a>
+          <Link href="/products/yieldai-global" className="btn-ghost">Explore YieldAI Global →</Link>
         </div>
       </div>
 
