@@ -165,9 +165,9 @@ file, the component below it. To change copy, edit the array — not the JSX.
 
 ### Not currently mounted
 
-`Dashboard.tsx`, `FieldScene.tsx` and `Services.tsx` remain in the repo but are not rendered on
-any page — they were cut when the homepage was shortened. Safe to delete, or to re-mount by
-adding the import and tag to a page.
+None. `Dashboard.tsx`, `FieldScene.tsx` and `Services.tsx` were cut when the homepage was
+shortened and have now been deleted — every component in `components/` renders on some page.
+Two of them had also drifted out of date, still labelling shipped capabilities as roadmap.
 
 ---
 
