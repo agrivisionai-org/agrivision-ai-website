@@ -30,7 +30,9 @@ export default function PrivacyPage() {
           <p>
             This Privacy Policy explains how AGRIVISION AI (legal entity Agrivisionai Inc, a Delaware
             C-Corporation headquartered in Detroit, Michigan, USA) handles information collected through
-            agrivisionai.org. We are a pre-launch company and this site is primarily informational.
+            agrivisionai.org. This site is informational: it does not host product accounts. Information
+            collected when you sign up for or use YieldAI Global is handled at yieldaiglobal.com, under the
+            privacy notice published there.
           </p>
 
           <Section title="Information we collect">
@@ -69,7 +71,7 @@ export default function PrivacyPage() {
           </Section>
 
           <p className="text-sm text-ink-500">
-            This is a standard pre-launch privacy notice and may be updated as our products develop.
+            This notice covers this website only and may be updated as our products develop.
           </p>
         </div>
 

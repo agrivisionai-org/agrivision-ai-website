@@ -109,7 +109,7 @@ export const products: Product[] = [
         "a": "It's built by AGRIVISION AI (legal name Agrivisionai Inc), an AI-first agriculture company headquartered in Detroit, Michigan, founded in 2026 by sole founder and CEO Vijesh Reddy Golamari. We are not affiliated with any other similarly named project."
       }
     ],
-    "ogAlt": "YieldAI Global by AGRIVISION AI — the flagship AI crop intelligence platform in development, shown with crop advisory, pest intelligence, and market insight modules."
+    "ogAlt": "YieldAI Global by AGRIVISION AI — the flagship AI crop intelligence platform, live in India, the USA and Canada, shown with crop advisory, pest intelligence, and market insight modules."
   },
   {
     "slug": "cropvision",

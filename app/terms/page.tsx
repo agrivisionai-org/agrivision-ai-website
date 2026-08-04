@@ -33,10 +33,14 @@ export default function TermsPage() {
             using the Site, you agree to these Terms.
           </p>
 
-          <Section title="Pre-launch, informational site">
-            <p>AGRIVISION AI is a pre-launch company. The Site describes products we are building or planning,
-            including YieldAI Global. No product is generally available, and nothing on the Site is an offer,
-            warranty, or guarantee of future features, availability, or performance.</p>
+          <Section title="What this Site is, and what it is not">
+            <p>These Terms cover the Site only. They do not govern use of our products. YieldAI Global,
+            including its CropVision module, is live and is provided at yieldaiglobal.com under the terms
+            presented there; signing up, subscribing, and paying all happen on that site, not this one.</p>
+            <p>Other products described here — FieldSense and FieldOps — are planned and are not available.
+            Descriptions of planned products, roadmap items, and future capabilities are statements of
+            intent only, and are not an offer, warranty, or guarantee of future features, availability,
+            or performance.</p>
           </Section>
 
           <Section title="Intellectual property">
@@ -67,7 +71,8 @@ export default function TermsPage() {
           </Section>
 
           <p className="text-sm text-ink-500">
-            This is a standard pre-launch terms notice and may be updated over time.
+            These Terms cover this website only and may be updated over time. Use of YieldAI Global is
+            governed by the terms published at yieldaiglobal.com.
           </p>
         </div>
 

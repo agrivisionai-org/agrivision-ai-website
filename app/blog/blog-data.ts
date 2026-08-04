@@ -1,4 +1,6 @@
-// Blog post content for AGRIVISION AI. Honest, building-in-public — keep pre-launch framing.
+// Blog post content for AGRIVISION AI. Honest, building-in-public.
+// YieldAI Global and CropVision are live; FieldSense and FieldOps are not. Posts written
+// before launch keep their original wording and carry a dated update note instead.
 
 export type BlogSection = { heading: string; paragraphs: string[] };
 export type BlogPost = {

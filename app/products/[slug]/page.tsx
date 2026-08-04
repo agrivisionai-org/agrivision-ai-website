@@ -253,7 +253,9 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
           </div>
         </div>
         <p className="mt-4 text-center text-[11px] text-ink-500">
-          Pre-launch. Capabilities described on this page reflect what we are building and planning, not features available today.
+          {product.liveUrl
+            ? `${product.name} is live and available today. Anything this page describes as planned or on the roadmap is not yet built.`
+            : `${product.name} is not built yet. Capabilities described on this page reflect what we are planning, not features available today.`}
         </p>
       </footer>
     </main>

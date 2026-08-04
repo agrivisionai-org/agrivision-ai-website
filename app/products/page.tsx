@@ -61,8 +61,8 @@ export default function ProductsIndex() {
           <span className="gradient-text-green">global agriculture</span>.
         </h1>
         <p className="mt-5 max-w-2xl text-base leading-relaxed text-ink-700">
-          Intelligence, vision, IoT, and operations — on a shared AI fabric. Some are in development; others
-          are on the roadmap. Everything here is honest about its stage: pre-launch, not yet generally available.
+          Intelligence, vision, IoT, and operations — on a shared AI fabric. YieldAI Global and CropVision are
+          live today; FieldSense and FieldOps are on the roadmap. Every card below states its stage plainly.
         </p>
       </section>
 
@@ -78,8 +78,8 @@ export default function ProductsIndex() {
                   <span className="flex h-11 w-11 items-center justify-center rounded-2xl" style={{ background: `${v.accent}1a`, color: v.accent }}>
                     <Icon className="h-5 w-5" />
                   </span>
-                  <span className="inline-flex items-center gap-1.5 rounded-full border border-brand-sun/30 bg-brand-sun/10 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-brand-sun">
-                    <span className="h-1.5 w-1.5 rounded-full bg-brand-sun" /> {p.status}
+                  <span className={`inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider ${p.liveUrl ? 'border-brand-primary/30 bg-brand-primary/10 text-brand-primary' : 'border-brand-sun/30 bg-brand-sun/10 text-brand-sun'}`}>
+                    <span className={`h-1.5 w-1.5 rounded-full ${p.liveUrl ? 'bg-brand-primary' : 'bg-brand-sun'}`} /> {p.status}
                   </span>
                 </div>
                 <h2 className="relative mt-5 font-display text-2xl font-semibold text-ink-900">{p.name}</h2>
@@ -98,7 +98,7 @@ export default function ProductsIndex() {
         <div className="inline-flex items-center gap-2 text-xs text-ink-500">
           AGRIVISION AI · Agrivisionai Inc · Detroit, Michigan
         </div>
-        <p className="mt-2 text-[11px] text-ink-500">Pre-launch. Products described here reflect what we are building, not features available today.</p>
+        <p className="mt-2 text-[11px] text-ink-500">YieldAI Global and CropVision are live at yieldaiglobal.com. FieldSense and FieldOps are roadmap concepts and are not available yet.</p>
       </footer>
     </main>
   );
