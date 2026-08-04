@@ -10,7 +10,7 @@ export default function NotFound() {
         <div className="mt-10 font-display text-7xl font-semibold tracking-tight text-ink-900">404</div>
         <h1 className="mt-3 font-display text-2xl font-semibold text-ink-900">Page not found</h1>
         <p className="mx-auto mt-3 max-w-sm text-sm leading-relaxed text-ink-600">
-          That page doesn&rsquo;t exist — or hasn&rsquo;t been built yet. We&rsquo;re a pre-launch company building
+          That page doesn&rsquo;t exist — or hasn&rsquo;t been built yet. We build
           AGRIVISION AI in public, so things move around. Here&rsquo;s the way back:
         </p>
         <div className="mt-7 flex flex-wrap justify-center gap-3">
