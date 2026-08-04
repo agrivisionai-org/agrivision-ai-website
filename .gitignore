@@ -8,3 +8,4 @@ out
 tsconfig.tsbuildinfo
 .gstack/
 .claude/settings.local.json
+.env*
