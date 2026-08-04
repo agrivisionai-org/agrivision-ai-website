@@ -15,8 +15,8 @@ const COLS = [
     links: [
       { label: 'YieldAI Global', href: '/products/yieldai-global' },
       { label: 'CropVision', href: '/products/cropvision' },
-      { label: 'AgriSense', href: '/products/agrisense' },
-      { label: 'FarmOS', href: '/products/farmos' },
+      { label: 'FieldSense', href: '/products/fieldsense' },
+      { label: 'FieldOps', href: '/products/fieldops' },
     ],
   },
   {

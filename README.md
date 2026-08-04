@@ -106,7 +106,7 @@ public/
 | `/` | Homepage |
 | `/about` | Company, purpose, team, sustainability |
 | `/products` | Product family index |
-| `/products/[slug]` | `yieldai-global`, `cropvision`, `agrisense`, `farmos` |
+| `/products/[slug]` | `yieldai-global`, `cropvision`, `fieldsense`, `fieldops` |
 | `/blog` | Blog index |
 | `/blog/[slug]` | 14 posts — 8 English, 6 Hindi |
 | `/careers` | Open roles + how to apply |
@@ -196,8 +196,8 @@ copy, keep to these rules:
    numbers unless they are real and verifiable. Projections and models are labelled as such —
    see `Sustainability`, which marks every figure "projected" or "modelled".
 2. **No fake social proof.** No customer logos, testimonials or "trusted by" claims until true.
-3. **Live vs planned is explicit.** YieldAI Global and CropVision are marked **Live**; AgriSense
-   and FarmOS are marked **Planned (roadmap)**. Never blur the two.
+3. **Live vs planned is explicit.** YieldAI Global and CropVision are marked **Live**; FieldSense
+   and FieldOps are marked **Planned (roadmap)**. Never blur the two.
 4. **The safety rule is product-critical.** Anything approaching chemical or dosage advice must
    route the farmer to a local agriculture extension officer / Krishi Vigyan Kendra. It appears
    in `Grounding`, on the CropVision page, and throughout the blog. Do not soften it.
