@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { Logo } from './Logo';
 import { Github, Linkedin, Twitter, Mail, Instagram, ArrowRight } from 'lucide-react';
 
@@ -70,9 +71,9 @@ export function Footer() {
               <a href="https://yieldaiglobal.com" target="_blank" rel="noopener" className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-ink-900 transition-transform hover:-translate-y-0.5">
                 Start Free Trial <ArrowRight className="h-4 w-4" />
               </a>
-              <a href="/products" className="inline-flex items-center gap-2 rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10">
+              <Link href="/products" className="inline-flex items-center gap-2 rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10">
                 Explore products
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -106,14 +107,20 @@ export function Footer() {
               <ul className="mt-5 space-y-3">
                 {c.links.map((l) => (
                   <li key={l.label}>
-                    <a
-                      href={l.href}
-                      target={l.href.startsWith('http') ? '_blank' : undefined}
-                      rel={l.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                      className="text-sm text-ink-600 transition-colors hover:text-ink-900"
-                    >
-                      {l.label}
-                    </a>
+                    {l.href.startsWith('/') ? (
+                      <Link href={l.href} className="text-sm text-ink-600 transition-colors hover:text-ink-900">
+                        {l.label}
+                      </Link>
+                    ) : (
+                      <a
+                        href={l.href}
+                        target={l.href.startsWith('http') ? '_blank' : undefined}
+                        rel={l.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                        className="text-sm text-ink-600 transition-colors hover:text-ink-900"
+                      >
+                        {l.label}
+                      </a>
+                    )}
                   </li>
                 ))}
               </ul>
@@ -124,8 +131,8 @@ export function Footer() {
         <div className="mt-16 flex flex-col items-start justify-between gap-4 border-t border-ink-900/[0.07] pt-8 sm:flex-row sm:items-center">
           <p className="text-xs text-ink-500">© {new Date().getFullYear()} AGRIVISION AI. All rights reserved.</p>
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-ink-500">
-            <a href="/privacy" className="hover:text-ink-900">Privacy</a>
-            <a href="/terms" className="hover:text-ink-900">Terms</a>
+            <Link href="/privacy" className="hover:text-ink-900">Privacy</Link>
+            <Link href="/terms" className="hover:text-ink-900">Terms</Link>
             <span className="hidden sm:inline text-ink-300">•</span>
             <span className="inline-flex items-center gap-1.5">
               <span className="h-1.5 w-1.5 rounded-full bg-brand-primary animate-pulse" />

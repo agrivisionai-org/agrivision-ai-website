@@ -46,9 +46,9 @@ export default function BlogIndex() {
       <header className="border-b border-ink-900/[0.07] bg-white/60 backdrop-blur">
         <div className="mx-auto flex w-full max-w-4xl items-center justify-between gap-4 px-5 py-5">
           <Link href="/" aria-label="AGRIVISION AI home"><Logo /></Link>
-          <a href="/#contact" className="inline-flex items-center gap-2 rounded-full bg-brand-primary px-4 py-2 text-sm font-semibold text-white transition-transform hover:-translate-y-0.5">
+          <Link href="/#contact" className="inline-flex items-center gap-2 rounded-full bg-brand-primary px-4 py-2 text-sm font-semibold text-white transition-transform hover:-translate-y-0.5">
             <Mail className="h-4 w-4" /> Contact
-          </a>
+          </Link>
         </div>
       </header>
 

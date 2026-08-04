@@ -276,7 +276,7 @@ function PhoneScreen() {
       >
         <div className="flex items-center justify-between text-[10px]">
           <span className="inline-flex items-center gap-1 font-semibold uppercase tracking-wider text-brand-secondary">
-            <Bell className="h-3 w-3" /> Today's plan
+            <Bell className="h-3 w-3" /> Today&rsquo;s plan
           </span>
           <span className="text-ink-300">AI · 94%</span>
         </div>
