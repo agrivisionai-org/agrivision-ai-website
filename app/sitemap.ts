@@ -9,6 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: BASE, lastModified: d('2026-07-21'), changeFrequency: 'weekly', priority: 1.0 },
     { url: `${BASE}/about`, lastModified: d('2026-07-21'), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/founder`, lastModified: d('2026-08-04'), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/careers`, lastModified: d('2026-07-21'), changeFrequency: 'weekly', priority: 0.7 },
     { url: `${BASE}/contact`, lastModified: d('2026-07-21'), changeFrequency: 'yearly', priority: 0.5 },
     { url: `${BASE}/faq`, lastModified: d('2026-07-21'), changeFrequency: 'monthly', priority: 0.6 },

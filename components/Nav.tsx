@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Link from 'next/link';
 import { Menu, X, ArrowUpRight } from 'lucide-react';
 import { Logo } from './Logo';
 
@@ -55,26 +56,26 @@ export function Nav() {
                 : 'border-ink-900/[0.06] bg-white/70 backdrop-blur-md'
             }`}
           >
-            <a href="/" aria-label="AGRIVISION AI">
+            <Link href="/" aria-label="AGRIVISION AI">
               <Logo />
-            </a>
+            </Link>
 
             <nav className="hidden items-center gap-1 rounded-full border border-ink-900/[0.06] bg-ink-50/60 p-1 lg:flex">
               {NAV_LINKS.map((l) => (
-                <a
+                <Link
                   key={l.href}
                   href={l.href}
                   className="rounded-full px-3.5 py-1.5 text-sm font-medium text-ink-600 transition-colors hover:bg-white hover:text-ink-900 hover:shadow-[0_1px_2px_rgba(20,23,28,0.06)]"
                 >
                   {l.label}
-                </a>
+                </Link>
               ))}
             </nav>
 
             <div className="hidden items-center gap-2 lg:flex">
-              <a href="/contact" className="btn-ghost px-3">
+              <Link href="/contact" className="btn-ghost px-3">
                 Contact us
-              </a>
+              </Link>
               <a href="https://yieldaiglobal.com" target="_blank" rel="noopener" className="btn-primary px-4 py-2 text-sm">
                 Start Free Trial <ArrowUpRight className="h-3.5 w-3.5" />
               </a>
@@ -101,14 +102,14 @@ export function Nav() {
           >
             <div className="flex flex-col gap-1">
               {NAV_LINKS.map((l) => (
-                <a
+                <Link
                   key={l.href}
                   href={l.href}
                   onClick={() => setOpen(false)}
                   className="rounded-xl px-4 py-3 text-sm font-medium text-ink-700 hover:bg-ink-50"
                 >
                   {l.label}
-                </a>
+                </Link>
               ))}
               <a href="https://yieldaiglobal.com" target="_blank" rel="noopener" onClick={() => setOpen(false)} className="btn-primary mt-3 w-full">
                 Start Free Trial

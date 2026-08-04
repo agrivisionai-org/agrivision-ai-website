@@ -82,9 +82,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       <header className="border-b border-ink-900/[0.07] bg-white/60 backdrop-blur">
         <div className={`${SECTION} flex items-center justify-between gap-4 py-5`} style={{ maxWidth: '64rem' }}>
           <Link href="/" aria-label="AGRIVISION AI home"><Logo /></Link>
-          <a href="/#contact" className="inline-flex items-center gap-2 rounded-full bg-brand-primary px-4 py-2 text-sm font-semibold text-white transition-transform hover:-translate-y-0.5">
+          <Link href="/#contact" className="inline-flex items-center gap-2 rounded-full bg-brand-primary px-4 py-2 text-sm font-semibold text-white transition-transform hover:-translate-y-0.5">
             <Mail className="h-4 w-4" /> Contact
-          </a>
+          </Link>
         </div>
       </header>
 
@@ -131,9 +131,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             <a href="https://www.linkedin.com/newsletters/7476661645046378496/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-ink-900 transition-transform hover:-translate-y-0.5">
               Read Build Notes <ArrowUpRight className="h-4 w-4" />
             </a>
-            <a href="/#contact" className="inline-flex items-center gap-2 rounded-full border border-white/30 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-white/10">
+            <Link href="/#contact" className="inline-flex items-center gap-2 rounded-full border border-white/30 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-white/10">
               <Mail className="h-4 w-4" /> Get in touch
-            </a>
+            </Link>
           </div>
         </div>
       </article>

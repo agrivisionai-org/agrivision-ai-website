@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import { Reveal, SectionEyebrow, GradientOrb } from '../primitives';
 import { Mail, ArrowUpRight, MessageSquare, Handshake, Briefcase, CheckCircle2 } from 'lucide-react';
 
@@ -173,7 +174,7 @@ function ContactForm() {
       </button>
       <p className="text-center text-[10px] text-ink-500">
         This opens your email app to send to hello@agrivisionai.org. See our{' '}
-        <a href="/privacy" className="underline hover:text-brand-primary">privacy policy</a>.
+        <Link href="/privacy" className="underline hover:text-brand-primary">privacy policy</Link>.
       </p>
     </form>
   );

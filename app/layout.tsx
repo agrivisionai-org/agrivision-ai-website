@@ -79,14 +79,13 @@ const organizationSchema = {
         '@type': 'ImageObject',
         url: 'https://agrivisionai.org/founder.jpg',
         contentUrl: 'https://agrivisionai.org/founder.jpg',
-        width: 900,
-        height: 900,
+        width: 1000,
+        height: 829,
         caption: 'Vijesh Reddy Golamari, Founder & CEO of AGRIVISION AI',
         representativeOfPage: true,
       },
       sameAs: [
         'https://www.linkedin.com/in/vijesh-reddy-golamari/',
-        'https://www.wikidata.org/wiki/Q140381399',
       ],
     },
   ],
@@ -99,14 +98,13 @@ const organizationSchema = {
       '@type': 'ImageObject',
       url: 'https://agrivisionai.org/founder.jpg',
       contentUrl: 'https://agrivisionai.org/founder.jpg',
-      width: 900,
-      height: 900,
+      width: 1000,
+      height: 829,
       caption: 'Vijesh Reddy Golamari, Founder & CEO of AGRIVISION AI',
       representativeOfPage: true,
     },
     sameAs: [
       'https://www.linkedin.com/in/vijesh-reddy-golamari/',
-      'https://www.wikidata.org/wiki/Q140381399',
     ],
   },
   sameAs: [
@@ -115,8 +113,17 @@ const organizationSchema = {
     'https://www.instagram.com/agrivisionai.inc/',
     'https://github.com/agrivisionai-org',
     'https://www.linkedin.com/newsletters/7476661645046378496/',
-    'https://www.wikidata.org/wiki/Q140381136',
   ],
+  // Reciprocates the parentOrganization claim buildvaillant.com already makes,
+  // so the two entities resolve as one corporate structure rather than one-way.
+  subOrganization: {
+    '@type': 'Organization',
+    '@id': 'https://buildvaillant.com/#organization',
+    name: 'BuildVaillant',
+    url: 'https://buildvaillant.com',
+    description:
+      'Web and product development studio, and a venture of Agrivisionai Inc — websites, web apps, and digital products, hosted and supported for 365 days after launch under a written contract.',
+  },
   contactPoint: [
     {
       '@type': 'ContactPoint',
@@ -155,8 +162,8 @@ const founderSchema = {
     '@type': 'ImageObject',
     url: 'https://agrivisionai.org/founder.jpg',
     contentUrl: 'https://agrivisionai.org/founder.jpg',
-    width: 900,
-    height: 900,
+    width: 1000,
+    height: 829,
     caption: 'Vijesh Reddy Golamari, Founder & CEO of AGRIVISION AI',
     representativeOfPage: true,
   },
@@ -166,7 +173,6 @@ const founderSchema = {
   ],
   sameAs: [
     'https://www.linkedin.com/in/vijesh-reddy-golamari/',
-    'https://www.wikidata.org/wiki/Q140381399',
   ],
 };
 
@@ -191,7 +197,7 @@ const productsSchema = {
         operatingSystem: 'Web',
         url: 'https://agrivisionai.org/products/yieldai-global',
         description:
-          'Flagship AI-powered agriculture platform, live in India, the USA & Canada — AI crop advice, live government market prices, weather, and government-scheme guidance in the farmer\'s own language. Available at https://yieldaiglobal.com.',
+          'Flagship AI-powered agriculture platform, live in India, the USA & Canada — AI crop advice, live government market prices, weather and forecasting, government-scheme guidance, yield prediction, and a voice assistant in the farmer\'s own language. Available at https://yieldaiglobal.com.',
         publisher: { '@id': 'https://agrivisionai.org#organization' },
         creator: { '@id': 'https://agrivisionai.org#organization' },
       },
