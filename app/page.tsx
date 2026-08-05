@@ -1,5 +1,6 @@
 import { Nav } from '@/components/Nav';
 import { Footer } from '@/components/Footer';
+import { BuildNotesCard } from '@/components/BuildNotesCard';
 import { Hero } from '@/components/sections/Hero';
 import { Products } from '@/components/sections/Products';
 import { Platform } from '@/components/sections/Platform';
@@ -19,6 +20,9 @@ export default function Home() {
       <section id="farmer" aria-label="Farmer experience"><FarmerExperience /></section>
       <Grounding />
       <Capabilities />
+      <section className="container-narrow pb-8">
+        <BuildNotesCard />
+      </section>
       <Footer />
     </main>
   );
