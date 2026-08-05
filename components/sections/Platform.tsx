@@ -17,6 +17,8 @@ import {
   CloudSun,
   Bell,
   BarChart3,
+  LineChart,
+  Mic,
   ArrowUpRight,
 } from 'lucide-react';
 
@@ -41,6 +43,7 @@ const GROUPS = [
       { icon: Sprout, label: 'Crop Recommendation' },
       { icon: ScanLine, label: 'Disease Detection' },
       { icon: Bug, label: 'Pest Prediction' },
+      { icon: LineChart, label: 'Yield Prediction' },
     ],
   },
   {
@@ -62,12 +65,13 @@ const GROUPS = [
       { icon: CloudSun, label: 'Weather Intelligence' },
       { icon: Bell, label: 'Notifications' },
       { icon: BarChart3, label: 'Analytics' },
+      { icon: Mic, label: 'Voice Assistant' },
     ],
   },
 ];
 
 const FACTS = [
-  { value: '15', label: 'Modules in the platform' },
+  { value: '17', label: 'Modules in the platform' },
   { value: '13', label: 'Languages supported' },
   { value: '54', label: 'Crops covered' },
   { value: '3', label: 'Countries live' },
@@ -87,7 +91,7 @@ export function Platform() {
             </Reveal>
             <Reveal delay={0.1}>
               <h2 className="mt-6 text-balance font-display text-display-lg text-ink-900">
-                Fifteen modules,{' '}
+                Seventeen modules,{' '}
                 <span className="gradient-text-green">one farming assistant</span>.
               </h2>
             </Reveal>
