@@ -293,7 +293,7 @@ Kept here so copy stays consistent across the site.
 - **Headquarters:** Detroit, Michigan, USA
 - **Founded:** May 2026 by Vijesh Reddy Golamari (sole founder — no co-founders)
 - **Flagship product:** YieldAI Global — live in India, the USA and Canada
-- **Platform:** 15 modules · 13 languages · 54 crops
+- **Platform:** 17 modules · 13 languages · 54 crops
 - **Pricing:** 30-day free trial, then $9.99/month
 - **Market data sources:** mandi (India), USDA (USA), StatCan (Canada)
 - **Agronomy grounding:** ICAR, FAO, state agriculture departments

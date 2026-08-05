@@ -52,7 +52,7 @@ export function FarmerExperience() {
             <Reveal delay={0.5}>
               <div className="mt-10 flex flex-wrap items-center gap-3">
                 <span className="chip">
-                  <Mic className="h-3 w-3" /> Multilingual voice · planned
+                  <Mic className="h-3 w-3 text-brand-primary" /> Multilingual voice · live
                 </span>
                 <span className="chip">
                   <CheckCircle2 className="h-3 w-3 text-brand-sun" /> Offline · planned
