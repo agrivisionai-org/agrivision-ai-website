@@ -61,7 +61,7 @@ export const press = {
       },
       {
         "label": "LinkedIn (company)",
-        "value": "https://www.linkedin.com/company/113249948/"
+        "value": "https://www.linkedin.com/company/agrivisionai/"
       },
       {
         "label": "X",

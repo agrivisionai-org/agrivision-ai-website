@@ -108,7 +108,7 @@ const organizationSchema = {
     ],
   },
   sameAs: [
-    'https://www.linkedin.com/company/113249948/',
+    'https://www.linkedin.com/company/agrivisionai/',
     'https://x.com/yieldaiglobal',
     'https://www.instagram.com/agrivisionai.inc/',
     'https://github.com/agrivisionai-org',

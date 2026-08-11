@@ -36,12 +36,13 @@ not the product itself.
 
 | Layer | Choice |
 |---|---|
-| Framework | Next.js 14.2.5 (App Router) |
+| Framework | Next.js 16.3 (App Router, Turbopack) |
 | Language | TypeScript 5.5 |
-| UI | React 18.3 |
+| UI | React 19.2 |
 | Styling | Tailwind CSS 3.4 |
-| Animation | Framer Motion 11.3 |
+| Animation | Framer Motion 12.43 |
 | Icons | lucide-react |
+| Linting | ESLint 9 (flat config, eslint-config-next) |
 | Hosting | Vercel |
 
 Fully static: every route is prerendered at build time (SSG). There is no backend, no database
@@ -107,6 +108,7 @@ public/
 | `/about` | Company, purpose, team, sustainability |
 | `/products` | Product family index |
 | `/products/[slug]` | `yieldai-global`, `cropvision`, `fieldsense`, `fieldops` |
+| `/founder` | Full founder profile (ProfilePage schema) |
 | `/blog` | Blog index |
 | `/blog/[slug]` | 14 posts — 8 English, 6 Hindi |
 | `/careers` | Open roles + how to apply |
@@ -151,7 +153,7 @@ file, the component below it. To change copy, edit the array — not the JSX.
 | `Hero` | home | Headline, live status, primary CTA, animated farm scene |
 | `TechStack` | home | Technology strip |
 | `Products` | home | YieldAI flagship card, module grid, BuildVaillant venture card |
-| `Platform` | home | The 15 YieldAI modules in 4 themed groups + facts bar |
+| `Platform` | home | The 17 YieldAI modules in 4 themed groups + facts bar |
 | `FarmerExperience` | home | Four farmer moments + phone preview |
 | `Grounding` | home | Where the AI's answers come from + the safety rule |
 | `Capabilities` | home | Capability cards + build lifecycle |
@@ -301,7 +303,7 @@ Kept here so copy stays consistent across the site.
 - **Venture:** [BuildVaillant](https://buildvaillant.com) — web and product development studio,
   the revenue engine funding the agriculture work
 - **Contact:** hello@agrivisionai.org · careers@agrivisionai.org · support@agrivisionai.org
-- **Elsewhere:** [LinkedIn](https://www.linkedin.com/company/113249948/) ·
+- **Elsewhere:** [LinkedIn](https://www.linkedin.com/company/agrivisionai/) ·
   [X](https://x.com/yieldaiglobal) · [GitHub](https://github.com/agrivisionai-org) ·
   Wikidata `Q140381136`
 

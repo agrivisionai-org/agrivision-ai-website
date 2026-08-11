@@ -3,7 +3,7 @@ import { Logo } from './Logo';
 import { Github, Linkedin, Twitter, Mail, Instagram, ArrowRight } from 'lucide-react';
 
 const SOCIALS = [
-  { Icon: Linkedin, href: 'https://www.linkedin.com/company/113249948/', label: 'AGRIVISION AI on LinkedIn' },
+  { Icon: Linkedin, href: 'https://www.linkedin.com/company/agrivisionai/', label: 'AGRIVISION AI on LinkedIn' },
   { Icon: Twitter, href: 'https://x.com/yieldaiglobal', label: 'YieldAI Global on X' },
   { Icon: Instagram, href: 'https://www.instagram.com/agrivisionai.inc/', label: 'AGRIVISION AI on Instagram' },
   { Icon: Github, href: 'https://github.com/agrivisionai-org', label: 'AGRIVISION AI on GitHub' },
