@@ -34,7 +34,7 @@ const LINKS: LinkItem[] = [
     Icon: Linkedin,
     label: 'AGRIVISION AI on LinkedIn',
     sub: 'Follow the company',
-    href: 'https://www.linkedin.com/company/113249948/',
+    href: 'https://www.linkedin.com/company/agrivisionai/',
     accent: 'blue',
   },
   {

@@ -64,7 +64,7 @@ export default function PressPage() {
           <a href="/press/agrivision-ai-logo-square.png" download className="inline-flex items-center gap-2 rounded-full border border-ink-900/10 bg-white px-4 py-2.5 text-sm font-semibold text-ink-800 transition-colors hover:border-brand-primary/40 hover:text-brand-primary">
             <Download className="h-4 w-4" /> Logo (square)
           </a>
-          <a href="https://www.linkedin.com/company/113249948/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full border border-ink-900/10 bg-white px-4 py-2.5 text-sm font-semibold text-ink-800 transition-colors hover:border-brand-primary/40 hover:text-brand-primary">
+          <a href="https://www.linkedin.com/company/agrivisionai/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full border border-ink-900/10 bg-white px-4 py-2.5 text-sm font-semibold text-ink-800 transition-colors hover:border-brand-primary/40 hover:text-brand-primary">
             <Linkedin className="h-4 w-4" /> Newsroom on LinkedIn
           </a>
         </div>
@@ -191,7 +191,7 @@ export default function PressPage() {
           {[
             { Icon: Globe, label: 'Website', sub: 'agrivisionai.org', href: 'https://agrivisionai.org' },
             { Icon: Newspaper, label: 'AGRIVISION Build Notes', sub: 'Founder newsletter', href: 'https://www.linkedin.com/newsletters/7476661645046378496/' },
-            { Icon: Linkedin, label: 'LinkedIn', sub: 'Company page', href: 'https://www.linkedin.com/company/113249948/' },
+            { Icon: Linkedin, label: 'LinkedIn', sub: 'Company page', href: 'https://www.linkedin.com/company/agrivisionai/' },
             { Icon: Twitter, label: 'X', sub: '@yieldaiglobal', href: 'https://x.com/yieldaiglobal' },
             { Icon: Github, label: 'GitHub', sub: 'agrivisionai-org', href: 'https://github.com/agrivisionai-org' },
             { Icon: Mail, label: 'Media contact', sub: 'hello@agrivisionai.org', href: 'mailto:hello@agrivisionai.org' },
