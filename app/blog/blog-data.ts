@@ -17,6 +17,121 @@ export type BlogPost = {
 
 export const posts: BlogPost[] = [
   {
+    "slug": "what-i-found-auditing-our-own-website",
+    "title": "I Audited Our Own Website and Found We Were Underselling the Product",
+    "metaTitle": "What I Found Auditing Our Own Website | AGRIVISION AI",
+    "metaDescription": "We spent the pre-launch months being careful not to overclaim, then forgot to stop once things shipped. What I found going through agrivisionai.org line by line.",
+    "date": "2026-08-13",
+    "excerpt": "Our homepage said disease detection was on the roadmap. It had been live for weeks. Here is everything I found wrong on our own site, and why I am publishing the list.",
+    "author": "Vijesh Reddy Golamari",
+    "sections": [
+      {
+        "heading": "The problem with being careful",
+        "paragraphs": [
+          "For most of this year I wrote our website like a company that had not shipped anything, because that was true. Every capability was marked planned. Every page carried a line reminding you that nothing was available yet. I was more worried about overclaiming than about anything else, and I think that was the right instinct at the time.",
+          "Then we shipped. And I never went back and turned that caution off. Last week I sat down and read our own site the way a stranger would, and what I found was a company quietly telling people its product does less than it does."
+        ]
+      },
+      {
+        "heading": "Disease detection was live. Our homepage said it was planned.",
+        "paragraphs": [
+          "CropVision — photograph an affected plant, get the likely disease and an honest confidence level — has been live inside YieldAI Global for weeks. It has its own page saying so. And two hundred pixels below that, our homepage listed Disease Detection under a heading that read On the roadmap, planned.",
+          "The same was true of weather, of yield prediction, and of the voice assistant. All shipped. All still sitting in the planned column. One chip on the homepage read multilingual voice, planned, directly underneath a card listing Voice Assistant as live. Both were on the same screen."
+        ]
+      },
+      {
+        "heading": "Our platform inventory was two modules short",
+        "paragraphs": [
+          "We describe YieldAI Global as a set of modules and we print the number on the homepage. That number said fifteen. The actual list was missing yield prediction and the voice assistant, so the real number was seventeen. We had been undercounting our own product in the one place a visitor looks for a summary.",
+          "It is a small thing. It is also the kind of small thing that makes someone wonder what else on the page is out of date."
+        ]
+      },
+      {
+        "heading": "The terms of service were the worst offender",
+        "paragraphs": [
+          "Our Terms of Service still described AGRIVISION AI as a pre-launch company where no product is generally available — on a site that sells a subscription at $9.99 a month after a thirty-day trial. That is not a marketing inconsistency. That is the document a customer is bound by, contradicting the thing they just paid for.",
+          "It now says what is actually true: these terms cover the website, YieldAI Global is live and governed by the terms published at yieldaiglobal.com, and the no-offer language applies to the products we have not built."
+        ]
+      },
+      {
+        "heading": "Two products got new names on the same day",
+        "paragraphs": [
+          "While I was in there I checked our roadmap product names properly for the first time. FarmOS collided with farmOS, an open-source farm management project that has been running under that name since around 2014. AgriSense collided with a UK pest-monitoring company trading under it since 1984, two live US trademark registrations, and at least four current agtech companies — one of them building the same IoT sensing product we had sketched.",
+          "They are now FieldOps and FieldSense. Both are still concepts rather than products, which is exactly why renaming them cost nothing. Finding this out after launch would have cost a great deal."
+        ]
+      },
+      {
+        "heading": "Why publish the list",
+        "paragraphs": [
+          "I could have fixed all of this quietly. Nobody had complained. The mistakes ran in the direction of modesty, which is the safer direction to be wrong in.",
+          "But building in public is not a thing you do only on launch days. If I am going to write posts about being honest with farmers, the site those posts sit on has to be accurate about what it does, what it does not do, and what it costs. The corrections are the work, not an embarrassing footnote to it.",
+          "Everything described here is now live on agrivisionai.org. If you find something else that is wrong, tell me and I will fix it and say so."
+        ]
+      }
+    ],
+    "tags": [
+      "founder essay",
+      "building in public",
+      "AGRIVISION AI",
+      "YieldAI Global",
+      "agritech"
+    ]
+  },
+  {
+    "slug": "why-cropvision-shows-its-confidence",
+    "title": "Why CropVision Tells You How Sure It Is",
+    "metaTitle": "Why Our AI Crop Disease Detection Shows Confidence | CropVision",
+    "metaDescription": "Most crop disease apps give you one answer and no way to judge it. CropVision returns the likely disease with an honest confidence level — and refuses to guess at chemicals.",
+    "date": "2026-08-13",
+    "excerpt": "A confident wrong answer about a diseased crop can cost a farmer a season. Here is why our disease detection shows its confidence instead of hiding it.",
+    "author": "Vijesh Reddy Golamari",
+    "sections": [
+      {
+        "heading": "One answer, no way to judge it",
+        "paragraphs": [
+          "Most crop disease apps work the same way. You photograph a leaf, and you get back a disease name. Sometimes a treatment. Almost never any indication of how sure the model actually is.",
+          "That design is comfortable to build and comfortable to demo. It is also the design that costs farmers money, because the app sounds exactly as certain when it is guessing as when it is right."
+        ]
+      },
+      {
+        "heading": "What CropVision returns instead",
+        "paragraphs": [
+          "CropVision is the vision layer inside YieldAI Global. Photograph an affected plant and it returns the disease it believes it is seeing, the visible symptoms behind that read, and how confident it is — in the farmer's own language.",
+          "The confidence number is not decoration. A high-confidence read on a classic, well-photographed infection deserves to be acted on. A low-confidence read on a blurry photo of an unusual symptom deserves a second opinion, and the farmer should be able to tell the difference before they spend money."
+        ]
+      },
+      {
+        "heading": "The line we do not cross",
+        "paragraphs": [
+          "There is one place where we deliberately stop short. For chemical treatments and dosages, YieldAI Global does not name a product and a quantity. It directs the farmer to a local agriculture extension officer or a Krishi Vigyan Kendra.",
+          "This is the rule I am least willing to negotiate on. Dosage advice depends on the specific compound, the crop stage, local resistance patterns and what is legally approved in that state. A model that is ninety percent right about chemicals is not ninety percent useful — the remaining ten percent is a poisoned crop or a wasted season, and neither the model nor I would carry that cost."
+        ]
+      },
+      {
+        "heading": "Being honest costs us on the demo",
+        "paragraphs": [
+          "I know the tradeoff. A tool that always answers with total certainty feels more impressive in a thirty-second demo than one that says it is sixty percent sure and suggests confirming with an extension officer.",
+          "But farming is not a demo. The person on the other end is deciding whether to spend money on a spray, pull a crop early, or wait. They deserve to know how much weight the answer can hold. We would rather lose the demo and keep the trust."
+        ]
+      },
+      {
+        "heading": "What we will not claim yet",
+        "paragraphs": [
+          "We do not publish an accuracy percentage for CropVision, and I will not invent one. It is live, it is early, and field-validated accuracy figures are something we intend to publish once we have results worth standing behind rather than a number that sounds good.",
+          "CropVision is live now as the Disease Detection module inside YieldAI Global, available in India, the USA and Canada. You can try it on the thirty-day free trial at yieldaiglobal.com — and if it gives you a bad read, I would genuinely like to hear about it."
+        ]
+      }
+    ],
+    "tags": [
+      "CropVision",
+      "AI agriculture",
+      "crop disease",
+      "YieldAI Global",
+      "AGRIVISION AI",
+      "founder essay"
+    ]
+  },
+  {
     "slug": "why-im-building-agrivision-ai",
     "title": "Why I'm Building AGRIVISION AI (and Why I'm Telling You Before It's Done)",
     "metaTitle": "Why I'm Building AGRIVISION AI | Founder Essay",
