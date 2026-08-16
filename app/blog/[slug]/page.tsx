@@ -23,12 +23,26 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const post = getPost(slug);
   if (!post) return {};
   const url = `${BASE}/blog/${post.slug}`;
+
+  // Six posts exist as an English/Hindi pair. Point each at the other so Google serves the
+  // right language rather than reading the Hindi post as a stray page on an English site.
+  // x-default always resolves to the English version.
+  const altUrl = post.altSlug ? `${BASE}/blog/${post.altSlug}` : undefined;
+  const languages = altUrl
+    ? {
+        en: post.lang === 'en' ? url : altUrl,
+        hi: post.lang === 'hi' ? url : altUrl,
+        'x-default': post.lang === 'en' ? url : altUrl,
+      }
+    : undefined;
+
   return {
     title: { absolute: post.metaTitle },
     description: post.metaDescription,
-    alternates: { canonical: url },
+    alternates: languages ? { canonical: url, languages } : { canonical: url },
     openGraph: {
       type: 'article',
+      locale: post.lang === 'hi' ? 'hi_IN' : 'en_US',
       url,
       title: post.metaTitle,
       description: post.metaDescription,
@@ -88,7 +102,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         </div>
       </header>
 
-      <article className={`${SECTION} pt-12`}>
+      {/* The root layout declares lang="en"; Hindi posts override it here so screen readers
+          and search engines read the body in the language it is actually written in. */}
+      <article lang={post.lang} className={`${SECTION} pt-12`}>
         <Link href="/blog" className="inline-flex items-center gap-1.5 text-sm font-medium text-ink-500 transition-colors hover:text-brand-primary">
           <ArrowLeft className="h-4 w-4" /> All posts
         </Link>

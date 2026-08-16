@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next';
 import { productSlugs } from './products/products-data';
-import { postSlugs } from './blog/blog-data';
+import { posts } from './blog/blog-data';
 
 const BASE = 'https://agrivisionai.org';
 
@@ -21,11 +21,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     })),
     { url: `${BASE}/blog`, lastModified: d('2026-06-30'), changeFrequency: 'weekly', priority: 0.8 },
-    ...postSlugs.map((slug) => ({
-      url: `${BASE}/blog/${slug}`,
-      lastModified: d('2026-06-30'),
+    // Translated posts carry their language alternates here too, so the pairing is declared
+    // in the sitemap as well as in each page's head — Google accepts either, and the two
+    // reinforce each other.
+    ...posts.map((p) => ({
+      url: `${BASE}/blog/${p.slug}`,
+      lastModified: d(p.date),
       changeFrequency: 'monthly' as const,
       priority: 0.7,
+      ...(p.altSlug
+        ? {
+            alternates: {
+              languages: {
+                en: p.lang === 'en' ? `${BASE}/blog/${p.slug}` : `${BASE}/blog/${p.altSlug}`,
+                hi: p.lang === 'hi' ? `${BASE}/blog/${p.slug}` : `${BASE}/blog/${p.altSlug}`,
+              },
+            },
+          }
+        : {}),
     })),
     { url: `${BASE}/press`, lastModified: d('2026-06-29'), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/links`, lastModified: d('2026-06-29'), changeFrequency: 'weekly', priority: 0.6 },
