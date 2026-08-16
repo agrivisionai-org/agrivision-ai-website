@@ -5,6 +5,10 @@
 export type BlogSection = { heading: string; paragraphs: string[] };
 export type BlogPost = {
   slug: string;
+  /** Language this post is written in. Drives the html lang attribute and hreflang. */
+  lang: 'en' | 'hi';
+  /** Slug of the same post in the other language, if a translation exists. */
+  altSlug?: string;
   title: string;
   metaTitle: string;
   metaDescription: string;
@@ -18,6 +22,7 @@ export type BlogPost = {
 export const posts: BlogPost[] = [
   {
     "slug": "what-i-found-auditing-our-own-website",
+    "lang": "en",
     "title": "I Audited Our Own Website and Found We Were Underselling the Product",
     "metaTitle": "What I Found Auditing Our Own Website | AGRIVISION AI",
     "metaDescription": "We spent the pre-launch months being careful not to overclaim, then forgot to stop once things shipped. What I found going through agrivisionai.org line by line.",
@@ -79,6 +84,7 @@ export const posts: BlogPost[] = [
   },
   {
     "slug": "why-cropvision-shows-its-confidence",
+    "lang": "en",
     "title": "Why CropVision Tells You How Sure It Is",
     "metaTitle": "Why Our AI Crop Disease Detection Shows Confidence | CropVision",
     "metaDescription": "Most crop disease apps give you one answer and no way to judge it. CropVision returns the likely disease with an honest confidence level — and refuses to guess at chemicals.",
@@ -133,6 +139,7 @@ export const posts: BlogPost[] = [
   },
   {
     "slug": "why-im-building-agrivision-ai",
+    "lang": "en",
     "title": "Why I'm Building AGRIVISION AI (and Why I'm Telling You Before It's Done)",
     "metaTitle": "Why I'm Building AGRIVISION AI | Founder Essay",
     "metaDescription": "Vijesh Reddy Golamari on founding AGRIVISION AI in Detroit, building YieldAI Global in public, and being honest about a pre-MVP stage.",
@@ -210,6 +217,8 @@ export const posts: BlogPost[] = [
   },
   {
     "slug": "crops-for-flood-prone-and-waterlogged-land",
+    "lang": "en",
+    "altSlug": "badh-prabhavit-zameen-mein-kaunsi-fasal",
     "title": "Which Crops to Grow on Flood-Prone or Waterlogged Land",
     "metaTitle": "Best Crops for Flood-Prone & Waterlogged Land (2026 Guide)",
     "metaDescription": "What to plant on land that floods or waterlogs — flood-tolerant rice, jute, taro and more — plus how to choose the right crop for your soil, region and season.",
@@ -257,6 +266,8 @@ export const posts: BlogPost[] = [
   },
   {
     "slug": "how-to-check-todays-mandi-prices-online",
+    "lang": "en",
+    "altSlug": "aaj-ke-mandi-bhav-online-kaise-dekhein",
     "title": "How to Check Today's Mandi Prices Online (India)",
     "metaTitle": "How to Check Today's Mandi Prices Online — Free Sources (2026)",
     "metaDescription": "Where to find today's mandi (market) prices for your crop online — AGMARKNET, e-NAM and state portals — plus how to use them and the MSP to sell smarter.",
@@ -304,6 +315,8 @@ export const posts: BlogPost[] = [
   },
   {
     "slug": "government-schemes-for-farmers-2026-india",
+    "lang": "en",
+    "altSlug": "kisano-ke-liye-sarkari-yojanaayein-2026",
     "title": "Government Schemes for Farmers in India (2026): A Simple Guide",
     "metaTitle": "Government Schemes for Farmers in India 2026 — PM-KISAN, PMFBY & More",
     "metaDescription": "A plain-language guide to key Indian farmer schemes in 2026 — PM-KISAN income support, PMFBY crop insurance, Kisan Credit Card and Soil Health Card — and how to apply.",
@@ -351,6 +364,8 @@ export const posts: BlogPost[] = [
   },
   {
     "slug": "how-to-increase-crop-yield",
+    "lang": "en",
+    "altSlug": "fasal-ki-paidawar-kaise-badhayein",
     "title": "How to Increase Crop Yield: 8 Practical Steps",
     "metaTitle": "How to Increase Crop Yield — 8 Practical Steps (2026)",
     "metaDescription": "A practical, no-nonsense guide to increasing crop yield — soil testing, seed choice, spacing, balanced nutrition, water, and timely pest management.",
@@ -412,6 +427,8 @@ export const posts: BlogPost[] = [
   },
   {
     "slug": "kharif-vs-rabi-when-to-sow-crops-india",
+    "lang": "en",
+    "altSlug": "kharif-rabi-boai-ka-samay-bharat",
     "title": "Kharif vs Rabi: When to Sow Major Crops in India",
     "metaTitle": "Kharif vs Rabi Crops — Sowing Seasons in India Explained (2026)",
     "metaDescription": "Kharif, Rabi and Zaid explained simply — which crops are grown in each season in India, when to sow and harvest, and how to plan your year.",
@@ -457,6 +474,8 @@ export const posts: BlogPost[] = [
   },
   {
     "slug": "drip-vs-flood-irrigation",
+    "lang": "en",
+    "altSlug": "drip-vs-flood-sinchai",
     "title": "Drip vs Flood Irrigation: Which Saves More Water and Money?",
     "metaTitle": "Drip vs Flood Irrigation — Water, Cost & Yield Compared (2026)",
     "metaDescription": "Drip versus flood irrigation compared simply — water savings, cost, yield, weeds and subsidies — so you can choose the right method for your field.",
@@ -495,6 +514,7 @@ export const posts: BlogPost[] = [
   },
   {
     "slug": "can-ai-really-help-farmers",
+    "lang": "en",
     "title": "Can AI Really Help Farmers? A Plain-English Guide",
     "metaTitle": "Can AI Really Help Farmers? What It Can (and Can't) Do — 2026",
     "metaDescription": "An honest, plain-English look at how AI helps farmers today — crop advice, market prices, weather, schemes, local languages — and its real limits.",
@@ -534,6 +554,8 @@ export const posts: BlogPost[] = [
   },
   {
     "slug": "badh-prabhavit-zameen-mein-kaunsi-fasal",
+    "lang": "hi",
+    "altSlug": "crops-for-flood-prone-and-waterlogged-land",
     "title": "बाढ़ या जलभराव वाली ज़मीन में कौन सी फसल लगाएँ",
     "metaTitle": "बाढ़/जलभराव वाली ज़मीन में कौन सी फसल लगाएँ (2026 गाइड)",
     "metaDescription": "जिस ज़मीन पर पानी भरता है या बाढ़ आती है, वहाँ क्या लगाएँ — बाढ़-सहनशील धान, जूट, अरबी और अन्य विकल्प, और अपनी मिट्टी व मौसम के अनुसार चुनाव कैसे करें।",
@@ -571,6 +593,8 @@ export const posts: BlogPost[] = [
   },
   {
     "slug": "aaj-ke-mandi-bhav-online-kaise-dekhein",
+    "lang": "hi",
+    "altSlug": "how-to-check-todays-mandi-prices-online",
     "title": "आज के मंडी भाव ऑनलाइन कैसे देखें",
     "metaTitle": "आज के मंडी भाव ऑनलाइन कैसे देखें — मुफ़्त स्रोत (2026)",
     "metaDescription": "अपनी फसल के आज के मंडी भाव ऑनलाइन कहाँ देखें — AGMARKNET, e-NAM और राज्य पोर्टल — और भाव व MSP का इस्तेमाल कर बेहतर बिक्री कैसे करें।",
@@ -608,6 +632,8 @@ export const posts: BlogPost[] = [
   },
   {
     "slug": "kisano-ke-liye-sarkari-yojanaayein-2026",
+    "lang": "hi",
+    "altSlug": "government-schemes-for-farmers-2026-india",
     "title": "किसानों के लिए सरकारी योजनाएँ 2026: एक आसान गाइड",
     "metaTitle": "किसानों के लिए सरकारी योजनाएँ 2026 — PM-KISAN, PMFBY और अधिक",
     "metaDescription": "2026 में किसानों की मुख्य सरकारी योजनाओं की सरल गाइड — PM-KISAN, PMFBY फसल बीमा, किसान क्रेडिट कार्ड और मृदा स्वास्थ्य कार्ड — और आवेदन कैसे करें।",
@@ -645,6 +671,8 @@ export const posts: BlogPost[] = [
   },
   {
     "slug": "fasal-ki-paidawar-kaise-badhayein",
+    "lang": "hi",
+    "altSlug": "how-to-increase-crop-yield",
     "title": "फसल की पैदावार कैसे बढ़ाएँ: 8 व्यावहारिक कदम",
     "metaTitle": "फसल की पैदावार कैसे बढ़ाएँ — 8 व्यावहारिक कदम (2026)",
     "metaDescription": "फसल की पैदावार बढ़ाने की सरल, कारगर गाइड — मिट्टी जाँच, बीज चयन, दूरी, संतुलित पोषण, पानी और समय पर कीट प्रबंधन।",
@@ -682,6 +710,8 @@ export const posts: BlogPost[] = [
   },
   {
     "slug": "kharif-rabi-boai-ka-samay-bharat",
+    "lang": "hi",
+    "altSlug": "kharif-vs-rabi-when-to-sow-crops-india",
     "title": "खरीफ और रबी: भारत में फसल बोने का समय",
     "metaTitle": "खरीफ बनाम रबी फसलें — भारत में बोने का समय (2026)",
     "metaDescription": "खरीफ, रबी और ज़ायद को आसान भाषा में समझें — किस मौसम में कौन सी फसल, बोने और कटाई का समय, और पूरे साल की योजना कैसे बनाएँ।",
@@ -720,6 +750,8 @@ export const posts: BlogPost[] = [
   },
   {
     "slug": "drip-vs-flood-sinchai",
+    "lang": "hi",
+    "altSlug": "drip-vs-flood-irrigation",
     "title": "ड्रिप बनाम फ्लड सिंचाई: कौन ज़्यादा पानी और पैसा बचाती है?",
     "metaTitle": "ड्रिप बनाम फ्लड सिंचाई — पानी, लागत और पैदावार (2026)",
     "metaDescription": "ड्रिप और फ्लड सिंचाई की आसान तुलना — पानी की बचत, लागत, पैदावार, खरपतवार और सब्सिडी — ताकि आप अपने खेत के लिए सही तरीका चुन सकें।",
