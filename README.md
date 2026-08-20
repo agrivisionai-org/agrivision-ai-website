@@ -59,8 +59,8 @@ npm run build    # production build (also the pre-deploy check)
 npm start        # serve the production build locally
 ```
 
-Node 18+ recommended. There are **no environment variables** — analytics IDs are inlined in
-`app/layout.tsx`, and nothing here needs secrets.
+Node 20.9+ required (the Next.js 16 engine constraint). There are **no environment
+variables** — analytics IDs are inlined in `app/layout.tsx`, and nothing here needs secrets.
 
 ---
 
@@ -75,7 +75,7 @@ app/
   robots.ts             robots.txt
   image-sitemap.xml/    Image sitemap route handler
   opengraph-image.png   Social preview images (OG + Twitter)
-  about|careers|contact|faq|press|links|privacy|terms/
+  about|careers|contact|faq|founder|press|links|privacy|terms/
   blog/                 Index + [slug] + blog-data.ts
   products/             Index + [slug] + products-data.ts
 
@@ -84,6 +84,7 @@ components/
   Footer.tsx            CTA band, link columns, socials
   Logo.tsx              Wordmark
   Tilt.tsx              Mouse-parallax 3D tilt wrapper
+  BuildNotesCard.tsx    LinkedIn newsletter card (homepage + blog index)
   primitives.tsx        Reveal, SectionEyebrow, CountUp, GradientOrb
   sections/             One file per page section (see below)
 
@@ -110,7 +111,7 @@ public/
 | `/products/[slug]` | `yieldai-global`, `cropvision`, `fieldsense`, `fieldops` |
 | `/founder` | Full founder profile (ProfilePage schema) |
 | `/blog` | Blog index |
-| `/blog/[slug]` | 14 posts — 8 English, 6 Hindi |
+| `/blog/[slug]` | 16 posts — 10 English, 6 Hindi |
 | `/careers` | Open roles + how to apply |
 | `/contact` | Contact routes and form |
 | `/faq` | FAQ (also emits FAQPage schema) |
@@ -128,7 +129,8 @@ their data files, so adding an entry there adds it to the sitemap.
 **Homepage** (`app/page.tsx`)
 
 ```
-Nav → Hero → TechStack → Products → Platform → FarmerExperience → Grounding → Capabilities → Footer
+Nav → Hero → TechStack → Products → Platform → FarmerExperience → Grounding → Capabilities
+    → BuildNotesCard → Footer
 ```
 
 **About** (`app/about/page.tsx`)
@@ -179,7 +181,7 @@ Long-form content lives in typed data files, separate from presentation:
 
 | File | Contains |
 |---|---|
-| `app/blog/blog-data.ts` | All 14 posts (title, meta, date, sections, tags). Exports `postSlugs` for the sitemap. |
+| `app/blog/blog-data.ts` | All 16 posts (title, meta, `lang`, `altSlug`, date, sections, tags). Exports `postSlugs` for the sitemap. |
 | `app/products/products-data.ts` | The 4 products: status, hero copy, overview, capabilities, audience, roadmap, FAQ, SEO meta. A product with a `liveUrl` renders a "Start Free Trial" CTA; without one it renders "Request early access". |
 | `app/press/press-data.ts` | Boilerplate, fact sheet, key facts, quotes, press release, media contact. |
 
@@ -221,8 +223,11 @@ copy, keep to these rules:
 - **`public/llms.txt`** — a plain-language summary of the company, product, modules, languages,
   pricing and data sources, written for AI crawlers and answer engines.
 - **Sitemaps** — `app/sitemap.ts` (pages, auto-derived) and `app/image-sitemap.xml/` (images).
-- **Bilingual content** — 8 English and 6 Hindi guides target farmer search intent in both
+- **Bilingual content** — 10 English and 6 Hindi guides target farmer search intent in both
   languages, all funnelling to the YieldAI free trial.
+- **hreflang** — a post carrying an `altSlug` is paired with its translation via
+  `alternates.languages` in `app/blog/[slug]/page.tsx`, so Google serves the right language.
+  Six English/Hindi pairs are currently linked; unpaired posts emit a canonical only.
 
 Search Console is set up as a **domain property** (`sc-domain:agrivisionai.org`).
 
