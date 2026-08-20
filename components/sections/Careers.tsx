@@ -43,9 +43,9 @@ export function Careers() {
               <SectionEyebrow>Careers</SectionEyebrow>
             </Reveal>
             <Reveal delay={0.1}>
-              <h2 className="mt-6 text-balance font-display text-display-lg text-ink-900">
+              <h1 className="mt-6 text-balance font-display text-display-lg text-ink-900">
                 Join <span className="gradient-text-green">AGRIVISION AI</span>.
-              </h2>
+              </h1>
             </Reveal>
             <Reveal delay={0.2}>
               <p className="mt-5 max-w-lg text-base leading-relaxed text-ink-700">

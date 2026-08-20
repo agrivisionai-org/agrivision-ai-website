@@ -57,9 +57,9 @@ export function FAQ() {
             <span className="h-1.5 w-1.5 rounded-full bg-brand-primary shadow-[0_0_8px_1px_rgba(15,107,62,0.5)]" />
             FAQ
           </div>
-          <h2 className="mt-6 text-balance font-display text-display-lg text-ink-900">
+          <h1 className="mt-6 text-balance font-display text-display-lg text-ink-900">
             Questions, answered <span className="gradient-text-green">honestly</span>.
-          </h2>
+          </h1>
         </div>
 
         <div className="mx-auto mt-12 max-w-3xl space-y-3">

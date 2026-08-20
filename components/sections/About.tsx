@@ -51,10 +51,10 @@ export function About() {
               <SectionEyebrow>About AGRIVISION AI</SectionEyebrow>
             </Reveal>
             <Reveal delay={0.1}>
-              <h2 className="mt-6 max-w-2xl text-balance font-display text-display-lg text-ink-900">
+              <h1 className="mt-6 max-w-2xl text-balance font-display text-display-lg text-ink-900">
                 The AI company building the next generation of{' '}
                 <span className="gradient-text-green">AgriTech products</span>.
-              </h2>
+              </h1>
             </Reveal>
             <Reveal delay={0.2}>
               <div className="mt-8 space-y-5 text-base leading-relaxed text-ink-700">

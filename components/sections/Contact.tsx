@@ -41,10 +41,10 @@ export function Contact() {
             <SectionEyebrow>Contact</SectionEyebrow>
           </Reveal>
           <Reveal delay={0.1}>
-            <h2 className="mx-auto mt-6 max-w-3xl text-balance font-display text-display-lg text-ink-900">
+            <h1 className="mx-auto mt-6 max-w-3xl text-balance font-display text-display-lg text-ink-900">
               Let&rsquo;s build the future of agriculture,{' '}
               <span className="gradient-text-green">together</span>.
-            </h2>
+            </h1>
           </Reveal>
         </div>
 
