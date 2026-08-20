@@ -4,9 +4,9 @@ import { Footer } from '@/components/Footer';
 import { Careers } from '@/components/sections/Careers';
 
 export const metadata: Metadata = {
-  title: 'Careers & Internships at AGRIVISION AI',
+  title: 'Careers & Internships',
   description:
-    'Join AGRIVISION AI. We are hiring an Agriculture Research Intern (remote, India) to help make YieldAI Global’s advice to farmers accurate and trustworthy. See open roles and how to apply.',
+    'We are hiring an Agriculture Research Intern (remote, India) to help make YieldAI Global’s advice to farmers accurate and trustworthy.',
   alternates: { canonical: 'https://agrivisionai.org/careers' },
   openGraph: {
     type: 'website',

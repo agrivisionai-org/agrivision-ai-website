@@ -7,9 +7,9 @@ import { Team } from '@/components/sections/Team';
 import { Sustainability } from '@/components/sections/Sustainability';
 
 export const metadata: Metadata = {
-  title: 'About AGRIVISION AI — Our Mission, Team & Founder',
+  title: 'About — Mission, Team & Founder',
   description:
-    'AGRIVISION AI is a Detroit-based company building AI-first tools for global agriculture. Meet the founder, our mission, and the team behind YieldAI Global — an AI farming assistant live in India, the USA & Canada.',
+    'AGRIVISION AI is a Detroit-based company building AI-first tools for global agriculture. Meet the founder, the mission, and the team behind YieldAI Global.',
   alternates: { canonical: 'https://agrivisionai.org/about' },
   openGraph: {
     type: 'website',

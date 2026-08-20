@@ -4,9 +4,9 @@ import { Footer } from '@/components/Footer';
 import { Contact } from '@/components/sections/Contact';
 
 export const metadata: Metadata = {
-  title: 'Contact AGRIVISION AI',
+  title: 'Contact',
   description:
-    'Get in touch with AGRIVISION AI — partnerships, press, careers, or general enquiries. Or start a free trial of YieldAI Global, our AI farming assistant for India, the USA & Canada.',
+    'Get in touch about partnerships, press, careers or general enquiries — or start a free trial of YieldAI Global, our AI farming assistant.',
   alternates: { canonical: 'https://agrivisionai.org/contact' },
   openGraph: {
     type: 'website',

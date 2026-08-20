@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     template: '%s · AGRIVISION AI',
   },
     description:
-    'AGRIVISION AI builds intelligent agriculture products. Our flagship, YieldAI Global, is live in India, the USA & Canada — AI crop advice, live market prices, weather, and government-scheme guidance in the farmer\'s own language.',
+    'YieldAI Global, our AI farming assistant, is live in India, the USA & Canada — AI crop advice, live government market prices, weather and scheme guidance.',
   keywords: [
     'AgriTech',
     'AI Agriculture',

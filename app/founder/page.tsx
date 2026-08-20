@@ -7,9 +7,9 @@ const BASE = 'https://agrivisionai.org';
 const SECTION = 'mx-auto w-full max-w-4xl px-5';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Vijesh Reddy Golamari — Founder, CEO & AI Architect | AGRIVISION AI' },
+  title: { absolute: 'Vijesh Reddy Golamari — Founder & CEO | AGRIVISION AI' },
   description:
-    'Vijesh Reddy Golamari is the sole founder, CEO and AI Architect of AGRIVISION AI (Agrivisionai Inc), a Detroit-based AI agriculture company, and the creator of its flagship platform YieldAI Global.',
+    'Vijesh Reddy Golamari is the sole founder, CEO and AI Architect of AGRIVISION AI, the Detroit company behind YieldAI Global.',
   alternates: { canonical: `${BASE}/founder` },
   openGraph: {
     type: 'profile',

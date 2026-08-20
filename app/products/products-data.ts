@@ -37,7 +37,7 @@ export const products: Product[] = [
     "status": "Live",
     "liveUrl": "https://yieldaiglobal.com",
     "metaTitle": "YieldAI Global — AI Farming Assistant | Free Trial",
-    "metaDescription": "Ask about crops, live market prices, weather & government schemes — in your own language. YieldAI Global is a free-to-try AI farming assistant, live in India, the USA & Canada.",
+    "metaDescription": "Ask about crops, live market prices, weather and government schemes in your own language. Free to try, live in India, the USA & Canada.",
     "heroHeadline": "YieldAI Global: AI crop intelligence, live for farmers",
     "heroSub": "Our flagship product is live in India, the USA, and Canada — AI crop advice, live government market prices, weather, and government-scheme guidance, in the farmer's own language. Start a free trial.",
     "overview": [
@@ -118,7 +118,7 @@ export const products: Product[] = [
     "status": "Live",
     "liveUrl": "https://yieldaiglobal.com",
     "metaTitle": "CropVision — AI Crop Disease Detection | AGRIVISION AI",
-    "metaDescription": "CropVision is the computer-vision layer inside YieldAI Global. Photograph a plant and get a likely disease, a clear confidence level, and what to do next \u2014 live in India, the USA and Canada.",
+    "metaDescription": "Photograph a plant and get a likely disease, a clear confidence level, and what to do next. CropVision is the vision layer inside YieldAI Global.",
     "heroHeadline": "CropVision: point your phone at the plant",
     "heroSub": "The computer-vision layer inside YieldAI Global. Photograph a leaf and get a likely diagnosis, an honest confidence level, and a clear next step \u2014 in your own language.",
     "overview": [

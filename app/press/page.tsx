@@ -4,9 +4,9 @@ import { press } from './press-data';
 import { Globe, Mail, Linkedin, Twitter, Github, Newspaper, Download, Building2, User } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Press Kit — Logos, Fact Sheet, Founder Bio & Quotes',
+  title: 'Press Kit — Logos, Fact Sheet & Founder Bio',
   description:
-    'Everything to cover AGRIVISION AI: company boilerplate, fact sheet, founder bio, quotes, press release, and downloadable logos. Its product YieldAI Global — an AI farming assistant — is live in India, the USA & Canada.',
+    'Company boilerplate, fact sheet, founder bio, quotes, press release and downloadable logos — everything you need to cover AGRIVISION AI.',
   alternates: { canonical: 'https://agrivisionai.org/press' },
   openGraph: {
     type: 'website',
