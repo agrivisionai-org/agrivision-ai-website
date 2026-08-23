@@ -190,16 +190,22 @@ export function Products() {
                 <ArrowUpRight className="h-4 w-4" />
               </span>
             </div>
-            <div className="relative overflow-hidden rounded-2xl border border-ink-900/[0.06]">
+            {/* The lockup carries its own navy ground, so the container matches that
+                exact navy (#011C3C, sampled from the artwork edge) and the logo is
+                contained rather than cropped — no seam, no clipped wordmark. */}
+            <div
+              className="relative flex items-center justify-center overflow-hidden rounded-2xl border border-ink-900/[0.06] px-6 py-8"
+              style={{ background: '#011C3C' }}
+            >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/buildvaillant-logo.jpg"
-                alt="BuildVaillant — Dream. Build. Deliver."
-                width={900}
-                height={900}
+                src="/buildvaillant-logo.png"
+                alt="BuildVaillant"
+                width={1600}
+                height={674}
                 loading="lazy"
                 decoding="async"
-                className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                className="w-full object-contain transition-transform duration-500 group-hover:scale-[1.03]"
               />
             </div>
           </a>
