@@ -41,6 +41,14 @@ const ROADMAP_FEATURES = [
   { icon: Droplets, label: 'Smart Irrigation' },
 ];
 
+// BuildVaillant accents, sampled from the new lockup artwork. Two values because
+// the chip sets 12px text on white: the dominant teal (#009FA4) only reaches 3.2:1
+// there, worse than the blue it replaces, so text and border use the darker teal
+// that also appears in the mark (4.9:1, WCAG AA). The bright one stays for the
+// purely decorative glow and dot.
+const BV_TEAL = '#009FA4';
+const BV_TEAL_INK = '#007D88';
+
 const PRODUCTS = [
   {
     name: 'YieldAI Global',
@@ -149,7 +157,8 @@ export function Products() {
           ))}
         </div>
 
-        {/* Venture: BuildVaillant */}
+        {/* Venture: BuildVaillant — accents come from the logo, not the site's
+            brand-accent blue, so the card reads as one piece with the artwork. */}
         <div className="mt-14 text-xs font-semibold uppercase tracking-[0.18em] text-ink-500">
           Also from Agrivisionai Inc
         </div>
@@ -162,11 +171,11 @@ export function Products() {
           >
             <div
               className="pointer-events-none absolute inset-0 opacity-40"
-              style={{ background: 'radial-gradient(circle at 85% 15%, #0A84FF22, transparent 55%)' }}
+              style={{ background: `radial-gradient(circle at 85% 15%, ${BV_TEAL}22, transparent 55%)` }}
             />
             <div className="relative">
               <div className="flex flex-wrap items-center gap-2">
-                <span className="chip" style={{ borderColor: '#0A84FF55', color: '#0A84FF' }}>
+                <span className="chip" style={{ borderColor: `${BV_TEAL_INK}55`, color: BV_TEAL_INK }}>
                   Web &amp; product development
                 </span>
                 <span className="inline-flex items-center gap-1.5 rounded-full border border-brand-primary/30 bg-brand-primary/10 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-brand-primary">
@@ -182,7 +191,7 @@ export function Products() {
                 We build it. Then we stay.
               </p>
               <div className="mt-4 inline-flex items-center gap-2 rounded-full border border-ink-900/[0.07] bg-ink-50 px-3.5 py-1.5 text-xs font-medium text-ink-700">
-                <span className="h-1.5 w-1.5 rounded-full" style={{ background: '#0A84FF' }} />
+                <span className="h-1.5 w-1.5 rounded-full" style={{ background: BV_TEAL }} />
                 The revenue engine that funds our agriculture work
               </div>
               <span className="mt-6 inline-flex items-center gap-2 rounded-full border border-ink-900/[0.08] bg-white px-5 py-3 text-sm font-semibold text-ink-900 transition-all group-hover:border-brand-primary/40 group-hover:text-brand-primary">
