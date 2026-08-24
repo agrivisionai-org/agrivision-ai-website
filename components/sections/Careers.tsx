@@ -43,7 +43,7 @@ const TRACKS = [
 const PROGRAMME = [
   { label: 'Location', value: 'Remote — USA, UK, Ireland, or Hyderabad, India' },
   { label: 'Duration', value: '8–12 weeks' },
-  { label: 'Commitment', value: '10–15 hrs / week' },
+  { label: 'Commitment', value: '20 hrs / week, US Eastern hours' },
   { label: 'Who can apply', value: 'Students, recent graduates, early career' },
 ];
 
@@ -76,6 +76,8 @@ export function Careers() {
                 feedback, a completion certificate, and a reference based on what you actually
                 built. Compensation and eligibility vary by country and by local employment and
                 university rules — we will tell you where you stand before you start, not after.
+                The programme runs 20 hours a week on US Eastern time, so expect evening hours if
+                you are applying from the UK, Ireland or India.
               </p>
             </Reveal>
             <Reveal delay={0.3}>
