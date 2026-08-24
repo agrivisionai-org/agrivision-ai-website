@@ -58,6 +58,38 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   };
 }
 
+// Paragraphs may carry inline links written as [anchor text](/href). Parsed here rather
+// than pattern-matching product names in prose, so a link only ever appears where an
+// author put one -- no surprise anchors when a post happens to mention a product.
+const INLINE_LINK = /\[([^\]]+)\]\(([^)]+)\)/g;
+const LINK_CLASS =
+  'font-medium text-brand-primary underline decoration-brand-primary/30 underline-offset-2 hover:decoration-brand-primary';
+
+function withInlineLinks(text: string): React.ReactNode[] {
+  const out: React.ReactNode[] = [];
+  let last = 0;
+  let k = 0;
+  for (const m of text.matchAll(INLINE_LINK)) {
+    const at = m.index ?? 0;
+    if (at > last) out.push(text.slice(last, at));
+    const [full, label, href] = m;
+    out.push(
+      href.startsWith('http') ? (
+        <a key={k++} href={href} target="_blank" rel="noopener noreferrer" className={LINK_CLASS}>
+          {label}
+        </a>
+      ) : (
+        <Link key={k++} href={href} className={LINK_CLASS}>
+          {label}
+        </Link>
+      )
+    );
+    last = at + full.length;
+  }
+  if (last < text.length) out.push(text.slice(last));
+  return out;
+}
+
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const post = getPost(slug);
@@ -128,7 +160,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               <h2 className="font-display text-xl font-semibold text-ink-900 sm:text-2xl">{s.heading}</h2>
               <div className="mt-3 space-y-4">
                 {s.paragraphs.map((p, j) => (
-                  <p key={j} className="text-[1.05rem] leading-relaxed text-ink-700">{p}</p>
+                  <p key={j} className="text-[1.05rem] leading-relaxed text-ink-700">{withInlineLinks(p)}</p>
                 ))}
               </div>
             </section>
