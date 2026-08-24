@@ -118,8 +118,9 @@ export function Careers() {
                           </span>
                         ))}
                       </div>
-                      <span className="mt-4 inline-flex items-center gap-1.5 text-xs font-semibold text-brand-primary">
-                        View role <ArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
+                      <span className="mt-5 inline-flex items-center gap-2 rounded-full border border-ink-900/[0.12] bg-white px-4 py-2 text-xs font-semibold text-ink-900 transition-all duration-300 group-hover:border-brand-primary/45 group-hover:bg-brand-primary group-hover:text-white">
+                        View role
+                        <ArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
                       </span>
                     </motion.div>
                   </Link>
