@@ -6,7 +6,7 @@ import { Careers } from '@/components/sections/Careers';
 export const metadata: Metadata = {
   title: 'Careers & Internships',
   description:
-    'Remote Learning & Internship Program in AI/ML, generative AI, software, data, product, design, AgriTech research, business and sales. USA or Hyderabad, India.',
+    'Remote Learning & Internship Program in AI/ML, generative AI, software, data, product, design, AgriTech research, business and sales. USA, UK, Ireland or Hyderabad, India.',
   alternates: { canonical: 'https://agrivisionai.org/careers' },
   openGraph: {
     type: 'website',

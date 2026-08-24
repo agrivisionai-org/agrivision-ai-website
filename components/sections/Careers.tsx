@@ -5,34 +5,35 @@ import { Reveal, SectionEyebrow, GradientOrb } from '../primitives';
 import { Cpu, Layers, FlaskConical, Handshake, ArrowUpRight, Mail } from 'lucide-react';
 
 // The Learning & Internship Program. Nine areas, grouped so the page stays readable.
-// Remote, but not worldwide: the USA, or Hyderabad specifically within India. Stated on
+// Remote, but not worldwide: the USA, UK and Ireland, or Hyderabad specifically within
+// India. Stated on
 // every card so nobody in another city applies and finds out afterwards.
 const TRACKS = [
   {
     icon: Cpu,
     title: 'AI & engineering',
-    location: 'Remote — USA, or Hyderabad, India',
+    location: 'Remote — USA, UK, Ireland, or Hyderabad, India',
     body: 'Models, LLM systems and the application layer behind a platform already answering real farmers.',
     roles: ['AI & Machine Learning', 'Generative AI / LLMs', 'Software & App Development'],
   },
   {
     icon: Layers,
     title: 'Data, product & design',
-    location: 'Remote — USA, or Hyderabad, India',
+    location: 'Remote — USA, UK, Ireland, or Hyderabad, India',
     body: 'Turn field and market data into decisions farmers can act on, in low-connectivity settings.',
     roles: ['Data Analytics & Engineering', 'Product Analysis', 'UI/UX & Product Design'],
   },
   {
     icon: FlaskConical,
     title: 'AgriTech research',
-    location: 'Remote — USA, or Hyderabad, India',
+    location: 'Remote — USA, UK, Ireland, or Hyderabad, India',
     body: 'Ground our answers in ICAR, FAO and government sources so the advice is actually right.',
     roles: ['AgriTech Research & Innovation'],
   },
   {
     icon: Handshake,
     title: 'Business & growth',
-    location: 'Remote — USA, or Hyderabad, India',
+    location: 'Remote — USA, UK, Ireland, or Hyderabad, India',
     body: 'Reach farmers, cooperatives and extension networks, and work out which channels carry.',
     roles: ['Business Strategy', 'Marketing & Business Development', 'Sales'],
   },
@@ -40,7 +41,7 @@ const TRACKS = [
 
 // Programme facts, kept beside the tracks so nobody has to email to find them out.
 const PROGRAMME = [
-  { label: 'Location', value: 'Remote — USA, or Hyderabad, India' },
+  { label: 'Location', value: 'Remote — USA, UK, Ireland, or Hyderabad, India' },
   { label: 'Duration', value: '8–12 weeks' },
   { label: 'Commitment', value: '10–15 hrs / week' },
   { label: 'Who can apply', value: 'Students, recent graduates, early career' },
