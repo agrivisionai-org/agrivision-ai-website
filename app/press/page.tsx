@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Logo } from '@/components/Logo';
 import { press } from './press-data';
 import { Globe, Mail, Linkedin, Twitter, Github, Newspaper, Download, Building2, User } from 'lucide-react';
+import { Footer } from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: 'Press Kit — Logos, Fact Sheet & Founder Bio',
@@ -214,6 +215,7 @@ export default function PressPage() {
         </div>
         <p className="mt-2 text-xs text-ink-500">© {new Date().getFullYear()} AGRIVISION AI. Press materials may be reproduced for editorial coverage.</p>
       </footer>
+    <Footer />
     </main>
   );
 }
@@ -221,6 +223,8 @@ export default function PressPage() {
 // Turn bare URLs and emails in fact-sheet values into links.
 function linkify(value: string): string {
   return value
-    .replace(/(https?:\/\/[^\s]+)/g, '<a href="$1" target="_blank" rel="noopener noreferrer" class="text-brand-primary underline-offset-2 hover:underline">$1</a>')
+    // The trailing class excludes sentence punctuation, which would otherwise be pulled
+    // into the href and produce a dead link (yieldaiglobal.com, -> NXDOMAIN).
+    .replace(/(https?:\/\/[^\s]*[^\s.,;:!?)\]}])/g, '<a href="$1" target="_blank" rel="noopener noreferrer" class="text-brand-primary underline-offset-2 hover:underline">$1</a>')
     .replace(/([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/g, '<a href="mailto:$1" class="text-brand-primary underline-offset-2 hover:underline">$1</a>');
 }

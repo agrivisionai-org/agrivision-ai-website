@@ -4,6 +4,7 @@ import { Logo } from '@/components/Logo';
 import { BuildNotesCard } from '@/components/BuildNotesCard';
 import { posts, readingMinutes } from './blog-data';
 import { ArrowUpRight, Mail } from 'lucide-react';
+import { Footer } from '@/components/Footer';
 
 const BASE = 'https://agrivisionai.org';
 const SECTION = 'mx-auto w-full max-w-3xl px-5';
@@ -86,6 +87,7 @@ export default function BlogIndex() {
           ))}
         </div>
       </section>
+    <Footer />
     </main>
   );
 }

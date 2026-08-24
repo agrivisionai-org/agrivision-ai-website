@@ -5,6 +5,17 @@ import { Globe, Linkedin, Twitter, Instagram, Github, Mail, Newspaper, User, Spr
 export const metadata: Metadata = {
   title: { absolute: 'Links · AGRIVISION AI' },
   description: 'All AGRIVISION AI channels in one place — website, LinkedIn, newsletter, GitHub, and more.',
+  // Without these, the page inherits the root layout's hardcoded homepage canonical and its
+  // whole OpenGraph block, so a page that is in the sitemap tells Google it is a duplicate
+  // of the homepage and previews as the homepage when shared.
+  alternates: { canonical: 'https://agrivisionai.org/links' },
+  openGraph: {
+    type: 'website',
+    url: 'https://agrivisionai.org/links',
+    title: 'Links · AGRIVISION AI',
+    description: 'All AGRIVISION AI channels in one place — website, LinkedIn, newsletter, GitHub, and more.',
+    siteName: 'AGRIVISION AI',
+  },
 };
 
 type LinkItem = {

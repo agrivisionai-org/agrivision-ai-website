@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Logo } from '@/components/Logo';
 import { products, productVisual } from './products-data';
 import { ArrowUpRight, Mail, Sparkles, Eye, Wifi, Cog } from 'lucide-react';
+import { Footer } from '@/components/Footer';
 
 const BASE = 'https://agrivisionai.org';
 const SECTION = 'mx-auto w-full max-w-5xl px-5';
@@ -100,6 +101,7 @@ export default function ProductsIndex() {
         </div>
         <p className="mt-2 text-[11px] text-ink-500">YieldAI Global and CropVision are live at yieldaiglobal.com. FieldSense and FieldOps are roadmap concepts and are not available yet.</p>
       </footer>
+    <Footer />
     </main>
   );
 }

@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { Logo } from '@/components/Logo';
 import { posts, getPost, postSlugs, readingMinutes } from '../blog-data';
 import { ArrowLeft, ArrowUpRight, Mail, CircleDot } from 'lucide-react';
+import { Footer } from '@/components/Footer';
 
 const BASE = 'https://agrivisionai.org';
 const SECTION = 'mx-auto w-full max-w-3xl px-5';
@@ -73,7 +74,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         headline: post.title,
         description: post.metaDescription,
         datePublished: post.date,
-        dateModified: post.date,
+        dateModified: post.updated ?? post.date,
         author: { '@type': 'Person', '@id': `${BASE}#founder`, name: post.author },
         publisher: { '@id': `${BASE}#organization` },
         mainEntityOfPage: url,
@@ -175,6 +176,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           <CircleDot className="h-3.5 w-3.5" /> AGRIVISION AI · Agrivisionai Inc · Detroit, Michigan
         </div>
       </footer>
+    <Footer />
     </main>
   );
 }

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Logo } from '@/components/Logo';
+import { Footer } from '@/components/Footer';
 
 const BASE = 'https://agrivisionai.org';
 const SECTION = 'mx-auto w-full max-w-3xl px-5';
@@ -81,6 +82,7 @@ export default function TermsPage() {
           <Link href="/" className="font-semibold text-ink-600 hover:text-brand-primary">Back home</Link>
         </div>
       </article>
+    <Footer />
     </main>
   );
 }

@@ -9,6 +9,8 @@ export type BlogPost = {
   lang: 'en' | 'hi';
   /** Slug of the same post in the other language, if a translation exists. */
   altSlug?: string;
+  /** Set when a post carries a dated update note. Drives dateModified and sitemap lastModified. */
+  updated?: string;
   title: string;
   metaTitle: string;
   metaDescription: string;
@@ -140,9 +142,10 @@ export const posts: BlogPost[] = [
   {
     "slug": "why-im-building-agrivision-ai",
     "lang": "en",
+    "updated": "2026-07-21",
     "title": "Why I'm Building AGRIVISION AI (and Why I'm Telling You Before It's Done)",
     "metaTitle": "Why I'm Building AGRIVISION AI | Founder Essay",
-    "metaDescription": "Vijesh Reddy Golamari on founding AGRIVISION AI in Detroit, building YieldAI Global in public, and being honest about a pre-MVP stage.",
+    "metaDescription": "Vijesh Reddy Golamari's June 2026 founding essay on starting AGRIVISION AI in Detroit and building YieldAI Global in public — now live.",
     "date": "2026-06-30",
     "excerpt": "The honest first post: why I left a career in production AI to build YieldAI Global for the world's agricultural extension workers — and exactly how early we are.",
     "author": "Vijesh Reddy Golamari",

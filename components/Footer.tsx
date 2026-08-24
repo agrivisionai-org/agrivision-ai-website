@@ -24,6 +24,7 @@ const COLS = [
     title: 'Company',
     links: [
       { label: 'About', href: '/about' },
+      { label: 'Founder', href: '/founder' },
       { label: 'Careers', href: '/careers' },
       { label: 'Press', href: '/press' },
       { label: 'BuildVaillant', href: 'https://buildvaillant.com' },
@@ -35,6 +36,7 @@ const COLS = [
     links: [
       { label: 'Blog', href: '/blog' },
       { label: 'FAQ', href: '/faq' },
+      { label: 'Links', href: '/links' },
       { label: 'Products', href: '/products' },
       { label: 'GitHub', href: 'https://github.com/agrivisionai-org' },
       { label: 'Build Notes', href: 'https://www.linkedin.com/newsletters/7476661645046378496/' },

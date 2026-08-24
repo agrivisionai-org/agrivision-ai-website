@@ -6,7 +6,9 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/api/', '/_next/'],
+        // /_next/ must stay crawlable: the entire compiled stylesheet and JS live there,
+        // and blocking it makes Google's render pass see the site unstyled.
+        disallow: ['/api/'],
       },
       {
         userAgent: 'GPTBot',

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Logo } from '@/components/Logo';
 import { Linkedin, Twitter, Github, Mail, ArrowLeft, ArrowUpRight } from 'lucide-react';
+import { Footer } from '@/components/Footer';
 
 const BASE = 'https://agrivisionai.org';
 const SECTION = 'mx-auto w-full max-w-4xl px-5';
@@ -205,6 +206,7 @@ export default function FounderPage() {
           </a>
         </div>
       </section>
+    <Footer />
     </main>
   );
 }

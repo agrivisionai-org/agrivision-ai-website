@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { Logo } from '@/components/Logo';
 import { products, getProduct, productVisual, productSlugs } from '../products-data';
+import { Footer } from '@/components/Footer';
 import {
   ArrowUpRight,
   ArrowLeft,
@@ -258,6 +259,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
             : `${product.name} is not built yet. Capabilities described on this page reflect what we are planning, not features available today.`}
         </p>
       </footer>
+    <Footer />
     </main>
   );
 }
