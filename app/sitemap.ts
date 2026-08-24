@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { productSlugs } from './products/products-data';
 import { posts } from './blog/blog-data';
+import { roleSlugs } from './careers/roles-data';
 
 const BASE = 'https://agrivisionai.org';
 
@@ -24,6 +25,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Translated posts carry their language alternates here too, so the pairing is declared
     // in the sitemap as well as in each page's head — Google accepts either, and the two
     // reinforce each other.
+    ...roleSlugs.map((slug) => ({
+      url: `${BASE}/careers/${slug}`,
+      lastModified: d('2026-08-24'),
+      changeFrequency: 'weekly' as const,
+      priority: 0.6,
+    })),
     ...posts.map((p) => ({
       url: `${BASE}/blog/${p.slug}`,
       lastModified: d(p.updated ?? p.date),

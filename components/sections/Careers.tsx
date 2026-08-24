@@ -2,49 +2,24 @@
 
 import { motion } from 'framer-motion';
 import { Reveal, SectionEyebrow, GradientOrb } from '../primitives';
+import Link from 'next/link';
 import { Cpu, Layers, FlaskConical, Handshake, ArrowUpRight, Mail } from 'lucide-react';
+import { roles, PROGRAMME } from '@/app/careers/roles-data';
 
-// The Learning & Internship Program. Nine areas, grouped so the page stays readable.
-// Remote, but not worldwide: the USA, UK and Ireland, or Hyderabad specifically within
-// India. Stated on
-// every card so nobody in another city applies and finds out afterwards.
-const TRACKS = [
-  {
-    icon: Cpu,
-    title: 'AI & engineering',
-    location: 'Remote — USA, UK, Ireland, or Hyderabad, India',
-    body: 'Models, LLM systems and the application layer behind a platform already answering real farmers.',
-    roles: ['AI & Machine Learning', 'Generative AI / LLMs', 'Software & App Development'],
-  },
-  {
-    icon: Layers,
-    title: 'Data, product & design',
-    location: 'Remote — USA, UK, Ireland, or Hyderabad, India',
-    body: 'Turn field and market data into decisions farmers can act on, in low-connectivity settings.',
-    roles: ['Data Analytics & Engineering', 'Product Analysis', 'UI/UX & Product Design'],
-  },
-  {
-    icon: FlaskConical,
-    title: 'AgriTech research',
-    location: 'Remote — USA, UK, Ireland, or Hyderabad, India',
-    body: 'Ground our answers in ICAR, FAO and government sources so the advice is actually right.',
-    roles: ['AgriTech Research & Innovation'],
-  },
-  {
-    icon: Handshake,
-    title: 'Business & growth',
-    location: 'Remote — USA, UK, Ireland, or Hyderabad, India',
-    body: 'Reach farmers, cooperatives and extension networks, and work out which channels carry.',
-    roles: ['Business Strategy', 'Marketing & Business Development', 'Sales'],
-  },
-];
+// Cards are driven by app/careers/roles-data.ts so the index, the role pages and the
+// JobPosting schema cannot disagree. Only the icon lives here -- it is presentation.
+const ICONS: Record<string, typeof Cpu> = {
+  'ai-engineering': Cpu,
+  'data-product-design': Layers,
+  'agritech-research': FlaskConical,
+  'business-growth': Handshake,
+};
 
-// Programme facts, kept beside the tracks so nobody has to email to find them out.
-const PROGRAMME = [
-  { label: 'Location', value: 'Remote — USA, UK, Ireland, or Hyderabad, India' },
-  { label: 'Duration', value: '8–12 weeks' },
-  { label: 'Commitment', value: '20 hrs / week, US Eastern hours' },
-  { label: 'Who can apply', value: 'Students, recent graduates, early career' },
+const FACTS = [
+  { label: 'Location', value: PROGRAMME.location },
+  { label: 'Duration', value: PROGRAMME.duration },
+  { label: 'Commitment', value: PROGRAMME.commitment },
+  { label: 'Who can apply', value: PROGRAMME.whoCanApply },
 ];
 
 export function Careers() {
@@ -82,7 +57,7 @@ export function Careers() {
             </Reveal>
             <Reveal delay={0.3}>
               <dl className="mt-6 grid max-w-lg grid-cols-2 gap-x-6 gap-y-4">
-                {PROGRAMME.map((f) => (
+                {FACTS.map((f) => (
                   <div key={f.label}>
                     <dt className="text-[10px] font-semibold uppercase tracking-wider text-ink-500">
                       {f.label}
@@ -112,33 +87,45 @@ export function Careers() {
           </div>
 
           <div className="grid gap-3 sm:grid-cols-2">
-            {TRACKS.map((t, i) => (
-              <Reveal key={t.title} delay={0.1 + i * 0.08}>
-                <motion.div whileHover={{ y: -4 }} transition={{ duration: 0.4 }} className="card-surface h-full p-6">
-                  <div className="flex items-center justify-between">
-                    <span className="flex h-10 w-10 items-center justify-center rounded-xl border border-ink-900/[0.07] bg-gradient-to-br from-brand-primary/15 to-transparent text-brand-primary">
-                      <t.icon className="h-4 w-4" />
-                    </span>
-                    <span className="text-[10px] font-semibold uppercase tracking-wider text-brand-primary">
-                      Open now
-                    </span>
-                  </div>
-                  <h3 className="mt-5 text-base font-semibold text-ink-900">{t.title}</h3>
-                  <p className="mt-1 text-[11px] font-medium text-ink-500">{t.location}</p>
-                  <p className="mt-2 text-xs leading-relaxed text-ink-600">{t.body}</p>
-                  <div className="mt-4 flex flex-wrap gap-1.5">
-                    {t.roles.map((r) => (
-                      <span
-                        key={r}
-                        className="rounded-full border border-ink-900/[0.07] bg-ink-50 px-2 py-1 text-[10px] font-medium text-ink-700"
-                      >
-                        {r}
+            {roles.map((r, i) => {
+              const Icon = ICONS[r.slug];
+              return (
+                <Reveal key={r.slug} delay={0.1 + i * 0.08}>
+                  <Link href={`/careers/${r.slug}`} className="block h-full">
+                    <motion.div
+                      whileHover={{ y: -4 }}
+                      transition={{ duration: 0.4 }}
+                      className="card-surface group h-full p-6 transition-colors hover:border-brand-primary/40"
+                    >
+                      <div className="flex items-center justify-between">
+                        <span className="flex h-10 w-10 items-center justify-center rounded-xl border border-ink-900/[0.07] bg-gradient-to-br from-brand-primary/15 to-transparent text-brand-primary">
+                          <Icon className="h-4 w-4" />
+                        </span>
+                        <span className="text-[10px] font-semibold uppercase tracking-wider text-brand-primary">
+                          Open now
+                        </span>
+                      </div>
+                      <h3 className="mt-5 text-base font-semibold text-ink-900">{r.cardTitle}</h3>
+                      <p className="mt-1 text-[11px] font-medium text-ink-500">{PROGRAMME.location}</p>
+                      <p className="mt-2 text-xs leading-relaxed text-ink-600">{r.summary}</p>
+                      <div className="mt-4 flex flex-wrap gap-1.5">
+                        {r.areas.map((a) => (
+                          <span
+                            key={a}
+                            className="rounded-full border border-ink-900/[0.07] bg-ink-50 px-2 py-1 text-[10px] font-medium text-ink-700"
+                          >
+                            {a}
+                          </span>
+                        ))}
+                      </div>
+                      <span className="mt-4 inline-flex items-center gap-1.5 text-xs font-semibold text-brand-primary">
+                        View role <ArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
                       </span>
-                    ))}
-                  </div>
-                </motion.div>
-              </Reveal>
-            ))}
+                    </motion.div>
+                  </Link>
+                </Reveal>
+              );
+            })}
           </div>
         </div>
       </div>
