@@ -6,14 +6,14 @@ import { Careers } from '@/components/sections/Careers';
 export const metadata: Metadata = {
   title: 'Careers & Internships',
   description:
-    'We are hiring an Agriculture Research Intern (remote, India) to help make YieldAI Global’s advice to farmers accurate and trustworthy.',
+    'Unpaid remote internships in AI/ML, product, agriculture research and sales. Open to students on OPT and CPT in the USA, and in India.',
   alternates: { canonical: 'https://agrivisionai.org/careers' },
   openGraph: {
     type: 'website',
     url: 'https://agrivisionai.org/careers',
     title: 'Careers & Internships at AGRIVISION AI',
     description:
-      'Open roles at AGRIVISION AI, including an Agriculture Research Intern (remote, India). Build AI tools that reach real farmers.',
+      'Unpaid remote internships at AGRIVISION AI — AI/ML, product, agriculture research and sales. Build AI tools that reach real farmers.',
     siteName: 'AGRIVISION AI',
     images: [{ url: 'https://agrivisionai.org/opengraph-image.png', width: 1200, height: 630, alt: 'Careers at AGRIVISION AI' }],
   },
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@yieldaiglobal',
     title: 'Careers at AGRIVISION AI',
-    description: 'We are hiring an Agriculture Research Intern (remote, India).',
+    description: 'Unpaid remote internships — AI/ML, product, agriculture research and sales.',
     images: ['https://agrivisionai.org/opengraph-image.png'],
   },
 };
