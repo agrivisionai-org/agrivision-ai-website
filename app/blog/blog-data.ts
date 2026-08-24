@@ -42,7 +42,7 @@ export const posts: BlogPost[] = [
       {
         "heading": "Disease detection was live. Our homepage said it was planned.",
         "paragraphs": [
-          "CropVision — photograph an affected plant, get the likely disease and an honest confidence level — has been live inside YieldAI Global for weeks. It has its own page saying so. And two hundred pixels below that, our homepage listed Disease Detection under a heading that read On the roadmap, planned.",
+          "[CropVision](/products/cropvision) — photograph an affected plant, get the likely disease and an honest confidence level — has been live inside YieldAI Global for weeks. It has its own page saying so. And two hundred pixels below that, our homepage listed Disease Detection under a heading that read On the roadmap, planned.",
           "The same was true of weather, of yield prediction, and of the voice assistant. All shipped. All still sitting in the planned column. One chip on the homepage read multilingual voice, planned, directly underneath a card listing Voice Assistant as live. Both were on the same screen."
         ]
       },
@@ -57,7 +57,7 @@ export const posts: BlogPost[] = [
         "heading": "The terms of service were the worst offender",
         "paragraphs": [
           "Our Terms of Service still described AGRIVISION AI as a pre-launch company where no product is generally available — on a site that sells a subscription at $9.99 a month after a thirty-day trial. That is not a marketing inconsistency. That is the document a customer is bound by, contradicting the thing they just paid for.",
-          "It now says what is actually true: these terms cover the website, YieldAI Global is live and governed by the terms published at yieldaiglobal.com, and the no-offer language applies to the products we have not built."
+          "It now says what is actually true: these terms cover the website, YieldAI Global is live and governed by the terms published at [yieldaiglobal.com](https://yieldaiglobal.com), and the no-offer language applies to the products we have not built."
         ]
       },
       {
@@ -104,7 +104,7 @@ export const posts: BlogPost[] = [
       {
         "heading": "What CropVision returns instead",
         "paragraphs": [
-          "CropVision is the vision layer inside YieldAI Global. Photograph an affected plant and it returns the disease it believes it is seeing, the visible symptoms behind that read, and how confident it is — in the farmer's own language.",
+          "[CropVision](/products/cropvision) is the vision layer inside YieldAI Global. Photograph an affected plant and it returns the disease it believes it is seeing, the visible symptoms behind that read, and how confident it is — in the farmer's own language.",
           "The confidence number is not decoration. A high-confidence read on a classic, well-photographed infection deserves to be acted on. A low-confidence read on a blurry photo of an unusual symptom deserves a second opinion, and the farmer should be able to tell the difference before they spend money."
         ]
       },
@@ -126,7 +126,7 @@ export const posts: BlogPost[] = [
         "heading": "What we will not claim yet",
         "paragraphs": [
           "We do not publish an accuracy percentage for CropVision, and I will not invent one. It is live, it is early, and field-validated accuracy figures are something we intend to publish once we have results worth standing behind rather than a number that sounds good.",
-          "CropVision is live now as the Disease Detection module inside YieldAI Global, available in India, the USA and Canada. You can try it on the thirty-day free trial at yieldaiglobal.com — and if it gives you a bad read, I would genuinely like to hear about it."
+          "CropVision is live now as the Disease Detection module inside YieldAI Global, available in India, the USA and Canada. You can try it on the thirty-day free trial at [yieldaiglobal.com](https://yieldaiglobal.com) — and if it gives you a bad read, I would genuinely like to hear about it."
         ]
       }
     ],
@@ -153,7 +153,7 @@ export const posts: BlogPost[] = [
       {
         "heading": "Update — July 2026: YieldAI Global is now live",
         "paragraphs": [
-          "A note added after the fact: since this essay was written, YieldAI Global has shipped. It is now live and available in India, the USA, and Canada at yieldaiglobal.com, with a free trial — AI crop advice, live government market prices, weather, and government-scheme guidance in the farmer's own language.",
+          "A note added after the fact: since this essay was written, YieldAI Global has shipped. It is now live and available in India, the USA, and Canada at [yieldaiglobal.com](https://yieldaiglobal.com), with a free trial — AI crop advice, live government market prices, weather, and government-scheme guidance in the farmer's own language.",
           "I'm leaving the original post below exactly as it was written, pre-launch, because that honesty is the whole point of building in public. Everything under this line reflects where we were then, not where we are now."
         ]
       },
@@ -179,7 +179,7 @@ export const posts: BlogPost[] = [
           "YieldAI Global is the product we're building first: an AI crop intelligence platform designed for agricultural extension workers and the farming households they serve. The mission of AGRIVISION AI is broader than one product — AI-first tools for global agriculture, designed for more than 40 countries and multilingual by design — but YieldAI Global is where that mission has to prove itself.",
           "The shape we're building toward is a voice-first, multilingual assistant for the field: AI crop advisory grounded in agronomic sources, live weather and pest-and-disease alerts, real-time market-price intelligence, and the ability to turn an extension worker's spoken field notes into a structured visit report. We're designing it around specialized agents — a crop advisor, market intelligence, weather, and field visit — rather than one monolithic chatbot, because the workflows are genuinely different.",
           "Beyond YieldAI Global, we have a roadmap I'll describe honestly as a roadmap, not a product line: CropVision (a planned vision module for crop and disease imagery), FieldSense (planned IoT sensing), and FieldOps (an early-stage operations concept). These are directions, not deliverables. I'd rather name them as ideas than dress them up as features that exist.",
-          "Update, August 2026: CropVision has since shipped. It is live inside YieldAI Global as the Disease Detection module — photograph a plant, get the likely disease and an honest confidence level. AgriSense and FarmOS have been renamed FieldSense and FieldOps, and both remain exactly what this post called them: planned, not built. I'm leaving the paragraph above as written, because the point of publishing early is that the record should show what we knew at the time."
+          "Update, August 2026: [CropVision](/products/cropvision) has since shipped. It is live inside YieldAI Global as the Disease Detection module — photograph a plant, get the likely disease and an honest confidence level. AgriSense and FarmOS have been renamed FieldSense and FieldOps, and both remain exactly what this post called them: planned, not built. I'm leaving the paragraph above as written, because the point of publishing early is that the record should show what we knew at the time."
         ]
       },
       {
@@ -261,7 +261,7 @@ export const posts: BlogPost[] = [
         "heading": "Match it to your exact field",
         "paragraphs": [
           "Soil type, region, rainfall pattern and season all change what will actually work on your land, and variety names and availability vary district to district. Treat this guide as a starting point, and confirm the specific variety and practices with your local agriculture extension officer or Krishi Vigyan Kendra (KVK) before you commit a season to it.",
-          "This is exactly the kind of question our product, YieldAI Global, is built to answer — describe your land, and it gives crop guidance tuned to your location, in your own language. It is live in India, the USA and Canada, with a free trial at yieldaiglobal.com."
+          "This is exactly the kind of question our product, [YieldAI Global](/products/yieldai-global), is built to answer — describe your land, and it gives crop guidance tuned to your location, in your own language. It is live in India, the USA and Canada, with a free trial at [yieldaiglobal.com](https://yieldaiglobal.com)."
         ]
       }
     ],
@@ -310,7 +310,7 @@ export const posts: BlogPost[] = [
         "heading": "Turn prices into decisions",
         "paragraphs": [
           "Data only helps if you act on it. Compare a few nearby mandis, look at the trend versus last week rather than a single day, and factor in transport cost to reach a higher-priced market. Sometimes the closer mandi at a slightly lower price nets you more.",
-          "This is one of the core things YieldAI Global does: it pulls live government market prices for your crop and shows them — with the 'as of' date — in your own language, so you are not digging through portals. It is live in India, the USA and Canada, with a free trial at yieldaiglobal.com."
+          "This is one of the core things [YieldAI Global](/products/yieldai-global) does: it pulls live government market prices for your crop and shows them — with the 'as of' date — in your own language, so you are not digging through portals. It is live in India, the USA and Canada, with a free trial at [yieldaiglobal.com](https://yieldaiglobal.com)."
         ]
       }
     ],
@@ -359,7 +359,7 @@ export const posts: BlogPost[] = [
         "heading": "How to apply — and not miss out",
         "paragraphs": [
           "Most schemes need the same core documents: Aadhaar, bank account details and land records. Deadlines matter, especially for insurance. If the online process is confusing, a Common Service Centre (CSC) or your bank branch can usually help you enrol.",
-          "Scheme rules, amounts and dates do change, so always confirm the current details on the official government portal for each scheme before acting. If you would rather just ask in your own language, YieldAI Global can tell you which schemes you may be eligible for and how to apply — it is live in India, the USA and Canada, with a free trial at yieldaiglobal.com."
+          "Scheme rules, amounts and dates do change, so always confirm the current details on the official government portal for each scheme before acting. If you would rather just ask in your own language, [YieldAI Global](/products/yieldai-global) can tell you which schemes you may be eligible for and how to apply — it is live in India, the USA and Canada, with a free trial at [yieldaiglobal.com](https://yieldaiglobal.com)."
         ]
       }
     ],
@@ -409,7 +409,7 @@ export const posts: BlogPost[] = [
       {
         "heading": "6. Stay ahead of weeds and pests",
         "paragraphs": [
-          "Weeds steal nutrients and water; pests and disease can wipe out gains fast. Scout your field regularly so you catch problems early, and favour integrated pest management (IPM) — cultural, biological and only-when-needed chemical control. Always confirm any chemical and its dose with your local agriculture extension officer before applying."
+          "Weeds steal nutrients and water; [pests and disease](/products/cropvision) can wipe out gains fast. Scout your field regularly so you catch problems early, and favour integrated pest management (IPM) — cultural, biological and only-when-needed chemical control. Always confirm any chemical and its dose with your local agriculture extension officer before applying."
         ]
       },
       {
@@ -422,7 +422,7 @@ export const posts: BlogPost[] = [
         "heading": "8. Protect the harvest",
         "paragraphs": [
           "Yield you grow but lose after harvest still counts as lost. Harvest at the right maturity, dry and store properly, and reduce spoilage. Getting this right protects the gains from all the earlier steps.",
-          "If keeping track of soil, timing, water and pests across a season feels like a lot, that is exactly what YieldAI Global helps with — practical, location-specific guidance in your own language. It is live in India, the USA and Canada, with a free trial at yieldaiglobal.com."
+          "If keeping track of soil, timing, water and pests across a season feels like a lot, that is exactly what YieldAI Global helps with — practical, location-specific guidance in your own language. It is live in India, the USA and Canada, with a free trial at [yieldaiglobal.com](https://yieldaiglobal.com)."
         ]
       }
     ],
@@ -469,7 +469,7 @@ export const posts: BlogPost[] = [
         "heading": "Plan the whole year, not one crop",
         "paragraphs": [
           "The strongest plans think across seasons — rotating crops to keep soil healthy, spreading risk, and lining up sowing dates with your water and labour. Exact windows shift with region and weather each year, so confirm local dates with your agriculture office or KVK.",
-          "YieldAI Global can help you plan around your location, crop and the current weather — in your own language. It is live in India, the USA and Canada, with a free trial at yieldaiglobal.com."
+          "[YieldAI Global](/products/yieldai-global) can help you plan around your location, crop and the current weather — in your own language. It is live in India, the USA and Canada, with a free trial at [yieldaiglobal.com](https://yieldaiglobal.com)."
         ]
       }
     ],
@@ -509,7 +509,7 @@ export const posts: BlogPost[] = [
         "heading": "Which should you choose?",
         "paragraphs": [
           "If water is scarce or costly, land is uneven, or you grow high-value crops, drip often pays for itself — especially with subsidy. If water is abundant and cheap and margins are thin, flood may still make sense for now. Many farmers move high-value plots to drip first and expand as it proves out.",
-          "The right answer depends on your crop, water source, land and budget. YieldAI Global can help you weigh options for your situation, in your own language — live in India, the USA and Canada, with a free trial at yieldaiglobal.com."
+          "The right answer depends on your crop, water source, land and budget. [YieldAI Global](/products/yieldai-global) can help you weigh options for your situation, in your own language — live in India, the USA and Canada, with a free trial at [yieldaiglobal.com](https://yieldaiglobal.com)."
         ]
       }
     ],
@@ -528,7 +528,7 @@ export const posts: BlogPost[] = [
       {
         "heading": "What AI can genuinely do for farmers today",
         "paragraphs": [
-          "At its best, an AI farming assistant puts useful information in a farmer's hand instantly. It can answer questions about which crop suits a field, explain a government scheme and how to apply, surface today's market prices, and give weather-based guidance — the kind of help that used to require calling several people or visiting an office.",
+          "At its best, [an AI farming assistant](/products) puts useful information in a farmer's hand instantly. It can answer questions about which crop suits a field, explain a government scheme and how to apply, surface today's market prices, and give weather-based guidance — the kind of help that used to require calling several people or visiting an office.",
           "The most practical part is that good AI does this in the farmer's own language, by voice or text, so literacy and jargon stop being barriers."
         ]
       },
@@ -549,7 +549,7 @@ export const posts: BlogPost[] = [
         "heading": "How to try it for yourself",
         "paragraphs": [
           "The best way to judge whether AI helps is to ask it a real question from your own farm and see if the answer is useful, specific and honest. That is the bar we hold ourselves to.",
-          "YieldAI Global is our AI farming assistant, built to give crop advice, live government market prices, weather and scheme guidance grounded in real data, in your own language. It is live in India, the USA and Canada, with a free trial at yieldaiglobal.com — try it with your own question."
+          "YieldAI Global is our AI farming assistant, built to give crop advice, live government market prices, weather and scheme guidance grounded in real data, in your own language. It is live in India, the USA and Canada, with a free trial at [yieldaiglobal.com](https://yieldaiglobal.com) — try it with your own question."
         ]
       }
     ],
@@ -588,7 +588,7 @@ export const posts: BlogPost[] = [
         "heading": "बाढ़ का जोखिम कम करने के उपाय और सही सलाह",
         "paragraphs": [
           "फसल आधा हल है; पानी का प्रबंधन दूसरा आधा। ऊँची क्यारियाँ (raised beds) और मेड़ जड़ों को खड़े पानी से ऊपर रखती हैं, निकासी नालियाँ अतिरिक्त पानी जल्दी बाहर करती हैं, और कम अवधि की किस्में व सही समय पर बुआई बाढ़ के चरम से बचा सकती हैं।",
-          "मिट्टी, क्षेत्र और मौसम के अनुसार सही किस्म बदलती है, इसलिए इसे शुरुआती गाइड मानें और अंतिम निर्णय से पहले अपने स्थानीय कृषि अधिकारी या KVK से पुष्टि करें। यही सवाल हमारा प्रोडक्ट YieldAI Global हल करता है — अपनी ज़मीन बताइए, यह आपकी जगह के अनुसार सलाह देता है, आपकी अपनी भाषा में। यह भारत, अमेरिका और कनाडा में लाइव है, और मुफ़्त ट्रायल के साथ: yieldaiglobal.com"
+          "मिट्टी, क्षेत्र और मौसम के अनुसार सही किस्म बदलती है, इसलिए इसे शुरुआती गाइड मानें और अंतिम निर्णय से पहले अपने स्थानीय कृषि अधिकारी या KVK से पुष्टि करें। यही सवाल हमारा प्रोडक्ट [YieldAI Global](/products/yieldai-global) हल करता है — अपनी ज़मीन बताइए, यह आपकी जगह के अनुसार सलाह देता है, आपकी अपनी भाषा में। यह भारत, अमेरिका और कनाडा में लाइव है, और मुफ़्त ट्रायल के साथ: [yieldaiglobal.com](https://yieldaiglobal.com)"
         ]
       }
     ],
@@ -627,7 +627,7 @@ export const posts: BlogPost[] = [
         "heading": "भाव को फ़ैसले में बदलें",
         "paragraphs": [
           "डेटा तभी काम आता है जब आप उस पर कदम उठाएँ। पास की कुछ मंडियों की तुलना करें, सिर्फ़ एक दिन नहीं बल्कि पिछले हफ़्ते के मुक़ाबले रुझान देखें, और ऊँचे भाव वाली मंडी तक पहुँचने का परिवहन खर्च भी जोड़ें।",
-          "यही एक मुख्य काम YieldAI Global करता है: यह आपकी फसल के लाइव सरकारी मंडी भाव — तारीख़ के साथ — आपकी अपनी भाषा में दिखाता है, ताकि आपको पोर्टल खंगालने न पड़ें। यह भारत, अमेरिका और कनाडा में लाइव है, मुफ़्त ट्रायल के साथ: yieldaiglobal.com"
+          "यही एक मुख्य काम [YieldAI Global](/products/yieldai-global) करता है: यह आपकी फसल के लाइव सरकारी मंडी भाव — तारीख़ के साथ — आपकी अपनी भाषा में दिखाता है, ताकि आपको पोर्टल खंगालने न पड़ें। यह भारत, अमेरिका और कनाडा में लाइव है, मुफ़्त ट्रायल के साथ: [yieldaiglobal.com](https://yieldaiglobal.com)"
         ]
       }
     ],
@@ -666,7 +666,7 @@ export const posts: BlogPost[] = [
         "heading": "आवेदन कैसे करें और चूकें नहीं",
         "paragraphs": [
           "ज़्यादातर योजनाओं के लिए एक ही मुख्य दस्तावेज़ चाहिए: आधार, बैंक खाता और ज़मीन के कागज़। अंतिम तिथियाँ मायने रखती हैं, खासकर बीमा के लिए। ऑनलाइन प्रक्रिया उलझन भरी लगे तो CSC या बैंक शाखा आपकी मदद कर सकती है। योजनाओं के नियम, राशि और तिथियाँ बदलती रहती हैं, इसलिए कदम उठाने से पहले हर योजना के आधिकारिक पोर्टल पर मौजूदा जानकारी की पुष्टि करें।",
-          "अगर आप अपनी भाषा में बस पूछना चाहें, तो YieldAI Global बता सकता है कि आप किन योजनाओं के लिए पात्र हो सकते हैं और आवेदन कैसे करें — यह भारत, अमेरिका और कनाडा में लाइव है, मुफ़्त ट्रायल के साथ: yieldaiglobal.com"
+          "अगर आप अपनी भाषा में बस पूछना चाहें, तो YieldAI Global बता सकता है कि आप किन योजनाओं के लिए पात्र हो सकते हैं और आवेदन कैसे करें — यह भारत, अमेरिका और कनाडा में लाइव है, मुफ़्त ट्रायल के साथ: [yieldaiglobal.com](https://yieldaiglobal.com)"
         ]
       }
     ],
@@ -698,14 +698,14 @@ export const posts: BlogPost[] = [
       {
         "heading": "पानी, खरपतवार और कीट का समय पर प्रबंधन",
         "paragraphs": [
-          "बहुत कम और बहुत ज़्यादा — दोनों पानी पैदावार घटाते हैं। आदत के बजाय फसल की अवस्था के अनुसार सिंचाई करें और जहाँ पानी रुकता है वहाँ निकासी सुधारें। खरपतवार पोषण और पानी चुरा लेते हैं, और कीट-रोग तेज़ी से नुकसान करते हैं, इसलिए खेत की नियमित निगरानी करें और एकीकृत कीट प्रबंधन (IPM) अपनाएँ। किसी भी रसायन और उसकी मात्रा की पुष्टि हमेशा अपने स्थानीय कृषि अधिकारी से करें।"
+          "बहुत कम और बहुत ज़्यादा — दोनों पानी पैदावार घटाते हैं। आदत के बजाय फसल की अवस्था के अनुसार सिंचाई करें और जहाँ पानी रुकता है वहाँ निकासी सुधारें। खरपतवार पोषण और पानी चुरा लेते हैं, और [कीट-रोग](/products/cropvision) तेज़ी से नुकसान करते हैं, इसलिए खेत की नियमित निगरानी करें और एकीकृत कीट प्रबंधन (IPM) अपनाएँ। किसी भी रसायन और उसकी मात्रा की पुष्टि हमेशा अपने स्थानीय कृषि अधिकारी से करें।"
         ]
       },
       {
         "heading": "समय पर बुआई और फ़सल की सुरक्षा",
         "paragraphs": [
           "सही समय पर बुआई पैदावार का एक बड़ा, अक्सर अनदेखा किया जाने वाला कारक है। सही खिड़की में बोई गई फसल पूरे मौसम का लाभ लेती है। और जो पैदावार आपने उगाई पर कटाई के बाद खो दी, वह भी नुकसान है — सही परिपक्वता पर कटाई करें, ठीक से सुखाएँ और भंडारण करें।",
-          "अगर पूरे मौसम में मिट्टी, समय, पानी और कीटों का हिसाब रखना मुश्किल लगे, तो यही काम YieldAI Global आसान करता है — आपकी जगह के अनुसार व्यावहारिक सलाह, आपकी अपनी भाषा में। यह भारत, अमेरिका और कनाडा में लाइव है, मुफ़्त ट्रायल के साथ: yieldaiglobal.com"
+          "अगर पूरे मौसम में मिट्टी, समय, पानी और कीटों का हिसाब रखना मुश्किल लगे, तो यही काम YieldAI Global आसान करता है — आपकी जगह के अनुसार व्यावहारिक सलाह, आपकी अपनी भाषा में। यह भारत, अमेरिका और कनाडा में लाइव है, मुफ़्त ट्रायल के साथ: [yieldaiglobal.com](https://yieldaiglobal.com)"
         ]
       }
     ],
@@ -745,7 +745,7 @@ export const posts: BlogPost[] = [
         "heading": "ज़ायद और पूरे साल की योजना",
         "paragraphs": [
           "ज़ायद रबी की कटाई और अगली खरीफ के बीच का छोटा मौसम है, लगभग मार्च से जून। लंबे, गर्म दिनों और सिंचाई के साथ किसान तरबूज़, खरबूज़, खीरा और कुछ सब्ज़ियाँ व चारा उगाते हैं — यह उस ज़मीन से कमाई का तरीका है जो वरना खाली रहती।",
-          "सबसे अच्छी योजनाएँ मौसमों के आर-पार सोचती हैं — मिट्टी को स्वस्थ रखने के लिए फसल-चक्र, जोखिम बाँटना, और बुआई की तारीख़ों को पानी व मज़दूरी के साथ मिलाना। सटीक खिड़कियाँ हर साल क्षेत्र और मौसम के अनुसार बदलती हैं, इसलिए स्थानीय तारीख़ें अपने कृषि कार्यालय या KVK से पुष्टि करें। YieldAI Global आपकी जगह, फसल और मौजूदा मौसम के अनुसार योजना बनाने में मदद करता है — आपकी अपनी भाषा में। यह भारत, अमेरिका और कनाडा में लाइव है, मुफ़्त ट्रायल के साथ: yieldaiglobal.com"
+          "सबसे अच्छी योजनाएँ मौसमों के आर-पार सोचती हैं — मिट्टी को स्वस्थ रखने के लिए फसल-चक्र, जोखिम बाँटना, और बुआई की तारीख़ों को पानी व मज़दूरी के साथ मिलाना। सटीक खिड़कियाँ हर साल क्षेत्र और मौसम के अनुसार बदलती हैं, इसलिए स्थानीय तारीख़ें अपने कृषि कार्यालय या KVK से पुष्टि करें। [YieldAI Global](/products/yieldai-global) आपकी जगह, फसल और मौजूदा मौसम के अनुसार योजना बनाने में मदद करता है — आपकी अपनी भाषा में। यह भारत, अमेरिका और कनाडा में लाइव है, मुफ़्त ट्रायल के साथ: [yieldaiglobal.com](https://yieldaiglobal.com)"
         ]
       }
     ],
@@ -785,7 +785,7 @@ export const posts: BlogPost[] = [
         "heading": "कौन सा चुनें?",
         "paragraphs": [
           "अगर पानी कम या महँगा है, ज़मीन ऊबड़-खाबड़ है, या आप ऊँचे मूल्य वाली फसलें उगाते हैं, तो ड्रिप अक्सर अपनी लागत वसूल कर लेती है — खासकर सब्सिडी के साथ। अगर पानी भरपूर और सस्ता है और मुनाफ़ा कम है, तो फिलहाल फ्लड भी ठीक हो सकता है। कई किसान पहले ऊँचे मूल्य वाले खेतों को ड्रिप पर लाते हैं और साबित होने पर बढ़ाते हैं।",
-          "सही जवाब आपकी फसल, पानी के स्रोत, ज़मीन और बजट पर निर्भर करता है। YieldAI Global आपकी स्थिति के अनुसार विकल्प तौलने में मदद कर सकता है, आपकी अपनी भाषा में — यह भारत, अमेरिका और कनाडा में लाइव है, मुफ़्त ट्रायल के साथ: yieldaiglobal.com"
+          "सही जवाब आपकी फसल, पानी के स्रोत, ज़मीन और बजट पर निर्भर करता है। [YieldAI Global](/products/yieldai-global) आपकी स्थिति के अनुसार विकल्प तौलने में मदद कर सकता है, आपकी अपनी भाषा में — यह भारत, अमेरिका और कनाडा में लाइव है, मुफ़्त ट्रायल के साथ: yieldaiglobal.com"
         ]
       }
     ],
