@@ -28,6 +28,14 @@ const FAQS = [
     a: "Yes. YieldAI Global is live and available now in India, the USA, and Canada at yieldaiglobal.com, where you can start a free trial. AGRIVISION AI remains an early-stage, founder-led company and continues to build in public.",
   },
   {
+    q: "How much does YieldAI Global cost, and how does the free trial work?",
+    a: "YieldAI Global is $9.99 per month after a 30-day free trial. The trial covers the full platform — all 17 modules across crop intelligence, market prices, weather and farm records — with no payment required up front. Start at yieldaiglobal.com.",
+  },
+  {
+    q: "What languages does YieldAI Global support?",
+    a: "13 languages today: Hindi, Bengali, Telugu, Tamil, Kannada, Marathi, Punjabi, Gujarati, Malayalam, Odia, English, Spanish and French. Farmers can ask by text or by voice and get the answer back in the same language. YieldAI Global is live in India, the USA and Canada, and is designed to reach 40+ countries.",
+  },
+  {
     q: "Is this the same as other companies named AgriVision AI?",
     a: "No. This AGRIVISION AI is Agrivisionai Inc, a Detroit, Michigan company founded in 2026 by sole founder Vijesh Reddy Golamari. It is not affiliated with any other similarly named agricultural-technology project or company.",
   },

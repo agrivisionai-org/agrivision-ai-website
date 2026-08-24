@@ -67,6 +67,19 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
         operatingSystem: 'Web',
         url,
         description: product.metaDescription,
+        // Only products with their own price carry an Offer. CropVision is a module inside
+        // the YieldAI subscription, so it deliberately has none.
+        ...(product.price
+          ? {
+              offers: {
+                '@type': 'Offer',
+                price: product.price.amount,
+                priceCurrency: product.price.currency,
+                availability: 'https://schema.org/InStock',
+                url: product.liveUrl ?? url,
+              },
+            }
+          : {}),
         publisher: { '@id': `${BASE}#organization` },
         creator: { '@id': `${BASE}#organization` },
       },

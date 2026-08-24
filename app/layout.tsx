@@ -198,6 +198,13 @@ const productsSchema = {
         url: 'https://agrivisionai.org/products/yieldai-global',
         description:
           'Flagship AI-powered agriculture platform, live in India, the USA & Canada — AI crop advice, live government market prices, weather and forecasting, government-scheme guidance, yield prediction, and a voice assistant in the farmer\'s own language. Available at https://yieldaiglobal.com.',
+        offers: {
+          '@type': 'Offer',
+          price: '9.99',
+          priceCurrency: 'USD',
+          availability: 'https://schema.org/InStock',
+          url: 'https://yieldaiglobal.com',
+        },
         publisher: { '@id': 'https://agrivisionai.org#organization' },
         creator: { '@id': 'https://agrivisionai.org#organization' },
       },

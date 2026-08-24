@@ -9,6 +9,8 @@ export type Product = {
   category: string;
   status: string;
   liveUrl?: string;
+  /** Only set where a product is separately purchasable. Drives the Offer node in JSON-LD. */
+  price?: { amount: string; currency: string };
   metaTitle: string;
   metaDescription: string;
   heroHeadline: string;
@@ -36,6 +38,7 @@ export const products: Product[] = [
     "category": "AI crop intelligence platform",
     "status": "Live",
     "liveUrl": "https://yieldaiglobal.com",
+    "price": { "amount": "9.99", "currency": "USD" },
     "metaTitle": "YieldAI Global — AI Farming Assistant | Free Trial",
     "metaDescription": "Ask about crops, live market prices, weather and government schemes in your own language. Free to try, live in India, the USA & Canada.",
     "heroHeadline": "YieldAI Global: AI crop intelligence, live for farmers",
@@ -43,7 +46,8 @@ export const products: Product[] = [
     "overview": [
       "YieldAI Global is the flagship product of AGRIVISION AI, and it's live. It's an AI-powered agriculture platform that brings practical crop intelligence to the people who grow the world's food and the people who advise them — available now at yieldaiglobal.com.",
       "The idea is straightforward: take the kind of agronomic insight that's usually locked behind cost, distance, or language, and make it available through one accessible platform. Today it delivers AI crop advice, live government market prices, weather and forecasting, government-scheme guidance, yield prediction, a voice assistant, and photo-based disease detection through CropVision — all in the farmer's own language. Our roadmap extends toward IoT sensors and smart irrigation.",
-      "We're an early-stage, founder-led company based in Detroit, Michigan. YieldAI Global is live first in the USA, India, and Canada, and we're working to reach farmers, agronomists, and extension workers across 40+ countries. You can start a free trial today at yieldaiglobal.com."
+      "We're an early-stage, founder-led company based in Detroit, Michigan. YieldAI Global is live first in the USA, India, and Canada, and we're working to reach farmers, agronomists, and extension workers across 40+ countries. You can start a free trial today at yieldaiglobal.com.",
+      "YieldAI Global costs $9.99 per month after a 30-day free trial. It covers 54 crops across 17 platform modules, in 13 languages. Market prices come from government sources — mandi data in India, USDA in the USA, and StatCan in Canada — and crop guidance is grounded in credible agronomic sources including ICAR, FAO, and state agriculture departments."
     ],
     "capabilities": [
       {
@@ -68,7 +72,7 @@ export const products: Product[] = [
       },
       {
         "title": "Voice assistant, in the farmer's language",
-        "description": "Ask out loud and get an answer back in the language you actually speak — 13 today across India, the USA, and Canada, designed from the start to reach 40+ countries."
+        "description": "Ask out loud and get an answer back in the language you actually speak — 13 today across India, the USA, and Canada: Hindi, Bengali, Telugu, Tamil, Kannada, Marathi, Punjabi, Gujarati, Malayalam, Odia, English, Spanish and French. Designed from the start to reach 40+ countries."
       }
     ],
     "audience": [
@@ -105,6 +109,14 @@ export const products: Product[] = [
         "a": "We're designing it for farmers, agronomists, extension workers, agri-cooperatives, and agribusinesses. The long-term vision is to serve users across 40+ countries, with a strong emphasis on extension workers who support many farmers at once."
       },
       {
+        "q": "How much does YieldAI Global cost?",
+        "a": "YieldAI Global is $9.99 per month after a 30-day free trial. The trial gives you the full platform — all 17 modules — with no payment required up front. You can start at yieldaiglobal.com."
+      },
+      {
+        "q": "What languages does YieldAI Global support?",
+        "a": "13 languages today: Hindi, Bengali, Telugu, Tamil, Kannada, Marathi, Punjabi, Gujarati, Malayalam, Odia, English, Spanish and French. Answers come back in the language you asked in, including by voice, and the platform is designed to reach 40+ countries."
+      },
+      {
         "q": "Who is building YieldAI Global?",
         "a": "It's built by AGRIVISION AI (legal name Agrivisionai Inc), an AI-first agriculture company headquartered in Detroit, Michigan, founded in 2026 by sole founder and CEO Vijesh Reddy Golamari. We are not affiliated with any other similarly named project."
       }
@@ -124,7 +136,7 @@ export const products: Product[] = [
     "overview": [
       "CropVision is the vision layer of YieldAI Global, and it is live today. Point a phone at an affected plant and CropVision reads the image, returns the disease it believes it is seeing, and tells you how confident it is \u2014 rather than handing back a single unexplained answer. It ships as the Disease Detection module inside YieldAI Global, so it sits alongside crop advice, pest prediction, weather and market prices in one place.",
       "The design rule is confidence before cleverness. A plant-health call made from a single photograph carries real uncertainty, so CropVision surfaces that uncertainty instead of hiding it: unclear reads are flagged as unclear, and anything approaching a chemical or dosage decision routes the farmer to their local agriculture extension officer or Krishi Vigyan Kendra. A confident wrong answer can cost an entire season, and we would rather be useful and honest than impressive and wrong.",
-      "Because CropVision runs inside YieldAI Global, a diagnosis does not end at the diagnosis. The same assistant can explain the symptoms in the farmer\u2019s own language, point to the relevant government scheme, and show what the crop is fetching at market today. It is available now in India, the USA and Canada on the YieldAI Global free trial."
+      "Because CropVision runs inside YieldAI Global, a diagnosis does not end at the diagnosis. The same assistant can explain the symptoms in the farmer\u2019s own language, point to the relevant government scheme, and show what the crop is fetching at market today. It is available now in India, the USA and Canada on the YieldAI Global free trial — 30 days, then $9.99 per month for the whole platform, with no separate charge for CropVision."
     ],
     "capabilities": [
       {
