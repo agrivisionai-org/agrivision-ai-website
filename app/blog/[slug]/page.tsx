@@ -49,9 +49,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       siteName: 'AGRIVISION AI',
       publishedTime: post.date,
       authors: [post.author],
-      images: [{ url: `${BASE}/opengraph-image.png`, width: 1200, height: 630, alt: 'AGRIVISION AI' }],
     },
-    twitter: { card: 'summary_large_image', title: post.title, description: post.metaDescription, images: [`${BASE}/opengraph-image.png`] },
+    // No explicit images on either block: opengraph-image.tsx in this folder generates a
+    // per-post card at build time, and Next only injects it when metadata does not already
+    // set one. Hardcoding the site-wide image here would silently win.
+    twitter: { card: 'summary_large_image', title: post.title, description: post.metaDescription },
   };
 }
 

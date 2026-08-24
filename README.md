@@ -77,6 +77,7 @@ app/
   opengraph-image.png   Social preview images (OG + Twitter)
   about|careers|contact|faq|founder|press|links|privacy|terms/
   blog/                 Index + [slug] + blog-data.ts
+  blog/[slug]/opengraph-image.tsx   Per-post social card, generated at build
   products/             Index + [slug] + products-data.ts
 
 components/
@@ -224,6 +225,10 @@ copy, keep to these rules:
 - **`public/llms.txt`** — a plain-language summary of the company, product, modules, languages,
   pricing and data sources, written for AI crawlers and answer engines.
 - **Sitemaps** — `app/sitemap.ts` (pages, auto-derived) and `app/image-sitemap.xml/` (images).
+- **Per-post OG images** — `app/blog/[slug]/opengraph-image.tsx` renders a 1200x630 card per
+  post at build time via `next/og`. Satori’s default font covers Devanagari, so the Hindi
+  posts get correct cards with no embedded font. Do not set `openGraph.images` in the post
+  metadata — an explicit value overrides the generated card.
 - **Bilingual content** — 10 English and 6 Hindi guides target farmer search intent in both
   languages, all funnelling to the YieldAI free trial.
 - **hreflang** — a post carrying an `altSlug` is paired with its translation via
