@@ -9,6 +9,11 @@ import { ArrowLeft, ArrowUpRight, Mail, Check } from 'lucide-react';
 const BASE = 'https://agrivisionai.org';
 const SECTION = 'mx-auto w-full max-w-3xl px-5';
 
+// Every valid slug is enumerated below, so anything else is a routing-level 404 that
+// serves the prerendered not-found page. Left on, Next streamed the not-found boundary
+// as an RSC payload and the HTML body arrived empty.
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return roleSlugs.map((role) => ({ role }));
 }

@@ -20,6 +20,11 @@ const SECTION = 'mx-auto w-full max-w-5xl px-5';
 
 const ICONS: Record<string, typeof Sparkles> = { sparkles: Sparkles, eye: Eye, wifi: Wifi, cog: Cog };
 
+// Every valid slug is enumerated below, so anything else is a routing-level 404 that
+// serves the prerendered not-found page. Left on, Next streamed the not-found boundary
+// as an RSC payload and the HTML body arrived empty.
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return productSlugs.map((slug) => ({ slug }));
 }

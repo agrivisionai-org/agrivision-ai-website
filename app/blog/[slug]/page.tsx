@@ -15,6 +15,11 @@ function fmtDate(d: string) {
   return `${months[(m || 1) - 1]} ${day}, ${y}`;
 }
 
+// Every valid slug is enumerated below, so anything else is a routing-level 404 that
+// serves the prerendered not-found page. Left on, Next streamed the not-found boundary
+// as an RSC payload and the HTML body arrived empty.
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return postSlugs.map((slug) => ({ slug }));
 }
