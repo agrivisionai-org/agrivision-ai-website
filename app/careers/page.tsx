@@ -6,14 +6,14 @@ import { Careers } from '@/components/sections/Careers';
 export const metadata: Metadata = {
   title: 'Careers & Internships',
   description:
-    'Remote Learning & Internship Program in AI/ML, generative AI, software, data, product, design, AgriTech research, business and sales. USA, UK, Ireland or Hyderabad, India.',
+    'Remote Learning & Internship Program in AI/ML, generative AI, software, data, product, design, AgriTech research, business and sales. Fully remote, open worldwide.',
   alternates: { canonical: 'https://agrivisionai.org/careers' },
   openGraph: {
     type: 'website',
     url: 'https://agrivisionai.org/careers',
     title: 'Careers & Internships at AGRIVISION AI',
     description:
-      'Remote Learning & Internship Program — AI/ML, generative AI, software, data, product, design, AgriTech research, business and sales. USA, UK, Ireland or Hyderabad, India.',
+      'Remote Learning & Internship Program — AI/ML, generative AI, software, data, product, design, AgriTech research, business and sales. Fully remote, open worldwide.',
     siteName: 'AGRIVISION AI',
     images: [{ url: 'https://agrivisionai.org/opengraph-image.png', width: 1200, height: 630, alt: 'Careers at AGRIVISION AI' }],
   },

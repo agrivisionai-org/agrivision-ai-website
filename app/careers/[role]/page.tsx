@@ -59,9 +59,9 @@ export default async function RolePage({ params }: { params: Promise<{ role: str
     `<p>Focus areas: ${r.areas.join(', ')}.</p>` +
     `<p><strong>What you would do:</strong></p><ul>${r.whatYouDo.map((x) => `<li>${x}</li>`).join('')}</ul>` +
     `<p><strong>Who this fits:</strong></p><ul>${r.whoFits.map((x) => `<li>${x}</li>`).join('')}</ul>` +
-    `<p><strong>Commitment:</strong> 20 hours per week on US Eastern time. Applicants in the UK, Ireland or India should expect evening hours.</p>` +
+    `<p><strong>Commitment:</strong> 20 hours per week on US Eastern time. Check the overlap with your own timezone before applying — outside the Americas this means evening or early-morning hours.</p>` +
     `<p><strong>Duration:</strong> approximately ${PROGRAMME.duration}.</p>` +
-    `<p><strong>Location:</strong> remote, open to candidates in the USA, the UK, Ireland, or Hyderabad, India.</p>` +
+    `<p><strong>Location:</strong> fully remote, open to candidates worldwide.</p>` +
     `<p><strong>What you gain:</strong> supervised projects, mentorship and regular feedback, a completion certificate, a reference based on performance, and portfolio work where applicable.</p>` +
     `<p><strong>Compensation:</strong> this is primarily a learning and training programme. Compensation and eligibility vary by country and by local employment and university regulations, and are confirmed before you start.</p>` +
     `<p>Apply by email to ${PROGRAMME.applyEmail} with your resume, area of interest, current education or experience, country, and LinkedIn profile.</p>`;
@@ -79,13 +79,10 @@ export default async function RolePage({ params }: { params: Promise<{ role: str
         validThrough: PROGRAMME.validThrough,
         employmentType: 'INTERN',
         hiringOrganization: { '@id': `${BASE}#organization` },
+        // Open worldwide, so no applicantLocationRequirements node. Google reads
+        // TELECOMMUTE with no applicant-location restriction as "anywhere"; listing
+        // countries here would narrow it, and listing every country is not a thing.
         jobLocationType: 'TELECOMMUTE',
-        applicantLocationRequirements: [
-          { '@type': 'Country', name: 'United States' },
-          { '@type': 'Country', name: 'United Kingdom' },
-          { '@type': 'Country', name: 'Ireland' },
-          { '@type': 'City', name: 'Hyderabad' },
-        ],
         industry: 'Agricultural Technology',
         directApply: false,
         url,
@@ -176,8 +173,9 @@ export default async function RolePage({ params }: { params: Promise<{ role: str
         <section className="mt-10 rounded-2xl border border-ink-900/[0.07] bg-white p-6">
           <h2 className="font-display text-xl font-semibold text-ink-900">Hours, and being straight about pay</h2>
           <p className="mt-3 text-[1.05rem] leading-relaxed text-ink-700">
-            The programme runs 20 hours a week on US Eastern time, so applicants in the UK,
-            Ireland or India should expect evening hours. It is a learning-focused programme:
+            The programme is fully remote and open worldwide. It runs 20 hours a week on US
+            Eastern time, so check the overlap with your own timezone before applying — outside
+            the Americas that means evening or early-morning hours. It is a learning-focused programme:
             supervised projects, mentorship and regular feedback, a completion certificate, and a
             reference based on performance.
           </p>

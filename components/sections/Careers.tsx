@@ -51,8 +51,9 @@ export function Careers() {
                 feedback, a completion certificate, and a reference based on what you actually
                 built. Compensation and eligibility vary by country and by local employment and
                 university rules — we will tell you where you stand before you start, not after.
-                The programme runs 20 hours a week on US Eastern time, so expect evening hours if
-                you are applying from the UK, Ireland or India.
+                The programme is fully remote and open worldwide. It runs 20 hours a week on
+                US Eastern time, so check the overlap with your own timezone before applying
+                — outside the Americas that means evening or early-morning hours.
               </p>
             </Reveal>
             <Reveal delay={0.3}>
