@@ -74,13 +74,16 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
         // the YieldAI subscription, so it deliberately has none.
         ...(product.price
           ? {
-              offers: {
+              // One Offer per market. A single USD figure would advertise a price that
+              // Indian and Canadian visitors cannot actually get.
+              offers: product.price.map((p) => ({
                 '@type': 'Offer',
-                price: product.price.amount,
-                priceCurrency: product.price.currency,
+                price: p.amount,
+                priceCurrency: p.currency,
+                eligibleRegion: { '@type': 'Country', name: p.country },
                 availability: 'https://schema.org/InStock',
                 url: product.liveUrl ?? url,
-              },
+              })),
             }
           : {}),
         publisher: { '@id': `${BASE}#organization` },

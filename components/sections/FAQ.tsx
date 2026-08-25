@@ -29,7 +29,7 @@ const FAQS = [
   },
   {
     q: "How much does YieldAI Global cost, and how does the free trial work?",
-    a: "YieldAI Global is $9.99 per month after a 30-day free trial. The trial covers the full platform — all 17 modules across crop intelligence, market prices, weather and farm records — with no payment required up front. Start at yieldaiglobal.com.",
+    a: "The 30-day trial is free and covers the full platform — all 17 modules across crop intelligence, market prices, weather and farm records — with no payment required up front. After that the Pro plan is priced for your market: ₹149 per month in India, $9.99 in the USA, and C$9.99 in Canada. Start at yieldaiglobal.com.",
   },
   {
     q: "What languages does YieldAI Global support?",
