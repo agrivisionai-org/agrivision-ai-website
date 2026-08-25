@@ -20,7 +20,7 @@ export default function NotFound() {
           <Link href="/products" className="inline-flex items-center gap-2 rounded-full border border-ink-900/10 bg-white px-5 py-2.5 text-sm font-semibold text-ink-800 transition-colors hover:border-brand-primary/40 hover:text-brand-primary">
             <Boxes className="h-4 w-4" /> Products
           </Link>
-          <Link href="/#contact" className="inline-flex items-center gap-2 rounded-full border border-ink-900/10 bg-white px-5 py-2.5 text-sm font-semibold text-ink-800 transition-colors hover:border-brand-primary/40 hover:text-brand-primary">
+          <Link href="/contact" className="inline-flex items-center gap-2 rounded-full border border-ink-900/10 bg-white px-5 py-2.5 text-sm font-semibold text-ink-800 transition-colors hover:border-brand-primary/40 hover:text-brand-primary">
             <Mail className="h-4 w-4" /> Contact
           </Link>
         </div>

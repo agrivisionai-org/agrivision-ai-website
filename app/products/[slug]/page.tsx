@@ -116,7 +116,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
             <Link href="/products" className="hidden rounded-full border border-ink-900/10 bg-white px-4 py-2 text-sm font-semibold text-ink-700 transition-colors hover:border-brand-primary/40 hover:text-brand-primary sm:inline-flex">
               All products
             </Link>
-            <Link href="/#contact" className="inline-flex items-center gap-2 rounded-full bg-brand-primary px-4 py-2 text-sm font-semibold text-white transition-transform hover:-translate-y-0.5">
+            <Link href="/contact" className="inline-flex items-center gap-2 rounded-full bg-brand-primary px-4 py-2 text-sm font-semibold text-white transition-transform hover:-translate-y-0.5">
               <Mail className="h-4 w-4" /> Contact
             </Link>
           </div>
@@ -149,7 +149,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
               Start Free Trial <ArrowUpRight className="h-4 w-4" />
             </a>
           ) : (
-            <Link href="/#contact" className="btn-primary">
+            <Link href="/contact" className="btn-primary">
               Request early access <ArrowUpRight className="h-4 w-4" />
             </Link>
           )}
@@ -229,7 +229,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
           <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-white/70">
             We&rsquo;re an early-stage, founder-led company building in the open. If you&rsquo;re a farmer, agronomist, cooperative, or partner, we&rsquo;d love your input.
           </p>
-          <Link href="/#contact" className="mt-6 inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-ink-900 transition-transform hover:-translate-y-0.5">
+          <Link href="/contact" className="mt-6 inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-ink-900 transition-transform hover:-translate-y-0.5">
             <Mail className="h-4 w-4" /> Talk to the team
           </Link>
         </div>

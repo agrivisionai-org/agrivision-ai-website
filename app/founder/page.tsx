@@ -69,7 +69,7 @@ export default function FounderPage() {
         <div className={`${SECTION} flex items-center justify-between gap-4 py-5`}>
           <Link href="/" aria-label="AGRIVISION AI home"><Logo /></Link>
           <Link
-            href="/#contact"
+            href="/contact"
             className="inline-flex items-center gap-2 rounded-full bg-brand-primary px-4 py-2 text-sm font-semibold text-white transition-transform hover:-translate-y-0.5"
           >
             <Mail className="h-4 w-4" /> Contact
