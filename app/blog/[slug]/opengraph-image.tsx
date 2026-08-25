@@ -11,6 +11,16 @@ export function generateStaticParams() {
   return postSlugs.map((slug) => ({ slug }));
 }
 
+// Satori does not reorder complex scripts. It maps codepoints to glyphs in sequence, so a
+// Devanagari pre-base i-matra is drawn AFTER its base consonant and anusvara is dropped:
+// "ड्रिप सिंचाई" came out as "ड्रपि सचिाई", which is not a word. Embedding Noto Sans
+// Devanagari was tried and changed the typeface without changing the shaping, confirming
+// this is a Satori limitation rather than a missing font.
+//
+// So Hindi cards do not render Devanagari at all. Each Hindi post has an English twin via
+// altSlug, and its title is used instead: a readable English card beats a garbled Hindi one,
+// and the page behind the link is still Hindi. The page's own <h1> is unaffected -- browsers
+// shape it correctly.
 const PAPER = '#F4F6F1';
 const GREEN = '#0F6B3E';
 const LEAF = '#4CAF2B';
@@ -32,14 +42,17 @@ export default async function Image({ params }: { params: Promise<{ slug: string
   const { slug } = await params;
   const post = getPost(slug);
 
-  const title = post?.title ?? 'AGRIVISION AI';
-  const tag = post?.tags?.[0] ?? 'Blog';
-  const date = post ? formatDate(post.date, post.lang) : '';
-
-  // Devanagari sets wider per character, and long titles need to step down.
   const isHi = post?.lang === 'hi';
+  const twin = isHi && post?.altSlug ? getPost(post.altSlug) : undefined;
+
+  // Latin only on Hindi cards, including the date -- Devanagari month names would mis-shape
+  // for exactly the same reason the headline does.
+  const title = (isHi ? twin?.title : post?.title) ?? 'AGRIVISION AI';
+  const tag = isHi ? 'Hindi guide' : post?.tags?.[0] ?? 'Blog';
+  const date = post ? formatDate(post.date, 'en') : '';
+
   const len = title.length;
-  const titleSize = isHi ? (len > 40 ? 52 : 60) : len > 46 ? 58 : 68;
+  const titleSize = len > 46 ? 58 : 68;
 
   return new ImageResponse(
     (
