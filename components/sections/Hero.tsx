@@ -21,6 +21,9 @@ const HERO_STATS: HeroStat[] = [
   { label: 'Languages', value: '13', icon: Hammer },
 ];
 
+// Above-the-fold motion animates transform only, never opacity. Fading the hero in
+// from opacity:0 meant the SSR HTML shipped an invisible headline and delayed LCP
+// until the fade finished. Sliding a fully-painted element costs nothing.
 export function Hero() {
   return (
     <section className="relative overflow-hidden pt-32 pb-20 lg:pt-40">
@@ -42,8 +45,8 @@ export function Hero() {
       <div className="container-narrow">
         {/* eyebrow */}
         <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ y: 16 }}
+          animate={{ y: 0 }}
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           className="mx-auto flex max-w-full items-center gap-2 rounded-full border border-ink-900/10 bg-white px-3.5 py-1.5 shadow-[0_1px_2px_rgba(20,23,28,0.04)]"
         >
@@ -55,8 +58,8 @@ export function Hero() {
 
         {/* headline */}
         <motion.h1
-          initial={{ opacity: 0, y: 26 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ y: 26 }}
+          animate={{ y: 0 }}
           transition={{ duration: 0.9, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
           className="mx-auto mt-7 max-w-4xl text-balance text-center font-display text-display-xl text-ink-900"
         >
@@ -65,8 +68,8 @@ export function Hero() {
         </motion.h1>
 
         <motion.p
-          initial={{ opacity: 0, y: 18 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ y: 18 }}
+          animate={{ y: 0 }}
           transition={{ duration: 0.9, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
           className="mx-auto mt-6 max-w-2xl text-balance text-center text-base leading-relaxed text-ink-600 sm:text-lg"
         >
@@ -75,8 +78,8 @@ export function Hero() {
         </motion.p>
 
         <motion.div
-          initial={{ opacity: 0, y: 18 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ y: 18 }}
+          animate={{ y: 0 }}
           transition={{ duration: 0.9, delay: 0.32, ease: [0.22, 1, 0.36, 1] }}
           className="mt-9 flex flex-wrap items-center justify-center gap-3"
         >
@@ -93,8 +96,8 @@ export function Hero() {
 
         {/* THE FARMER-WORKING SCENE */}
         <motion.div
-          initial={{ opacity: 0, y: 40, scale: 0.98 }}
-          animate={{ opacity: 1, y: 0, scale: 1 }}
+          initial={{ y: 40, scale: 0.98 }}
+          animate={{ y: 0, scale: 1 }}
           transition={{ duration: 1.1, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
           className="mx-auto mt-14 max-w-6xl"
         >

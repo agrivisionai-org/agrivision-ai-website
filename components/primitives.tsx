@@ -36,7 +36,10 @@ export function Reveal({
       initial={{ opacity: 0, y }}
       animate={inView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.8, delay, ease: [0.22, 1, 0.36, 1] }}
-      className={className}
+      // The `reveal` class exists so the <noscript> rule in app/layout.tsx can force these
+      // visible. Without JS, framer-motion never animates and the inline opacity:0 would
+      // leave the whole page blank below the hero.
+      className={className ? `reveal ${className}` : 'reveal'}
     >
       {children}
     </motion.div>

@@ -274,6 +274,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className="scroll-smooth">
       <head>
+        {/* Without JS, framer-motion never runs and every animated element keeps its inline
+            opacity:0, leaving the page blank below the hero. Matching the inline style as
+            well as .reveal catches the section-level motion divs that are not Reveals.
+            An !important rule in a stylesheet outranks an inline style that lacks it. */}
+        <noscript>
+          <style>{`.reveal,[style*="opacity:0"],[style*="opacity: 0"]{opacity:1!important;transform:none!important}`}</style>
+        </noscript>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link
