@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import { Menu, X, ArrowUpRight } from 'lucide-react';
 import { Logo } from './Logo';
@@ -42,11 +41,11 @@ export function Nav() {
 
   return (
     <>
-      <motion.header
-        initial={{ y: -20 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-        className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${scrolled ? 'pt-3' : 'pt-5'}`}
+      {/* CSS, not framer-motion. Nav renders on every page, so importing the library here
+          pulled it onto /privacy, /terms, every blog post and every role page -- none of
+          which animate anything. The slide-in is a keyframe in globals.css instead. */}
+      <header
+        className={`nav-slide-in fixed inset-x-0 top-0 z-50 transition-all duration-500 ${scrolled ? 'pt-3' : 'pt-5'}`}
       >
         <div className="container-narrow">
           <div
@@ -92,16 +91,15 @@ export function Nav() {
             </button>
           </div>
         </div>
-      </motion.header>
+      </header>
 
-      <AnimatePresence>
+      {/* No AnimatePresence: the exit animation is not worth the library. Opens with a CSS
+          keyframe, closes immediately. */}
+      <>
         {open && (
-          <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
+          <div
             id="mobile-menu"
-            className="fixed inset-x-4 top-20 z-40 rounded-2xl border border-ink-900/10 bg-white p-4 shadow-2xl lg:hidden"
+            className="menu-drop fixed inset-x-4 top-20 z-40 rounded-2xl border border-ink-900/10 bg-white p-4 shadow-2xl lg:hidden"
           >
             <div className="flex flex-col gap-1">
               {NAV_LINKS.map((l) => (
@@ -118,9 +116,9 @@ export function Nav() {
                 Start Free Trial
               </a>
             </div>
-          </motion.div>
+          </div>
         )}
-      </AnimatePresence>
+      </>
     </>
   );
 }

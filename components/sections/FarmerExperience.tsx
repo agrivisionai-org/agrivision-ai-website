@@ -337,9 +337,14 @@ function PhoneScreen() {
         transition={{ delay: 0.65 }}
         className="absolute inset-x-5 bottom-5 flex items-center gap-2 rounded-2xl border border-white/10 bg-white/10 p-2"
       >
-        <button className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-brand-primary to-brand-secondary text-white shadow-glow-primary">
+        {/* Decoration inside the illustrative phone mock, not a control. As a <button> it
+            was a keyboard tab stop with no accessible name and nothing to activate. */}
+        <span
+          aria-hidden="true"
+          className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-brand-primary to-brand-secondary text-white shadow-glow-primary"
+        >
           <Mic className="h-4 w-4" />
-        </button>
+        </span>
         <div className="flex flex-1 items-center gap-1.5">
           {[16, 22, 30, 24, 18, 28, 22, 14].map((h, i) => (
             <motion.span
