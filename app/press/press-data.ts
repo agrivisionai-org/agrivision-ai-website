@@ -45,7 +45,7 @@ export const press = {
       },
       {
         "label": "Countries & languages",
-        "value": "Launching first in the USA, India, and Canada; expanding to 40+ countries, multilingual by design"
+        "value": "Live in the USA, India, and Canada; designed to expand to 40+ countries, multilingual by design"
       },
       {
         "label": "Website",
@@ -125,7 +125,7 @@ export const press = {
     },
     {
       "q": "What's the hardest technical challenge you're facing?",
-      "a": "Factual reliability across many languages and 40-plus countries, for advice where a wrong answer can cost a farmer a season. We're building a routed multi-model stack with a three-layer RAG grounded in agronomic primitives from sources like ICAR and FAO, CLIP-based vision for pest and disease identification, and a continuous evaluation harness with separate factual, safety, and cultural-appropriateness tracks. Getting advice that's correct, safe, and culturally appropriate in a farmer's own language and context — not just fluent — is the real engineering problem, and it's why we're being careful before we ship."
+      "a": "Factual reliability across many languages and 40-plus countries, for advice where a wrong answer can cost a farmer a season. We're building a routed multi-model stack with a three-layer RAG grounded in agronomic primitives from sources like ICAR and FAO, CLIP-based vision for pest and disease identification, and a continuous evaluation harness with separate factual, safety, and cultural-appropriateness tracks. Getting advice that's correct, safe, and culturally appropriate in a farmer's own language and context — not just fluent — is the real engineering problem, and it is why the product routes anything near a chemical or dosage decision to a local extension officer rather than guessing."
     },
     {
       "q": "How can people get involved or follow along?",

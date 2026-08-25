@@ -116,7 +116,7 @@ export default async function RolePage({ params }: { params: Promise<{ role: str
           <ArrowLeft className="h-4 w-4" /> All roles
         </Link>
 
-        <div className="mt-6 inline-flex items-center gap-2 rounded-full border border-brand-primary/30 bg-brand-primary/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-brand-primary">
+        <div className="mt-6 flex w-fit items-center gap-2 rounded-full border border-brand-primary/30 bg-brand-primary/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-brand-primary">
           <span className="h-1.5 w-1.5 rounded-full bg-brand-primary" /> Open now
         </div>
 
