@@ -29,8 +29,16 @@ export async function generateMetadata({ params }: { params: Promise<{ role: str
       title: `${r.title} · AGRIVISION AI`,
       description,
       siteName: 'AGRIVISION AI',
+      // Required explicitly: defining openGraph without `images` suppresses the root
+      // opengraph-image.png file convention, leaving a summary_large_image card with no image.
+      images: [{ url: `${BASE}/opengraph-image.png`, width: 1200, height: 630, alt: `${r.title} at AGRIVISION AI` }],
     },
-    twitter: { card: 'summary_large_image', title: r.title, description },
+    twitter: {
+      card: 'summary_large_image',
+      title: r.title,
+      description,
+      images: [`${BASE}/opengraph-image.png`],
+    },
   };
 }
 
@@ -74,7 +82,7 @@ export default async function RolePage({ params }: { params: Promise<{ role: str
           { '@type': 'Country', name: 'United States' },
           { '@type': 'Country', name: 'United Kingdom' },
           { '@type': 'Country', name: 'Ireland' },
-          { '@type': 'City', name: 'Hyderabad, India' },
+          { '@type': 'City', name: 'Hyderabad' },
         ],
         industry: 'Agricultural Technology',
         directApply: false,

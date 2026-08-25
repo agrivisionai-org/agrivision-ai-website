@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     title: 'Products — AGRIVISION AI',
     description: 'AI products for global agriculture: YieldAI Global, CropVision, FieldSense, FieldOps.',
     siteName: 'AGRIVISION AI',
+    images: [{ url: 'https://agrivisionai.org/opengraph-image.png', width: 1200, height: 630, alt: 'AGRIVISION AI products' }],
   },
 };
 

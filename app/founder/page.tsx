@@ -56,7 +56,8 @@ const profileSchema = {
   url: `${BASE}/founder`,
   name: 'Vijesh Reddy Golamari — Founder, CEO & AI Architect of AGRIVISION AI',
   mainEntity: { '@id': `${BASE}#founder` },
-  isPartOf: { '@id': `${BASE}#organization` },
+  // isPartOf expects a CreativeWork; the WebSite node is the correct parent here.
+    isPartOf: { '@id': `${BASE}#website` },
 };
 
 export default function FounderPage() {

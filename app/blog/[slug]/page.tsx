@@ -110,7 +110,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         author: { '@type': 'Person', '@id': `${BASE}#founder`, name: post.author },
         publisher: { '@id': `${BASE}#organization` },
         mainEntityOfPage: url,
-        image: `${BASE}/opengraph-image.png`,
+        // The post's own generated card, matching og:image. Was the site-wide image,
+        // which left the structured data disagreeing with the meta tags.
+        image: `${url}/opengraph-image`,
         keywords: post.tags.join(', '),
       },
       {

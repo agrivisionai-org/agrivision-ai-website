@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     url: 'https://agrivisionai.org/careers',
     title: 'Careers & Internships at AGRIVISION AI',
     description:
-      'Unpaid remote internships at AGRIVISION AI — AI/ML, product, agriculture research and sales. Build AI tools that reach real farmers.',
+      'Remote Learning & Internship Program — AI/ML, generative AI, software, data, product, design, AgriTech research, business and sales. USA, UK, Ireland or Hyderabad, India.',
     siteName: 'AGRIVISION AI',
     images: [{ url: 'https://agrivisionai.org/opengraph-image.png', width: 1200, height: 630, alt: 'Careers at AGRIVISION AI' }],
   },
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@yieldaiglobal',
     title: 'Careers at AGRIVISION AI',
-    description: 'Unpaid remote internships — AI/ML, product, agriculture research and sales.',
+    description: 'Remote internships — AI/ML, generative AI, software, data, product, design, research and sales.',
     images: ['https://agrivisionai.org/opengraph-image.png'],
   },
 };

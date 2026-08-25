@@ -143,6 +143,7 @@ const organizationSchema = {
 const websiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
+  '@id': 'https://agrivisionai.org#website',
   name: 'AGRIVISION AI',
   url: 'https://agrivisionai.org',
   publisher: { '@id': 'https://agrivisionai.org#organization' },

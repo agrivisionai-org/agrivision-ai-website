@@ -60,7 +60,10 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
     '@graph': [
       {
         '@type': 'SoftwareApplication',
-        '@id': `${BASE}#product-${product.slug}`,
+        // Page-scoped id. The site-wide ItemList in app/layout.tsx already defines
+        // ${BASE}#product-<slug> on every page; reusing it here made two nodes claim
+        // one identity with conflicting descriptions.
+        '@id': `${url}#software-application`,
         name: product.name,
         applicationCategory: 'BusinessApplication',
         applicationSubCategory: product.category,

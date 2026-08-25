@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     title: 'Links · AGRIVISION AI',
     description: 'All AGRIVISION AI channels in one place — website, LinkedIn, newsletter, GitHub, and more.',
     siteName: 'AGRIVISION AI',
+    images: [{ url: 'https://agrivisionai.org/opengraph-image.png', width: 1200, height: 630, alt: 'AGRIVISION AI links' }],
   },
 };
 
