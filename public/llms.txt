@@ -14,7 +14,7 @@
 - What it does: AI crop advice, live government market prices, weather and forecasting, government-scheme guidance, yield prediction, disease detection, and a voice assistant — in the farmer's own language (13 languages, including Hindi, Bengali, Telugu, Tamil, Kannada, Marathi, Punjabi, Gujarati, Malayalam, Odia, English, Spanish and French).
 - Platform modules (17): Dashboard, My Farms, Soil Analysis, Crop Recommendation, Yield Prediction, Profit Prediction, Weather Intelligence, Pest Prediction, Disease Detection, Market Prices, Store Locator, Drone Marketplace, Notifications, Farm Calendar, Farm History, Analytics, Voice Assistant.
 - Coverage: 54 crops. Market prices come from government sources — mandi data in India, USDA in the USA, StatCan in Canada.
-- Availability: live in India, the USA, and Canada. 30-day free trial with full platform access, then the Pro plan: ₹149/month in India, $9.99/month in the USA, C$9.99/month in Canada.
+- Availability: live in India, the USA, and Canada. 30-day free trial with full platform access, then the Pro plan: Rs 149/month in India, $9.99/month in the USA, C$9.99/month in Canada.
 - Try it: https://yieldaiglobal.com
 
 ## CropVision (live)

@@ -311,7 +311,7 @@ function PhoneScreen() {
           {[
             { icon: Wheat, t: 'Plot 7 — vigor 96%', s: 'Excellent', c: 'text-brand-secondary' },
             { icon: Droplets, t: 'Zone B irrigation due', s: '14 min', c: 'text-brand-accent' },
-            { icon: TrendingUp, t: 'Wheat price ↑ 2.4% in mandi', s: '₹2,840', c: 'text-brand-secondary' },
+            { icon: TrendingUp, t: 'Wheat price ↑ 2.4% in mandi', s: 'Rs 2,840', c: 'text-brand-secondary' },
           ].map((row) => (
             <div
               key={row.t}

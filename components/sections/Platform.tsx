@@ -158,7 +158,7 @@ export function Platform() {
 
         <Reveal delay={0.25}>
           <p className="mt-6 text-sm text-ink-500">
-            30-day free trial, then the Pro plan at ₹149/month in India, $9.99 in the USA or
+            30-day free trial, then the Pro plan at Rs 149/month in India, $9.99 in the USA or
             C$9.99 in Canada. Market prices come from government sources — mandi
             data in India, USDA in the USA and StatCan in Canada.
           </p>

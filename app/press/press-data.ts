@@ -109,7 +109,7 @@ export const press = {
     },
     {
       "q": "How are you thinking about the business model?",
-      "a": "YieldAI Global is a subscription. A 30-day trial is free with full platform access, and the Pro plan is then priced for each market: ₹149 per month in India, $9.99 in the USA, and C$9.99 in Canada. Pricing regionally rather than in one currency is deliberate — a US price converted straight to rupees would put the product out of reach of the farmers it is built for. Longer term we expect the extension layer to matter most, since a single worker advises roughly 1,200 farming households, and institutional or public-sector arrangements are the likeliest shape of that. We are early: the pricing is real and live, the durable model is still being proven in the field."
+      "a": "YieldAI Global is a subscription. A 30-day trial is free with full platform access, and the Pro plan is then priced for each market: Rs 149 per month in India, $9.99 in the USA, and C$9.99 in Canada. Pricing regionally rather than in one currency is deliberate — a US price converted straight to rupees would put the product out of reach of the farmers it is built for. Longer term we expect the extension layer to matter most, since a single worker advises roughly 1,200 farming households, and institutional or public-sector arrangements are the likeliest shape of that. We are early: the pricing is real and live, the durable model is still being proven in the field."
     },
     {
       "q": "Why build this now?",

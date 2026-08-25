@@ -53,7 +53,7 @@ export const products: Product[] = [
       "YieldAI Global is the flagship product of AGRIVISION AI, and it's live. It's an AI-powered agriculture platform that brings practical crop intelligence to the people who grow the world's food and the people who advise them — available now at yieldaiglobal.com.",
       "The idea is straightforward: take the kind of agronomic insight that's usually locked behind cost, distance, or language, and make it available through one accessible platform. Today it delivers AI crop advice, live government market prices, weather and forecasting, government-scheme guidance, yield prediction, a voice assistant, and photo-based disease detection through CropVision — all in the farmer's own language. Our roadmap extends toward IoT sensors and smart irrigation.",
       "We're an early-stage, founder-led company based in Detroit, Michigan. YieldAI Global is live first in the USA, India, and Canada, and we're working to reach farmers, agronomists, and extension workers across 40+ countries. You can start a free trial today at yieldaiglobal.com.",
-      "YieldAI Global is free for 30 days with full platform access. After that the Pro plan is ₹149 per month in India, $9.99 in the USA and C$9.99 in Canada. It covers 54 crops across 17 platform modules, in 13 languages. Market prices come from government sources — mandi data in India, USDA in the USA, and StatCan in Canada — and crop guidance is grounded in credible agronomic sources including ICAR, FAO, and state agriculture departments."
+      "YieldAI Global is free for 30 days with full platform access. After that the Pro plan is Rs 149 per month in India, $9.99 in the USA and C$9.99 in Canada. It covers 54 crops across 17 platform modules, in 13 languages. Market prices come from government sources — mandi data in India, USDA in the USA, and StatCan in Canada — and crop guidance is grounded in credible agronomic sources including ICAR, FAO, and state agriculture departments."
     ],
     "capabilities": [
       {
@@ -116,7 +116,7 @@ export const products: Product[] = [
       },
       {
         "q": "How much does YieldAI Global cost?",
-        "a": "The 30-day trial is free and gives you full platform access, with no payment required up front. After that the Pro plan is priced for your market: ₹149 per month in India, $9.99 in the USA, and C$9.99 in Canada. You can start at yieldaiglobal.com."
+        "a": "The 30-day trial is free and gives you full platform access, with no payment required up front. After that the Pro plan is priced for your market: Rs 149 per month in India, $9.99 in the USA, and C$9.99 in Canada. You can start at yieldaiglobal.com."
       },
       {
         "q": "What languages does YieldAI Global support?",
@@ -142,7 +142,7 @@ export const products: Product[] = [
     "overview": [
       "CropVision is the vision layer of YieldAI Global, and it is live today. Point a phone at an affected plant and CropVision reads the image, returns the disease it believes it is seeing, and tells you how confident it is \u2014 rather than handing back a single unexplained answer. It ships as the Disease Detection module inside YieldAI Global, so it sits alongside crop advice, pest prediction, weather and market prices in one place.",
       "The design rule is confidence before cleverness. A plant-health call made from a single photograph carries real uncertainty, so CropVision surfaces that uncertainty instead of hiding it: unclear reads are flagged as unclear, and anything approaching a chemical or dosage decision routes the farmer to their local agriculture extension officer or Krishi Vigyan Kendra. A confident wrong answer can cost an entire season, and we would rather be useful and honest than impressive and wrong.",
-      "Because CropVision runs inside YieldAI Global, a diagnosis does not end at the diagnosis. The same assistant can explain the symptoms in the farmer\u2019s own language, point to the relevant government scheme, and show what the crop is fetching at market today. It is available now in India, the USA and Canada on the YieldAI Global free trial — 30 days free, then the Pro plan at ₹149 per month in India, $9.99 in the USA or C$9.99 in Canada, with no separate charge for CropVision."
+      "Because CropVision runs inside YieldAI Global, a diagnosis does not end at the diagnosis. The same assistant can explain the symptoms in the farmer\u2019s own language, point to the relevant government scheme, and show what the crop is fetching at market today. It is available now in India, the USA and Canada on the YieldAI Global free trial — 30 days free, then the Pro plan at Rs 149 per month in India, $9.99 in the USA or C$9.99 in Canada, with no separate charge for CropVision."
     ],
     "capabilities": [
       {
