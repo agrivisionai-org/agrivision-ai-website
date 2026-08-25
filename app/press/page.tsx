@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Logo } from '@/components/Logo';
 import { press } from './press-data';
-import { Globe, Mail, Linkedin, Twitter, Github, Newspaper, Download, Building2, User } from 'lucide-react';
+import { Globe, Mail, Linkedin, Twitter, Instagram, Github, Newspaper, Download, Building2, User } from 'lucide-react';
 import { Footer } from '@/components/Footer';
 
 export const metadata: Metadata = {
@@ -194,6 +194,7 @@ export default function PressPage() {
             { Icon: Newspaper, label: 'AGRIVISION Build Notes', sub: 'Founder newsletter', href: 'https://www.linkedin.com/newsletters/7476661645046378496/' },
             { Icon: Linkedin, label: 'LinkedIn', sub: 'Company page', href: 'https://www.linkedin.com/company/agrivisionai/' },
             { Icon: Twitter, label: 'X', sub: '@yieldaiglobal', href: 'https://x.com/yieldaiglobal' },
+            { Icon: Instagram, label: 'Instagram', sub: '@agrivisionai.inc', href: 'https://www.instagram.com/agrivisionai.inc/' },
             { Icon: Github, label: 'GitHub', sub: 'agrivisionai-org', href: 'https://github.com/agrivisionai-org' },
             { Icon: Mail, label: 'Media contact', sub: 'hello@agrivisionai.org', href: 'mailto:hello@agrivisionai.org' },
           ].map(({ Icon, label, sub, href }) => (
