@@ -299,11 +299,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="min-h-screen bg-paper font-sans text-ink-900 antialiased">
         {children}
+        {/* lazyOnload, not afterInteractive: afterInteractive makes Next preload gtag.js
+            at high priority in <head>, where 165 KB of analytics competes with the page's
+            own CSS and JS. Loading it at idle costs a little pageview fidelity on very
+            short sessions and buys back the critical path. */}
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
-        <Script id="ga4-init" strategy="afterInteractive">
+        <Script id="ga4-init" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}

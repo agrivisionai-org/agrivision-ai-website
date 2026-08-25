@@ -96,7 +96,7 @@ public/
   founder.jpg           Founder portrait
   team/                 Leadership headshots
   press/                Press-kit logo downloads
-  buildvaillant-logo.png  BuildVaillant lockup (navy ground, 1600x674)
+  buildvaillant-logo.webp BuildVaillant lockup (navy ground, 1000x421, 9.6 KB)
   buildvaillant-icon.png  BuildVaillant square mark (512)
   llms.txt              AI-crawler summary of the company (AI-SEO)
 ```

@@ -88,10 +88,16 @@ export default function FounderPage() {
           <div className="w-[200px] overflow-hidden rounded-3xl border border-ink-900/[0.07] bg-gradient-to-br from-brand-secondary/20 via-white to-brand-accent/10">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/founder.jpg"
+              /* Display-only variant. /founder.jpg stays the canonical image in the
+                 Person schema and is CORS-enabled for Wikimedia, so it keeps its
+                 resolution; serving that 1000x829 original into a 200px box was 93 KB
+                 for 40 KB of pixels. */
+              src="/founder-400.jpg"
               alt="Vijesh Reddy Golamari, Founder & CEO of AGRIVISION AI"
               width={200}
               height={200}
+              loading="lazy"
+              decoding="async"
               className="h-[200px] w-[200px] object-cover"
             />
           </div>

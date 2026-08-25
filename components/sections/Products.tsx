@@ -208,10 +208,10 @@ export function Products() {
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/buildvaillant-logo.png"
+                src="/buildvaillant-logo.webp"
                 alt="BuildVaillant"
-                width={1600}
-                height={674}
+                width={1000}
+                height={421}
                 loading="lazy"
                 decoding="async"
                 className="w-full object-contain transition-transform duration-500 group-hover:scale-[1.03]"
