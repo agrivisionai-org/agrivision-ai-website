@@ -28,8 +28,8 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ['Inter', 'SF Pro Display', 'Poppins', 'system-ui', 'sans-serif'],
-        display: ['SF Pro Display', 'Inter', 'Poppins', 'system-ui', 'sans-serif'],
+        sans: ['var(--font-inter)', 'Inter', 'SF Pro Display', 'Nirmala UI', 'Noto Sans Devanagari', 'system-ui', 'sans-serif'],
+        display: ['SF Pro Display', 'var(--font-inter)', 'Inter', 'Nirmala UI', 'Noto Sans Devanagari', 'system-ui', 'sans-serif'],
       },
       fontSize: {
         'display-2xl': ['clamp(3.5rem, 7vw, 6.5rem)', { lineHeight: '0.98', letterSpacing: '-0.04em', fontWeight: '700' }],

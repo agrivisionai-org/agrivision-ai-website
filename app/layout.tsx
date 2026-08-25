@@ -1,9 +1,22 @@
 import type { Metadata, Viewport } from 'next';
+import { Inter } from 'next/font/google';
 import Script from 'next/script';
 import './globals.css';
 
 const GA_ID = 'G-DFX8SDNRYV';
 const CLARITY_ID = 'xdmyfpauf4';
+
+// Self-hosted via next/font instead of a <link> to fonts.googleapis.com. That stylesheet
+// was render-blocking on every page: a third-party round trip before anything could paint.
+// Latin subset only -- Poppins is dropped entirely. It sat third in the stack behind Inter
+// and SF Pro Display so it never rendered Latin text, but Google served its ~39 KB
+// Devanagari face to every blog page. Hindi now uses the system Devanagari stack.
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800'],
+  display: 'swap',
+  variable: '--font-inter',
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://agrivisionai.org'),
@@ -40,7 +53,6 @@ export const metadata: Metadata = {
     title: 'AGRIVISION AI',
     description: 'Building the Future of Agriculture with Artificial Intelligence.',
   },
-  robots: { index: true, follow: true },
   alternates: { canonical: 'https://agrivisionai.org' },
 };
 
@@ -271,7 +283,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className={`${inter.variable} scroll-smooth`}>
       <head>
         {/* Without JS, framer-motion never runs and every animated element keeps its inline
             opacity:0, leaving the page blank below the hero. Matching the inline style as
@@ -280,12 +292,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <noscript>
           <style>{`.reveal,[style*="opacity:0"],[style*="opacity: 0"]{opacity:1!important;transform:none!important}`}</style>
         </noscript>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap"
-          rel="stylesheet"
-        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}

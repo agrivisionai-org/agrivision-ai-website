@@ -1,6 +1,18 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Logo } from '@/components/Logo';
 import { Home, Boxes, Mail } from 'lucide-react';
+
+// Without this the 404 inherits the root layout wholesale: the homepage's title, its
+// description, and a canonical claiming this response IS the homepage. canonical: null
+// removes the inherited value rather than pointing a 404 somewhere it is not.
+export const metadata: Metadata = {
+  title: { absolute: 'Page not found · AGRIVISION AI' },
+  description: 'That page does not exist. Find AGRIVISION AI products, blog and contact details here.',
+  alternates: { canonical: null },
+  robots: { index: false, follow: true },
+  openGraph: { title: 'Page not found · AGRIVISION AI', url: 'https://agrivisionai.org/404', siteName: 'AGRIVISION AI' },
+};
 
 export default function NotFound() {
   return (
