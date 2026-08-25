@@ -133,7 +133,7 @@ export function Products() {
             </Reveal>
           </div>
           <Reveal delay={0.25}>
-            <Link href="/contact" className="btn-secondary">
+            <Link href="/products" className="btn-secondary">
               See the roadmap
               <ArrowUpRight className="h-4 w-4" />
             </Link>

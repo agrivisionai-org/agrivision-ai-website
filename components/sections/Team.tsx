@@ -10,7 +10,8 @@ const FOUNDER = {
   x: 'https://x.com/yieldaiglobal',
   github: 'https://github.com/agrivisionai-org',
   email: 'mailto:hello@agrivisionai.org',
-  photo: '/founder.jpg',
+  // Display variant. /founder.jpg stays canonical for the Person schema and Wikimedia.
+  photo: '/founder-800.jpg',
 };
 
 const LEADERSHIP = [
@@ -189,6 +190,13 @@ function FounderPortrait() {
           src={FOUNDER.photo}
           alt="Vijesh Reddy Golamari, Founder & CEO of AGRIVISION AI"
           onError={() => setImgError(true)}
+          width={800}
+          height={800}
+          // Below the fold on /about. Without loading="lazy" React 19 emits a
+          // <link rel="preload" as="image"> for it during SSR, so the portrait competed
+          // with the page's own critical resources.
+          loading="lazy"
+          decoding="async"
           className="h-full w-full object-cover"
         />
       ) : (
