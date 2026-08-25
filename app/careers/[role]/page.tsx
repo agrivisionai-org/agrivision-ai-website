@@ -18,7 +18,9 @@ export async function generateMetadata({ params }: { params: Promise<{ role: str
   const r = getRole(role);
   if (!r) return {};
   const url = `${BASE}/careers/${r.slug}`;
-  const description = `${r.summary} Remote internship, 20 hours a week on US Eastern time, ${PROGRAMME.duration}. Open in the USA, UK, Ireland or Hyderabad, India.`;
+  // Purpose-written per role. The old template concatenated the full summary with a fixed
+  // tail and ran 225-272 characters, well past what a SERP shows.
+  const description = r.metaDescription;
   return {
     title: { absolute: `${r.title} | AGRIVISION AI` },
     description,

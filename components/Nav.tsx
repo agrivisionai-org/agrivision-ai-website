@@ -84,7 +84,9 @@ export function Nav() {
             <button
               onClick={() => setOpen((v) => !v)}
               className="flex h-11 w-11 items-center justify-center rounded-xl border border-ink-900/10 bg-white lg:hidden"
-              aria-label="Toggle menu"
+              aria-label={open ? 'Close menu' : 'Open menu'}
+              aria-expanded={open}
+              aria-controls="mobile-menu"
             >
               {open ? <X className="h-4 w-4 text-ink-900" /> : <Menu className="h-4 w-4 text-ink-900" />}
             </button>
@@ -98,6 +100,7 @@ export function Nav() {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
+            id="mobile-menu"
             className="fixed inset-x-4 top-20 z-40 rounded-2xl border border-ink-900/10 bg-white p-4 shadow-2xl lg:hidden"
           >
             <div className="flex flex-col gap-1">

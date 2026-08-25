@@ -14,6 +14,8 @@ export type Role = {
   areas: string[];
   /** One sentence, used on the card and as the opening line of the JobPosting description. */
   summary: string;
+  /** Purpose-written for <meta name="description">. Kept under 160 characters. */
+  metaDescription: string;
   whatYouDo: string[];
   whoFits: string[];
 };
@@ -36,6 +38,8 @@ export const PROGRAMME = {
 export const roles: Role[] = [
   {
     slug: 'ai-engineering',
+    metaDescription:
+      'Remote AI/ML internship at AGRIVISION AI — work on the models and LLM systems behind YieldAI Global. 20 hrs/week, US Eastern. USA, UK, Ireland or Hyderabad.',
     title: 'AI & Engineering Intern',
     cardTitle: 'AI & engineering',
     areas: ['Artificial Intelligence & Machine Learning', 'Generative AI / LLMs', 'Software & Application Development'],
@@ -55,6 +59,8 @@ export const roles: Role[] = [
   },
   {
     slug: 'data-product-design',
+    metaDescription:
+      'Remote data, product and design internship — turn farm and market data into decisions farmers act on. 20 hrs/week, US Eastern. USA, UK, Ireland or Hyderabad.',
     title: 'Data, Product & Design Intern',
     cardTitle: 'Data, product & design',
     areas: ['Data Analytics & Data Engineering', 'Product Analysis', 'UI/UX & Product Design'],
@@ -74,6 +80,8 @@ export const roles: Role[] = [
   },
   {
     slug: 'agritech-research',
+    metaDescription:
+      'Remote AgriTech research internship — ground our crop advice in ICAR, FAO and government sources. 20 hrs/week, US Eastern. USA, UK, Ireland or Hyderabad.',
     title: 'AgriTech Research Intern',
     cardTitle: 'AgriTech research',
     areas: ['AgriTech Research & Innovation'],
@@ -93,6 +101,8 @@ export const roles: Role[] = [
   },
   {
     slug: 'business-growth',
+    metaDescription:
+      'Remote business and growth internship — reach farmers, cooperatives and extension networks. 20 hrs/week, US Eastern. USA, UK, Ireland or Hyderabad.',
     title: 'Business & Growth Intern',
     cardTitle: 'Business & growth',
     areas: ['Business Strategy', 'Marketing & Business Development', 'Sales'],

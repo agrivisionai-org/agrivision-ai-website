@@ -28,6 +28,13 @@ export const metadata: Metadata = {
     siteName: 'AGRIVISION AI',
     images: [{ url: `${BASE}/opengraph-image.png`, width: 1200, height: 630, alt: 'AGRIVISION AI' }],
   },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@yieldaiglobal',
+    title: 'AGRIVISION AI Blog',
+    description: 'Building an AI farming assistant in public — crop guidance, market prices and honest notes on what shipped.',
+    images: ['https://agrivisionai.org/opengraph-image.png'],
+  },
 };
 
 export default function BlogIndex() {

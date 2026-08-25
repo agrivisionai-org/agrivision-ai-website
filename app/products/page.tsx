@@ -22,6 +22,13 @@ export const metadata: Metadata = {
     siteName: 'AGRIVISION AI',
     images: [{ url: 'https://agrivisionai.org/opengraph-image.png', width: 1200, height: 630, alt: 'AGRIVISION AI products' }],
   },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@yieldaiglobal',
+    title: 'Products · AGRIVISION AI',
+    description: 'YieldAI Global and CropVision are live. FieldSense and FieldOps are on the roadmap.',
+    images: ['https://agrivisionai.org/opengraph-image.png'],
+  },
 };
 
 export default function ProductsIndex() {

@@ -11,6 +11,21 @@ export const metadata: Metadata = {
   description: 'Terms for using agrivisionai.org, operated by AGRIVISION AI (Agrivisionai Inc).',
   alternates: { canonical: `${BASE}/terms` },
   robots: { index: true, follow: true },
+  openGraph: {
+    type: 'website',
+    url: `${BASE}/terms`,
+    title: 'Terms of Service · AGRIVISION AI',
+    description: 'The terms governing use of agrivisionai.org and AGRIVISION AI products.',
+    siteName: 'AGRIVISION AI',
+    images: [{ url: 'https://agrivisionai.org/opengraph-image.png', width: 1200, height: 630, alt: 'AGRIVISION AI terms of service' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@yieldaiglobal',
+    title: 'Terms of Service · AGRIVISION AI',
+    description: 'The terms governing use of agrivisionai.org and AGRIVISION AI products.',
+    images: ['https://agrivisionai.org/opengraph-image.png'],
+  },
 };
 
 export default function TermsPage() {

@@ -11,6 +11,21 @@ export const metadata: Metadata = {
   description: 'How AGRIVISION AI (Agrivisionai Inc) collects and uses information from agrivisionai.org.',
   alternates: { canonical: `${BASE}/privacy` },
   robots: { index: true, follow: true },
+  openGraph: {
+    type: 'website',
+    url: `${BASE}/privacy`,
+    title: 'Privacy Policy · AGRIVISION AI',
+    description: 'How AGRIVISION AI (Agrivisionai Inc) collects and uses information from agrivisionai.org.',
+    siteName: 'AGRIVISION AI',
+    images: [{ url: 'https://agrivisionai.org/opengraph-image.png', width: 1200, height: 630, alt: 'AGRIVISION AI privacy policy' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@yieldaiglobal',
+    title: 'Privacy Policy · AGRIVISION AI',
+    description: 'How AGRIVISION AI (Agrivisionai Inc) collects and uses information from agrivisionai.org.',
+    images: ['https://agrivisionai.org/opengraph-image.png'],
+  },
 };
 
 export default function PrivacyPage() {
