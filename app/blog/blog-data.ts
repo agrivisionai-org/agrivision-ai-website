@@ -790,6 +790,184 @@ export const posts: BlogPost[] = [
       }
     ],
     "tags": ["ड्रिप सिंचाई", "फ्लड सिंचाई", "पानी की बचत", "सूक्ष्म सिंचाई", "सिंचाई तरीके", "hindi"]
+  },
+  {
+    "slug": "irelands-nitrates-derogation-explained",
+    "lang": "en",
+    "title": "Ireland's Nitrates Derogation, Explained",
+    "metaTitle": "Ireland's Nitrates Derogation Explained (2026)",
+    "metaDescription": "What the nitrates derogation actually is, the 220 and 250 kg limits, the 80% grassland rule, and the extension to 31 December 2028.",
+    "date": "2026-08-26",
+    "excerpt": "The derogation is not a scheme. It is an exception to a limit written into an EU directive from 1991, and in December 2025 it was extended to the end of 2028. Here is what it actually says.",
+    "author": "Vijesh Reddy Golamari",
+    "tags": [
+      "ireland",
+      "nitrates",
+      "regulation",
+      "dairy"
+    ],
+    "sections": [
+      {
+        "heading": "It is an exception, not a scheme",
+        "paragraphs": [
+          "The single most common misunderstanding about the nitrates derogation is that it is a programme you join. It is not. The EU Nitrates Directive (91/676/EEC) sets a baseline in Annex III(2): a maximum of 170 kg of nitrogen per hectare per year from livestock manure. The derogation is a Commission decision permitting Ireland to authorise certain farms to exceed that baseline.",
+          "That distinction matters, because it explains why the terms keep moving. A scheme has rules its owner can adjust. A derogation is an exception granted for a fixed period, reviewed against evidence, and renewed or not by the European Commission. Irish farmers are not negotiating with Dublin here so much as living inside a decision taken in Brussels."
+        ]
+      },
+      {
+        "heading": "The 80% rule decides who can even apply",
+        "paragraphs": [
+          "Only grassland farms qualify. Under the terms governing the 2026 to 2028 derogation period, a grassland farm means a holding where at least 80% of the agricultural area available for manure application is grass. Fall below that and the derogation is not available to you, regardless of how the rest of the farm is run.",
+          "This is why the derogation is, in practice, a dairy and drystock instrument. It is written around Ireland's grass-based systems, and a holding with substantial tillage simply falls outside the definition."
+        ]
+      },
+      {
+        "heading": "220 or 250, and why it depends on your water",
+        "paragraphs": [
+          "An authorised farm may exceed the 170 kg baseline, but not without limit. The headline figure is 250 kg of nitrogen per hectare per year from livestock manure. Since 1 January 2024, however, that ceiling drops to 220 kg on holdings whose land drains into waters where monitoring showed the required water quality was not being met.",
+          "The mechanism for that split came from Article 12 of Commission Implementing Decision (EU) 2022/696, headed “Two-year review”. Irish authorities carried out that review in 2023 and mapped the areas where the limit would fall. So whether you are on 220 or 250 is not a matter of farm type or stocking ambition. It is a matter of which catchment your land drains into.",
+          "The practical consequence is that two neighbouring farms running identical systems can sit under different ceilings. If you have not checked which applies to your holding, that is the first thing to establish, not the last."
+        ]
+      },
+      {
+        "heading": "The rules you actually farm under",
+        "paragraphs": [
+          "Ireland's current Nitrates Action Programme is the Sixth. It was given legal effect by the European Union (Good Agricultural Practice for Protection of Waters) Regulations 2025, S.I. No. 588 of 2025, signed on 8 December 2025.",
+          "That statutory instrument is where the day-to-day obligations live: closed periods for spreading, storage requirements, buffer distances from watercourses. The derogation decision sets your nitrogen ceiling; the regulations set how and when you may apply what you have."
+        ]
+      },
+      {
+        "heading": "Extended to the end of 2028",
+        "paragraphs": [
+          "Commission Implementing Decision (EU) 2026/67, made on 22 December 2025, amended the 2022 decision and replaced its expiry date. Ireland's derogation now runs to 31 December 2028.",
+          "The Commission's own wording is worth reading rather than paraphrasing. It described the step as “appropriate and prudent to exceptionally extend” the derogation. That is not the language of a settled, permanent arrangement, and planning a farm system on the assumption that the derogation is indefinite would be reading it more generously than it reads.",
+          "Three years is real breathing room. It is not certainty."
+        ]
+      },
+      {
+        "heading": "Where to check, and why we are not your source",
+        "paragraphs": [
+          "Everything above is drawn from primary sources: the Nitrates Directive itself, Commission Implementing Decisions 2022/696 and 2026/67, and S.I. No. 588 of 2025. We have cited them so you can read them rather than take our word for it.",
+          "But nitrates rules are amended, re-mapped and reviewed, and a farm-specific question about your ceiling, your closed periods or your storage is a question for the Department of Agriculture, Food and the Marine or your own advisor. We build software for farmers and we are careful about the line between explaining a rule and advising you on your holding. This article is the former."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "when-to-sow-cereals-in-ireland",
+    "lang": "en",
+    "title": "When to Sow Cereals in Ireland: The Winter and Spring Windows",
+    "metaTitle": "When to Sow Cereals in Ireland — Teagasc Windows",
+    "metaDescription": "Winter and spring sowing windows for Irish cereals, seeding rates and the October date Teagasc trials point to, drawn from Teagasc guidance.",
+    "date": "2026-08-26",
+    "excerpt": "Irish sowing dates are decided by a short autumn window and a wet spring, not by a calendar. Here are the windows Teagasc actually publishes, and the trade-off behind each one.",
+    "author": "Vijesh Reddy Golamari",
+    "tags": [
+      "ireland",
+      "tillage",
+      "sowing",
+      "cereals"
+    ],
+    "sections": [
+      {
+        "heading": "The winter window is narrower than it looks",
+        "paragraphs": [
+          "Teagasc's guidance describes the Irish planting season plainly: winter cereals are generally sown from mid-September to mid-November, and because growth is restricted after mid-November, little or no cereal is sown after that point.",
+          "That gives roughly eight weeks. In a country where autumn rainfall decides whether a field travels at all, eight weeks of calendar can become a fortnight of actual opportunity. Planning as though you have the full window is how crops end up in the ground in conditions that cost more in establishment than the later date saves."
+        ]
+      },
+      {
+        "heading": "The yield window is narrower still",
+        "paragraphs": [
+          "Sowing and maximum yield are not the same target. Teagasc's sowing guidance advises that for maximum yield, winter varieties should be sown from the end of September to early November. It adds that with modern varieties sowing can occur up to February, but that is a statement about what the crop tolerates, not about what it rewards.",
+          "For winter wheat specifically, Teagasc crops specialist Shay Phelan, writing in Teagasc Daily, put it in terms of a single date: ideally all wheat should be drilled around the 15th of October, because trials at Oak Park have shown that to be, on average, the optimum.",
+          "One date is not a rule you can farm to literally. It is a centre of gravity worth planning around and departing from knowingly."
+        ]
+      },
+      {
+        "heading": "The early-versus-late trade-off",
+        "paragraphs": [
+          "Teagasc's winter wheat guidance sets the trade-off out directly. Planting early, in mid to late September, generally ensures good seedbeds and favourable temperatures during germination, which leads to higher establishment.",
+          "The cost of early sowing is everything that a longer autumn exposes the crop to: more growth before winter, more aphid pressure and the virus risk that comes with it, more disease carried into spring. The cost of late sowing is poorer establishment and less tillering. Neither end of the window is free, which is why the middle of it is where the guidance sits."
+        ]
+      },
+      {
+        "heading": "Seeding rates and plant populations",
+        "paragraphs": [
+          "Teagasc's Sowing and Varieties guidance gives recommended seeding rates of 140 to 200 kg per hectare for winter wheat, 140 to 190 kg per hectare for winter barley, and 160 to 190 kg per hectare for winter oats, with target plant populations of 250 to 300 plants per square metre.",
+          "Those are ranges for a reason. Rate rises with lateness, with a rougher seedbed, and with lower expected establishment. A figure from the bottom of the range sown into a difficult November seedbed is not a saving."
+        ]
+      },
+      {
+        "heading": "Spring barley: early to mid-March",
+        "paragraphs": [
+          "For spring barley, Teagasc Drystock and Tillage Adviser John Galvin has put the window as early to mid-March being the ideal time to sow, with yield potential falling away as the season progresses.",
+          "Spring sowing in Ireland is less a decision than a race between the calendar and the ground drying. The agronomy is straightforward; the timing is a judgement about your own fields in a given year, which is why this article gives you the published window rather than a date for your farm."
+        ]
+      },
+      {
+        "heading": "A note on what this article is not",
+        "paragraphs": [
+          "Every figure above traces to published Teagasc guidance, and we have named the source and the specialist where a quote is attributed, so you can go and read it.",
+          "What we have deliberately not done is tell you what to apply to a crop. Anything approaching a chemical or dosage decision belongs with your agronomist or Teagasc adviser, who knows your ground. That is the line we hold in our software too: an answer that sounds confident and is wrong can cost a season."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "irish-farm-payment-schemes-explained",
+    "lang": "en",
+    "title": "Irish Farm Payment Schemes: How BISS and the Area-Based Applications Work",
+    "metaTitle": "Irish Farm Payments: How BISS Applications Work",
+    "metaDescription": "How Ireland's BISS and area-based scheme applications work — one application, nine schemes, the myagfood.ie portal and the penalty timeline.",
+    "date": "2026-08-26",
+    "excerpt": "One online application covers nine Irish schemes, and missing its deadline costs 1% per working day until it costs everything. Here is how the machinery actually works.",
+    "author": "Vijesh Reddy Golamari",
+    "tags": [
+      "ireland",
+      "cap",
+      "schemes",
+      "payments"
+    ],
+    "sections": [
+      {
+        "heading": "One application, nine schemes",
+        "paragraphs": [
+          "The thing worth understanding first is that Ireland's area-based supports run through a single online application. One submission through the Department of Agriculture, Food and the Marine covers Basic Income Support for Sustainability and a set of related schemes and measures alongside it.",
+          "That design has a consequence people discover the hard way. Because the other supports hang off the same application, a valid BISS application is the gateway: the Eco-Scheme, CRISS, CIS-YF, Protein Aid, ANC, ACRES, SIM and SCEP cannot be paid for a scheme year without one. Miss the application and you have not missed one payment, you have missed the set."
+        ]
+      },
+      {
+        "heading": "The penalty timeline is a staircase, not a cliff",
+        "paragraphs": [
+          "For the 2026 scheme year, the application closed at midnight on 15 May 2026. What happens after a deadline like that is more graduated than most farmers expect.",
+          "Under section 15 of the Department's 2026 terms and conditions, a late application is reduced by 1% for each working day it is late. Because the reduction accrues on working days only, a weekend immediately after the deadline carries no reduction. The deduction reached 16% for an application received on 9 June 2026, the final day of the 25-calendar-day late window. From 10 June 2026, the reduction was 100%.",
+          "Amendments follow their own timetable. For 2026 a farmer could amend a declared area without penalty until 31 May. Adding parcels or increasing claimed area late carried the same 1% per working day on the parcels concerned. Withdrawing land or reducing a claimed area could be done without penalty much later, provided the Department had not already flagged an issue with the application."
+        ]
+      },
+      {
+        "heading": "Where the application actually happens",
+        "paragraphs": [
+          "Applications go through the Department's own portal at myagfood.ie. Older Departmental material still refers to agfood.ie; that address redirects to the same portal, so either gets you there.",
+          "There are two helpdesks and they are not interchangeable, which is a small detail that wastes a lot of people's afternoons. Registration and password problems go to the Agfood Online Services Helpdesk in the Department's Cavan office. Help with completing the application itself goes to the Direct Payments Helpdesk in Portlaoise."
+        ]
+      },
+      {
+        "heading": "Letting an advisor apply for you",
+        "paragraphs": [
+          "A farmer who does not want to file themselves can authorise a Farm Advisory System approved advisor to do it. There are two routes. You can authorise the advisor yourself in your myagfood.ie account under Manage Your Agent Associations. Or an approved advisor can add you as a client, which triggers an SMS to you, and you reply to confirm the association.",
+          "Both routes are open up to the scheme closing date. Where authorisation is given on a form instead, as the Department describes for joint ventures, the form has to be in earlier: five working days before the scheme deadline. The list of approved advisors is published by the Department."
+        ]
+      },
+      {
+        "heading": "Why the dates in this article will be wrong next year",
+        "paragraphs": [
+          "Everything above is drawn from the Department's 2026 terms and conditions and its own announcements for that scheme year. The 2026 window opened on 13 February 2026 and closed on 15 May 2026. Those dates are already history at the time of writing.",
+          "Irish scheme deadlines are set fresh annually, and the terms are revised during the year as well: the 2026 document reached version 6 by late August. So treat the structure here as durable and the dates as a snapshot. Before you rely on any specific date, check the current year's terms and conditions on gov.ie or ask your advisor.",
+          "We publish this because the machinery is genuinely confusing and rarely explained in one place. We are not a substitute for the Department, and on a question about your own holding, they and your advisor are the answer."
+        ]
+      }
+    ]
   }
 ];
 
