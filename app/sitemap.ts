@@ -13,6 +13,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/founder`, lastModified: d('2026-08-04'), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/careers`, lastModified: d('2026-07-21'), changeFrequency: 'weekly', priority: 0.7 },
     { url: `${BASE}/contact`, lastModified: d('2026-07-21'), changeFrequency: 'yearly', priority: 0.5 },
+    // Ireland is not a live market; the page says so. Lower priority than live pages
+    // and yearly change frequency, because it should not compete with them.
+    { url: `${BASE}/ireland`, lastModified: d('2026-08-26'), changeFrequency: 'yearly', priority: 0.4 },
     { url: `${BASE}/faq`, lastModified: d('2026-07-21'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${BASE}/products`, lastModified: d('2026-06-30'), changeFrequency: 'weekly', priority: 0.9 },
     ...productSlugs.map((slug) => ({
