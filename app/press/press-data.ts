@@ -101,7 +101,7 @@ export const press = {
   "faq": [
     {
       "q": "What does AGRIVISION AI actually do?",
-      "a": "We're an AI-first technology company building intelligent products for global agriculture, headquartered in Detroit. Our flagship product, YieldAI Global, is an AI crop-intelligence platform designed for agricultural extension workers and farming households across India, Africa, Latin America, and Southeast Asia. The idea is to put real-time agronomy, market, weather, and pest intelligence in the hands of the field workers who advise farmers but today often work with no real-time data and no AI tools."
+      "a": "We're an AI-first technology company building intelligent products for global agriculture, headquartered in Detroit. Our flagship product, YieldAI Global, is an AI crop-intelligence platform for agricultural extension workers and farming households, live today in India, the USA and Canada, with expansion toward Africa, Latin America and Southeast Asia on the roadmap. The idea is to put real-time agronomy, market, weather, and pest intelligence in the hands of the field workers who advise farmers but today often work with no real-time data and no AI tools."
     },
     {
       "q": "What stage is the company at, honestly?",

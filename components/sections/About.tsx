@@ -105,7 +105,7 @@ export function About() {
                     Company timeline
                   </div>
                   <div className="mt-1 font-display text-2xl font-semibold text-ink-900">
-                    From idea to MVP
+                    From idea to a live product
                   </div>
                 </div>
                 <span className="chip">Founded May 2026</span>
