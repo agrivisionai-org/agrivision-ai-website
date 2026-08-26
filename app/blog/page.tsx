@@ -85,8 +85,10 @@ export default function BlogIndex() {
                 <span aria-hidden>·</span>
                 <span>{readingMinutes(p)} min read</span>
               </div>
-              <h2 className="mt-3 font-display text-2xl font-semibold text-ink-900">{p.title}</h2>
-              <p className="mt-2 text-sm leading-relaxed text-ink-600">{p.excerpt}</p>
+              {/* lang per card: six of these are Devanagari inside a lang="en" document,
+                  so without it a screen reader applies English pronunciation to Hindi. */}
+              <h2 lang={p.lang} className="mt-3 font-display text-2xl font-semibold text-ink-900">{p.title}</h2>
+              <p lang={p.lang} className="mt-2 text-sm leading-relaxed text-ink-600">{p.excerpt}</p>
               <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-primary">
                 Read post <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
               </span>

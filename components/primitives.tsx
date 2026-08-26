@@ -22,24 +22,28 @@ export function Reveal({
   className,
   delay = 0,
   y = 28,
+  eager = false,
 }: {
   children: React.ReactNode;
   className?: string;
   delay?: number;
   y?: number;
+  /** Above-the-fold: animate transform only so the element paints immediately. Fading an
+   *  LCP element in from opacity:0 delays LCP by the length of the fade. */
+  eager?: boolean;
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const inView = useInView(ref, { once: true, margin: '-80px' });
   return (
     <motion.div
       ref={ref}
-      initial={{ opacity: 0, y }}
-      animate={inView ? { opacity: 1, y: 0 } : {}}
+      initial={eager ? { y } : { opacity: 0, y }}
+      animate={eager ? { y: 0 } : inView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.8, delay, ease: [0.22, 1, 0.36, 1] }}
       // The `reveal` class exists so the <noscript> rule in app/layout.tsx can force these
       // visible. Without JS, framer-motion never animates and the inline opacity:0 would
       // leave the whole page blank below the hero.
-      className={className ? `reveal ${className}` : 'reveal'}
+      className={eager ? className : className ? `reveal ${className}` : 'reveal'}
     >
       {children}
     </motion.div>

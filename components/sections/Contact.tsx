@@ -37,10 +37,10 @@ export function Contact() {
       <GradientOrb className="left-1/2 -translate-x-1/2 top-20" color="#0F6B3E" size={700} />
       <div className="container-narrow">
         <div className="text-center">
-          <Reveal>
+          <Reveal eager>
             <SectionEyebrow>Contact</SectionEyebrow>
           </Reveal>
-          <Reveal delay={0.1}>
+          <Reveal delay={0.1} eager>
             <h1 className="mx-auto mt-6 max-w-3xl text-balance font-display text-display-lg text-ink-900">
               Let&rsquo;s build the future of agriculture,{' '}
               <span className="gradient-text-green">together</span>.

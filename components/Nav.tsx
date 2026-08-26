@@ -11,6 +11,10 @@ const NAV_LINKS = [
   { href: '/blog', label: 'Blog' },
   { href: '/press', label: 'Press' },
   { href: '/careers', label: 'Careers' },
+  // In NAV_LINKS so it reaches the mobile drawer. Previously /contact existed only
+  // in a `hidden ... lg:flex` cluster, so below 1024px the sole visible link to it
+  // was the footer entry labelled "Investors".
+  { href: '/contact', label: 'Contact' },
 ];
 
 export function Nav() {

@@ -203,7 +203,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             {others.map((p) => (
               <Link key={p.slug} href={`/blog/${p.slug}`} className="block rounded-2xl border border-ink-900/[0.08] bg-white p-5 transition-all hover:-translate-y-0.5 hover:border-brand-primary/40">
                 <div className="text-xs text-ink-500">{fmtDate(p.date)}</div>
-                <div className="mt-1 font-display text-base font-semibold text-ink-900">{p.title}</div>
+                <div lang={p.lang} className="mt-1 font-display text-base font-semibold text-ink-900">{p.title}</div>
               </Link>
             ))}
           </div>

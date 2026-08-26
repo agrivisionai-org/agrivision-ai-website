@@ -41,7 +41,7 @@ export const press = {
       },
       {
         "label": "Target markets",
-        "value": "India, Africa, Latin America, and Southeast Asia"
+        "value": "Live in the USA, India, and Canada; expanding toward Africa, Latin America, and Southeast Asia"
       },
       {
         "label": "Countries & languages",

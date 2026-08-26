@@ -47,10 +47,10 @@ export function About() {
       <div className="container-narrow">
         <div className="grid gap-16 lg:grid-cols-[1.1fr_1fr] lg:items-start">
           <div>
-            <Reveal>
+            <Reveal eager>
               <SectionEyebrow>About AGRIVISION AI</SectionEyebrow>
             </Reveal>
-            <Reveal delay={0.1}>
+            <Reveal delay={0.1} eager>
               <h1 className="mt-6 max-w-2xl text-balance font-display text-display-lg text-ink-900">
                 The AI company building the next generation of{' '}
                 <span className="gradient-text-green">AgriTech products</span>.

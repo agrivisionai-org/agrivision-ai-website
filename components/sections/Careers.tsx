@@ -30,10 +30,10 @@ export function Careers() {
       <div className="container-narrow">
         <div className="grid gap-12 lg:grid-cols-[1fr_1.3fr] lg:items-center">
           <div>
-            <Reveal>
+            <Reveal eager>
               <SectionEyebrow>Careers</SectionEyebrow>
             </Reveal>
-            <Reveal delay={0.1}>
+            <Reveal delay={0.1} eager>
               <h1 className="mt-6 text-balance font-display text-display-lg text-ink-900">
                 Join <span className="gradient-text-green">AGRIVISION AI</span>.
               </h1>
