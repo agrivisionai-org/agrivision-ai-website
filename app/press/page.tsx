@@ -59,8 +59,13 @@ export default function PressPage() {
           <a href="mailto:hello@agrivisionai.org" className="font-semibold text-brand-primary underline-offset-2 hover:underline">hello@agrivisionai.org</a>.
         </p>
         <div className="mt-7 flex flex-wrap gap-3">
+          {/* SVG first: it is the only asset that survives print and large format. The PNGs
+              stay for anyone whose tooling will not take vector. */}
+          <a href="/press/agrivision-ai-logo.svg" download className="inline-flex items-center gap-2 rounded-full border border-brand-primary/30 bg-brand-primary/[0.06] px-4 py-2.5 text-sm font-semibold text-brand-primary transition-colors hover:border-brand-primary/60">
+            <Download className="h-4 w-4" /> Logo (SVG, vector)
+          </a>
           <a href="/press/agrivision-ai-logo.png" download className="inline-flex items-center gap-2 rounded-full border border-ink-900/10 bg-white px-4 py-2.5 text-sm font-semibold text-ink-800 transition-colors hover:border-brand-primary/40 hover:text-brand-primary">
-            <Download className="h-4 w-4" /> Logo (wide)
+            <Download className="h-4 w-4" /> Logo (wide PNG)
           </a>
           <a href="/press/agrivision-ai-logo-square.png" download className="inline-flex items-center gap-2 rounded-full border border-ink-900/10 bg-white px-4 py-2.5 text-sm font-semibold text-ink-800 transition-colors hover:border-brand-primary/40 hover:text-brand-primary">
             <Download className="h-4 w-4" /> Logo (square)

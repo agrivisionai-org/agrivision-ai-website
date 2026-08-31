@@ -1,5 +1,6 @@
 import { ImageResponse } from 'next/og';
 import { getPost, postSlugs } from '../blog-data';
+import { LEAF_MARK } from './leaf-mark';
 
 // Per-post social card. Same design language as the site card in app/opengraph-image.png:
 // paper ground, green rail, wordmark, green-to-deep headline, URL footer.
@@ -80,16 +81,10 @@ export default async function Image({ params }: { params: Promise<{ slug: string
           {/* wordmark */}
           <div style={{ display: 'flex', flexDirection: 'column' }}>
             <div style={{ display: 'flex', alignItems: 'center' }}>
-              <div
-                style={{
-                  width: 30,
-                  height: 30,
-                  borderRadius: 8,
-                  backgroundColor: GREEN,
-                  display: 'flex',
-                  marginRight: 14,
-                }}
-              />
+              {/* The real brand mark. This was a plain green rounded square, which is not
+                  the logo -- AGRIVISION AI's mark is an outlined leaf. Satori cannot read
+                  /public at render time, so it arrives as a data URI from ./leaf-mark. */}
+              <img src={LEAF_MARK} width={30} height={36} alt="" style={{ marginRight: 14 }} />
               <div style={{ display: 'flex', fontSize: 30, fontWeight: 700, letterSpacing: 1 }}>
                 <span style={{ color: INK900 }}>AGRIVISION</span>
                 <span style={{ color: LEAF, marginLeft: 10 }}>AI</span>
