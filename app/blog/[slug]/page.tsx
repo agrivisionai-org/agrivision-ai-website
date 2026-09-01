@@ -101,7 +101,22 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   if (!post) notFound();
 
   const url = `${BASE}/blog/${post.slug}`;
-  const others = posts.filter((p) => p.slug !== post.slug);
+  // Rank by topical closeness instead of listing the whole blog. Every post used to link
+  // to every other post -- 22 links per page across 23 posts -- which gives a crawler no
+  // signal about what relates to what, and spreads link equity evenly over everything.
+  // Shared tags dominate, same language breaks ties, recency breaks the rest.
+  const others = posts
+    .filter((p) => p.slug !== post.slug)
+    .map((p) => ({
+      post: p,
+      score:
+        p.tags.filter((t) => post.tags.includes(t)).length * 10 +
+        (p.lang === post.lang ? 3 : 0) +
+        (p.slug === post.altSlug ? 20 : 0),
+    }))
+    .sort((a, b) => b.score - a.score || b.post.date.localeCompare(a.post.date))
+    .slice(0, 4)
+    .map((x) => x.post);
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -198,7 +213,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
       {others.length > 0 && (
         <section className={`${SECTION} mt-12`}>
-          <h2 className="mb-4 font-display text-lg font-semibold text-ink-900">More posts</h2>
+          <h2 className="mb-4 font-display text-lg font-semibold text-ink-900">Related reading</h2>
           <div className="space-y-3">
             {others.map((p) => (
               <Link key={p.slug} href={`/blog/${p.slug}`} className="block rounded-2xl border border-ink-900/[0.08] bg-white p-5 transition-all hover:-translate-y-0.5 hover:border-brand-primary/40">
