@@ -848,7 +848,8 @@ export const posts: BlogPost[] = [
         "heading": "Where to check, and why we are not your source",
         "paragraphs": [
           "Everything above is drawn from primary sources: the Nitrates Directive itself, Commission Implementing Decisions 2022/696 and 2026/67, and S.I. No. 588 of 2025. We have cited them so you can read them rather than take our word for it.",
-          "But nitrates rules are amended, re-mapped and reviewed, and a farm-specific question about your ceiling, your closed periods or your storage is a question for the Department of Agriculture, Food and the Marine or your own advisor. We build software for farmers and we are careful about the line between explaining a rule and advising you on your holding. This article is the former."
+          "But nitrates rules are amended, re-mapped and reviewed, and a farm-specific question about your ceiling, your closed periods or your storage is a question for the Department of Agriculture, Food and the Marine or your own advisor. We build software for farmers and we are careful about the line between explaining a rule and advising you on your holding. This article is the former.",
+          "We write about Irish farming because it is on our roadmap, not because we sell here. YieldAI Global is not available in Ireland. [Here is what an Irish version would have to get right first](/ireland)."
         ]
       }
     ]
@@ -909,7 +910,8 @@ export const posts: BlogPost[] = [
         "heading": "A note on what this article is not",
         "paragraphs": [
           "Every figure above traces to published Teagasc guidance, and we have named the source and the specialist where a quote is attributed, so you can go and read it.",
-          "What we have deliberately not done is tell you what to apply to a crop. Anything approaching a chemical or dosage decision belongs with your agronomist or Teagasc adviser, who knows your ground. That is the line we hold in our software too: an answer that sounds confident and is wrong can cost a season."
+          "What we have deliberately not done is tell you what to apply to a crop. Anything approaching a chemical or dosage decision belongs with your agronomist or Teagasc adviser, who knows your ground. That is the line we hold in our software too: an answer that sounds confident and is wrong can cost a season.",
+          "For the avoidance of doubt: YieldAI Global is live in India, the USA and Canada, and not in Ireland. [We keep a page saying exactly that](/ireland) rather than running a waitlist."
         ]
       }
     ]
@@ -964,7 +966,8 @@ export const posts: BlogPost[] = [
         "paragraphs": [
           "Everything above is drawn from the Department's 2026 terms and conditions and its own announcements for that scheme year. The 2026 window opened on 13 February 2026 and closed on 15 May 2026. Those dates are already history at the time of writing.",
           "Irish scheme deadlines are set fresh annually, and the terms are revised during the year as well: the 2026 document reached version 6 by late August. So treat the structure here as durable and the dates as a snapshot. Before you rely on any specific date, check the current year's terms and conditions on gov.ie or ask your advisor.",
-          "We publish this because the machinery is genuinely confusing and rarely explained in one place. We are not a substitute for the Department, and on a question about your own holding, they and your advisor are the answer."
+          "We publish this because the machinery is genuinely confusing and rarely explained in one place. We are not a substitute for the Department, and on a question about your own holding, they and your advisor are the answer.",
+          "YieldAI Global does not operate in Ireland. [What an Irish version would need](/ireland) is set out separately, including why we will not put a launch date on it."
         ]
       }
     ]

@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import { Reveal, SectionEyebrow, GradientOrb } from '../primitives';
 import {
   Sprout,
@@ -11,6 +12,7 @@ import {
   Bot,
   BarChart3,
   Building2,
+  ArrowUpRight,
 } from 'lucide-react';
 
 const FOCUS_AREAS = [
@@ -27,7 +29,10 @@ const FOCUS_AREAS = [
 const TIMELINE = [
   { year: '2026', title: 'AGRIVISION AI founded', body: 'A founder-led, AI-first AgriTech company set out to build intelligent agriculture products.' },
   { year: 'Now', title: 'YieldAI Global is live', body: 'AI crop advice, live government market prices, weather, and scheme guidance — live in the USA, India, and Canada.' },
-  { year: 'Next', title: 'Grow & expand', body: 'Scaling YieldAI Global toward 40+ countries with deeper crop intelligence. Ireland and the EU are on the roadmap — not available yet.' },
+  // The Ireland page had no inbound link anywhere on the site. Search Console reported it
+  // as "Discovered - currently not indexed" with "Referring page: None detected", which is
+  // what an orphan page looks like: reachable only via the sitemap, so never prioritised.
+  { year: 'Next', title: 'Grow & expand', body: 'Scaling YieldAI Global toward 40+ countries with deeper crop intelligence. Ireland and the EU are on the roadmap — not available yet.', link: { href: '/ireland', text: 'What an Irish version would need' } },
   { year: 'Roadmap', title: 'Planned modules', body: 'FieldSense (IoT sensing) and smart irrigation — planned for future implementation.' },
 ];
 
@@ -130,6 +135,14 @@ export function About() {
                       <span className="text-base font-semibold text-ink-900">{t.title}</span>
                     </div>
                     <p className="mt-1.5 text-sm text-ink-600">{t.body}</p>
+                    {t.link && (
+                      <Link
+                        href={t.link.href}
+                        className="mt-2 inline-flex items-center gap-1 text-sm font-semibold text-brand-primary underline-offset-2 hover:underline"
+                      >
+                        {t.link.text} <ArrowUpRight className="h-3.5 w-3.5" />
+                      </Link>
+                    )}
                   </motion.li>
                 ))}
               </ol>
