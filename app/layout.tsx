@@ -61,7 +61,7 @@ const organizationSchema = {
   '@type': 'Organization',
   '@id': 'https://agrivisionai.org#organization',
   name: 'AGRIVISION AI',
-  alternateName: 'Agrivisionai Inc',
+  alternateName: 'AgriVisionAI Inc.',
   url: 'https://agrivisionai.org',
   logo: {
     '@type': 'ImageObject',
@@ -75,7 +75,7 @@ const organizationSchema = {
   description:
     'AI-first technology company building intelligent products for global agriculture. Flagship: YieldAI Global — AI-powered crop intelligence for extension workers across 40+ countries, built to work multilingually.',
   disambiguatingDescription:
-    'AGRIVISION AI (Agrivisionai Inc) is a Detroit, Michigan-based company founded in 2026 by sole founder Vijesh Reddy Golamari. It is not affiliated with any other similarly named agricultural-technology project or company.',
+    'AGRIVISION AI (AgriVisionAI Inc.) is a Detroit, Michigan-based company founded in 2026 by sole founder Vijesh Reddy Golamari. It is not affiliated with any other similarly named agricultural-technology project or company.',
   foundingDate: '2026-05-01',
   foundingLocation: {
     '@type': 'Place',
@@ -134,7 +134,7 @@ const organizationSchema = {
     name: 'BuildVaillant',
     url: 'https://buildvaillant.com',
     description:
-      'Web and product development studio, and a venture of Agrivisionai Inc — websites, web apps, and digital products, hosted and supported for 365 days after launch under a written contract.',
+      'Web and product development studio, and a venture of AgriVisionAI Inc. — websites, web apps, and digital products, hosted and supported for 365 days after launch under a written contract.',
   },
   contactPoint: [
     {
@@ -170,7 +170,7 @@ const founderSchema = {
   familyName: 'Golamari',
   jobTitle: 'Founder, CEO & AI Architect',
   description:
-    'Sole founder and CEO of AGRIVISION AI (Agrivisionai Inc), a Detroit, Michigan AI agriculture company founded in 2026, and a Generative AI Engineer and Technical Lead at Symplore Inc.',
+    'Sole founder and CEO of AGRIVISION AI (AgriVisionAI Inc.), a Detroit, Michigan AI agriculture company founded in 2026, and a Generative AI Engineer and Technical Lead at Symplore Inc.',
   image: {
     '@type': 'ImageObject',
     url: 'https://agrivisionai.org/founder.jpg',
@@ -194,7 +194,7 @@ const productsSchema = {
   '@type': 'ItemList',
   name: 'AGRIVISION AI product family',
   description:
-    'AI products for global agriculture built by AGRIVISION AI (Agrivisionai Inc).',
+    'AI products for global agriculture built by AGRIVISION AI (AgriVisionAI Inc.).',
   itemListOrder: 'https://schema.org/ItemListOrderAscending',
   numberOfItems: 4,
   itemListElement: [

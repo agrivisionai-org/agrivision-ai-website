@@ -227,7 +227,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
       <footer className={`${SECTION} mt-12 border-t border-ink-900/[0.07] pt-8 text-center`}>
         <div className="inline-flex items-center gap-2 text-xs text-ink-500">
-          <CircleDot className="h-3.5 w-3.5" /> AGRIVISION AI · Agrivisionai Inc · Detroit, Michigan
+          <CircleDot className="h-3.5 w-3.5" /> AGRIVISION AI · AgriVisionAI Inc. · Detroit, Michigan
         </div>
       </footer>
     <Footer />

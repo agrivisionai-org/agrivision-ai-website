@@ -217,7 +217,7 @@ export default function PressPage() {
 
       <footer className={`${SECTION} mt-10 border-t border-ink-900/[0.07] pt-8 text-center`}>
         <div className="inline-flex items-center gap-2 text-xs text-ink-500">
-          <Building2 className="h-3.5 w-3.5" /> AGRIVISION AI · Agrivisionai Inc · Detroit, Michigan
+          <Building2 className="h-3.5 w-3.5" /> AGRIVISION AI · AgriVisionAI Inc. · Detroit, Michigan
         </div>
         <p className="mt-2 text-xs text-ink-500">© {new Date().getFullYear()} AGRIVISION AI. Press materials may be reproduced for editorial coverage.</p>
       </footer>

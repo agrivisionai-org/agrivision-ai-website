@@ -160,7 +160,7 @@ export function Products() {
         {/* Venture: BuildVaillant — accents come from the logo, not the site's
             brand-accent blue, so the card reads as one piece with the artwork. */}
         <div className="mt-14 text-xs font-semibold uppercase tracking-[0.18em] text-ink-500">
-          Also from Agrivisionai Inc
+          Also from AgriVisionAI Inc.
         </div>
         <Reveal delay={0.1} className="mt-4 block">
           <a

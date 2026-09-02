@@ -5,7 +5,7 @@
 const FAQS = [
   {
     q: "What is AGRIVISION AI?",
-    a: "AGRIVISION AI (legal entity Agrivisionai Inc) is an AI-first agriculture technology company headquartered in Detroit, Michigan, building intelligent, multilingual products for global agriculture. Its flagship product, YieldAI Global, is a live AI crop intelligence platform available in India, the USA, and Canada.",
+    a: "AGRIVISION AI (legal entity AgriVisionAI Inc.) is an AI-first agriculture technology company headquartered in Detroit, Michigan, building intelligent, multilingual products for global agriculture. Its flagship product, YieldAI Global, is a live AI crop intelligence platform available in India, the USA, and Canada.",
   },
   {
     q: "Who founded AGRIVISION AI?",
@@ -13,7 +13,7 @@ const FAQS = [
   },
   {
     q: "Where is AGRIVISION AI based?",
-    a: "AGRIVISION AI is headquartered in Detroit, Michigan, USA, and is incorporated as Agrivisionai Inc, a Delaware C-Corporation.",
+    a: "AGRIVISION AI is headquartered in Detroit, Michigan, USA, and is incorporated as AgriVisionAI Inc., a Delaware C-Corporation.",
   },
   {
     q: "When was AGRIVISION AI founded?",
@@ -37,7 +37,7 @@ const FAQS = [
   },
   {
     q: "Is this the same as other companies named AgriVision AI?",
-    a: "No. This AGRIVISION AI is Agrivisionai Inc, a Detroit, Michigan company founded in 2026 by sole founder Vijesh Reddy Golamari. It is not affiliated with any other similarly named agricultural-technology project or company.",
+    a: "No. This AGRIVISION AI is AgriVisionAI Inc., a Detroit, Michigan company founded in 2026 by sole founder Vijesh Reddy Golamari. It is not affiliated with any other similarly named agricultural-technology project or company.",
   },
   {
     q: "How can I follow AGRIVISION AI or get involved?",

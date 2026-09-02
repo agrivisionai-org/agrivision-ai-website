@@ -105,7 +105,7 @@ export default function ProductsIndex() {
 
       <footer className={`${SECTION} mt-10 border-t border-ink-900/[0.07] pt-8 text-center`}>
         <div className="inline-flex items-center gap-2 text-xs text-ink-500">
-          AGRIVISION AI · Agrivisionai Inc · Detroit, Michigan
+          AGRIVISION AI · AgriVisionAI Inc. · Detroit, Michigan
         </div>
         <p className="mt-2 text-[11px] text-ink-500">YieldAI Global and CropVision are live at yieldaiglobal.com. FieldSense and FieldOps are roadmap concepts and are not available yet.</p>
       </footer>

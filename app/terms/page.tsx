@@ -8,7 +8,7 @@ const SECTION = 'mx-auto w-full max-w-3xl px-5';
 
 export const metadata: Metadata = {
   title: { absolute: 'Terms of Service — AGRIVISION AI' },
-  description: 'Terms for using agrivisionai.org, operated by AGRIVISION AI (Agrivisionai Inc).',
+  description: 'Terms for using agrivisionai.org, operated by AGRIVISION AI (AgriVisionAI Inc.).',
   alternates: { canonical: `${BASE}/terms` },
   robots: { index: true, follow: true },
   openGraph: {
@@ -45,7 +45,7 @@ export default function TermsPage() {
         <div className="mt-8 space-y-6 text-[1.02rem] leading-relaxed text-ink-700">
           <p>
             These Terms govern your use of agrivisionai.org (the &ldquo;Site&rdquo;), operated by AGRIVISION AI
-            (legal entity Agrivisionai Inc, a Delaware C-Corporation headquartered in Detroit, Michigan, USA). By
+            (legal entity AgriVisionAI Inc., a Delaware C-Corporation headquartered in Detroit, Michigan, USA). By
             using the Site, you agree to these Terms.
           </p>
 
@@ -60,7 +60,7 @@ export default function TermsPage() {
           </Section>
 
           <Section title="Intellectual property">
-            <p>The Site&rsquo;s content, branding, and logos are owned by Agrivisionai Inc or used with permission,
+            <p>The Site&rsquo;s content, branding, and logos are owned by AgriVisionAI Inc. or used with permission,
             except where noted (for example, brand assets we release under an open license). You may not use our
             branding in a way that implies affiliation or endorsement without permission.</p>
           </Section>
@@ -72,7 +72,7 @@ export default function TermsPage() {
 
           <Section title="No warranties; limitation of liability">
             <p>The Site is provided &ldquo;as is&rdquo; without warranties of any kind. To the maximum extent
-            permitted by law, Agrivisionai Inc is not liable for any indirect or consequential damages arising from
+            permitted by law, AgriVisionAI Inc. is not liable for any indirect or consequential damages arising from
             your use of the Site.</p>
           </Section>
 

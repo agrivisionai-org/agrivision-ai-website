@@ -274,7 +274,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
         <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
           <Link href="/" aria-label="AGRIVISION AI home"><Logo /></Link>
           <div className="flex items-center gap-2 text-xs text-ink-500">
-            <CircleDot className="h-3.5 w-3.5" /> AGRIVISION AI · Agrivisionai Inc · Detroit, Michigan
+            <CircleDot className="h-3.5 w-3.5" /> AGRIVISION AI · AgriVisionAI Inc. · Detroit, Michigan
           </div>
         </div>
         <p className="mt-4 text-center text-[11px] text-ink-500">

@@ -36,7 +36,7 @@ export default function NotFound() {
             <Mail className="h-4 w-4" /> Contact
           </Link>
         </div>
-        <p className="mt-8 text-xs text-ink-500">AGRIVISION AI · Agrivisionai Inc · Detroit, Michigan</p>
+        <p className="mt-8 text-xs text-ink-500">AGRIVISION AI · AgriVisionAI Inc. · Detroit, Michigan</p>
       </div>
     </main>
   );

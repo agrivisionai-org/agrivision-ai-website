@@ -8,14 +8,14 @@ const SECTION = 'mx-auto w-full max-w-3xl px-5';
 
 export const metadata: Metadata = {
   title: { absolute: 'Privacy Policy — AGRIVISION AI' },
-  description: 'How AGRIVISION AI (Agrivisionai Inc) collects and uses information from agrivisionai.org.',
+  description: 'How AGRIVISION AI (AgriVisionAI Inc.) collects and uses information from agrivisionai.org.',
   alternates: { canonical: `${BASE}/privacy` },
   robots: { index: true, follow: true },
   openGraph: {
     type: 'website',
     url: `${BASE}/privacy`,
     title: 'Privacy Policy · AGRIVISION AI',
-    description: 'How AGRIVISION AI (Agrivisionai Inc) collects and uses information from agrivisionai.org.',
+    description: 'How AGRIVISION AI (AgriVisionAI Inc.) collects and uses information from agrivisionai.org.',
     siteName: 'AGRIVISION AI',
     images: [{ url: 'https://agrivisionai.org/opengraph-image.png', width: 1200, height: 630, alt: 'AGRIVISION AI privacy policy' }],
   },
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@yieldaiglobal',
     title: 'Privacy Policy · AGRIVISION AI',
-    description: 'How AGRIVISION AI (Agrivisionai Inc) collects and uses information from agrivisionai.org.',
+    description: 'How AGRIVISION AI (AgriVisionAI Inc.) collects and uses information from agrivisionai.org.',
     images: ['https://agrivisionai.org/opengraph-image.png'],
   },
 };
@@ -44,7 +44,7 @@ export default function PrivacyPage() {
 
         <div className="mt-8 space-y-6 text-[1.02rem] leading-relaxed text-ink-700">
           <p>
-            This Privacy Policy explains how AGRIVISION AI (legal entity Agrivisionai Inc, a Delaware
+            This Privacy Policy explains how AGRIVISION AI (legal entity AgriVisionAI Inc., a Delaware
             C-Corporation headquartered in Detroit, Michigan, USA) handles information collected through
             agrivisionai.org. This site is informational: it does not host product accounts. Information
             collected when you sign up for or use YieldAI Global is handled at yieldaiglobal.com, under the
@@ -83,7 +83,7 @@ export default function PrivacyPage() {
 
           <Section title="Contact">
             <p>Questions about this policy? Email <a className="text-brand-primary hover:underline" href="mailto:hello@agrivisionai.org">hello@agrivisionai.org</a>.
-            AGRIVISION AI · Agrivisionai Inc · Detroit, Michigan, USA.</p>
+            AGRIVISION AI · AgriVisionAI Inc. · Detroit, Michigan, USA.</p>
           </Section>
 
           <p className="text-sm text-ink-500">
