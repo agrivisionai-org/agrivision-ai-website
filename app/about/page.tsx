@@ -5,6 +5,7 @@ import { About } from '@/components/sections/About';
 import { Purpose } from '@/components/sections/Purpose';
 import { Team } from '@/components/sections/Team';
 import { Sustainability } from '@/components/sections/Sustainability';
+import { SkipTarget } from '@/components/SkipTarget';
 
 export const metadata: Metadata = {
   title: 'About — Mission, Team & Founder',
@@ -33,6 +34,7 @@ export default function AboutPage() {
   return (
     <main className="relative pt-24">
       <Nav />
+      <SkipTarget />
       <About />
       <Purpose />
       <Team />

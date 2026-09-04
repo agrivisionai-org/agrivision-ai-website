@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Nav } from '@/components/Nav';
 import { Footer } from '@/components/Footer';
 import { Contact } from '@/components/sections/Contact';
+import { SkipTarget } from '@/components/SkipTarget';
 
 export const metadata: Metadata = {
   title: 'Contact',
@@ -29,6 +30,7 @@ export default function ContactPage() {
   return (
     <main className="relative pt-24">
       <Nav />
+      <SkipTarget />
       <Contact />
       <Footer />
     </main>

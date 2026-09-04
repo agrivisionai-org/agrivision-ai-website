@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Nav } from '@/components/Nav';
 import { Footer } from '@/components/Footer';
 import { FAQ } from '@/components/sections/FAQ';
+import { SkipTarget } from '@/components/SkipTarget';
 
 export const metadata: Metadata = {
   title: 'FAQ — AGRIVISION AI & YieldAI Global',
@@ -30,6 +31,7 @@ export default function FAQPage() {
   return (
     <main className="relative pt-24">
       <Nav />
+      <SkipTarget />
       <FAQ />
       <Footer />
     </main>

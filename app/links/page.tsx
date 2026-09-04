@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Logo } from '@/components/Logo';
 import { Globe, Linkedin, Twitter, Instagram, Github, Mail, Newspaper, User, Sprout } from 'lucide-react';
+import { SkipTarget } from '@/components/SkipTarget';
 
 export const metadata: Metadata = {
   title: { absolute: 'Links · AGRIVISION AI' },
@@ -103,6 +104,7 @@ const LINKS: LinkItem[] = [
 export default function LinksPage() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-brand-primary/[0.04] via-paper to-paper">
+    <SkipTarget />
       <div className="mx-auto flex w-full max-w-md flex-col items-center px-5 py-12 sm:py-16">
         <a href="https://agrivisionai.org" className="mb-6 transition-transform hover:scale-[1.02]" aria-label="AGRIVISION AI home">
           <Logo />

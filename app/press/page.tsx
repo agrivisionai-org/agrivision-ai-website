@@ -3,6 +3,7 @@ import { Logo } from '@/components/Logo';
 import { press } from './press-data';
 import { Globe, Mail, Linkedin, Twitter, Instagram, Github, Newspaper, Download, Building2, User } from 'lucide-react';
 import { Footer } from '@/components/Footer';
+import { SkipTarget } from '@/components/SkipTarget';
 
 export const metadata: Metadata = {
   title: 'Press Kit — Logos, Fact Sheet & Founder Bio',
@@ -46,6 +47,7 @@ export default function PressPage() {
           </a>
         </div>
       </header>
+      <SkipTarget />
 
       {/* Hero */}
       <section className={`${SECTION} pt-14 pb-10`}>

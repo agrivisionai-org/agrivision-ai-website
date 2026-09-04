@@ -27,6 +27,7 @@ export const metadata: Metadata = {
 };
 
 import { roles } from './roles-data';
+import { SkipTarget } from '@/components/SkipTarget';
 
 const BASE = 'https://agrivisionai.org';
 
@@ -51,6 +52,7 @@ export default function CareersPage() {
     <main className="relative pt-24">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(listSchema) }} />
       <Nav />
+      <SkipTarget />
       <Careers />
       <Footer />
     </main>

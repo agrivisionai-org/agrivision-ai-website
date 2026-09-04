@@ -5,6 +5,7 @@ import { Nav } from '@/components/Nav';
 import { Footer } from '@/components/Footer';
 import { getRole, roleSlugs, roles, PROGRAMME } from '../roles-data';
 import { ArrowLeft, ArrowUpRight, Mail, Check } from 'lucide-react';
+import { SkipTarget } from '@/components/SkipTarget';
 
 const BASE = 'https://agrivisionai.org';
 const SECTION = 'mx-auto w-full max-w-3xl px-5';
@@ -107,6 +108,7 @@ export default async function RolePage({ params }: { params: Promise<{ role: str
     <main className="relative pt-24">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Nav />
+      <SkipTarget />
 
       <article className={`${SECTION} pt-12`}>
         <Link

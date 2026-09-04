@@ -5,6 +5,7 @@ import { Logo } from '@/components/Logo';
 import { posts, getPost, postSlugs, readingMinutes } from '../blog-data';
 import { ArrowLeft, ArrowUpRight, Mail, CircleDot } from 'lucide-react';
 import { Footer } from '@/components/Footer';
+import { SkipTarget } from '@/components/SkipTarget';
 
 const BASE = 'https://agrivisionai.org';
 const SECTION = 'mx-auto w-full max-w-3xl px-5';
@@ -158,6 +159,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           </Link>
         </div>
       </header>
+      <SkipTarget />
 
       {/* The root layout declares lang="en"; Hindi posts override it here so screen readers
           and search engines read the body in the language it is actually written in. */}

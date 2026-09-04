@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Logo } from '@/components/Logo';
 import { Home, Boxes, Mail } from 'lucide-react';
+import { SkipTarget } from '@/components/SkipTarget';
 
 // Without this the 404 inherits the root layout wholesale: the homepage's title, its
 // description, and a canonical claiming this response IS the homepage. canonical: null
@@ -17,7 +18,11 @@ export const metadata: Metadata = {
 export default function NotFound() {
   return (
     <main className="grid min-h-screen place-items-center bg-gradient-to-b from-brand-primary/[0.05] via-paper to-paper px-5">
+      {/* Inside the content block, not a direct child of <main>: main is a grid with
+          place-items-center, so an extra direct child becomes a second grid row and
+          knocks the 404 card off centre. */}
       <div className="w-full max-w-md text-center">
+        <SkipTarget />
         <Link href="/" aria-label="AGRIVISION AI home" className="inline-flex"><Logo /></Link>
         <div className="mt-10 font-display text-7xl font-semibold tracking-tight text-ink-900">404</div>
         <h1 className="mt-3 font-display text-2xl font-semibold text-ink-900">Page not found</h1>

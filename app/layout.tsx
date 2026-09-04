@@ -310,6 +310,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className="min-h-screen bg-paper font-sans text-ink-900 antialiased">
+        {/* WCAG 2.4.1 (Bypass Blocks). The nav is fixed on every page and carries six
+            links plus two CTAs, so without this a keyboard or screen-reader user tabs
+            through the whole header before reaching content -- on every navigation.
+            Visually hidden until focused; the target <main> takes tabIndex={-1} so
+            focus actually moves rather than only the scroll position. */}
+        <a href="#main-content" className="skip-link">
+          Skip to main content
+        </a>
         {children}
         {/* lazyOnload, not afterInteractive: afterInteractive makes Next preload gtag.js
             at high priority in <head>, where 165 KB of analytics competes with the page's

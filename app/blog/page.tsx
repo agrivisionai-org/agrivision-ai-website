@@ -5,6 +5,7 @@ import { BuildNotesCard } from '@/components/BuildNotesCard';
 import { posts, readingMinutes } from './blog-data';
 import { ArrowUpRight, Mail } from 'lucide-react';
 import { Footer } from '@/components/Footer';
+import { SkipTarget } from '@/components/SkipTarget';
 
 const BASE = 'https://agrivisionai.org';
 const SECTION = 'mx-auto w-full max-w-3xl px-5';
@@ -60,6 +61,7 @@ export default function BlogIndex() {
           </Link>
         </div>
       </header>
+      <SkipTarget />
 
       <section className={`${SECTION} pt-14 pb-8`}>
         <div className="text-xs font-semibold uppercase tracking-[0.18em] text-brand-primary">Blog</div>

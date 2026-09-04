@@ -8,11 +8,13 @@ import { FarmerExperience } from '@/components/sections/FarmerExperience';
 import { Grounding } from '@/components/sections/Grounding';
 import { Capabilities } from '@/components/sections/Capabilities';
 import { TechStack } from '@/components/sections/TechStack';
+import { SkipTarget } from '@/components/SkipTarget';
 
 export default function Home() {
   return (
     <main className="relative">
       <Nav />
+      <SkipTarget />
       <Hero />
       <TechStack />
       <Products />

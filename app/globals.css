@@ -214,6 +214,33 @@
     box-shadow: 0 0 0 2px #F4F6F1, 0 0 0 4px rgba(15,107,62,0.55);
     border-radius: 10px;
   }
+  /* Skip link: off-screen until focused, then pinned above the fixed nav (z-50).
+     Not `display:none` or `visibility:hidden` -- either would drop it out of the tab
+     order entirely, which is the one thing it exists to be in. */
+  .skip-link {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    z-index: 100;
+    transform: translate(-50%, -150%);
+    padding: 0.75rem 1.25rem;
+    border-radius: 0 0 12px 12px;
+    background: #0F6B3E;
+    color: #FFFFFF;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 12px 40px -20px rgba(20, 23, 28, 0.35);
+  }
+  .skip-link:focus {
+    transform: translate(-50%, 0);
+  }
+  /* The tabIndex={-1} skip target is a whole-page landmark; a focus ring drawn around
+     it would outline the entire viewport. Focus still moves -- it just isn't painted. */
+  main:focus {
+    outline: none;
+  }
+
   /* button press feedback */
   .btn-primary:active, .btn-green:active, .btn-secondary:active { transform: translateY(0) scale(0.98); }
 }

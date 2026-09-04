@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Logo } from '@/components/Logo';
 import { Footer } from '@/components/Footer';
+import { SkipTarget } from '@/components/SkipTarget';
 
 const BASE = 'https://agrivisionai.org';
 const SECTION = 'mx-auto w-full max-w-3xl px-5';
@@ -37,6 +38,7 @@ export default function TermsPage() {
           <Link href="/" className="text-sm font-semibold text-ink-600 hover:text-brand-primary">Home</Link>
         </div>
       </header>
+      <SkipTarget />
 
       <article className={`${SECTION} pt-12`}>
         <h1 className="font-display text-4xl font-semibold tracking-tight text-ink-900">Terms of Service</h1>

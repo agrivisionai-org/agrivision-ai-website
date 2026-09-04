@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Logo } from '@/components/Logo';
 import { Linkedin, Twitter, Github, Mail, ArrowLeft, ArrowUpRight } from 'lucide-react';
 import { Footer } from '@/components/Footer';
+import { SkipTarget } from '@/components/SkipTarget';
 
 const BASE = 'https://agrivisionai.org';
 const SECTION = 'mx-auto w-full max-w-4xl px-5';
@@ -77,6 +78,7 @@ export default function FounderPage() {
           </Link>
         </div>
       </header>
+      <SkipTarget />
 
       {/* Hero */}
       <section className={`${SECTION} pt-12 pb-10`}>

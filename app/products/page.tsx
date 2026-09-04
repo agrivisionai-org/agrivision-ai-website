@@ -4,6 +4,7 @@ import { Logo } from '@/components/Logo';
 import { products, productVisual } from './products-data';
 import { ArrowUpRight, Mail, Sparkles, Eye, Wifi, Cog } from 'lucide-react';
 import { Footer } from '@/components/Footer';
+import { SkipTarget } from '@/components/SkipTarget';
 
 const BASE = 'https://agrivisionai.org';
 const SECTION = 'mx-auto w-full max-w-5xl px-5';
@@ -62,6 +63,7 @@ export default function ProductsIndex() {
           </Link>
         </div>
       </header>
+      <SkipTarget />
 
       <section className={`${SECTION} pt-14 pb-8`}>
         <div className="text-xs font-semibold uppercase tracking-[0.18em] text-brand-primary">Products</div>

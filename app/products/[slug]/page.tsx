@@ -14,6 +14,7 @@ import {
   Cog,
   CircleDot,
 } from 'lucide-react';
+import { SkipTarget } from '@/components/SkipTarget';
 
 const BASE = 'https://agrivisionai.org';
 const SECTION = 'mx-auto w-full max-w-5xl px-5';
@@ -133,6 +134,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
           </div>
         </div>
       </header>
+      <SkipTarget />
 
       {/* Hero */}
       <section className={`${SECTION} pt-12 pb-8`}>
