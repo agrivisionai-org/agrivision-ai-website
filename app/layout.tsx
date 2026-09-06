@@ -73,7 +73,7 @@ const organizationSchema = {
   },
   image: 'https://agrivisionai.org/opengraph-image.png',
   description:
-    'AI-first technology company building intelligent products for global agriculture. Flagship: YieldAI Global — AI-powered crop intelligence for extension workers across 40+ countries, built to work multilingually.',
+    'AI-first technology company building intelligent products for global agriculture. Flagship: YieldAI Global — AI-powered crop intelligence for farmers and extension workers, live in the USA, India and Canada in 13 languages.',
   disambiguatingDescription:
     'AGRIVISION AI (AgriVisionAI Inc.) is a Detroit, Michigan-based company founded in 2026 by sole founder Vijesh Reddy Golamari. It is not affiliated with any other similarly named agricultural-technology project or company.',
   foundingDate: '2026-05-01',
