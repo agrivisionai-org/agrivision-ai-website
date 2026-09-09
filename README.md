@@ -1,6 +1,6 @@
 # AGRIVISION AI — agrivisionai.org
 
-The corporate website for **AGRIVISION AI** (legal entity *Agrivisionai Inc*), a Detroit,
+The corporate website for **AGRIVISION AI** (legal entity *AgriVisionAI Inc.*), a Detroit,
 Michigan company building AI-first tools for global agriculture.
 
 Its flagship product, **YieldAI Global**, is live in India, the USA and Canada at
@@ -208,7 +208,7 @@ copy, keep to these rules:
    route the farmer to a local agriculture extension officer / Krishi Vigyan Kendra. It appears
    in `Grounding`, on the CropVision page, and throughout the blog. Do not soften it.
 5. **Brand disambiguation.** Several unrelated organisations share the "AgriVision" name. Copy
-   and schema state that this is *Agrivisionai Inc*, Detroit, founded 2026 by Vijesh Reddy
+   and schema state that this is *AgriVisionAI Inc.*, Detroit, founded 2026 by Vijesh Reddy
    Golamari, and not affiliated with any similarly named project.
 6. **Historical posts stay as written.** The founder essay is pre-launch and carries a dated
    update note at the top rather than being rewritten.
@@ -302,7 +302,7 @@ in Google Search Console.
 
 Kept here so copy stays consistent across the site.
 
-- **Legal entity:** Agrivisionai Inc, a Delaware C-Corporation
+- **Legal entity:** AgriVisionAI Inc., a Delaware C-Corporation
 - **Headquarters:** Detroit, Michigan, USA
 - **Founded:** May 2026 by Vijesh Reddy Golamari (sole founder — no co-founders)
 - **Flagship product:** YieldAI Global — live in India, the USA and Canada
@@ -320,4 +320,4 @@ Kept here so copy stays consistent across the site.
 
 ---
 
-© 2026 AGRIVISION AI (Agrivisionai Inc). All rights reserved.
+© 2026 AGRIVISION AI (AgriVisionAI Inc.). All rights reserved.

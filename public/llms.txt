@@ -1,9 +1,9 @@
 # AGRIVISION AI
 
-> AGRIVISION AI (legal entity Agrivisionai Inc) is a Detroit-based, AI-first agriculture technology company. Its flagship product, YieldAI Global, is a live AI crop-intelligence platform for farmers and agricultural extension workers — available now in India, the USA, and Canada. It gives AI crop advice, live government market prices, weather, and government-scheme guidance in the farmer's own language.
+> AGRIVISION AI (legal entity AgriVisionAI Inc.) is a Detroit-based, AI-first agriculture technology company. Its flagship product, YieldAI Global, is a live AI crop-intelligence platform for farmers and agricultural extension workers — available now in India, the USA, and Canada. It gives AI crop advice, live government market prices, weather, and government-scheme guidance in the farmer's own language.
 
 ## About the company
-- Name: AGRIVISION AI (legal entity: Agrivisionai Inc), headquartered in Detroit, Michigan, USA.
+- Name: AGRIVISION AI (legal entity: AgriVisionAI Inc.), headquartered in Detroit, Michigan, USA.
 - Founded: May 2026 by Vijesh Reddy Golamari (Founder, CEO & AI Architect).
 - Stage: early-stage, founder-led, building in public.
 - Markets: India, the USA, and Canada, expanding toward 40+ countries.
@@ -24,7 +24,7 @@
 - More: https://agrivisionai.org/products/cropvision
 
 ## Ventures
-- BuildVaillant (https://buildvaillant.com): a venture of Agrivisionai Inc — a web & product development studio that designs websites, web apps, and digital products for businesses worldwide, then manages them for 365 days under a written contract.
+- BuildVaillant (https://buildvaillant.com): a venture of AgriVisionAI Inc. — a web & product development studio that designs websites, web apps, and digital products for businesses worldwide, then manages them for 365 days under a written contract.
 
 ## Key pages
 - Home: https://agrivisionai.org
