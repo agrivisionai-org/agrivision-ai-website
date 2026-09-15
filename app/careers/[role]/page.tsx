@@ -68,7 +68,7 @@ export default async function RolePage({ params }: { params: Promise<{ role: str
     `<p><strong>Duration:</strong> approximately ${PROGRAMME.duration}.</p>` +
     `<p><strong>Location:</strong> fully remote, open to candidates worldwide.</p>` +
     `<p><strong>What you gain:</strong> supervised projects, mentorship and regular feedback, a completion certificate, a reference based on performance, and portfolio work where applicable.</p>` +
-    `<p><strong>Compensation:</strong> this is primarily a learning and training programme. Compensation and eligibility vary by country and by local employment and university regulations, and are confirmed before you start.</p>` +
+    `<p><strong>Compensation:</strong> this is an unpaid learning and training programme. There is no salary or stipend.</p>` +
     `<p>Apply by email to ${PROGRAMME.applyEmail} with your resume, area of interest, current education or experience, country, and LinkedIn profile.</p>`;
 
   const jsonLd = {
@@ -185,8 +185,8 @@ export default async function RolePage({ params }: { params: Promise<{ role: str
             reference based on performance.
           </p>
           <p className="mt-3 text-[1.05rem] leading-relaxed text-ink-700">
-            Compensation and eligibility vary by country and by local employment and university
-            regulations. We will tell you where you stand before you start, not after.
+            This is an unpaid programme. There is no salary or stipend. We would rather say that
+            plainly on this page than have you find it out after you have applied.
           </p>
         </section>
 
