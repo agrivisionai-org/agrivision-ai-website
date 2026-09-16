@@ -74,6 +74,35 @@ export default function PressPage() {
             <Linkedin className="h-4 w-4" /> Newsroom on LinkedIn
           </a>
         </div>
+
+        {/* Social variants. The dark files are not inversions: the master leaf gradient ends
+            near-black and disappears on a dark ground, so these carry a brightened gradient
+            and a paper wordmark. Avatars are leaf-only and circle-safe — the full lockup is
+            unreadable at avatar size, which is the mistake the old favicon made. */}
+        <div className="mt-8">
+          <div className="text-xs font-semibold uppercase tracking-[0.18em] text-ink-500">For social and dark backgrounds</div>
+          <div className="mt-4 flex flex-wrap gap-3">
+          <a href="/press/social/agrivision-ai-logo-dark.svg" download className="inline-flex items-center gap-2 rounded-full border border-ink-900/10 bg-white px-4 py-2.5 text-sm font-semibold text-ink-800 transition-colors hover:border-brand-primary/40 hover:text-brand-primary">
+            <Download className="h-4 w-4" /> Logo for dark (SVG)
+          </a>
+          <a href="/press/social/agrivision-ai-avatar-light.png" download className="inline-flex items-center gap-2 rounded-full border border-ink-900/10 bg-white px-4 py-2.5 text-sm font-semibold text-ink-800 transition-colors hover:border-brand-primary/40 hover:text-brand-primary">
+            <Download className="h-4 w-4" /> Avatar (light)
+          </a>
+          <a href="/press/social/agrivision-ai-avatar-dark.png" download className="inline-flex items-center gap-2 rounded-full border border-ink-900/10 bg-white px-4 py-2.5 text-sm font-semibold text-ink-800 transition-colors hover:border-brand-primary/40 hover:text-brand-primary">
+            <Download className="h-4 w-4" /> Avatar (dark)
+          </a>
+          <a href="/press/social/agrivision-ai-story-light.png" download className="inline-flex items-center gap-2 rounded-full border border-ink-900/10 bg-white px-4 py-2.5 text-sm font-semibold text-ink-800 transition-colors hover:border-brand-primary/40 hover:text-brand-primary">
+            <Download className="h-4 w-4" /> Story 9:16 (light)
+          </a>
+          <a href="/press/social/agrivision-ai-story-dark.png" download className="inline-flex items-center gap-2 rounded-full border border-ink-900/10 bg-white px-4 py-2.5 text-sm font-semibold text-ink-800 transition-colors hover:border-brand-primary/40 hover:text-brand-primary">
+            <Download className="h-4 w-4" /> Story 9:16 (dark)
+          </a>
+          </div>
+          <p className="mt-3 text-sm leading-relaxed text-ink-600">
+            Square 1:1 frames, 512px avatars and full usage notes are in{' '}
+            <a href="/press/social/README.md" className="font-medium text-brand-primary underline-offset-2 hover:underline">/press/social</a>.
+          </p>
+        </div>
       </section>
 
       {/* Quick facts grid */}
