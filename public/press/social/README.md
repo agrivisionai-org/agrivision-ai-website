@@ -50,6 +50,31 @@ Same idea: branded frame, empty middle. For finished 4:5 feed posts use the card
 For decks, press kits, partner sites and conference material. Transparent, so they sit on
 any ground.
 
+## Marketing lockup — logo with the URL
+
+| File | Use |
+|---|---|
+| `agrivision-ai-marketing-lockup-light.svg` | Vector master for **light** grounds |
+| `agrivision-ai-marketing-lockup-dark.svg` | Vector master for **dark** grounds |
+| `agrivision-ai-marketing-lockup-light.png` / `-dark.png` | 2400x884, transparent |
+| `agrivision-ai-marketing-lockup-on-paper.png` | Ground already filled with paper `#F4F6F1` |
+| `agrivision-ai-marketing-lockup-on-green.png` | Ground already filled with deep green `#0B2E1C` |
+
+This is the **collateral** version: flyers, banners, merch, slide footers, ads, anywhere the
+reader needs to be told where to go. It is not the logo. Press and editorial use the plain
+lockup above, because a web address baked into a logo reads as an advert inside an article.
+
+Two differences from the master worth knowing:
+
+- **It has clear space.** `public/logo.svg` is a tight bounding box - the final "I" of "AI"
+  sits exactly on the right edge at x=1873. Correct for a web logo sized by CSS, wrong for
+  print, where a trim would cut into the glyph. The lockup insets the mark inside 72px of
+  side padding, so the URL is centred on real clear space rather than on the glyph edge.
+- **The URL is live text in the SVG and baked pixels in the PNG.** The SVG asks for Inter
+  and falls back through Segoe UI, Roboto, Helvetica Neue and Arial, so it degrades to a
+  close geometric sans rather than Times on a machine without Inter. If you are sending
+  artwork to a printer or a partner, send the PNG - it cannot substitute a font.
+
 ## Why the dark variants are not just inverted
 
 The master leaf gradient runs `#5AB709 → #0C4223`. That second stop is nearly black-green
@@ -74,5 +99,6 @@ lockup that should not change.
 
 ## Regenerating
 
-`node brand_kit.js` in the scratchpad rebuilds every file from the masters. If the logo
-changes, rerun it rather than editing PNGs.
+`node brand_kit.js` rebuilds the avatars, stories, squares and plain lockups.
+`node marketing_lockup.js` rebuilds the marketing lockup. Both read the vector masters, so
+if the logo changes, rerun them rather than editing PNGs.

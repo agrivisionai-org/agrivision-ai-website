@@ -103,6 +103,37 @@ export default function PressPage() {
             <a href="/press/social/README.md" className="font-medium text-brand-primary underline-offset-2 hover:underline">/press/social</a>.
           </p>
         </div>
+
+        {/* The marketing lockup carries the URL under the wordmark. Deliberately kept in its
+            own block and labelled: journalists covering us should take the clean logo above,
+            because a URL baked into a logo reads as an advert inside an article. This one is
+            for our own collateral and for partners co-promoting us. It is also inset inside
+            clear space — the master logo.svg is a tight bounding box whose final "I" sits on
+            the edge, which a printer would trim into. */}
+        <div className="mt-8">
+          <div className="text-xs font-semibold uppercase tracking-[0.18em] text-ink-500">Marketing lockup (logo with URL)</div>
+          <div className="mt-4 flex flex-wrap gap-3">
+          <a href="/press/social/agrivision-ai-marketing-lockup-light.svg" download className="inline-flex items-center gap-2 rounded-full border border-ink-900/10 bg-white px-4 py-2.5 text-sm font-semibold text-ink-800 transition-colors hover:border-brand-primary/40 hover:text-brand-primary">
+            <Download className="h-4 w-4" /> Lockup + URL (SVG, light)
+          </a>
+          <a href="/press/social/agrivision-ai-marketing-lockup-dark.svg" download className="inline-flex items-center gap-2 rounded-full border border-ink-900/10 bg-white px-4 py-2.5 text-sm font-semibold text-ink-800 transition-colors hover:border-brand-primary/40 hover:text-brand-primary">
+            <Download className="h-4 w-4" /> Lockup + URL (SVG, dark)
+          </a>
+          <a href="/press/social/agrivision-ai-marketing-lockup-light.png" download className="inline-flex items-center gap-2 rounded-full border border-ink-900/10 bg-white px-4 py-2.5 text-sm font-semibold text-ink-800 transition-colors hover:border-brand-primary/40 hover:text-brand-primary">
+            <Download className="h-4 w-4" /> Lockup + URL (PNG, light)
+          </a>
+          <a href="/press/social/agrivision-ai-marketing-lockup-dark.png" download className="inline-flex items-center gap-2 rounded-full border border-ink-900/10 bg-white px-4 py-2.5 text-sm font-semibold text-ink-800 transition-colors hover:border-brand-primary/40 hover:text-brand-primary">
+            <Download className="h-4 w-4" /> Lockup + URL (PNG, dark)
+          </a>
+          </div>
+          <p className="mt-3 text-sm leading-relaxed text-ink-600">
+            For flyers, banners, slide footers and partner collateral. If you are writing about us,
+            use the plain logo at the top of this page instead — this version carries our web
+            address, which does not belong inside an article. Versions with the background already
+            filled in are in{' '}
+            <a href="/press/social/README.md" className="font-medium text-brand-primary underline-offset-2 hover:underline">/press/social</a>.
+          </p>
+        </div>
       </section>
 
       {/* Quick facts grid */}
