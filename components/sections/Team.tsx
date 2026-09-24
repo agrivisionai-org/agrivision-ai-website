@@ -72,9 +72,11 @@ export function Team() {
               <p className="mt-6 max-w-xl text-base leading-relaxed text-ink-700">
                 Vijesh Reddy Golamari is the sole founder of AGRIVISION AI (AgriVisionAI Inc.),
                 headquartered in Detroit, Michigan, and a Generative AI Engineer and Technical Lead at
-                Symplore Inc. He founded AGRIVISION AI to bring AI-first product thinking to global
-                agriculture, and leads product, AI, and platform engineering — building intelligent
-                agriculture products, including the flagship platform YieldAI Global, from the ground up.
+                Symplore Inc. Before founding the company he spent five years building production AI at
+                Google, Meta, Citi and Flipkart. He founded AGRIVISION AI to bring AI-first product
+                thinking to global agriculture, and leads product, AI, and platform engineering —
+                building intelligent agriculture products, including the flagship platform YieldAI
+                Global, from the ground up.
               </p>
 
               <blockquote className="mt-8 border-l-2 border-brand-primary/60 bg-ink-50 pl-5 py-3">
