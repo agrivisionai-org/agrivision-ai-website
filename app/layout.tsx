@@ -186,6 +186,15 @@ const founderSchema = {
     { '@id': 'https://agrivisionai.org#organization' },
     { '@type': 'Organization', name: 'Symplore Inc' },
   ],
+  // Former employers. alumniOf takes Organization as well as EducationalOrganization,
+  // so past roles go here rather than in worksFor, which would assert he still holds
+  // all four jobs at once.
+  alumniOf: [
+    { '@type': 'Organization', name: 'Google' },
+    { '@type': 'Organization', name: 'Meta' },
+    { '@type': 'Organization', name: 'Citi' },
+    { '@type': 'Organization', name: 'Flipkart' },
+  ],
   sameAs: [
     'https://www.linkedin.com/in/vijesh-reddy-golamari/',
     'https://github.com/agrivisionai',

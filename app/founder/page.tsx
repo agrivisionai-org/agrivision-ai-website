@@ -45,6 +45,7 @@ const FACTS = [
   { label: 'Founded', value: 'May 2026 — sole founder' },
   { label: 'Flagship', value: 'YieldAI Global — live in India, the USA & Canada' },
   { label: 'Also', value: 'Generative AI Engineer & Technical Lead, Symplore Inc' },
+  { label: 'Before', value: 'AI in production at Google, Meta, Citi & Flipkart' },
 ];
 
 // The Person entity itself is emitted site-wide from the root layout; this page
@@ -153,6 +154,19 @@ export default function FounderPage() {
             <strong className="font-semibold text-ink-900">AGRIVISION AI (AgriVisionAI Inc.)</strong>, an
             AI-first agricultural technology company headquartered in Detroit, Michigan. He is also a
             Generative AI Engineer and Technical Lead at Symplore Inc.
+          </p>
+          <p>
+            Before AGRIVISION AI he spent five years building AI systems in production at scale: LLM
+            evaluation, alignment and red-teaming on the Gemini family at{' '}
+            <strong className="font-semibold text-ink-900">Google</strong>; LLaMA 3 fine-tuning,
+            distributed training and multimodal vision at{' '}
+            <strong className="font-semibold text-ink-900">Meta</strong>; enterprise generative AI and
+            retrieval pipelines for financial services at{' '}
+            <strong className="font-semibold text-ink-900">Citi</strong>; and end-to-end machine
+            learning, recommendation systems and search ranking at{' '}
+            <strong className="font-semibold text-ink-900">Flipkart</strong>. The evaluation and
+            refusal-behaviour work in particular is why YieldAI Global declines to answer questions it
+            should not, rather than guessing.
           </p>
           <p>
             He founded AGRIVISION AI with the goal of making advanced agricultural intelligence
