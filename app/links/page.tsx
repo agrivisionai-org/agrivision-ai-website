@@ -78,6 +78,15 @@ const LINKS: LinkItem[] = [
     accent: 'black',
   },
   {
+    // The org account and the founder's personal account are different profiles. Both are
+    // real and both get asked for, so both are listed rather than assuming one implies the other.
+    Icon: Github,
+    label: 'Vijesh Reddy Golamari on GitHub',
+    sub: 'The founder personally — github.com/agrivisionai',
+    href: 'https://github.com/agrivisionai',
+    accent: 'black',
+  },
+  {
     Icon: Instagram,
     label: 'AGRIVISION AI on Instagram',
     sub: '@agrivisionai.inc',

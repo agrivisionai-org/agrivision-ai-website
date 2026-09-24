@@ -98,6 +98,7 @@ const organizationSchema = {
       },
       sameAs: [
         'https://www.linkedin.com/in/vijesh-reddy-golamari/',
+        'https://github.com/agrivisionai',
       ],
     },
   ],
@@ -117,6 +118,7 @@ const organizationSchema = {
     },
     sameAs: [
       'https://www.linkedin.com/in/vijesh-reddy-golamari/',
+      'https://github.com/agrivisionai',
     ],
   },
   sameAs: [
@@ -186,6 +188,7 @@ const founderSchema = {
   ],
   sameAs: [
     'https://www.linkedin.com/in/vijesh-reddy-golamari/',
+    'https://github.com/agrivisionai',
   ],
 };
 
