@@ -186,7 +186,7 @@ export function CountrySelector() {
               sizes="100vw"
               alt={current.marketAlt}
               width={1200}
-              height={675}
+              height={520}
               loading="lazy"
               decoding="async"
               className="h-48 w-full object-cover sm:h-60"
