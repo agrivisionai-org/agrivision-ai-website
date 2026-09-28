@@ -48,7 +48,10 @@ export function CountryMarketCards() {
               className="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03] motion-reduce:transition-none motion-reduce:group-hover:scale-100"
             />
             <span className="absolute left-4 top-4 inline-flex items-center gap-2 rounded-full bg-white/92 px-3 py-1.5 text-xs font-semibold text-ink-900 backdrop-blur">
-              <span aria-hidden>{c.flag}</span> {c.name}
+              <span aria-hidden className="rounded bg-ink-900 px-1.5 py-0.5 text-[10px] font-bold tracking-wider text-white">
+                {c.code}
+              </span>
+              {c.name}
             </span>
           </div>
           <div className="p-6">
@@ -99,7 +102,14 @@ export function CountrySelector() {
                   : 'border border-ink-900/15 bg-white text-ink-700 hover:border-brand-primary/50 hover:text-brand-primary'
               }`}
             >
-              <span aria-hidden>{c.flag}</span>
+              <span
+                aria-hidden
+                className={`rounded px-1.5 py-0.5 text-[10px] font-bold tracking-wider ${
+                  selected ? 'bg-white/20 text-white' : 'bg-ink-900/[0.07] text-ink-700'
+                }`}
+              >
+                {c.code}
+              </span>
               {c.name}
             </button>
           );

@@ -166,7 +166,10 @@ export default function InvestorsPage() {
                       className="h-24 w-full object-cover sm:h-28"
                     />
                     <span className="absolute left-3 top-3 inline-flex items-center gap-1.5 rounded-full bg-white/92 px-2.5 py-1 text-[11px] font-semibold text-ink-900 backdrop-blur">
-                      <span aria-hidden>{c.flag}</span> {c.name}
+                      <span aria-hidden className="rounded bg-ink-900 px-1.5 py-0.5 text-[9px] font-bold tracking-wider text-white">
+                        {c.code}
+                      </span>
+                      {c.name}
                     </span>
                     <span className="absolute bottom-3 right-3 rounded-full bg-ink-900/85 px-2.5 py-1 text-[11px] font-semibold text-white">
                       {c.marketSource}
@@ -328,7 +331,7 @@ export default function InvestorsPage() {
         <Reveal delay={0.1}>
           <p className="mt-5 text-xs leading-relaxed text-ink-500">
             Crops listed describe what each market grows. They are landscape context, not a statement of platform crop
-            coverage. Imagery is original AGRIVISION AI illustration, not photography.
+            coverage. Photographs are licensed and self-hosted; each names its location only where one is documented.
           </p>
         </Reveal>
       </section>
@@ -339,7 +342,7 @@ export default function InvestorsPage() {
           <div className="flex flex-wrap items-center gap-3">
             <Eyebrow>The problem</Eyebrow>
             <span className="inline-flex items-center gap-1.5 rounded-full bg-[#FBF4E4] px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.12em] text-[#8A6A1F]">
-              <span aria-hidden>🇮🇳</span> India case study
+              <span aria-hidden className="rounded bg-[#8A6A1F] px-1.5 py-0.5 text-[9px] font-bold tracking-wider text-white">IN</span> India case study
             </span>
           </div>
           <h2 className="mt-4 font-display text-3xl font-semibold tracking-tight text-ink-900 sm:text-4xl">
@@ -775,7 +778,10 @@ export default function InvestorsPage() {
                   className="h-16 w-full object-cover sm:h-20"
                 />
                 <p className="bg-white px-3 py-2 text-[11px] font-semibold text-ink-700">
-                  <span aria-hidden>{c.flag}</span> {c.name} &middot; {c.price}
+                  <span aria-hidden className="mr-1 rounded bg-ink-900 px-1.5 py-0.5 text-[9px] font-bold tracking-wider text-white">
+                    {c.code}
+                  </span>
+                  {c.name} &middot; {c.price}
                 </p>
               </div>
             ))}

@@ -6,7 +6,12 @@
 //
 // Photographs are licensed under the Pexels licence and self-hosted, never hotlinked.
 // All three frames name their location, because Pexels documents one for each:
-// Nagpur, Alma in Wisconsin, and Saskatchewan. No identifiable face is used to imply a person endorses
+// Nagpur, Alma in Wisconsin, and Saskatchewan.
+//
+// `code` exists because flag emoji do not render on Windows: the regional-indicator
+// pair falls back to the bare letters, so a flag that looks fine on a Mac shows as
+// "IN" on most desktops. The code is rendered as a deliberate badge instead, which
+// looks intentional everywhere. `flag` is kept for platforms that do render it. No identifiable face is used to imply a person endorses
 // or uses the product, which the Pexels licence forbids.
 //
 // Guardrails: `grows` is landscape context, not a claim that a crop is supported — the
@@ -17,6 +22,7 @@ export type Country = {
   id: 'india' | 'usa' | 'canada';
   name: string;
   flag: string;
+  code: string;
   image: string;
   imageSmall: string;
   alt: string;
@@ -32,6 +38,7 @@ export const COUNTRIES: Country[] = [
   {
     id: 'india',
     name: 'India',
+    code: 'IN',
     flag: '🇮🇳',
     image: '/images/investors/photo-india.webp',
     imageSmall: '/images/investors/photo-india-800.webp',
@@ -47,6 +54,7 @@ export const COUNTRIES: Country[] = [
   {
     id: 'usa',
     name: 'United States',
+    code: 'US',
     flag: '🇺🇸',
     image: '/images/investors/photo-usa.webp',
     imageSmall: '/images/investors/photo-usa-800.webp',
@@ -62,6 +70,7 @@ export const COUNTRIES: Country[] = [
   {
     id: 'canada',
     name: 'Canada',
+    code: 'CA',
     flag: '🇨🇦',
     image: '/images/investors/photo-canada.webp',
     imageSmall: '/images/investors/photo-canada-800.webp',
