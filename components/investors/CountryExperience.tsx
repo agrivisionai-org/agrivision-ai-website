@@ -38,11 +38,11 @@ export function CountryMarketCards() {
           <div className="relative h-44 overflow-hidden">
             <img
               src={c.image}
-              srcSet={`${c.imageSmall} 800w, ${c.image} 1600w`}
+              srcSet={`${c.imageSmall} 800w, ${c.image} 1200w`}
               sizes="(max-width: 640px) 100vw, 33vw"
               alt={c.alt}
-              width={1600}
-              height={1000}
+              width={1200}
+              height={750}
               loading="lazy"
               decoding="async"
               className="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03] motion-reduce:transition-none motion-reduce:group-hover:scale-100"
@@ -121,11 +121,11 @@ export function CountrySelector() {
         >
           <img
             src={current.image}
-            srcSet={`${current.imageSmall} 800w, ${current.image} 1600w`}
+            srcSet={`${current.imageSmall} 800w, ${current.image} 1200w`}
             sizes="(max-width: 1024px) 100vw, 50vw"
             alt={current.alt}
-            width={1600}
-            height={1000}
+            width={1200}
+            height={750}
             loading="lazy"
             decoding="async"
             className="h-full max-h-80 w-full object-cover"

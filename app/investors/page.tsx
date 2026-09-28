@@ -53,6 +53,26 @@ const pageSchema = {
 const PRODUCT_ICONS = [Sprout, ScanEye, Radio, ClipboardList];
 const WHO_ICONS = [Users, Sprout, Building2];
 
+// One photograph per persona, in the same order. Locations are named in alt text only
+// where Pexels documents them; the other two are described by scene alone.
+const WHO_PHOTOS = [
+  {
+    src: '/images/investors/photo-smallholder.webp',
+    small: '/images/investors/photo-smallholder-800.webp',
+    alt: 'A young farmer harvesting rice by hand in a paddy field in Patna, Bihar',
+  },
+  {
+    src: '/images/investors/photo-agronomist.webp',
+    small: '/images/investors/photo-agronomist-800.webp',
+    alt: 'An agronomist inspecting mangoes on the tree while holding a tablet',
+  },
+  {
+    src: '/images/investors/photo-cooperative.webp',
+    small: '/images/investors/photo-cooperative-800.webp',
+    alt: 'A group of farmers standing together in a wheat field at dusk',
+  },
+];
+
 function Eyebrow({ children }: { children: React.ReactNode }) {
   return <div className="text-xs font-semibold uppercase tracking-[0.18em] text-brand-primary">{children}</div>;
 }
@@ -332,15 +352,32 @@ export default function InvestorsPage() {
           </p>
         </Reveal>
 
-        <div className="mt-10 grid gap-5 sm:grid-cols-3">
-          {d.problem.stats.map((s, i) => (
-            <Reveal key={s.value} delay={i * 0.08}>
-              <div className="h-full rounded-2xl border border-ink-900/[0.08] bg-white p-6">
-                <div className="font-display text-3xl font-semibold tabular-nums text-brand-primary">{s.value}</div>
-                <p className="mt-3 text-sm leading-relaxed text-ink-600">{s.label}</p>
-              </div>
-            </Reveal>
-          ))}
+        <div className="mt-10 grid gap-6 lg:grid-cols-[1.1fr_1fr] lg:items-center">
+          <div className="grid gap-5 sm:grid-cols-3 lg:grid-cols-1">
+            {d.problem.stats.map((s, i) => (
+              <Reveal key={s.value} delay={i * 0.08}>
+                <div className="h-full rounded-2xl border border-ink-900/[0.08] bg-white p-6">
+                  <div className="font-display text-3xl font-semibold tabular-nums text-brand-primary">{s.value}</div>
+                  <p className="mt-3 text-sm leading-relaxed text-ink-600">{s.label}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+          <Reveal delay={0.12}>
+            <div className="overflow-hidden rounded-2xl border border-ink-900/[0.08]">
+              <img
+                src="/images/investors/photo-problem-india.webp"
+                srcSet="/images/investors/photo-problem-india-800.webp 800w, /images/investors/photo-problem-india.webp 1200w"
+                sizes="(max-width: 1024px) 100vw, 45vw"
+                alt="Overhead view of rice being raked out to dry across a field in Habra, India"
+                width={1200}
+                height={750}
+                loading="lazy"
+                decoding="async"
+                className="h-full max-h-[420px] w-full object-cover"
+              />
+            </div>
+          </Reveal>
         </div>
 
         <Reveal delay={0.1}>
@@ -459,6 +496,60 @@ export default function InvestorsPage() {
         </div>
       </section>
 
+      {/* CropVision: the photograph carries this one, because the product story is
+          literally a person pointing a phone at a plant. */}
+      <section className={`${SECTION} py-12`}>
+        <Reveal>
+          <Eyebrow>CropVision</Eyebrow>
+          <h2 className="mt-4 font-display text-3xl font-semibold tracking-tight text-ink-900 sm:text-4xl">
+            See the crop. Understand the problem.
+          </h2>
+        </Reveal>
+        <div className="mt-9 grid gap-6 lg:grid-cols-2 lg:items-center">
+          <Reveal>
+            <div className="overflow-hidden rounded-2xl border border-ink-900/[0.08]">
+              <img
+                src="/images/investors/photo-cropvision.webp"
+                srcSet="/images/investors/photo-cropvision-800.webp 800w, /images/investors/photo-cropvision.webp 1600w"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                alt="A farmer holding a young plant in one hand and a smartphone in the other"
+                width={1600}
+                height={1000}
+                loading="lazy"
+                decoding="async"
+                className="h-full w-full object-cover"
+              />
+            </div>
+          </Reveal>
+          <Reveal delay={0.08}>
+            <ol className="space-y-3">
+              {[
+                ['Photograph', 'The farmer points a phone at the affected plant.'],
+                ['Analysis', 'The image is assessed against the agronomic corpus, not from model memory.'],
+                ['Detection and explanation', 'The likely cause is named, and an unclear read is reported as unclear rather than guessed.'],
+                ['Next action', 'Anything approaching a chemical or dosage decision is routed to a local extension officer or Krishi Vigyan Kendra.'],
+              ].map(([t2, b], i) => (
+                <li key={t2} className="flex gap-4 rounded-2xl border border-ink-900/[0.08] bg-white p-5">
+                  <span className="font-display text-sm font-semibold tabular-nums text-ink-400">{String(i + 1).padStart(2, '0')}</span>
+                  <span>
+                    <span className="block font-display text-base font-semibold text-ink-900">{t2}</span>
+                    <span className="mt-1 block text-sm leading-relaxed text-ink-600">{b}</span>
+                  </span>
+                </li>
+              ))}
+            </ol>
+            <p className="mt-4 rounded-2xl bg-[#FBF4E4] px-5 py-4 text-xs leading-relaxed text-[#6B5420]">
+              No confidence percentage or example diagnosis is shown here, because neither would come from a real
+              CropVision result. The product is live at{' '}
+              <a href="https://yieldaiglobal.com" target="_blank" rel="noopener noreferrer" className="font-semibold underline underline-offset-2">
+                yieldaiglobal.com
+              </a>{' '}
+              if you want to see an actual one.
+            </p>
+          </Reveal>
+        </div>
+      </section>
+
       {/* How it works */}
       <section className={`${SECTION} py-12`}>
         <Reveal>
@@ -552,7 +643,19 @@ export default function InvestorsPage() {
             const live = r.status === 'Live and self-serve';
             return (
               <Reveal key={r.who} delay={i * 0.07}>
-                <div className="flex h-full flex-col rounded-2xl border border-ink-900/[0.08] bg-white p-6">
+                <div className="flex h-full flex-col overflow-hidden rounded-2xl border border-ink-900/[0.08] bg-white">
+                  <img
+                    src={WHO_PHOTOS[i].src}
+                    srcSet={`${WHO_PHOTOS[i].small} 800w, ${WHO_PHOTOS[i].src} 1600w`}
+                    sizes="(max-width: 640px) 100vw, 33vw"
+                    alt={WHO_PHOTOS[i].alt}
+                    width={1600}
+                    height={1000}
+                    loading="lazy"
+                    decoding="async"
+                    className="h-40 w-full object-cover"
+                  />
+                  <div className="flex flex-1 flex-col p-6">
                   <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-brand-primary/10 text-brand-primary">
                     <Icon className="h-5 w-5" aria-hidden />
                   </span>
@@ -569,6 +672,7 @@ export default function InvestorsPage() {
                   >
                     {r.status}
                   </span>
+                  </div>
                 </div>
               </Reveal>
             );
@@ -790,6 +894,16 @@ export default function InvestorsPage() {
             </div>
           </div>
         </Reveal>
+      </section>
+
+      <section className={`${SECTION} pb-4`}>
+        <p className="text-[11px] leading-relaxed text-ink-500">
+          Photography licensed under the{' '}
+          <a href="https://www.pexels.com/license/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">Pexels licence</a>{' '}
+          and self-hosted: wheat field, vishal mali; corn crop, Frank Rubio; canola and tractor, Efrem Efre; plant and
+          smartphone, Mark Stebnicki; plus the rice harvest in Patna, the rice drying in Habra, the mango orchard and the wheat-field group, via Pexels contributors. A location is named only where Pexels documents one. Landscape panels elsewhere on
+          this page are original AGRIVISION AI illustration.
+        </p>
       </section>
 
       <Footer />

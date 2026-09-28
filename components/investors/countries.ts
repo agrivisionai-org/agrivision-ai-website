@@ -4,6 +4,12 @@
 // server component imports it, so this array has to live in a module of its own for the
 // page to be able to map over it during prerender.
 //
+// Photographs are licensed under the Pexels licence and self-hosted, never hotlinked.
+// The USA and Canada frames name their location because Pexels documents one (Alma,
+// Wisconsin; Saskatchewan). The India frame does not, so its alt text describes the
+// scene alone rather than asserting a country. No identifiable face is used to imply a person endorses
+// or uses the product, which the Pexels licence forbids.
+//
 // Guardrails: `grows` is landscape context, not a claim that a crop is supported — the
 // repository has no crop list. Market sources are only the three named in the product
 // data. Prices are the published live ones. Images are original illustration.
@@ -28,9 +34,9 @@ export const COUNTRIES: Country[] = [
     id: 'india',
     name: 'India',
     flag: '🇮🇳',
-    image: '/images/investors/market-india.webp',
-    imageSmall: '/images/investors/market-india-800.webp',
-    alt: 'Illustration of smallholder paddy and vegetable plots at late afternoon, representing the India market for YieldAI Global',
+    image: '/images/investors/photo-india.webp',
+    imageSmall: '/images/investors/photo-india-800.webp',
+    alt: 'A farmer standing in a wheat field, holding a smartphone',
     marketSource: 'Mandi data',
     marketDetail: 'Government mandi prices, benchmarked against the published Minimum Support Price.',
     currency: '₹',
@@ -43,9 +49,9 @@ export const COUNTRIES: Country[] = [
     id: 'usa',
     name: 'United States',
     flag: '🇺🇸',
-    image: '/images/investors/market-usa.webp',
-    imageSmall: '/images/investors/market-usa-800.webp',
-    alt: 'Illustration of Midwest row-crop fields converging on the horizon with a grain bin, representing the United States market for YieldAI Global',
+    image: '/images/investors/photo-usa.webp',
+    imageSmall: '/images/investors/photo-usa-800.webp',
+    alt: 'Rows of corn stretching toward farm buildings in Alma, Wisconsin, United States',
     marketSource: 'USDA',
     marketDetail: 'United States Department of Agriculture market information.',
     currency: '$',
@@ -58,9 +64,9 @@ export const COUNTRIES: Country[] = [
     id: 'canada',
     name: 'Canada',
     flag: '🇨🇦',
-    image: '/images/investors/market-canada.webp',
-    imageSmall: '/images/investors/market-canada-800.webp',
-    alt: 'Illustration of a canola field in bloom under a prairie sky with a grain elevator, representing the Canada market for YieldAI Global',
+    image: '/images/investors/photo-canada.webp',
+    imageSmall: '/images/investors/photo-canada-800.webp',
+    alt: 'A canola field in full bloom under a prairie sky in Saskatchewan, Canada',
     marketSource: 'StatCan',
     marketDetail: 'Statistics Canada market information.',
     currency: 'C$',
