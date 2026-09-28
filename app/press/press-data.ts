@@ -12,6 +12,14 @@ export const press = {
         "value": "AGRIVISION AI (legal entity: AgriVisionAI Inc.)"
       },
       {
+        "label": "Not to be confused with",
+        "value": "Several unrelated organisations use the same or a similar name: agrivisionai.io, agrivisionai.tech, agrivisionai.live, agrivisionai.se, agrivision-project.com, Agrivision of Lalande-de-Pomerol in France, AgriVision Equipment Group and AgriVision Solutions. None is affiliated with AgriVisionAI Inc. If you are writing about us, the company is the one at agrivisionai.org, headquartered in Detroit, Michigan."
+      },
+      {
+        "label": "Related companies",
+        "value": "YieldAI Global (yieldaiglobal.com), the flagship product, and BuildVaillant (buildvaillant.com), a web and product development studio and a venture of AgriVisionAI Inc. These are the only two."
+      },
+      {
         "label": "Type",
         "value": "AI-first technology company building intelligent products for global agriculture"
       },

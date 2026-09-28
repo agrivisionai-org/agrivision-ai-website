@@ -61,7 +61,11 @@ const organizationSchema = {
   '@type': 'Organization',
   '@id': 'https://agrivisionai.org#organization',
   name: 'AGRIVISION AI',
-  alternateName: 'AgriVisionAI Inc.',
+  legalName: 'AgriVisionAI Inc.',
+  // The spellings people actually type and that other companies also answer to. Without
+  // these, a search for "Agrivision AI" has no reason to resolve to this entity rather
+  // than one of the several unrelated companies using the same words.
+  alternateName: ['AgriVisionAI Inc.', 'AgriVision AI', 'Agrivision AI', 'AgriVisionAI'],
   url: 'https://agrivisionai.org',
   logo: {
     '@type': 'ImageObject',
@@ -74,8 +78,11 @@ const organizationSchema = {
   image: 'https://agrivisionai.org/opengraph-image.png',
   description:
     'AI-first technology company building intelligent products for global agriculture. Flagship: YieldAI Global — AI-powered crop intelligence for farmers and extension workers, live in the USA, India and Canada in 13 languages.',
+  // A blanket "not affiliated with anyone similar" is not actionable: it names nothing, so
+  // nothing can be told apart by it. These are the specific unrelated organisations that
+  // share the name, listed so an engine resolving the entity has something to separate.
   disambiguatingDescription:
-    'AGRIVISION AI (AgriVisionAI Inc.) is a Detroit, Michigan-based company founded in 2026 by sole founder Vijesh Reddy Golamari. It is not affiliated with any other similarly named agricultural-technology project or company.',
+    'AGRIVISION AI (AgriVisionAI Inc.) is a Detroit, Michigan company founded in May 2026 by sole founder Vijesh Reddy Golamari, and its flagship product is YieldAI Global at yieldaiglobal.com. Several unrelated organisations use the same or similar names and are not affiliated with it: agrivisionai.io (a crop-detection app for Indian farmers), agrivisionai.tech, agrivisionai.live, agrivisionai.se (vertical-farming software), agrivision-project.com, Agrivision of Lalande-de-Pomerol, France (agrivision.fr), AgriVision Equipment Group, and AgriVision Solutions. The only companies related to AgriVisionAI Inc. are its own properties: yieldaiglobal.com and buildvaillant.com.',
   foundingDate: '2026-05-01',
   foundingLocation: {
     '@type': 'Place',
