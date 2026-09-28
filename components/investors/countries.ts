@@ -32,6 +32,9 @@ export type Country = {
   price: string;
   grows: string[];
   context: string;
+  marketImage?: string;
+  marketImageSmall?: string;
+  marketAlt?: string;
 };
 
 export const COUNTRIES: Country[] = [
@@ -40,8 +43,8 @@ export const COUNTRIES: Country[] = [
     name: 'India',
     code: 'IN',
     flag: '🇮🇳',
-    image: '/images/investors/photo-india.webp',
-    imageSmall: '/images/investors/photo-india-800.webp',
+    image: '/images/investors/photo-india.webp?v=2',
+    imageSmall: '/images/investors/photo-india-800.webp?v=2',
     alt: 'A farmer broadcasting fertiliser by hand across a green field in Nagpur, India',
     marketSource: 'Mandi data',
     marketDetail: 'Government mandi prices, benchmarked against the published Minimum Support Price.',
@@ -50,14 +53,21 @@ export const COUNTRIES: Country[] = [
     grows: ['Rice', 'Wheat', 'Cotton', 'Vegetables'],
     context:
       'Smallholdings of a few acres, worked by hand, where the adviser gap is widest and where multilingual and voice access decide whether the product is usable at all.',
+    marketImage: '/images/investors/photo-india-market.webp',
+    marketImageSmall: '/images/investors/photo-india-market-800.webp',
+    // Pexels lists the location as India, but the tags also include Bangladesh and the
+    // photographer's name is common there, so the alt text describes the scene without
+    // naming a country. What matters here is that it shows a mandi: the place the price
+    // in "Mandi data" is actually set.
+    marketAlt: 'An open-air vegetable market at dusk, produce laid out across stalls with vendors and buyers among them',
   },
   {
     id: 'usa',
     name: 'United States',
     code: 'US',
     flag: '🇺🇸',
-    image: '/images/investors/photo-usa.webp',
-    imageSmall: '/images/investors/photo-usa-800.webp',
+    image: '/images/investors/photo-usa.webp?v=2',
+    imageSmall: '/images/investors/photo-usa-800.webp?v=2',
     alt: 'Rows of corn stretching toward farm buildings in Alma, Wisconsin, United States',
     marketSource: 'USDA',
     marketDetail: 'United States Department of Agriculture market information.',
@@ -72,8 +82,8 @@ export const COUNTRIES: Country[] = [
     name: 'Canada',
     code: 'CA',
     flag: '🇨🇦',
-    image: '/images/investors/photo-canada.webp',
-    imageSmall: '/images/investors/photo-canada-800.webp',
+    image: '/images/investors/photo-canada.webp?v=2',
+    imageSmall: '/images/investors/photo-canada-800.webp?v=2',
     alt: 'A canola field in full bloom under a prairie sky in Saskatchewan, Canada',
     marketSource: 'StatCan',
     marketDetail: 'Statistics Canada market information.',
