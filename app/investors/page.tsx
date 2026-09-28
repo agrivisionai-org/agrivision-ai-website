@@ -515,6 +515,60 @@ export default function InvestorsPage() {
         </Reveal>
       </section>
 
+      {/* The live product, shown rather than described. */}
+      <section className={`${SECTION} py-12`}>
+        <Reveal>
+          <Eyebrow>The live product</Eyebrow>
+          <h2 className="mt-4 font-display text-3xl font-semibold tracking-tight text-ink-900 sm:text-4xl">
+            It is running today, at yieldaiglobal.com.
+          </h2>
+        </Reveal>
+        <div className="mt-9 grid gap-6 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
+          <Reveal>
+            <div className="overflow-hidden rounded-2xl border border-ink-900/[0.08] bg-white">
+              <img
+                src="/images/investors/product-phone.webp"
+                alt="YieldAI Global on a phone, showing a weather alert reading rain arriving tonight, delay spraying until tomorrow afternoon"
+                width={700}
+                height={796}
+                loading="lazy"
+                decoding="async"
+                className="w-full object-cover"
+              />
+            </div>
+          </Reveal>
+          <Reveal delay={0.08}>
+            <div className="overflow-hidden rounded-2xl border border-ink-900/[0.08] bg-white">
+              <img
+                src="/images/investors/product-features.webp"
+                srcSet="/images/investors/product-features-800.webp 800w, /images/investors/product-features.webp 1400w"
+                sizes="(max-width: 1024px) 100vw, 60vw"
+                alt="The YieldAI Global feature set: AI Crop Advisor, Live Market Prices, Price Alerts, Live Weather and Irrigation, Extension Worker CRM, and Government Schemes"
+                width={1400}
+                height={672}
+                loading="lazy"
+                decoding="async"
+                className="w-full object-cover"
+              />
+            </div>
+            <p className="mt-4 text-sm leading-relaxed text-ink-600">
+              Six capabilities shipping today, including an{' '}
+              <strong className="font-semibold text-ink-900">Extension Worker CRM</strong> for managing farmers,
+              diagnosis history, field visits and impact reports from one dashboard — which is the tool behind the
+              extension-worker route to distribution.
+            </p>
+            <p className="mt-4 text-xs leading-relaxed text-ink-500">
+              Both images are screenshots of{' '}
+              <a href="https://yieldaiglobal.com" target="_blank" rel="noopener noreferrer" className="font-medium text-brand-primary underline-offset-2 hover:underline">
+                yieldaiglobal.com
+              </a>{' '}
+              taken in September 2026. They are the product&rsquo;s own published presentation, not an in-app recording
+              and not a mockup made for this page.
+            </p>
+          </Reveal>
+        </div>
+      </section>
+
       {/* CropVision: the photograph carries this one, because the product story is
           literally a person pointing a phone at a plant. */}
       <section className={`${SECTION} py-12`}>
