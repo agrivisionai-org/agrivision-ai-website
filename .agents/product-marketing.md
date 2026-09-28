@@ -115,7 +115,7 @@
 **Personality:** Honest, grounded, self-correcting, practical, unflashy
 
 ## Proof Points
-**Metrics:** 54 crops · 17 platform modules · 13 languages · live in 3 countries · 23 published guides
+**Metrics:** 17 platform modules · 13 languages · live in 3 countries · 23 published guides
 
 **Customers:** **GAP** — no named customers or logos yet
 

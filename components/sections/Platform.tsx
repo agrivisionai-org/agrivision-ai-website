@@ -73,8 +73,8 @@ const GROUPS = [
 const FACTS = [
   { value: '17', label: 'Modules in the platform' },
   { value: '13', label: 'Languages supported' },
-  { value: '54', label: 'Crops covered' },
   { value: '3', label: 'Countries live' },
+  { value: '3', label: 'Government price feeds' },
 ];
 
 export function Platform() {

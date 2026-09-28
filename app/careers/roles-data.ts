@@ -89,7 +89,7 @@ export const roles: Role[] = [
       'Ground the platform’s answers in credible agronomic sources — ICAR, FAO and state agriculture departments — so the advice given to farmers is correct.',
     whatYouDo: [
       'Check what the platform tells farmers against credible agronomic sources, and flag where it is thin or wrong.',
-      'Build out crop, pest and disease coverage across the 54 crops the platform handles.',
+      'Build out the crop, pest and disease coverage the platform handles, and keep the published coverage list accurate.',
       'Work on government scheme guidance — PM-KISAN, PMFBY and others — so the detail is accurate and current.',
       'Help decide where the honest answer is "ask your local extension officer".',
     ],

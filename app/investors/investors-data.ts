@@ -20,9 +20,9 @@ export const investors = {
       'YieldAI Global gives farming households and agricultural extension workers grounded, multilingual crop advice, live government market prices and photo-based disease detection — and refuses to guess when the stakes are chemical.',
     stats: [
       { value: '17', label: 'platform modules' },
-      { value: '54', label: 'crops covered' },
       { value: '13', label: 'languages, voice included' },
       { value: '3', label: 'countries live today' },
+      { value: '3', label: 'government price feeds' },
     ] as Stat[],
   },
 
@@ -86,7 +86,7 @@ export const investors = {
   whyAi: {
     headline: 'Why AI is required here, and where it is the wrong tool.',
     items: [
-      { title: 'The combinatorics', body: '54 crops, multiple growth stages, district-level conditions and 13 languages. A rules engine covering that is tens of thousands of branches, hand-written and stale within a season.' },
+      { title: 'The combinatorics', body: 'Many crops, multiple growth stages, district-level conditions and 13 languages. A rules engine covering that is tens of thousands of branches, hand-written and stale within a season.' },
       { title: 'The input is unstructured', body: 'A voice note and a blurred photograph of a leaf are the actual inputs. Neither is a form field.' },
       { title: 'The answer must be composed', body: 'A useful reply combines agronomy, today’s price, the weather window and a scheme rule into one paragraph in one language.' },
       { title: 'Where AI is the wrong tool', body: 'Prices come from government feeds, not predictions. Scheme eligibility comes from published rules, not inference. Dosage is refused outright. We use AI where judgement is needed and data where facts exist.', tone: 'note' },
@@ -116,7 +116,7 @@ export const investors = {
     headline: 'Pricing, as published.',
     rows: [
       { tier: 'Free trial', price: '30 days, no card required', includes: 'Full platform access, all 17 modules', status: 'Live' },
-      { tier: 'Pro — India', price: 'Rs 149 / month', includes: 'Full platform, 54 crops, 13 languages, CropVision', status: 'Live' },
+      { tier: 'Pro — India', price: 'Rs 149 / month', includes: 'Full platform, all 17 modules, 13 languages, CropVision', status: 'Live' },
       { tier: 'Pro — USA', price: '$9.99 / month', includes: 'Full platform, USDA market prices', status: 'Live' },
       { tier: 'Pro — Canada', price: 'C$9.99 / month', includes: 'Full platform, StatCan market prices', status: 'Live' },
     ],
@@ -137,7 +137,7 @@ export const investors = {
   progress: {
     headline: 'Where we actually are.',
     built: [
-      { title: 'Product shipped and live', body: 'YieldAI Global is live in India, the USA and Canada at a published price with a working 30-day trial. 17 modules, 54 crops, 13 languages, CropVision included.' },
+      { title: 'Product shipped and live', body: 'YieldAI Global is live in India, the USA and Canada at a published price with a working 30-day trial. 17 modules, 13 languages, CropVision included.' },
       { title: 'Three government price feeds integrated', body: 'Mandi data in India, USDA in the USA and StatCan in Canada — three separate government sources, not one wrapped API.' },
       { title: 'Public company surface', body: 'Website, product documentation, press kit, structured data and a weekly build-in-public newsletter.' },
     ] as Item[],
