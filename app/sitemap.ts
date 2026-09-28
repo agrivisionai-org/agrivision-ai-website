@@ -51,6 +51,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         : {}),
     })),
     { url: `${BASE}/press`, lastModified: d('2026-06-29'), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/investors`, lastModified: d('2026-09-28'), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/links`, lastModified: d('2026-06-29'), changeFrequency: 'weekly', priority: 0.6 },
     { url: `${BASE}/privacy`, lastModified: d('2026-06-30'), changeFrequency: 'yearly', priority: 0.3 },
     { url: `${BASE}/terms`, lastModified: d('2026-06-30'), changeFrequency: 'yearly', priority: 0.3 },
