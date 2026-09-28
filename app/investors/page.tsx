@@ -494,6 +494,25 @@ export default function InvestorsPage() {
             );
           })}
         </div>
+        <Reveal delay={0.12}>
+          <figure className="mt-6 overflow-hidden rounded-2xl border border-ink-900/[0.08]">
+            <img
+              src="/images/investors/photo-paddy.webp"
+              srcSet="/images/investors/photo-paddy-800.webp 800w, /images/investors/photo-paddy.webp 1200w"
+              sizes="100vw"
+              alt="A farmer transplanting rice seedlings by hand in a flooded paddy field in India"
+              width={1200}
+              height={600}
+              loading="lazy"
+              decoding="async"
+              className="h-48 w-full object-cover sm:h-64"
+            />
+            <figcaption className="bg-white px-5 py-3 text-xs leading-relaxed text-ink-600">
+              The work the advice is about. Timing a transplant, a spray or a sale is where a grounded answer either
+              helps or does not.
+            </figcaption>
+          </figure>
+        </Reveal>
       </section>
 
       {/* CropVision: the photograph carries this one, because the product story is
@@ -688,8 +707,28 @@ export default function InvestorsPage() {
             {d.pricing.headline}
           </h2>
         </Reveal>
+        <Reveal delay={0.06}>
+          <div className="mt-8 grid grid-cols-3 gap-3">
+            {COUNTRIES.map((c) => (
+              <div key={c.id} className="overflow-hidden rounded-xl border border-ink-900/[0.08]">
+                <img
+                  src={c.imageSmall}
+                  alt=""
+                  width={800}
+                  height={500}
+                  loading="lazy"
+                  decoding="async"
+                  className="h-16 w-full object-cover sm:h-20"
+                />
+                <p className="bg-white px-3 py-2 text-[11px] font-semibold text-ink-700">
+                  <span aria-hidden>{c.flag}</span> {c.name} &middot; {c.price}
+                </p>
+              </div>
+            ))}
+          </div>
+        </Reveal>
         <Reveal delay={0.08}>
-          <div className="mt-8 overflow-hidden rounded-2xl border border-ink-900/[0.08] bg-white">
+          <div className="mt-4 overflow-hidden rounded-2xl border border-ink-900/[0.08] bg-white">
             <dl className="divide-y divide-ink-900/[0.06]">
               {d.pricing.rows.map((r) => (
                 <div key={r.tier} className="grid grid-cols-1 gap-1 px-5 py-4 sm:grid-cols-[180px_180px_1fr_auto] sm:items-center sm:gap-4">
@@ -851,7 +890,7 @@ export default function InvestorsPage() {
         <Reveal>
           <div className="relative overflow-hidden rounded-3xl">
             <img
-              src="/images/investors/global-agriculture.webp"
+              src="/images/investors/photo-global-agriculture.webp"
               alt=""
               width={1599}
               height={560}

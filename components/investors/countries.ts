@@ -5,9 +5,8 @@
 // page to be able to map over it during prerender.
 //
 // Photographs are licensed under the Pexels licence and self-hosted, never hotlinked.
-// The USA and Canada frames name their location because Pexels documents one (Alma,
-// Wisconsin; Saskatchewan). The India frame does not, so its alt text describes the
-// scene alone rather than asserting a country. No identifiable face is used to imply a person endorses
+// All three frames name their location, because Pexels documents one for each:
+// Nagpur, Alma in Wisconsin, and Saskatchewan. No identifiable face is used to imply a person endorses
 // or uses the product, which the Pexels licence forbids.
 //
 // Guardrails: `grows` is landscape context, not a claim that a crop is supported — the
@@ -36,7 +35,7 @@ export const COUNTRIES: Country[] = [
     flag: '🇮🇳',
     image: '/images/investors/photo-india.webp',
     imageSmall: '/images/investors/photo-india-800.webp',
-    alt: 'A farmer standing in a wheat field, holding a smartphone',
+    alt: 'A farmer broadcasting fertiliser by hand across a green field in Nagpur, India',
     marketSource: 'Mandi data',
     marketDetail: 'Government mandi prices, benchmarked against the published Minimum Support Price.',
     currency: '₹',
