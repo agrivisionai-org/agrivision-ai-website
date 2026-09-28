@@ -142,32 +142,6 @@ export function CountrySelector() {
           />
         </motion.div>
 
-        {current.marketImage && (
-          <motion.figure
-            key={`${current.id}-mkt`}
-            initial={reduce ? false : { opacity: 0, y: 10 }}
-            animate={reduce ? undefined : { opacity: 1, y: 0 }}
-            transition={{ duration: 0.3, ease: 'easeOut' }}
-            className="overflow-hidden rounded-2xl border border-ink-900/[0.08] lg:col-span-2"
-          >
-            <img
-              src={current.marketImage}
-              srcSet={`${current.marketImageSmall} 800w, ${current.marketImage} 1200w`}
-              sizes="100vw"
-              alt={current.marketAlt}
-              width={1200}
-              height={675}
-              loading="lazy"
-              decoding="async"
-              className="h-48 w-full object-cover sm:h-60"
-            />
-            <figcaption className="bg-white px-5 py-3 text-xs leading-relaxed text-ink-600">
-              Where the price is actually set. A mandi is a physical market, and the government price a household is
-              quoted comes out of one &mdash; which is why the product carries the official figure rather than an
-              estimate.
-            </figcaption>
-          </motion.figure>
-        )}
 
         <motion.div
           key={`${current.id}-body`}
@@ -197,6 +171,33 @@ export function CountrySelector() {
             </div>
           </dl>
         </motion.div>
+
+        {current.marketImage && (
+          <motion.figure
+            key={`${current.id}-mkt`}
+            initial={reduce ? false : { opacity: 0, y: 10 }}
+            animate={reduce ? undefined : { opacity: 1, y: 0 }}
+            transition={{ duration: 0.3, ease: 'easeOut' }}
+            className="overflow-hidden rounded-2xl border border-ink-900/[0.08] lg:col-span-2"
+          >
+            <img
+              src={current.marketImage}
+              srcSet={`${current.marketImageSmall} 800w, ${current.marketImage} 1200w`}
+              sizes="100vw"
+              alt={current.marketAlt}
+              width={1200}
+              height={675}
+              loading="lazy"
+              decoding="async"
+              className="h-48 w-full object-cover sm:h-60"
+            />
+            <figcaption className="bg-white px-5 py-3 text-xs leading-relaxed text-ink-600">
+              Where the price is actually set. A mandi is a physical market, and the government price a household is
+              quoted comes out of one &mdash; which is why the product carries the official figure rather than an
+              estimate.
+            </figcaption>
+          </motion.figure>
+        )}
       </div>
     </div>
   );
