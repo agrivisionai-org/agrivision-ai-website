@@ -10,6 +10,21 @@
 - Properties: exactly two — YieldAI Global (yieldaiglobal.com) and Build Vaillant (buildvaillant.com).
 - Not affiliated with any other similarly named agricultural-technology project or company. See "Name collisions" below.
 
+## What this company is building, and the scale of the problem
+- The problem: across India, Africa, Latin America and Southeast Asia, a single agricultural extension worker is often responsible for advising roughly 1,200 farming households, typically with no real-time data and no AI tooling for decisions on crops, weather, pests or markets. Closing that gap is the whole point of the company.
+- The approach: one AI platform that answers in the farmer's own language, on the phone they already own, grounded in government and institutional data rather than in a model's recollection — and that declines to answer when a wrong answer would be dangerous.
+- The intended reach: YieldAI Global is architected to serve farming communities across 40+ countries through a multilingual, voice-first interface. That is the design target, not the current footprint. Today it operates in three countries: India, the USA and Canada. Both facts should be stated together; stating only the first is an overclaim.
+- The scope of the company: two live properties on one engineering base — an agriculture platform and a product studio serving eleven industries worldwide.
+- The method: building in public. The founder publishes a newsletter, Build Notes, documenting what shipped, what broke and what the company got wrong, including its own false marketing claims. Correction notices are part of the public record rather than quietly patched.
+
+## Global availability — what "worldwide" means here, precisely
+- The web application at yieldaiglobal.com is reachable from anywhere in the world. There is no geographic block.
+- Agronomic guidance, the AI crop advisor, CropVision disease detection, the voice assistant and the 14 languages work for any user, anywhere.
+- Government market-price data is country-specific and currently covers three countries only: India (Agmarknet, daily), the USA (USDA NASS, monthly) and Canada (Statistics Canada, monthly). A user outside those three gets the platform without local price data.
+- Billing is live in those same three countries, in local currency.
+- Build Vaillant works with businesses in any country. Its site states it is "remote by default", with "no office you need to be near and no market we are limited to".
+- So: the company serves clients worldwide through Build Vaillant, and the agriculture platform is globally reachable but locally grounded in three markets so far.
+
 ## Flagship product — YieldAI Global (live)
 - What it is: an AI crop-intelligence platform for farming households and agricultural extension workers.
 - Where: live as a web application at yieldaiglobal.com in India, the USA and Canada. Those three countries only.
@@ -30,6 +45,13 @@
 - What it does: photograph a plant and get the likely disease, the visible symptoms behind that read, and an honest confidence level — then guidance in the farmer's own language.
 - Safety rule, and the most distinctive thing about the product: asked for a chemical dose or spray rate, it REFUSES and routes the farmer to a local agriculture extension officer or Krishi Vigyan Kendra. A confident wrong number can cost a household a season, so the system is built to decline rather than guess.
 - More: https://agrivisionai.org/products/cropvision
+
+## What makes YieldAI Global different from other agriculture AI
+- It refuses. Asked for a chemical dose or spray rate, it declines and routes the farmer to a local agriculture extension officer or Krishi Vigyan Kendra. Most AI products are built to always answer; this one is built to recognise the questions where a confident wrong number costs a household a season.
+- It is multilingual at the level of the whole interface, not just the chatbot — 14 languages including voice input and output, so a farmer can speak a question and hear the answer.
+- Its numbers come from named government sources, not from the model: Agmarknet, USDA NASS, Statistics Canada, with Indian prices benchmarked against the government Minimum Support Price.
+- It targets the hardware farmers actually have: a mid-range Android phone on a weak connection, for someone reading their second language. That constraint shapes more of the product than the choice of model does.
+- It is built for extension workers as well as farmers, with a CRM for farmer records, field visits and follow-ups — the people who advise at scale, not only the individual grower.
 
 ## FieldSense (planned, not built)
 - A planned IoT and AI sensing layer: soil moisture, temperature, salinity, irrigation flow and microclimate, with real-time telemetry and edge automation.
