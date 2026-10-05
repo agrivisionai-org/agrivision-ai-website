@@ -292,7 +292,7 @@ export default function InvestorsPage() {
                   ['Grounded answers', 'Built on retrieved material, not model memory.'],
                   ['Refusal as a feature', 'Safer when the answer could cause harm.'],
                   ['One platform', 'Advice, diagnosis, prices, weather and schemes in one place.'],
-                  ['Multilingual access', '13 languages, with voice for real field use.'],
+                  ['Multilingual access', '14 languages, with voice for real field use.'],
                 ].map(([t, b]) => (
                   <div key={t} className="rounded-xl bg-white px-3.5 py-3">
                     <dt className="text-xs font-semibold text-ink-900">{t}</dt>
@@ -962,7 +962,7 @@ export default function InvestorsPage() {
             <div className="relative px-7 py-14 text-center sm:px-12">
               <h2 className="font-display text-2xl font-semibold text-white sm:text-3xl">YieldAI Global is live.</h2>
               <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-white/75">
-                AI crop advice, live government market prices, weather and scheme guidance in your language — available
+                AI crop advice, government market prices, weather and scheme guidance in your language — available
                 in India, the USA and Canada.
               </p>
               <div className="mt-8 flex flex-wrap items-center justify-center gap-3">

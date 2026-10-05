@@ -28,7 +28,7 @@ const FOCUS_AREAS = [
 
 const TIMELINE = [
   { year: '2026', title: 'AGRIVISION AI founded', body: 'A founder-led, AI-first AgriTech company set out to build intelligent agriculture products.' },
-  { year: 'Now', title: 'YieldAI Global is live', body: 'AI crop advice, live government market prices, weather, and scheme guidance — live in the USA, India, and Canada.' },
+  { year: 'Now', title: 'YieldAI Global is live', body: 'AI crop advice, government market prices, weather, and scheme guidance — live in the USA, India, and Canada.' },
   // The Ireland page had no inbound link anywhere on the site. Search Console reported it
   // as "Discovered - currently not indexed" with "Referring page: None detected", which is
   // what an orphan page looks like: reachable only via the sitemap, so never prioritised.

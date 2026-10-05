@@ -13,7 +13,7 @@ import { Mic, MapPin, Library, Cpu, ShieldCheck, MessageSquare, ArrowRight, User
  */
 
 const STEPS = [
-  { n: '01', Icon: Mic, title: 'Ask', body: 'Typed or spoken, in any of 13 languages, or a photograph of the affected plant.' },
+  { n: '01', Icon: Mic, title: 'Ask', body: 'Typed or spoken, in any of 14 languages, or a photograph of the affected plant.' },
   { n: '02', Icon: MapPin, title: 'Locate', body: 'Crop, growth stage, district and season establish what the question actually means.' },
   { n: '03', Icon: Library, title: 'Retrieve', body: 'Retrieval over ICAR, FAO and state department material, plus live price and weather feeds.' },
   { n: '04', Icon: Cpu, title: 'Reason', body: 'Routed models compose an answer against the retrieved material, not from memory.', emphasis: true },

@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     template: '%s · AGRIVISION AI',
   },
     description:
-    'YieldAI Global, our AI farming assistant, is live in India, the USA & Canada — AI crop advice, live government market prices, weather and scheme guidance.',
+    'YieldAI Global, our AI farming assistant, is live in India, the USA & Canada — AI crop advice, government market prices, weather and scheme guidance.',
   keywords: [
     'AgriTech',
     'AI Agriculture',
@@ -77,7 +77,7 @@ const organizationSchema = {
   },
   image: 'https://agrivisionai.org/opengraph-image.png',
   description:
-    'AI-first technology company building intelligent products for global agriculture. Flagship: YieldAI Global — AI-powered crop intelligence for farmers and extension workers, live in the USA, India and Canada in 13 languages.',
+    'AI-first technology company building intelligent products for global agriculture. Flagship: YieldAI Global — AI-powered crop intelligence for farmers and extension workers, live in the USA, India and Canada in 14 languages.',
   // A blanket "not affiliated with anyone similar" is not actionable: it names nothing, so
   // nothing can be told apart by it. These are the specific unrelated organisations that
   // share the name, listed so an engine resolving the entity has something to separate.
@@ -137,13 +137,35 @@ const organizationSchema = {
   ],
   // Reciprocates the parentOrganization claim buildvaillant.com already makes,
   // so the two entities resolve as one corporate structure rather than one-way.
+  //
+  // Everything below is taken from buildvaillant.com's own copy. Deliberately NOT
+  // carried across: its "98% clients staying past year one", "6 wks first release"
+  // and "5+ sectors" hero tiles. Those are unverifiable business metrics, the first
+  // two especially so for a studio whose own footer says "On watch since 2026", and
+  // schema is precisely where an unbacked number gets laundered into a knowledge
+  // graph and quoted back at us.
   subOrganization: {
     '@type': 'Organization',
     '@id': 'https://buildvaillant.com/#organization',
-    name: 'BuildVaillant',
+    name: 'Build Vaillant',
+    alternateName: ['BuildVaillant', 'Build Vaillant Studio'],
     url: 'https://buildvaillant.com',
+    slogan: 'We Build. We Deploy. We Watch.',
     description:
-      'Web and product development studio, and a venture of AgriVisionAI Inc. — websites, web apps, and digital products, hosted and supported for 365 days after launch under a written contract.',
+      'Web and product development studio, and a venture of AgriVisionAI Inc. — custom ERP systems, e-commerce and SaaS applications, mobile apps, CRM systems and business websites, built for businesses across eleven industries and supported after launch under a scoped support plan.',
+    parentOrganization: { '@id': 'https://agrivisionai.org#organization' },
+    sameAs: ['https://www.instagram.com/buildvaillantofficial/'],
+    knowsAbout: [
+      'Custom ERP systems',
+      'E-commerce web applications',
+      'Mobile application development',
+      'CRM systems',
+      'SaaS product development',
+      'Business websites',
+      'Deployment, monitoring and support',
+    ],
+    areaServed: { '@type': 'Place', name: 'Worldwide' },
+    email: 'hello@agrivisionai.org',
   },
   contactPoint: [
     {
@@ -229,7 +251,7 @@ const productsSchema = {
         operatingSystem: 'Web',
         url: 'https://agrivisionai.org/products/yieldai-global',
         description:
-          'Flagship AI-powered agriculture platform, live in India, the USA & Canada — AI crop advice, live government market prices, weather and forecasting, government-scheme guidance, yield prediction, and a voice assistant in the farmer\'s own language. Available at https://yieldaiglobal.com.',
+          'Flagship AI-powered agriculture platform, live in India, the USA & Canada — AI crop advice, government market prices, weather and forecasting, government-scheme guidance, yield prediction, and a voice assistant in the farmer\'s own language. Available at https://yieldaiglobal.com.',
         // Priced per market; one Offer each so no visitor is shown a price they cannot buy.
         offers: [
           { '@type': 'Offer', price: '149', priceCurrency: 'INR', eligibleRegion: { '@type': 'Country', name: 'IN' }, availability: 'https://schema.org/InStock', url: 'https://yieldaiglobal.com' },

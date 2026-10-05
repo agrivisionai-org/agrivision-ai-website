@@ -17,7 +17,7 @@ export const investors = {
     eyebrow: 'Investor and partner briefing',
     headline: 'Crop intelligence that knows when not to answer.',
     lede:
-      'YieldAI Global gives farming households and agricultural extension workers grounded, multilingual crop advice, live government market prices and photo-based disease detection — and refuses to guess when the stakes are chemical.',
+      'YieldAI Global gives farming households and agricultural extension workers grounded, multilingual crop advice, government market prices and photo-based disease detection — and refuses to guess when the stakes are chemical.',
     stats: [
       { value: '17', label: 'platform modules' },
       { value: '13', label: 'languages, voice included' },
@@ -62,7 +62,7 @@ export const investors = {
   platform: {
     headline: 'One platform. Four products. Two of them are real today.',
     items: [
-      { title: 'YieldAI Global', body: 'The flagship crop intelligence platform: AI crop advisory, live government market prices, weather, scheme guidance, yield prediction and a voice assistant across 17 modules.', tag: 'Live', tone: 'live' },
+      { title: 'YieldAI Global', body: 'The flagship crop intelligence platform: AI crop advisory, government market prices, weather, scheme guidance, yield prediction and a voice assistant across 17 modules.', tag: 'Live', tone: 'live' },
       { title: 'CropVision', body: 'Photo-based disease, pest and nutrient detection. Runs inside YieldAI Global, so a diagnosis continues into explanation, scheme guidance and next steps.', tag: 'Live', tone: 'live' },
       { title: 'FieldSense', body: 'Soil and irrigation sensing: sensor fabric, real-time telemetry, microclimate intelligence and edge automation.', tag: 'Planned — roadmap, IoT', tone: 'planned' },
       { title: 'FieldOps', body: 'Farm operations for agribusinesses and cooperatives: workflow automation, yield and cost ledger, multi-farm operations and traceability.', tag: 'Early-stage concept', tone: 'planned' },
@@ -72,7 +72,7 @@ export const investors = {
   how: {
     headline: 'Question in, grounded answer out — or an honest refusal.',
     steps: [
-      { title: 'Ask', body: 'Typed or spoken, in any of 13 languages, or a photograph of the affected plant.' },
+      { title: 'Ask', body: 'Typed or spoken, in any of 14 languages, or a photograph of the affected plant.' },
       { title: 'Locate', body: 'Crop, growth stage, district and season establish what the question actually means.' },
       { title: 'Retrieve', body: 'Retrieval over ICAR, FAO and state agriculture department material, plus live price and weather feeds.' },
       { title: 'Reason', body: 'Routed models compose an answer against the retrieved material, not from memory.' },
@@ -86,7 +86,7 @@ export const investors = {
   whyAi: {
     headline: 'Why AI is required here, and where it is the wrong tool.',
     items: [
-      { title: 'The combinatorics', body: 'Many crops, multiple growth stages, district-level conditions and 13 languages. A rules engine covering that is tens of thousands of branches, hand-written and stale within a season.' },
+      { title: 'The combinatorics', body: 'Many crops, multiple growth stages, district-level conditions and 14 languages. A rules engine covering that is tens of thousands of branches, hand-written and stale within a season.' },
       { title: 'The input is unstructured', body: 'A voice note and a blurred photograph of a leaf are the actual inputs. Neither is a form field.' },
       { title: 'The answer must be composed', body: 'A useful reply combines agronomy, today’s price, the weather window and a scheme rule into one paragraph in one language.' },
       { title: 'Where AI is the wrong tool', body: 'Prices come from government feeds, not predictions. Scheme eligibility comes from published rules, not inference. Dosage is refused outright. We use AI where judgement is needed and data where facts exist.', tone: 'note' },
@@ -115,8 +115,8 @@ export const investors = {
   pricing: {
     headline: 'Pricing, as published.',
     rows: [
-      { tier: 'Free trial', price: '30 days, no card required', includes: 'Full platform access, all 17 modules', status: 'Live' },
-      { tier: 'Pro — India', price: 'Rs 149 / month', includes: 'Full platform, all 17 modules, 13 languages, CropVision', status: 'Live' },
+      { tier: 'Free trial', price: '30 days', includes: 'Full platform access, all 17 modules', status: 'Live' },
+      { tier: 'Pro — India', price: 'Rs 149 / month', includes: 'Full platform, all 17 modules, 14 languages, CropVision', status: 'Live' },
       { tier: 'Pro — USA', price: '$9.99 / month', includes: 'Full platform, USDA market prices', status: 'Live' },
       { tier: 'Pro — Canada', price: 'C$9.99 / month', includes: 'Full platform, StatCan market prices', status: 'Live' },
     ],
@@ -137,7 +137,7 @@ export const investors = {
   progress: {
     headline: 'Where we actually are.',
     built: [
-      { title: 'Product shipped and live', body: 'YieldAI Global is live in India, the USA and Canada at a published price with a working 30-day trial. 17 modules, 13 languages, CropVision included.' },
+      { title: 'Product shipped and live', body: 'YieldAI Global is live in India, the USA and Canada at a published price with a working 30-day trial. 17 modules, 14 languages, CropVision included.' },
       { title: 'Three government price feeds integrated', body: 'Mandi data in India, USDA in the USA and StatCan in Canada — three separate government sources, not one wrapped API.' },
       { title: 'Public company surface', body: 'Website, product documentation, press kit, structured data and a weekly build-in-public newsletter.' },
     ] as Item[],

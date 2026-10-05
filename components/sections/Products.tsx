@@ -55,7 +55,7 @@ const PRODUCTS = [
     tagline: 'Flagship · Live',
     status: 'Live',
     description:
-      'Our live AI agriculture platform — AI crop advice, live government market prices, weather, and scheme guidance in the farmer’s own language. Available now in India, the USA, and Canada, with more capabilities on the roadmap.',
+      'Our live AI agriculture platform — AI crop advice, government market prices, weather, and scheme guidance in the farmer’s own language. Available now in India, the USA, and Canada, with more capabilities on the roadmap.',
     accent: '#5DBB63',
     features: MVP_FEATURES,
     metric: { value: 'Live', label: 'India · USA · Canada' },
@@ -186,13 +186,13 @@ export function Products() {
                 BuildVaillant
               </h3>
               <p className="mt-3 max-w-lg text-base leading-relaxed text-ink-700">
-                Our venture beyond the farm — websites, web apps, and digital products for businesses
-                worldwide, designed and shipped, then managed for 365 days under a written contract.
-                We build it. Then we stay.
+                Our venture beyond the farm — ERP systems, e-commerce and SaaS applications, mobile
+                apps, CRM systems and business websites for businesses across eleven industries,
+                then monitored and supported after launch. We build. We deploy. We watch.
               </p>
               <div className="mt-4 inline-flex items-center gap-2 rounded-full border border-ink-900/[0.07] bg-ink-50 px-3.5 py-1.5 text-xs font-medium text-ink-700">
                 <span className="h-1.5 w-1.5 rounded-full" style={{ background: BV_TEAL }} />
-                The revenue engine that funds our agriculture work
+                Our commercial studio, run alongside the agriculture work
               </div>
               <span className="mt-6 inline-flex items-center gap-2 rounded-full border border-ink-900/[0.08] bg-white px-5 py-3 text-sm font-semibold text-ink-900 transition-all group-hover:border-brand-primary/40 group-hover:text-brand-primary">
                 Visit buildvaillant.com

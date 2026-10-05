@@ -74,7 +74,7 @@ export function Hero() {
           className="mx-auto mt-6 max-w-2xl text-balance text-center text-base leading-relaxed text-ink-600 sm:text-lg"
         >
           Our flagship product, YieldAI Global, is live in the USA, India, and Canada — AI crop advice,
-          live government market prices, weather, and scheme guidance, in the farmer&rsquo;s own language.
+          government market prices, weather, and scheme guidance, in the farmer&rsquo;s own language.
         </motion.p>
 
         <motion.div

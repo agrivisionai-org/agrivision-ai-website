@@ -46,14 +46,14 @@ export const products: Product[] = [
       { "amount": "9.99", "currency": "CAD", "country": "CA" }
     ],
     "metaTitle": "YieldAI Global — AI Farming Assistant | Free Trial",
-    "metaDescription": "Ask about crops, live market prices, weather and government schemes in your own language. Free to try, live in India, the USA & Canada.",
+    "metaDescription": "Ask about crops, market prices, weather and government schemes in your own language. Free to try, live in India, the USA & Canada.",
     "heroHeadline": "YieldAI Global: AI crop intelligence, live for farmers",
-    "heroSub": "Our flagship product is live in India, the USA, and Canada — AI crop advice, live government market prices, weather, and government-scheme guidance, in the farmer's own language. Start a free trial.",
+    "heroSub": "Our flagship product is live in India, the USA, and Canada — AI crop advice, government market prices, weather, and government-scheme guidance, in the farmer's own language. Start a free trial.",
     "overview": [
       "YieldAI Global is the flagship product of AGRIVISION AI, and it's live. It's an AI-powered agriculture platform that brings practical crop intelligence to the people who grow the world's food and the people who advise them — available now at yieldaiglobal.com.",
-      "The idea is straightforward: take the kind of agronomic insight that's usually locked behind cost, distance, or language, and make it available through one accessible platform. Today it delivers AI crop advice, live government market prices, weather and forecasting, government-scheme guidance, yield prediction, a voice assistant, and photo-based disease detection through CropVision — all in the farmer's own language. Our roadmap extends toward IoT sensors and smart irrigation.",
+      "The idea is straightforward: take the kind of agronomic insight that's usually locked behind cost, distance, or language, and make it available through one accessible platform. Today it delivers AI crop advice, government market prices, weather and forecasting, government-scheme guidance, yield prediction, a voice assistant, and photo-based disease detection through CropVision — all in the farmer's own language. Our roadmap extends toward IoT sensors and smart irrigation.",
       "We're an early-stage, founder-led company based in Detroit, Michigan. YieldAI Global is live first in the USA, India, and Canada, and we're working to reach farmers, agronomists, and extension workers across 40+ countries. You can start a free trial today at yieldaiglobal.com.",
-      "YieldAI Global is free for 30 days with full platform access. After that the Pro plan is Rs 149 per month in India, $9.99 in the USA and C$9.99 in Canada. It covers 17 platform modules in 13 languages. Market prices come from government sources — mandi data in India, USDA in the USA, and StatCan in Canada — and crop guidance is grounded in credible agronomic sources including ICAR, FAO, and state agriculture departments."
+      "YieldAI Global is free for 30 days with full platform access. After that the Pro plan is Rs 149 per month in India, $9.99 in the USA and C$9.99 in Canada. It covers 17 platform modules in 14 languages. Market prices come from government sources — mandi data in India, USDA in the USA, and StatCan in Canada — and crop guidance is grounded in credible agronomic sources including ICAR, FAO, and state agriculture departments."
     ],
     "capabilities": [
       {
@@ -66,7 +66,7 @@ export const products: Product[] = [
       },
       {
         "title": "Live market prices",
-        "description": "Surfaces live government market prices so farmers and cooperatives can decide what to grow and when to sell, benchmarked against official sources."
+        "description": "Surfaces government market prices so farmers and cooperatives can decide what to grow and when to sell, benchmarked against official sources."
       },
       {
         "title": "Weather & scheme guidance",
@@ -78,7 +78,7 @@ export const products: Product[] = [
       },
       {
         "title": "Voice assistant, in the farmer's language",
-        "description": "Ask out loud and get an answer back in the language you actually speak — 13 today across India, the USA, and Canada: Hindi, Bengali, Telugu, Tamil, Kannada, Marathi, Punjabi, Gujarati, Malayalam, Odia, English, Spanish and French. Designed from the start to reach 40+ countries."
+        "description": "Ask out loud and get an answer back in the language you actually speak — 14 today across India, the USA, and Canada: Hindi, Bengali, Telugu, Tamil, Kannada, Marathi, Punjabi, Gujarati, Malayalam, Odia, Portuguese, English, Spanish and French. Designed from the start to reach 40+ countries."
       }
     ],
     "audience": [
@@ -96,7 +96,7 @@ export const products: Product[] = [
       }
     ],
     "roadmap": [
-      "Live now: AI crop advice, live government market prices, weather and forecasting, government-scheme guidance, and photo-based disease detection through CropVision — in the farmer's own language, across India, the USA, and Canada.",
+      "Live now: AI crop advice, government market prices, weather and forecasting, government-scheme guidance, and photo-based disease detection through CropVision — in the farmer's own language, across India, the USA, and Canada.",
       "Also live: yield prediction for forward-looking decisions, and a voice assistant for hands-free, low-literacy access.",
       "Planned: IoT sensor integration and smart irrigation to connect the platform to conditions on the ground.",
       "Longer-term vision: scaling crop intelligence across 40+ countries for farmers and extension workers worldwide."
@@ -104,7 +104,7 @@ export const products: Product[] = [
     "faq": [
       {
         "q": "Is YieldAI Global available today?",
-        "a": "Yes. YieldAI Global is live and available now in India, the USA, and Canada at yieldaiglobal.com, where you can start a free trial. It delivers AI crop advice, live government market prices, weather and forecasting, government-scheme guidance, yield prediction, photo-based disease detection through CropVision, and a voice assistant — in the farmer's own language. AGRIVISION AI remains an early-stage, founder-led company and continues to add capabilities on its roadmap."
+        "a": "Yes. YieldAI Global is live and available now in India, the USA, and Canada at yieldaiglobal.com, where you can start a free trial. It delivers AI crop advice, government market prices, weather and forecasting, government-scheme guidance, yield prediction, photo-based disease detection through CropVision, and a voice assistant — in the farmer's own language. AGRIVISION AI remains an early-stage, founder-led company and continues to add capabilities on its roadmap."
       },
       {
         "q": "What is in YieldAI Global today?",
@@ -120,7 +120,7 @@ export const products: Product[] = [
       },
       {
         "q": "What languages does YieldAI Global support?",
-        "a": "13 languages today: Hindi, Bengali, Telugu, Tamil, Kannada, Marathi, Punjabi, Gujarati, Malayalam, Odia, English, Spanish and French. Answers come back in the language you asked in, including by voice, and the platform is designed to reach 40+ countries."
+        "a": "14 languages today: Hindi, Bengali, Telugu, Tamil, Kannada, Marathi, Punjabi, Gujarati, Malayalam, Odia, Portuguese, English, Spanish and French. Answers come back in the language you asked in, including by voice, and the platform is designed to reach 40+ countries."
       },
       {
         "q": "Who is building YieldAI Global?",
@@ -159,7 +159,7 @@ export const products: Product[] = [
       },
       {
         "title": "Next steps in your language",
-        "description": "Guidance continues in any of YieldAI Global\u2019s 13 languages, so the diagnosis and the advice arrive in the language the farmer actually thinks in."
+        "description": "Guidance continues in any of YieldAI Global\u2019s 14 languages, so the diagnosis and the advice arrive in the language the farmer actually thinks in."
       },
       {
         "title": "Safety rule built in",

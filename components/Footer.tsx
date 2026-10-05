@@ -66,7 +66,7 @@ export function Footer() {
                 YieldAI Global is live.
               </h3>
               <p className="mt-3 max-w-md text-sm text-white/80">
-                AI crop advice, live market prices, weather, and scheme guidance in your language — available now in the USA, India, and Canada. Start a free trial.
+                AI crop advice, market prices, weather, and scheme guidance in your language — available now in the USA, India, and Canada. Start a free trial.
               </p>
             </div>
             <div className="flex items-center gap-3">

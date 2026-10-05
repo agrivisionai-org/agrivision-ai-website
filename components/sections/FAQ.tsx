@@ -21,7 +21,7 @@ const FAQS = [
   },
   {
     q: "What is YieldAI Global?",
-    a: "YieldAI Global is the flagship product of AGRIVISION AI — an AI crop intelligence platform for farming households and agricultural extension workers, with AI crop advice, live government market prices, weather, and government-scheme guidance in the farmer's own language. It is live and available in India, the USA, and Canada at yieldaiglobal.com, with a free trial.",
+    a: "YieldAI Global is the flagship product of AGRIVISION AI — an AI crop intelligence platform for farming households and agricultural extension workers, with AI crop advice, government market prices, weather, and government-scheme guidance in the farmer's own language. It is live and available in India, the USA, and Canada at yieldaiglobal.com, with a free trial.",
   },
   {
     q: "Is AGRIVISION AI's product available yet?",
@@ -33,7 +33,7 @@ const FAQS = [
   },
   {
     q: "What languages does YieldAI Global support?",
-    a: "13 languages today: Hindi, Bengali, Telugu, Tamil, Kannada, Marathi, Punjabi, Gujarati, Malayalam, Odia, English, Spanish and French. Farmers can ask by text or by voice and get the answer back in the same language. YieldAI Global is live in India, the USA and Canada, and is designed to reach 40+ countries.",
+    a: "14 languages today: Hindi, Bengali, Telugu, Tamil, Kannada, Marathi, Punjabi, Gujarati, Malayalam, Odia, Portuguese, English, Spanish and French. Farmers can ask by text or by voice and get the answer back in the same language. YieldAI Global is live in India, the USA and Canada, and is designed to reach 40+ countries.",
   },
   {
     q: "Is this the same as other companies named AgriVision AI?",

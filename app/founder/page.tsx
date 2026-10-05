@@ -184,7 +184,7 @@ export default function FounderPage() {
             <strong className="font-semibold text-ink-900">YieldAI Global</strong>, AGRIVISION AI&rsquo;s
             flagship agricultural intelligence platform. He has led it from initial concept through
             product architecture and implementation, building a connected platform for crop guidance,
-            live government market prices, weather, government-scheme guidance, and photo-based disease
+            government market prices, weather, government-scheme guidance, and photo-based disease
             detection through CropVision. Soil and irrigation sensing (FieldSense) and farm operations
             (FieldOps) are on the roadmap, not yet built.
           </p>

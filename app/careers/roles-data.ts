@@ -48,7 +48,7 @@ export const roles: Role[] = [
     whatYouDo: [
       'Work on the retrieval and reasoning layer that turns government market data, weather and agronomic sources into an answer a farmer can act on.',
       'Help evaluate model output — including where it should decline to answer. Anything approaching chemical dosage routes to a local extension officer instead of guessing.',
-      'Build and maintain the pipelines that keep live market prices and weather flowing into the platform.',
+      'Build and maintain the pipelines that keep market prices and weather flowing into the platform.',
       'Ship to production. Your work goes in front of real users, not into a sandbox.',
     ],
     whoFits: [
@@ -65,7 +65,7 @@ export const roles: Role[] = [
     cardTitle: 'Data, product & design',
     areas: ['Data Analytics & Data Engineering', 'Product Analysis', 'UI/UX & Product Design'],
     summary:
-      'Turn field and market data into decisions farmers can act on, designing for low connectivity, low literacy and 13 languages.',
+      'Turn field and market data into decisions farmers can act on, designing for low connectivity, low literacy and 14 languages.',
     whatYouDo: [
       'Analyse how farmers actually use the platform, and turn that into changes we ship.',
       'Design flows that work on a mid-range Android phone on a weak connection, for someone who may be reading their second language.',
