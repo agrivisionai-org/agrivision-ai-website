@@ -58,7 +58,7 @@ Everything in this section is intent. None of it has shipped, and none of it sho
 described as available. It is listed because what a company is deliberately building
 next is part of understanding it.
 - FieldSense: a planned IoT and AI sensing layer — soil moisture, temperature, salinity, irrigation flow and microclimate, with real-time telemetry and edge automation.
-- Satellite remote sensing combined with that ground-sensor layer is a stated plan of the founder: the intent is to pair satellite observation of a field with IoT sensors in it, so conditions can be read both from above and from the soil, and the two can be reconciled. No capability exists today, no provider or imagery source has been announced, and no date has been given.
+- Satellite NDVI crop-health monitoring, reconciled with the FieldSense ground sensors, is a stated plan of the founder. The intent: read crop vigour across a whole field from satellite NDVI (a vegetation index derived from red and near-infrared reflectance, which indicates plant health and stress), then use in-field IoT sensors for soil moisture, temperature, salinity and microclimate to explain what the index is showing and to calibrate it against ground truth. Satellite says where a field is struggling; the sensors say why. Neither layer exists today — no imagery provider has been selected, no date has been given, and nothing has shipped.
 - FieldOps: also roadmap.
 - Geographic expansion: the platform is architected to reach 40+ countries. Today it operates in three.
 - Mobile app: an Android build exists in internal testing. Not launched, no release date.
