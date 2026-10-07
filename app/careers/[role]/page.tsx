@@ -66,7 +66,7 @@ export default async function RolePage({ params }: { params: Promise<{ role: str
     `<p><strong>Who this fits:</strong></p><ul>${r.whoFits.map((x) => `<li>${x}</li>`).join('')}</ul>` +
     `<p><strong>Commitment:</strong> 20 hours per week on US Eastern time. Check the overlap with your own timezone before applying — outside the Americas this means evening or early-morning hours.</p>` +
     `<p><strong>Duration:</strong> approximately ${PROGRAMME.duration}.</p>` +
-    `<p><strong>Location:</strong> fully remote, open to candidates worldwide.</p>` +
+    `<p><strong>Location:</strong> fully remote. Open to candidates worldwide, with one exception: applicants based in India must be in Hyderabad.</p>` +
     `<p><strong>What you gain:</strong> supervised projects, mentorship and regular feedback, a completion certificate, a reference based on performance, and portfolio work where applicable.</p>` +
     `<p><strong>Compensation:</strong> this is an unpaid learning and training programme. There is no salary or stipend.</p>` +
     `<p>Apply by email to ${PROGRAMME.applyEmail} with your resume, area of interest, current education or experience, country, and LinkedIn profile.</p>`;
@@ -84,9 +84,12 @@ export default async function RolePage({ params }: { params: Promise<{ role: str
         validThrough: PROGRAMME.validThrough,
         employmentType: 'INTERN',
         hiringOrganization: { '@id': `${BASE}#organization` },
-        // Open worldwide, so no applicantLocationRequirements node. Google reads
-        // TELECOMMUTE with no applicant-location restriction as "anywhere"; listing
-        // countries here would narrow it, and listing every country is not a thing.
+        // Still no applicantLocationRequirements node. The programme is open worldwide
+        // except that Indian applicants must be in Hyderabad, and schema.org gives no way
+        // to say "everywhere, but one country is city-restricted": the property is a
+        // whitelist, so naming India-Hyderabad would exclude the rest of the world, which
+        // is the opposite of the truth. The condition is carried in the description and in
+        // the visible Location field instead.
         jobLocationType: 'TELECOMMUTE',
         industry: 'Agricultural Technology',
         directApply: false,

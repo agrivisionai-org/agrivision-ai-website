@@ -22,7 +22,7 @@ export type Role = {
 
 // Programme-wide facts. Stated once, rendered everywhere.
 export const PROGRAMME = {
-  location: 'Remote — open worldwide',
+  location: 'Remote — worldwide; in India, Hyderabad only',
   duration: '8–12 weeks',
   commitment: '20 hrs / week, US Eastern hours',
   whoCanApply: 'Students, recent graduates, early career',
