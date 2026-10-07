@@ -4,16 +4,16 @@ import { Reveal, SectionEyebrow, GradientOrb } from '../primitives';
 import {
   LayoutDashboard,
   Tractor,
-  CalendarDays,
-  History,
+  MapPin,
+  UsersRound,
   FlaskConical,
   Sprout,
   ScanLine,
   Bug,
   BadgeIndianRupee,
-  TrendingUp,
-  Store,
-  Plane,
+  Landmark,
+  Droplets,
+  MessageCircle,
   CloudSun,
   Bell,
   BarChart3,
@@ -30,8 +30,8 @@ const GROUPS = [
     items: [
       { icon: LayoutDashboard, label: 'Dashboard' },
       { icon: Tractor, label: 'My Farms' },
-      { icon: CalendarDays, label: 'Farm Calendar' },
-      { icon: History, label: 'Farm History' },
+      { icon: MapPin, label: 'Field Scouting' },
+      { icon: UsersRound, label: 'Extension Worker CRM' },
     ],
   },
   {
@@ -47,14 +47,13 @@ const GROUPS = [
     ],
   },
   {
-    title: 'Market & profit',
-    body: 'From today’s price to what the season is worth.',
+    title: 'Market & money',
+    body: 'What the crop is worth, and what the state will pay toward it.',
     accent: '#C9922B',
     items: [
       { icon: BadgeIndianRupee, label: 'Market Prices' },
-      { icon: TrendingUp, label: 'Profit Prediction' },
-      { icon: Store, label: 'Store Locator' },
-      { icon: Plane, label: 'Drone Marketplace' },
+      { icon: Bell, label: 'Price Alerts' },
+      { icon: Landmark, label: 'Government Schemes' },
     ],
   },
   {
@@ -63,16 +62,24 @@ const GROUPS = [
     accent: '#7A4FD1',
     items: [
       { icon: CloudSun, label: 'Weather Intelligence' },
-      { icon: Bell, label: 'Notifications' },
+      { icon: Droplets, label: 'Irrigation Scheduling' },
       { icon: BarChart3, label: 'Analytics' },
       { icon: Mic, label: 'Voice Assistant' },
+      { icon: MessageCircle, label: 'Ask AI' },
     ],
   },
 ];
 
+// Every label above maps to a screen that exists in the product: a page under
+// frontend/src/pages or a tab under bolt-app/project/app/(tabs). Five labels that did
+// not were removed - Farm Calendar, Farm History, Profit Prediction, Store Locator and
+// Drone Marketplace - and five real modules that were missing took their place. Store
+// Locator, Drone Marketplace and Farm History returned no match anywhere in either
+// codebase. Keep this grid and llms.txt in step; the count is derived from the list,
+// not the other way round.
 const FACTS = [
   { value: '17', label: 'Modules in the platform' },
-  { value: '13', label: 'Languages supported' },
+  { value: '14', label: 'Languages supported' },
   { value: '3', label: 'Countries live' },
   { value: '3', label: 'Government price feeds' },
 ];
