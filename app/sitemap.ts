@@ -24,7 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly' as const,
       priority: 0.8,
     })),
-    { url: `${BASE}/blog`, lastModified: d('2026-06-30'), changeFrequency: 'weekly', priority: 0.8 },
+    { url: `${BASE}/blog`, lastModified: d('2026-10-14'), changeFrequency: 'weekly', priority: 0.8 },
     // Translated posts carry their language alternates here too, so the pairing is declared
     // in the sitemap as well as in each page's head — Google accepts either, and the two
     // reinforce each other.

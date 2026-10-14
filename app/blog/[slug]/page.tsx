@@ -134,6 +134,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         // which left the structured data disagreeing with the meta tags.
         image: `${url}/opengraph-image`,
         keywords: post.tags.join(', '),
+        // Declares the newsletter issue as the same work published elsewhere, so the two
+        // copies are related rather than looking like duplicated content of unknown origin.
+        ...(post.originalUrl ? { sameAs: post.originalUrl } : {}),
       },
       {
         '@type': 'BreadcrumbList',
@@ -176,6 +179,19 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           <span>{readingMinutes(post)} min read</span>
         </div>
 
+        {/* Republished from the newsletter. Saying so, and linking the issue it ran in, is
+            the honest form of syndication: the reader can see where it appeared first. */}
+        {post.originalUrl && (
+          <p className="mt-5 rounded-2xl border border-brand-primary/20 bg-brand-primary/[0.05] px-4 py-3 text-sm leading-relaxed text-ink-600">
+            This first appeared in{' '}
+            <span className="font-semibold text-ink-900">AGRIVISION Build Notes</span>, our
+            build-in-public newsletter.{' '}
+            <a href={post.originalUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 font-semibold text-brand-primary hover:underline">
+              Read the original issue <ArrowUpRight className="h-3.5 w-3.5" />
+            </a>
+          </p>
+        )}
+
         <div className="mt-10 space-y-9">
           {post.sections.map((s, i) => (
             <section key={i}>
@@ -185,6 +201,51 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                   <p key={j} className="text-[1.05rem] leading-relaxed text-ink-700">{withInlineLinks(p)}</p>
                 ))}
               </div>
+
+              {s.bullets && s.bullets.length > 0 && (
+                <ul className="mt-4 space-y-2.5">
+                  {s.bullets.map((b, j) => (
+                    <li key={j} className="flex gap-3 text-[1.05rem] leading-relaxed text-ink-700">
+                      <span aria-hidden className="mt-[0.62em] h-1.5 w-1.5 shrink-0 rounded-full bg-brand-primary" />
+                      <span>{withInlineLinks(b)}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+
+              {/* Scrolls horizontally rather than forcing the page to, which is what a
+                  fixed-width table does to a phone. */}
+              {s.table && (
+                <figure className="mt-5 -mx-5 overflow-x-auto px-5 sm:mx-0 sm:px-0">
+                  <table className="w-full min-w-[32rem] border-collapse text-left text-[0.95rem]">
+                    <thead>
+                      <tr className="border-b border-ink-900/15">
+                        {s.table.headers.map((h, j) => (
+                          <th key={j} scope="col" className="py-2.5 pr-5 font-semibold text-ink-900">
+                            {h}
+                          </th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {s.table.rows.map((row, j) => (
+                        <tr key={j} className="border-b border-ink-900/[0.07]">
+                          {row.map((cell, k) => (
+                            <td key={k} className="py-2.5 pr-5 align-top leading-relaxed text-ink-700">
+                              {withInlineLinks(cell)}
+                            </td>
+                          ))}
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                  {s.table.caption && (
+                    <figcaption className="mt-2.5 text-sm text-ink-500">
+                      {withInlineLinks(s.table.caption)}
+                    </figcaption>
+                  )}
+                </figure>
+              )}
             </section>
           ))}
         </div>

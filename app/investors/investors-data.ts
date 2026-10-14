@@ -139,7 +139,7 @@ export const investors = {
     built: [
       { title: 'Product shipped and live', body: 'YieldAI Global is live in India, the USA and Canada at a published price with a working 30-day trial. 17 modules, 14 languages, CropVision included.' },
       { title: 'Three government price feeds integrated', body: 'Mandi data in India, USDA in the USA and StatCan in Canada — three separate government sources, not one wrapped API.' },
-      { title: 'Public company surface', body: 'Website, product documentation, press kit, structured data and a weekly build-in-public newsletter.' },
+      { title: 'Public company surface', body: 'Website, product documentation, press kit, structured data and a build-in-public newsletter, archived in full on our blog.' },
     ] as Item[],
     notClaimed: [
       'No user or revenue figures are presented, because none have been independently verified.',

@@ -2,7 +2,19 @@
 // YieldAI Global and CropVision are live; FieldSense and FieldOps are not. Posts written
 // before launch keep their original wording and carry a dated update note instead.
 
-export type BlogSection = { heading: string; paragraphs: string[] };
+import { buildNotes } from './build-notes-data';
+
+/** Comparative data. Answer engines extract a table far more reliably than the same
+ *  figures buried in a sentence, so numbers that belong side by side go here instead. */
+export type BlogTable = { caption?: string; headers: string[]; rows: string[][] };
+
+export type BlogSection = {
+  heading: string;
+  paragraphs: string[];
+  /** Rendered after the paragraphs. Same inline [text](url) links as a paragraph. */
+  bullets?: string[];
+  table?: BlogTable;
+};
 export type BlogPost = {
   slug: string;
   /** Language this post is written in. Drives the html lang attribute and hreflang. */
@@ -11,6 +23,9 @@ export type BlogPost = {
   altSlug?: string;
   /** Set when a post carries a dated update note. Drives dateModified and sitemap lastModified. */
   updated?: string;
+  /** Set when the post first appeared in the AGRIVISION Build Notes newsletter. Drives the
+   *  republished attribution line and the direct link back to that issue. */
+  originalUrl?: string;
   title: string;
   metaTitle: string;
   metaDescription: string;
@@ -21,7 +36,7 @@ export type BlogPost = {
   tags: string[];
 };
 
-export const posts: BlogPost[] = [
+const originalPosts: BlogPost[] = [
   {
     "slug": "what-i-found-auditing-our-own-website",
     "lang": "en",
@@ -1341,14 +1356,26 @@ export const posts: BlogPost[] = [
 
 ];
 
+// The Build Notes archive is kept in its own file -- same shape, same index, but the
+// republished issues are a distinct body of work and the diff stays readable that way.
+export const posts: BlogPost[] = [...originalPosts, ...buildNotes];
+
 export const postSlugs = posts.map((p) => p.slug);
 
 export function getPost(slug: string): BlogPost | undefined {
   return posts.find((p) => p.slug === slug);
 }
 
-// Rough reading time from total words.
+// Rough reading time from total words. Bullets and table cells count too: a section that
+// is mostly a table used to contribute almost nothing to the estimate.
 export function readingMinutes(p: BlogPost): number {
-  const words = p.sections.reduce((n, s) => n + s.paragraphs.join(' ').split(/\s+/).length, 0);
+  const words = p.sections.reduce((n, s) => {
+    const parts = [...s.paragraphs, ...(s.bullets ?? [])];
+    if (s.table) {
+      parts.push(s.table.headers.join(' '), ...s.table.rows.map((r) => r.join(' ')));
+      if (s.table.caption) parts.push(s.table.caption);
+    }
+    return n + parts.join(' ').split(/\s+/).filter(Boolean).length;
+  }, 0);
   return Math.max(1, Math.round(words / 200));
 }
