@@ -47,8 +47,13 @@ export const buildNotes: BlogPost[] = [
       {
         heading: 'Real prices, from the real sources',
         paragraphs: [
-          'YieldAI Global is launching first in three countries — the USA, India, and Canada — and each has its own official price source. So I connected to the government feeds directly: live mandi (market) prices from the government’s AGMARKNET open-data feed in India, market prices from the USDA’s Market News service in the USA, and crop price data from Statistics Canada.',
+          'YieldAI Global is launching first in three countries — the USA, India, and Canada — and each has its own official price source. So I connected to the government feeds directly:',
           'No middlemen, no scraped numbers of unknown origin. If YieldAI tells a farmer a price, it should trace back to an official source — and now it does.',
+        ],
+        bullets: [
+          'India: live mandi (market) prices from the government’s AGMARKNET open-data feed.',
+          'USA: market prices from the USDA’s Market News service.',
+          'Canada: crop price data from Statistics Canada.',
         ],
       },
       {
@@ -61,7 +66,8 @@ export const buildNotes: BlogPost[] = [
       },
       {
         heading: 'What the data taught me',
-        paragraphs: [
+        paragraphs: ['A few honest lessons from the week:'],
+        bullets: [
           'Fresh isn’t always fresh. India’s mandi prices update once a day, in a batch, with gaps for markets that didn’t report. So every price YieldAI shows will carry an “as of” date. A stale price without a date is a trap; a stale price with a date is still useful.',
           'Grounding beats fluency. The whole design principle is that the AI reasons over verified data, it doesn’t invent it. When the data isn’t there, the honest answer is I don’t know — check with your local extension officer, not a guess.',
           'The unglamorous layer is the moat. Anyone can put a chatbot in front of farmers. Clean, sourced, country-specific data that the answers are actually grounded in — that’s the hard, patient part, and it’s the part I’d rather get right first.',
@@ -282,9 +288,17 @@ export const buildNotes: BlogPost[] = [
         heading: 'What the numbers actually say',
         paragraphs: [
           'I had been assuming we did not rank for our own name — six other companies use “AgriVision AI”. Search Console says otherwise: position 3.7 for our brand, 110 clicks and 2,090 impressions in three months.',
-          'The split that matters: the United States gave 75 clicks from 487 impressions, a 15.4% click-through rate. India gave 31 clicks from 1,253 impressions — 2.5%.',
+          'The split that matters:',
           'India sees us 2.6x more than the US and clicks 6x less. One Hindi post has 436 impressions and 1 click. We are ranking fine in India and losing almost everyone at the search result. That is a headline-and-description problem in Hindi, not a ranking problem, and it is now the most valuable thing on my list.',
         ],
+        table: {
+          headers: ['Country', 'Clicks', 'Impressions', 'CTR'],
+          rows: [
+            ['United States', '75', '487', '15.4%'],
+            ['India', '31', '1,253', '2.5%'],
+          ],
+          caption: 'Google Search Console, three months to 26 August 2026. Brand query position 3.7.',
+        },
       },
       {
         heading: 'What I took from it',
@@ -344,8 +358,12 @@ export const buildNotes: BlogPost[] = [
         paragraphs: [
           'We now have guides for the USA and Canada — how to check crop prices, USDA farm programmes, Canadian business risk management, and Prairie seeding windows. Every one was researched against primary agency sources, then independently fact-checked against those same sources rather than against the draft.',
           'That check returned 56 findings. Five were blockers. Four of the five were confidently wrong rather than vague, which is the worse kind.',
-          'We had the USDA payment limit wrong for both years — we read the statutory table and missed the inflation-adjusted one that actually applies. We wrote that a producer lacks full crop insurance coverage until acres are reported; Saskatchewan’s actual wording is that you do not have any coverage, and one word turned a total absence of cover into a partial one. We gave an excess moisture deductible as a flat five per cent, when it starts at five and climbs to forty with claim history.',
           'Every one of those would have been published under my name, to farmers, as fact.',
+        ],
+        bullets: [
+          'We had the USDA payment limit wrong for both years — we read the statutory table and missed the inflation-adjusted one that actually applies.',
+          'We wrote that a producer lacks full crop insurance coverage until acres are reported. Saskatchewan’s actual wording is that you do not have any coverage. One word turned a total absence of cover into a partial one.',
+          'We gave an excess moisture deductible as a flat five per cent. It starts at five and climbs to forty with claim history.',
         ],
       },
       {
@@ -478,7 +496,9 @@ export const buildNotes: BlogPost[] = [
         heading: 'Then I looked at the other six',
         paragraphs: [
           'Having got that wrong, I stopped trusting the rest of the number and actually examined it.',
-          'Two of the six are github.com and linkedin.com. Both are our own profiles, and both are nofollow by default, which means they explicitly pass no ranking signal. One is wikidata.org. That is an entity record — it helps machines know we exist and who we are, which is genuinely valuable, but it is not a ranking signal and nobody chose to cite us. The remaining three are bebee.com, tracxn.com and dealroom.co. These are auto-generated startup registry entries. No human decided to include us. A crawler found a company and made a row.',
+          'Two of the six are github.com and linkedin.com. Both are our own profiles, and both are nofollow by default, which means they explicitly pass no ranking signal.',
+          'One is wikidata.org. That is an entity record — it helps machines know we exist and who we are, which is genuinely valuable, but it is not a ranking signal and nobody chose to cite us.',
+          'The remaining three are bebee.com, tracxn.com and dealroom.co. These are auto-generated startup registry entries. No human decided to include us. A crawler found a company and made a row.',
           'So: two properties we own. Two profiles we created. Three registry rows generated automatically. One entity record.',
           'Sixteen links, and not one of them is an instance of a person reading our work and deciding to point at it. We have zero editorial links. I have been watching a daily number that was, almost entirely, measuring myself.',
         ],
@@ -536,7 +556,9 @@ export const buildNotes: BlogPost[] = [
           'Working through the free, low-effort tier — the ones I had ranked as do-these-first — here is what actually stopped each one.',
           'Seven required creating an account before the form would accept anything. StartupBlink filled in perfectly, then returned a 403: “Please log in to add or edit an entity.” SaaSHub, AlternativeTo, Digital Agri Hub, Indie Hackers, Hacker News and Qwoted all want a registered identity first, and Hacker News in particular wants an aged one that has commented a few times before it posts anything promotional.',
           'Three sat behind a CAPTCHA. The two university library submissions — Farm Answers, run out of the University of Minnesota for USDA’s beginning-farmer programme, and the Ag Risk library alongside it — both put an “I’m not a robot” checkbox directly above the submit button. Michigan Ag Connection carries the same protection.',
-          'One, the FoodTech 500 questionnaire, is a live uncaptcha’d form, but submitting it means consenting to have your contact details shared with the organiser’s partners for business development. Four are not forms at all. They are email pitches to named people — a Michigan tech reporter, Farm Management Canada, a Vermont agriculture official — where the entire value is that a person wrote to a person. One wants a formal press release in Word format and says it will reject anything else.',
+          'One, the FoodTech 500 questionnaire, is a live uncaptcha’d form, but submitting it means consenting to have your contact details shared with the organiser’s partners for business development.',
+          'Four are not forms at all. They are email pitches to named people — a Michigan tech reporter, Farm Management Canada, a Vermont agriculture official — where the entire value is that a person wrote to a person.',
+          'One wants a formal press release in Word format and says it will reject anything else.',
           'Every single one of those is the correct decision by the organisation making it. A library curated for beginning farmers should absolutely not accept bulk automated submissions. A journalist should want an email from a founder, not a template. The gates are not obstacles to route around; they are the thing that makes those links worth having in the first place.',
           'But it does mean the forty-two was never a list of tasks. It was a list of appointments.',
         ],
@@ -633,18 +655,39 @@ export const buildNotes: BlogPost[] = [
       'https://www.linkedin.com/pulse/we-removed-claim-from-six-files-system-prompt-vijesh-reddy-golamari-nytuc/',
     sections: [
       {
-        heading: 'Where it was',
+        heading: 'The sentence, and why it is false',
         paragraphs: [
           'Build Notes — what shipped, what broke, and what we got wrong.',
           'Over the last two weeks I removed the same false sentence from six files. This week I found it in the system prompt, which means the product had been saying it out loud the whole time.',
-          'The sentence is “live market prices”. Only India’s feed is daily. The US figures come from USDA NASS Quick Stats, described in its own source comment as “prices received, MONTHLY”. The Canadian ones come from Statistics Canada table 32-10-0077, “monthly farm prices”. So for two of our three countries, “live” was simply not true.',
-          'The store listing, where a Play reviewer reads it beside the app. The in-app copy. The privacy policy. The submission runbook. The website, including the meta descriptions that only Google reads. The opening sentence of our own README. Six places, six commits, each one found by going looking after the last.',
-          'Every one of those is prose a human wrote and a human might re-read. That is the thing they had in common, and it is why I thought I was finished.',
+          'The sentence is “live market prices”. Only India’s feed is daily, so for two of our three countries that single word was simply not true.',
+        ],
+        table: {
+          headers: ['Country', 'Source', 'Update cadence'],
+          rows: [
+            ['India', 'Agmarknet, via data.gov.in', 'Daily'],
+            ['USA', 'USDA NASS Quick Stats', 'Monthly'],
+            ['Canada', 'Statistics Canada table 32-10-0077', 'Monthly'],
+          ],
+          caption:
+            'The US source comment reads “prices received, MONTHLY”; the Canadian table is titled “monthly farm prices”.',
+        },
+      },
+      {
+        heading: 'Where it was',
+        paragraphs: ['Six places, six commits, each one found by going looking after the last:'],
+        bullets: [
+          'The store listing, where a Play reviewer reads it beside the app.',
+          'The in-app copy.',
+          'The privacy policy.',
+          'The submission runbook.',
+          'The website, including the meta descriptions that only Google reads.',
+          'The opening sentence of our own README.',
         ],
       },
       {
         heading: 'The one that was different',
         paragraphs: [
+          'Every one of those is prose a human wrote and a human might re-read. That is the thing they had in common, and it is why I thought I was finished.',
           'ai_brain.py, line 110, told the model: “The app has live market prices the farmer can open for exact spot figures.” And a clause later: “for live market prices give trend and direction in words”. The header on the reference data said the same thing.',
           'So the claim was not sitting in a file waiting to be read. It was being handed to the model on every single request, as a fact about its own product, in the one voice a farmer has no reason to doubt.',
           'The six before it were things we told people. This one was a thing we told the model to tell people. It generates rather than sits, and that makes it worse than all of them put together.',

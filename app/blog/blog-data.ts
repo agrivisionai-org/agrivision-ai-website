@@ -4,7 +4,17 @@
 
 import { buildNotes } from './build-notes-data';
 
-export type BlogSection = { heading: string; paragraphs: string[] };
+/** Comparative data. Answer engines extract a table far more reliably than the same
+ *  figures buried in a sentence, so numbers that belong side by side go here instead. */
+export type BlogTable = { caption?: string; headers: string[]; rows: string[][] };
+
+export type BlogSection = {
+  heading: string;
+  paragraphs: string[];
+  /** Rendered after the paragraphs. Same inline [text](url) links as a paragraph. */
+  bullets?: string[];
+  table?: BlogTable;
+};
 export type BlogPost = {
   slug: string;
   /** Language this post is written in. Drives the html lang attribute and hreflang. */
@@ -1356,8 +1366,16 @@ export function getPost(slug: string): BlogPost | undefined {
   return posts.find((p) => p.slug === slug);
 }
 
-// Rough reading time from total words.
+// Rough reading time from total words. Bullets and table cells count too: a section that
+// is mostly a table used to contribute almost nothing to the estimate.
 export function readingMinutes(p: BlogPost): number {
-  const words = p.sections.reduce((n, s) => n + s.paragraphs.join(' ').split(/\s+/).length, 0);
+  const words = p.sections.reduce((n, s) => {
+    const parts = [...s.paragraphs, ...(s.bullets ?? [])];
+    if (s.table) {
+      parts.push(s.table.headers.join(' '), ...s.table.rows.map((r) => r.join(' ')));
+      if (s.table.caption) parts.push(s.table.caption);
+    }
+    return n + parts.join(' ').split(/\s+/).filter(Boolean).length;
+  }, 0);
   return Math.max(1, Math.round(words / 200));
 }
