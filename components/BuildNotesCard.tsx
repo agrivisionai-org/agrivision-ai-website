@@ -20,7 +20,8 @@ export function BuildNotesCard() {
           <div className="text-xs font-semibold uppercase tracking-[0.16em] text-brand-primary">Newsletter</div>
           <div className="mt-1 font-semibold text-ink-900">AGRIVISION Build Notes</div>
           <p className="mt-1 text-sm leading-relaxed text-ink-600">
-            Weekly build-in-public notes on LinkedIn — what shipped, what broke, and what we got wrong.
+            Build-in-public notes — what shipped, what broke, and what we got wrong. Every issue is
+            also republished on this blog.
           </p>
         </div>
       </div>

@@ -134,6 +134,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         // which left the structured data disagreeing with the meta tags.
         image: `${url}/opengraph-image`,
         keywords: post.tags.join(', '),
+        // Declares the newsletter issue as the same work published elsewhere, so the two
+        // copies are related rather than looking like duplicated content of unknown origin.
+        ...(post.originalUrl ? { sameAs: post.originalUrl } : {}),
       },
       {
         '@type': 'BreadcrumbList',
@@ -175,6 +178,19 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           <span aria-hidden>·</span>
           <span>{readingMinutes(post)} min read</span>
         </div>
+
+        {/* Republished from the newsletter. Saying so, and linking the issue it ran in, is
+            the honest form of syndication: the reader can see where it appeared first. */}
+        {post.originalUrl && (
+          <p className="mt-5 rounded-2xl border border-brand-primary/20 bg-brand-primary/[0.05] px-4 py-3 text-sm leading-relaxed text-ink-600">
+            This first appeared in{' '}
+            <span className="font-semibold text-ink-900">AGRIVISION Build Notes</span>, our
+            build-in-public newsletter.{' '}
+            <a href={post.originalUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 font-semibold text-brand-primary hover:underline">
+              Read the original issue <ArrowUpRight className="h-3.5 w-3.5" />
+            </a>
+          </p>
+        )}
 
         <div className="mt-10 space-y-9">
           {post.sections.map((s, i) => (

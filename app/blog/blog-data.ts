@@ -2,6 +2,8 @@
 // YieldAI Global and CropVision are live; FieldSense and FieldOps are not. Posts written
 // before launch keep their original wording and carry a dated update note instead.
 
+import { buildNotes } from './build-notes-data';
+
 export type BlogSection = { heading: string; paragraphs: string[] };
 export type BlogPost = {
   slug: string;
@@ -11,6 +13,9 @@ export type BlogPost = {
   altSlug?: string;
   /** Set when a post carries a dated update note. Drives dateModified and sitemap lastModified. */
   updated?: string;
+  /** Set when the post first appeared in the AGRIVISION Build Notes newsletter. Drives the
+   *  republished attribution line and the direct link back to that issue. */
+  originalUrl?: string;
   title: string;
   metaTitle: string;
   metaDescription: string;
@@ -21,7 +26,7 @@ export type BlogPost = {
   tags: string[];
 };
 
-export const posts: BlogPost[] = [
+const originalPosts: BlogPost[] = [
   {
     "slug": "what-i-found-auditing-our-own-website",
     "lang": "en",
@@ -1340,6 +1345,10 @@ export const posts: BlogPost[] = [
   }
 
 ];
+
+// The Build Notes archive is kept in its own file -- same shape, same index, but the
+// republished issues are a distinct body of work and the diff stays readable that way.
+export const posts: BlogPost[] = [...originalPosts, ...buildNotes];
 
 export const postSlugs = posts.map((p) => p.slug);
 
