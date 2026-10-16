@@ -18,6 +18,7 @@ const COLS = [
       { label: 'CropVision', href: '/products/cropvision' },
       { label: 'FieldSense', href: '/products/fieldsense' },
       { label: 'FieldOps', href: '/products/fieldops' },
+      { label: 'Use cases', href: '/use-cases' },
     ],
   },
   {

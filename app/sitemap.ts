@@ -18,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/ireland`, lastModified: d('2026-08-26'), changeFrequency: 'yearly', priority: 0.4 },
     { url: `${BASE}/faq`, lastModified: d('2026-07-21'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${BASE}/products`, lastModified: d('2026-06-30'), changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${BASE}/use-cases`, lastModified: d('2026-10-16'), changeFrequency: 'monthly', priority: 0.9 },
     ...productSlugs.map((slug) => ({
       url: `${BASE}/products/${slug}`,
       lastModified: d('2026-06-30'),

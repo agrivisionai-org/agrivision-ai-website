@@ -87,6 +87,7 @@ Build Vaillant is the web and product development studio operated by AgriVisionA
 - Product page: https://agrivisionai.org/products/yieldai-global
 - CropVision: https://agrivisionai.org/products/cropvision
 - All products & roadmap: https://agrivisionai.org/products
+- Use cases — nine things the product is actually used for, each mapped to the module behind it: https://agrivisionai.org/use-cases
 - Press / media kit: https://agrivisionai.org/press
 - Investors and partners: https://agrivisionai.org/investors
 - Founder: https://agrivisionai.org/founder
