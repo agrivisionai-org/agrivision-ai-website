@@ -90,9 +90,17 @@ export function Hero() {
             href="https://play.google.com/store/apps/details?id=com.yieldaiglobal.app"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-secondary"
+            aria-label="Get YieldAI Global on Google Play"
+            className="inline-flex shrink-0 transition-transform hover:-translate-y-0.5"
           >
-            Get it on Google Play
+            {/* Google's official badge artwork, used unmodified and scaled proportionally. */}
+            <img
+              src="/google-play-badge.png"
+              alt="Get it on Google Play"
+              width={646}
+              height={250}
+              className="h-12 w-auto"
+            />
           </a>
           <a href="#products" className="btn-secondary">
             Explore YieldAI Global
