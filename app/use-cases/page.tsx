@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Nav } from '@/components/Nav';
 import { Footer } from '@/components/Footer';
-import { ArrowUpRight, Mail, ShieldAlert, Smartphone } from 'lucide-react';
+import { ArrowUpRight, Mail, ShieldAlert } from 'lucide-react';
 
 const BASE = 'https://agrivisionai.org';
 const SECTION = 'mx-auto w-full max-w-3xl px-5';
@@ -385,9 +385,17 @@ export default function UseCasesPage() {
               href="https://play.google.com/store/apps/details?id=com.yieldaiglobal.app"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-secondary"
+              aria-label="Get YieldAI Global on Google Play"
+              className="inline-flex shrink-0 transition-transform hover:-translate-y-0.5"
             >
-              <Smartphone className="h-4 w-4" /> Get it on Google Play
+              {/* Google's official badge artwork, used unmodified and scaled proportionally. */}
+              <img
+                src="/google-play-badge.png"
+                alt="Get it on Google Play"
+                width={646}
+                height={250}
+                className="h-12 w-auto"
+              />
             </a>
             <Link href="/products" className="btn-secondary">
               All products <ArrowUpRight className="h-4 w-4" />
