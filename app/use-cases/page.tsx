@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Nav } from '@/components/Nav';
 import { Footer } from '@/components/Footer';
-import { ArrowUpRight, Mail, ShieldAlert } from 'lucide-react';
+import { ArrowUpRight, Mail, ShieldAlert, Smartphone } from 'lucide-react';
 
 const BASE = 'https://agrivisionai.org';
 const SECTION = 'mx-auto w-full max-w-3xl px-5';
@@ -367,9 +367,10 @@ export default function UseCasesPage() {
             Try it, or tell us where it falls short
           </h2>
           <p className="mt-2 text-sm leading-relaxed text-ink-700">
-            YieldAI Global is live as a web app in India, the USA and Canada, with a 30-day free
-            trial. The mobile app has not launched. If you work in agriculture, extension or
-            agronomy and it fails you somewhere, that is the message we most want to receive.
+            YieldAI Global is live in India, the USA and Canada — on the web, and on Android as
+            YieldAI Global: Farm Advisor. There is no iOS app yet. If you work in agriculture,
+            extension or agronomy and it fails you somewhere, that is the message we most want
+            to receive.
           </p>
           <div className="mt-5 flex flex-wrap gap-3">
             <a
@@ -379,6 +380,14 @@ export default function UseCasesPage() {
               className="btn-primary inline-flex"
             >
               Open YieldAI Global <ArrowUpRight className="h-4 w-4" />
+            </a>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.yieldaiglobal.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-secondary"
+            >
+              <Smartphone className="h-4 w-4" /> Get it on Google Play
             </a>
             <Link href="/products" className="btn-secondary">
               All products <ArrowUpRight className="h-4 w-4" />

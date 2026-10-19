@@ -6,7 +6,7 @@ import { BadgeIndianRupee, Sprout, CloudSun, Landmark, ShieldCheck } from 'lucid
 const SOURCES = [
   {
     icon: BadgeIndianRupee,
-    title: 'Live market prices',
+    title: 'Government market prices',
     body: 'Real government mandi rates from official sources like AGMARKNET and e-NAM — with the date, benchmarked against the Minimum Support Price (MSP).',
   },
   {

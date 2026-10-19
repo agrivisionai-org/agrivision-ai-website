@@ -28,6 +28,10 @@ const FAQS = [
     a: "Yes. YieldAI Global is live and available now in India, the USA, and Canada at yieldaiglobal.com, where you can start a free trial. AGRIVISION AI remains an early-stage, founder-led company and continues to build in public.",
   },
   {
+    q: "Is there a mobile app?",
+    a: "Yes, on Android. YieldAI Global: Farm Advisor is live on Google Play, published by AgriVisionAI Inc. The free tier gives 5 AI farming questions a day, government market prices, weather and pest risk, soil ratings and crop suggestions, in all 14 languages. There is no iOS app — an iOS version is planned and no release date is announced.",
+  },
+  {
     q: "How much does YieldAI Global cost, and how does the free trial work?",
     a: "The 30-day trial is free and covers the full platform — all 17 modules across crop intelligence, market prices, weather and farm records — with no payment required up front. After that the Pro plan is priced for your market: Rs 149 per month in India, $9.99 in the USA, and C$9.99 in Canada. Start at yieldaiglobal.com.",
   },

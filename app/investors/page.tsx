@@ -274,7 +274,7 @@ export default function InvestorsPage() {
                 chemical.
               </p>
               <ul className="mt-5 flex flex-wrap gap-2">
-                {['Crop advisory', 'Photo disease detection', 'Live market prices', 'Weather', 'Government schemes', 'Multilingual + voice'].map((chip) => (
+                {['Crop advisory', 'Photo disease detection', 'Government market prices', 'Weather', 'Government schemes', 'Multilingual + voice'].map((chip) => (
                   <li key={chip} className="rounded-full bg-white px-3 py-1.5 text-xs font-medium text-ink-800 ring-1 ring-ink-900/[0.06]">
                     {chip}
                   </li>

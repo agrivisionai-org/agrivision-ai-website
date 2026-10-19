@@ -86,6 +86,14 @@ export function Hero() {
           <a href="https://yieldaiglobal.com" target="_blank" rel="noopener" className="btn-primary">
             Start Free Trial <ArrowRight className="h-4 w-4" />
           </a>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.yieldaiglobal.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-secondary"
+          >
+            Get it on Google Play
+          </a>
           <a href="#products" className="btn-secondary">
             Explore YieldAI Global
           </a>
