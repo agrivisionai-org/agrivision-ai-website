@@ -48,7 +48,7 @@ export const products: Product[] = [
     "metaTitle": "YieldAI Global — AI Farming Assistant | Free Trial",
     "metaDescription": "Ask about crops, market prices, weather and government schemes in your own language. Free to try, live in India, the USA & Canada.",
     "heroHeadline": "YieldAI Global: AI crop intelligence, live for farmers",
-    "heroSub": "Our flagship product is live in India, the USA, and Canada — AI crop advice, government market prices, weather, and government-scheme guidance, in the farmer's own language. Start a free trial.",
+    "heroSub": "Our flagship product is live in India, the USA, and Canada — on the web and on Android — with AI crop advice, government market prices, weather, and government-scheme guidance, in the farmer's own language. Start a free trial.",
     "overview": [
       "YieldAI Global is the flagship product of AGRIVISION AI, and it's live. It's an AI-powered agriculture platform that brings practical crop intelligence to the people who grow the world's food and the people who advise them — available now at yieldaiglobal.com.",
       "The idea is straightforward: take the kind of agronomic insight that's usually locked behind cost, distance, or language, and make it available through one accessible platform. Today it delivers AI crop advice, government market prices, weather and forecasting, government-scheme guidance, yield prediction, a voice assistant, and photo-based disease detection through CropVision — all in the farmer's own language. Our roadmap extends toward IoT sensors and smart irrigation.",
@@ -65,7 +65,7 @@ export const products: Product[] = [
         "description": "CropVision, the platform's vision layer, reads a photograph of an affected plant and returns the likely disease with an honest confidence level rather than a single unexplained answer."
       },
       {
-        "title": "Live market prices",
+        "title": "Government market prices",
         "description": "Surfaces government market prices so farmers and cooperatives can decide what to grow and when to sell, benchmarked against official sources."
       },
       {
