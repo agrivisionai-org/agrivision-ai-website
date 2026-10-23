@@ -49,6 +49,7 @@ const COLS = [
       { label: 'hello@agrivisionai.org', href: 'mailto:hello@agrivisionai.org' },
       { label: 'support@agrivisionai.org', href: 'mailto:support@agrivisionai.org' },
       { label: 'careers@agrivisionai.org', href: 'mailto:careers@agrivisionai.org' },
+      { label: 'hr@agrivisionai.org', href: 'mailto:hr@agrivisionai.org' },
     ],
   },
 ];

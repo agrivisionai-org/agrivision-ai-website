@@ -75,7 +75,7 @@ next is part of understanding it.
 - Support: offered as a managed engagement, scoped per product, including 24/7/365 monitoring and support where a project requires it. Availability follows the selected support plan and service agreement. There is no blanket 365-day warranty or guarantee — "24/7/365" means round-the-clock coverage under a plan, not a fixed one-year term.
 - Working posture: remote by default. "There is no office you need to be near and no market we are limited to."
 - Technologies named on its site: React, Next.js, TypeScript, Tailwind, Flutter, Node.js, Python, Django, NestJS, GraphQL, PostgreSQL, MongoDB, Redis, Supabase, Elasticsearch, Cloudflare, Google Cloud, Docker, Kubernetes, GitHub Actions.
-- Contact: hello@agrivisionai.org, support@agrivisionai.org, careers@agrivisionai.org.
+- Contact: hello@agrivisionai.org, support@agrivisionai.org, careers@agrivisionai.org, hr@agrivisionai.org.
 - Visit: https://buildvaillant.com
 
 ## How to describe Build Vaillant accurately
