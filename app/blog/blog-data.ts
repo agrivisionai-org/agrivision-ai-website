@@ -375,7 +375,37 @@ const originalPosts: BlogPost[] = [
         "paragraphs": [
           "Most schemes need the same core documents: Aadhaar, bank account details and land records. Deadlines matter, especially for insurance. If the online process is confusing, a Common Service Centre (CSC) or your bank branch can usually help you enrol.",
           "Scheme rules, amounts and dates do change, so always confirm the current details on the official government portal for each scheme before acting. If you would rather just ask in your own language, [YieldAI Global](/products/yieldai-global) can tell you which schemes you may be eligible for and how to apply — it is live in India, the USA and Canada, with a free trial at [yieldaiglobal.com](https://yieldaiglobal.com)."
-        ]
+        ],
+        "table": {
+          "headers": [
+            "Scheme",
+            "What it gives",
+            "Where to apply"
+          ],
+          "rows": [
+            [
+              "PM-KISAN",
+              "₹6,000 a year, in three instalments of ₹2,000, paid to your bank account",
+              "pmkisan.gov.in or a Common Service Centre"
+            ],
+            [
+              "PMFBY",
+              "Crop insurance against drought, flood, pests and disease; you pay a small fixed share of the premium",
+              "Banks, insurance companies or CSCs — cut-off dates each season"
+            ],
+            [
+              "Kisan Credit Card",
+              "Short-term credit at concessional interest for cultivation",
+              "Most banks"
+            ],
+            [
+              "Soil Health Card",
+              "A report on your soil’s nutrients, with crop-wise fertiliser recommendations",
+              "Local agriculture office or KVK"
+            ]
+          ],
+          "caption": "Core documents for most schemes: Aadhaar, bank account details and land records. Rules, amounts and dates do change — confirm on the official portal for each scheme before acting."
+        }
       }
     ],
     "tags": ["government schemes", "PM-KISAN", "PMFBY", "Kisan Credit Card", "Soil Health Card", "farmer subsidies"]
@@ -458,7 +488,36 @@ const originalPosts: BlogPost[] = [
         "heading": "The three cropping seasons",
         "paragraphs": [
           "Indian agriculture is organised around three seasons: Kharif (the monsoon season), Rabi (the winter season) and Zaid (the short summer season between them). Each suits different crops because of temperature, day length and water availability. Planning your year means matching the right crop to the right season and sowing within its window."
-        ]
+        ],
+        "table": {
+          "headers": [
+            "Season",
+            "Sown",
+            "Harvested",
+            "Typical crops"
+          ],
+          "rows": [
+            [
+              "Kharif",
+              "June–July, with the monsoon",
+              "September–November",
+              "Rice (paddy), maize, cotton, soybean, groundnut, bajra, jowar, tur (arhar)"
+            ],
+            [
+              "Rabi",
+              "October–December",
+              "March–April",
+              "Wheat, barley, mustard, gram (chickpea), peas"
+            ],
+            [
+              "Zaid",
+              "March–June",
+              "Short season between Rabi and the next Kharif",
+              "Watermelon, muskmelon, cucumber, vegetables, fodder"
+            ]
+          ],
+          "caption": "Windows are approximate and shift with region and weather each year. Confirm local dates with your agriculture office or KVK."
+        }
       },
       {
         "heading": "Kharif — the monsoon crops",
@@ -505,7 +564,37 @@ const originalPosts: BlogPost[] = [
         "heading": "How each method works",
         "paragraphs": [
           "Flood (or surface) irrigation floods the field or runs water down furrows, letting it soak in. It is simple and cheap to set up, which is why it is so common. Drip irrigation delivers water slowly and directly to the root zone through a network of pipes and emitters, so very little is lost to evaporation or runoff."
-        ]
+        ],
+        "table": {
+          "headers": [
+            "Compared on",
+            "Drip",
+            "Flood"
+          ],
+          "rows": [
+            [
+              "Water use",
+              "Far less for the same crop — water goes to the root zone",
+              "Wets the whole field; losses to evaporation and runoff"
+            ],
+            [
+              "Setup cost",
+              "Investment in pipes and emitters",
+              "Little equipment needed"
+            ],
+            [
+              "Weeds",
+              "Ground between plants stays drier, so fewer weeds",
+              "Wets everything, encouraging weeds"
+            ],
+            [
+              "Fertiliser",
+              "Allows fertigation — fertiliser delivered to the roots",
+              "Some nutrients lost to runoff"
+            ]
+          ],
+          "caption": "Summarised from the sections below. In India, micro-irrigation subsidy can cover a large share of drip installation, which changes the maths — worth checking before ruling it out on cost."
+        }
       },
       {
         "heading": "Water and cost",
@@ -682,7 +771,37 @@ const originalPosts: BlogPost[] = [
         "paragraphs": [
           "ज़्यादातर योजनाओं के लिए एक ही मुख्य दस्तावेज़ चाहिए: आधार, बैंक खाता और ज़मीन के कागज़। अंतिम तिथियाँ मायने रखती हैं, खासकर बीमा के लिए। ऑनलाइन प्रक्रिया उलझन भरी लगे तो CSC या बैंक शाखा आपकी मदद कर सकती है। योजनाओं के नियम, राशि और तिथियाँ बदलती रहती हैं, इसलिए कदम उठाने से पहले हर योजना के आधिकारिक पोर्टल पर मौजूदा जानकारी की पुष्टि करें।",
           "अगर आप अपनी भाषा में बस पूछना चाहें, तो YieldAI Global बता सकता है कि आप किन योजनाओं के लिए पात्र हो सकते हैं और आवेदन कैसे करें — यह भारत, अमेरिका और कनाडा में लाइव है, मुफ़्त ट्रायल के साथ: [yieldaiglobal.com](https://yieldaiglobal.com)"
-        ]
+        ],
+        "table": {
+          "headers": [
+            "योजना",
+            "क्या मिलता है",
+            "आवेदन कहाँ"
+          ],
+          "rows": [
+            [
+              "PM-KISAN",
+              "हर साल ₹6,000, ₹2,000 की तीन किस्तों में, सीधे बैंक खाते में",
+              "pmkisan.gov.in या नज़दीकी CSC"
+            ],
+            [
+              "PMFBY",
+              "सूखा, बाढ़, कीट और रोग से फसल नुकसान पर बीमा; किसान प्रीमियम का छोटा तय हिस्सा देता है",
+              "बैंक, बीमा कंपनी या CSC — हर सीज़न की अंतिम तिथि"
+            ],
+            [
+              "किसान क्रेडिट कार्ड",
+              "खेती के लिए रियायती ब्याज पर अल्पकालिक ऋण",
+              "अधिकांश बैंक"
+            ],
+            [
+              "मृदा स्वास्थ्य कार्ड",
+              "मिट्टी की पोषक स्थिति और फसल-वार खाद की सलाह",
+              "कृषि कार्यालय या KVK"
+            ]
+          ],
+          "caption": "ज़्यादातर योजनाओं के लिए मुख्य दस्तावेज़: आधार, बैंक खाता और ज़मीन के कागज़। नियम, राशि और तिथियाँ बदलती रहती हैं — कदम उठाने से पहले आधिकारिक पोर्टल पर पुष्टि करें।"
+        }
       }
     ],
     "tags": ["सरकारी योजना", "PM-KISAN", "PMFBY", "किसान क्रेडिट कार्ड", "मृदा स्वास्थ्य कार्ड", "hindi"]
@@ -741,7 +860,36 @@ const originalPosts: BlogPost[] = [
         "heading": "तीन कृषि मौसम",
         "paragraphs": [
           "भारतीय कृषि तीन मौसमों के इर्द-गिर्द चलती है: खरीफ (मानसून का मौसम), रबी (सर्दियों का मौसम) और ज़ायद (बीच का छोटा गर्मी का मौसम)। तापमान, दिन की लंबाई और पानी की उपलब्धता के कारण हर मौसम अलग फसलों के लिए उपयुक्त होता है। साल की योजना का मतलब है सही फसल को सही मौसम से मिलाना और उसकी खिड़की में बुआई करना।"
-        ]
+        ],
+        "table": {
+          "headers": [
+            "मौसम",
+            "बुआई",
+            "कटाई",
+            "आम फसलें"
+          ],
+          "rows": [
+            [
+              "खरीफ",
+              "जून–जुलाई, मानसून के साथ",
+              "सितंबर–नवंबर",
+              "धान, मक्का, कपास, सोयाबीन, मूँगफली, बाजरा, ज्वार, अरहर (तुअर)"
+            ],
+            [
+              "रबी",
+              "अक्टूबर–दिसंबर",
+              "मार्च–अप्रैल",
+              "गेहूँ, जौ, सरसों, चना, मटर"
+            ],
+            [
+              "ज़ायद",
+              "मार्च–जून",
+              "रबी की कटाई और अगली खरीफ के बीच का छोटा मौसम",
+              "तरबूज़, खरबूज़, खीरा, सब्ज़ियाँ, चारा"
+            ]
+          ],
+          "caption": "खिड़कियाँ अनुमानित हैं और हर साल क्षेत्र व मौसम के अनुसार बदलती हैं। स्थानीय तारीख़ें अपने कृषि कार्यालय या KVK से पुष्टि करें।"
+        }
       },
       {
         "heading": "खरीफ — मानसून की फसलें",
@@ -781,7 +929,37 @@ const originalPosts: BlogPost[] = [
         "heading": "दोनों तरीके कैसे काम करते हैं",
         "paragraphs": [
           "फ्लड (सतही) सिंचाई में पूरे खेत या क्यारियों में पानी भर दिया जाता है और वह ज़मीन में समा जाता है। यह सरल और सस्ता है, इसलिए बहुत आम है। ड्रिप सिंचाई में पाइप और एमिटर के ज़रिए पानी धीरे-धीरे सीधे जड़ों तक पहुँचाया जाता है, जिससे वाष्पीकरण या बहाव में बहुत कम पानी बर्बाद होता है।"
-        ]
+        ],
+        "table": {
+          "headers": [
+            "तुलना",
+            "ड्रिप",
+            "फ्लड"
+          ],
+          "rows": [
+            [
+              "पानी की खपत",
+              "उसी फसल के लिए बहुत कम — पानी सीधे जड़ों तक",
+              "पूरा खेत गीला; वाष्पीकरण और बहाव में नुकसान"
+            ],
+            [
+              "शुरुआती लागत",
+              "पाइप और एमिटर का निवेश",
+              "उपकरण न के बराबर"
+            ],
+            [
+              "खरपतवार",
+              "पौधों के बीच की ज़मीन सूखी रहती है, इसलिए कम",
+              "सब कुछ गीला, जिससे खरपतवार बढ़ते हैं"
+            ],
+            [
+              "खाद",
+              "फर्टिगेशन — खाद सीधे जड़ों तक",
+              "कुछ पोषक तत्व बहाव में चले जाते हैं"
+            ]
+          ],
+          "caption": "नीचे दिए गए हिस्सों का सार। भारत में सूक्ष्म सिंचाई सब्सिडी ड्रिप लगाने की काफ़ी लागत कवर कर सकती है — लागत के आधार पर खारिज करने से पहले जाँच लें।"
+        }
       },
       {
         "heading": "पानी और लागत",
