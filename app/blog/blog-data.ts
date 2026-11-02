@@ -1218,7 +1218,36 @@ const originalPosts: BlogPost[] = [
           "For the 2026 scheme year, the application closed at midnight on 15 May 2026. What happens after a deadline like that is more graduated than most farmers expect.",
           "Under section 15 of the Department's 2026 terms and conditions, a late application is reduced by 1% for each working day it is late. Because the reduction accrues on working days only, a weekend immediately after the deadline carries no reduction. The deduction reached 16% for an application received on 9 June 2026, the final day of the 25-calendar-day late window. From 10 June 2026, the reduction was 100%.",
           "Amendments follow their own timetable. For 2026 a farmer could amend a declared area without penalty until 31 May. Adding parcels or increasing claimed area late carried the same 1% per working day on the parcels concerned. Withdrawing land or reducing a claimed area could be done without penalty much later, provided the Department had not already flagged an issue with the application."
-        ]
+        ],
+        "table": {
+          "headers": [
+            "Date, 2026 scheme year",
+            "What applied"
+          ],
+          "rows": [
+            [
+              "13 February",
+              "Application window opened"
+            ],
+            [
+              "15 May, midnight",
+              "Application closed"
+            ],
+            [
+              "To 31 May",
+              "A declared area could still be amended without penalty"
+            ],
+            [
+              "16 May to 9 June",
+              "Late applications reduced by 1% for each working day late. The deduction reached 16% for an application received on 9 June, the final day of the 25-calendar-day late window"
+            ],
+            [
+              "From 10 June",
+              "The reduction was 100%"
+            ]
+          ],
+          "caption": "Section 15 of the Department’s 2026 terms and conditions. Reductions accrue on working days only, so a weekend immediately after the deadline carries none. Irish scheme deadlines are set fresh annually — treat the structure as durable and these dates as a snapshot."
+        }
       },
       {
         "heading": "Where the application actually happens",
@@ -1232,7 +1261,32 @@ const originalPosts: BlogPost[] = [
         "paragraphs": [
           "A farmer who does not want to file themselves can authorise a Farm Advisory System approved advisor to do it. There are two routes. You can authorise the advisor yourself in your myagfood.ie account under Manage Your Agent Associations. Or an approved advisor can add you as a client, which triggers an SMS to you, and you reply to confirm the association.",
           "Both routes are open up to the scheme closing date. Where authorisation is given on a form instead, as the Department describes for joint ventures, the form has to be in earlier: five working days before the scheme deadline. The list of approved advisors is published by the Department."
-        ]
+        ],
+        "table": {
+          "headers": [
+            "Route",
+            "How it works",
+            "Open until"
+          ],
+          "rows": [
+            [
+              "You authorise the advisor",
+              "In your myagfood.ie account, under Manage Your Agent Associations",
+              "The scheme closing date"
+            ],
+            [
+              "The advisor adds you",
+              "An approved advisor adds you as a client, which triggers an SMS; you reply to confirm",
+              "The scheme closing date"
+            ],
+            [
+              "Authorisation on a form",
+              "As the Department describes for joint ventures",
+              "Five working days before the scheme deadline"
+            ]
+          ],
+          "caption": "Only a Farm Advisory System approved advisor can file on your behalf."
+        }
       },
       {
         "heading": "Why the dates in this article will be wrong next year",
@@ -1600,7 +1654,37 @@ const originalPosts: BlogPost[] = [
           "Most confusion about American price data comes from mixing up two agencies. USDA's Agricultural Marketing Service (AMS) runs Market News, which reports what is being bid and traded right now. USDA's National Agricultural Statistics Service (NASS) runs the Price Program, which surveys what farmers actually received, weeks after the fact. They are not substitutes for each other.",
           "AMS Market News covers cotton and tobacco, dairy and milk products, fruits, vegetables and specialty crops, livestock, meats, poultry, eggs, grain and hay, organic, and local and regional foods. AMS issued its first Market News report in 1915, by telegraph, carrying the price of strawberries at Hammond, Louisiana. USDA's centenary account of the service, published in 2015, put the output at more than 250,000 reports a year; treat that as an order of magnitude rather than a current count. For specialty crops, reporters collect data through direct contacts with sales personnel, suppliers, brokers and buyers, and AMS says the data is made available within hours of collection at no cost.",
           "NASS is on a monthly clock. Its Agricultural Prices publication contains prices received by producers for principal crops, livestock and livestock products, indexes of prices received by producers, feed price ratios, indexes of prices paid by producers, and parity prices. The 2026 release calendar puts it at 3:00 p.m. Eastern on 31 August, 29 September, 30 October, 30 November and 30 December. A NASS state average is a benchmark for judging a season. It is not a bid you can sell into today."
-        ]
+        ],
+        "table": {
+          "headers": [
+            "",
+            "AMS Market News",
+            "NASS Price Program"
+          ],
+          "rows": [
+            [
+              "Reports",
+              "What is being bid and traded right now",
+              "What farmers actually received, surveyed weeks after the fact"
+            ],
+            [
+              "Timing",
+              "Specialty crop data available within hours of collection, at no cost",
+              "Monthly"
+            ],
+            [
+              "Covers",
+              "Cotton and tobacco, dairy and milk products, fruits, vegetables and specialty crops, livestock, meats, poultry, eggs, grain and hay, organic, and local and regional foods",
+              "Prices received by producers for principal crops, livestock and livestock products; indexes of prices received and paid; feed price ratios; parity prices"
+            ],
+            [
+              "Use it as",
+              "A bid you can sell into today",
+              "A benchmark for judging a season"
+            ]
+          ],
+          "caption": "They are not substitutes for each other, and mixing them up is where most confusion about American price data starts. The 2026 NASS Agricultural Prices release calendar puts it at 3:00 p.m. Eastern on 31 August, 29 September, 30 October, 30 November and 30 December."
+        }
       },
       {
         "heading": "Where the reports live, and what a daily grain report contains",
@@ -1626,7 +1710,28 @@ const originalPosts: BlogPost[] = [
           "A blank in a USDA report is not a zero and it is not a mistake. AMS applies a confidentiality guideline known as 3/70/20 to livestock reports under Livestock Mandatory Reporting. For a report to be published, at least three reporting entities must provide data at least 50 per cent of the time over the most recent 60-day period; no single reporting entity may provide more than 70 per cent of the data for a report over that period; and no single reporting entity may be the sole reporting entity for a report more than 20 per cent of the time over that period. Thin markets get suppressed rather than published.",
           "In grain, the reverse problem exists. AMS defines a nominal quotation as a price reported in the absence of a cash trade, where the reporter is confident that the nominal price reflects current market value conditions. A number on the page does not prove a bushel changed hands at it. AMS also defines a bid as willingness to buy at a stated price according to specified conditions, and a spot bid as a price willing to be paid for a commodity available for immediate delivery. A bid is an offer to buy, not a settled transaction. Separately, AMS defines price protection as a price discount subtracted from the bid, usually in effect during volatile market activity, and requires that where protection occurs the bids include the protection discounts and the report carries a statement showing the range of discounts taken for each commodity.",
           "AMS's own reporter guidance is unusually blunt about the limits of its numbers. Much of a daily livestock report is a qualitative scale rather than a figure: supply is described as light, moderate or heavy; demand as very good, good, moderate, light or very light; trade activity as active, moderate, slow or inactive; and price trend as higher, firm, steady, weak or lower. Trends are based on bulk prices for the most part, sales outside the normal range usually have little influence on the trend, and it is generally not necessary to use less than a 25 cent fluctuation. The same guidance states that the prices at which livestock or livestock products are sold are not necessarily their value, and that the terms are not synonymous and must not be used interchangeably."
-        ]
+        ],
+        "table": {
+          "headers": [
+            "Threshold",
+            "Requirement, over the most recent 60-day period"
+          ],
+          "rows": [
+            [
+              "3",
+              "At least three reporting entities must provide data at least 50 per cent of the time"
+            ],
+            [
+              "70",
+              "No single reporting entity may provide more than 70 per cent of the data for a report"
+            ],
+            [
+              "20",
+              "No single reporting entity may be the sole reporting entity for a report more than 20 per cent of the time"
+            ]
+          ],
+          "caption": "The AMS confidentiality guideline applied to livestock reports under Livestock Mandatory Reporting. Thin markets get suppressed rather than published, which is why a blank in a USDA report is not a zero and not a mistake."
+        }
       },
       {
         "heading": "Futures on the CME, and the basis that connects them to your elevator",
