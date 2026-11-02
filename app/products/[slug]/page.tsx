@@ -72,7 +72,9 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
         name: product.name,
         applicationCategory: 'BusinessApplication',
         applicationSubCategory: product.category,
-        operatingSystem: 'Web',
+        // Android where the product actually ships there; roadmap products stay Web.
+        operatingSystem: product.installUrl ? 'Web, Android' : 'Web',
+        ...(product.installUrl ? { installUrl: product.installUrl } : {}),
         url,
         description: product.metaDescription,
         // Only products with their own price carry an Offer. CropVision is a module inside

@@ -9,6 +9,10 @@ export type Product = {
   category: string;
   status: string;
   liveUrl?: string;
+  /** Google Play URL, set only where the product actually ships on Android. Drives both
+   *  operatingSystem and installUrl in the page's JSON-LD. FieldSense and FieldOps are
+   *  roadmap, so they carry none. */
+  installUrl?: string;
   /** Only set where a product is separately purchasable. Drives the Offer node in JSON-LD. */
   /** One entry per market. YieldAI Global is priced regionally, so a single USD figure
    *  would be wrong for two of the three countries it is live in. */
@@ -40,6 +44,7 @@ export const products: Product[] = [
     "category": "AI crop intelligence platform",
     "status": "Live",
     "liveUrl": "https://yieldaiglobal.com",
+    "installUrl": "https://play.google.com/store/apps/details?id=com.yieldaiglobal.app",
     "price": [
       { "amount": "149", "currency": "INR", "country": "IN" },
       { "amount": "9.99", "currency": "USD", "country": "US" },
@@ -131,6 +136,7 @@ export const products: Product[] = [
   },
   {
     "slug": "cropvision",
+    "installUrl": "https://play.google.com/store/apps/details?id=com.yieldaiglobal.app",
     "name": "CropVision",
     "category": "YieldAI module · computer vision",
     "status": "Live",
