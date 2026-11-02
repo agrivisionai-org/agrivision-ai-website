@@ -1020,7 +1020,32 @@ const originalPosts: BlogPost[] = [
           "An authorised farm may exceed the 170 kg baseline, but not without limit. The headline figure is 250 kg of nitrogen per hectare per year from livestock manure. Since 1 January 2024, however, that ceiling drops to 220 kg on holdings whose land drains into waters where monitoring showed the required water quality was not being met.",
           "The mechanism for that split came from Article 12 of Commission Implementing Decision (EU) 2022/696, headed “Two-year review”. Irish authorities carried out that review in 2023 and mapped the areas where the limit would fall. So whether you are on 220 or 250 is not a matter of farm type or stocking ambition. It is a matter of which catchment your land drains into.",
           "The practical consequence is that two neighbouring farms running identical systems can sit under different ceilings. If you have not checked which applies to your holding, that is the first thing to establish, not the last."
-        ]
+        ],
+        "table": {
+          "headers": [
+            "Ceiling",
+            "Applies to",
+            "Source"
+          ],
+          "rows": [
+            [
+              "170 kg N/ha/year",
+              "The baseline for all farms — livestock manure nitrogen",
+              "Nitrates Directive 91/676/EEC, Annex III(2)"
+            ],
+            [
+              "250 kg N/ha/year",
+              "Authorised derogation farms",
+              "Commission Implementing Decision (EU) 2022/696"
+            ],
+            [
+              "220 kg N/ha/year",
+              "Derogation farms whose land drains into waters where monitoring showed the required water quality was not being met — since 1 January 2024",
+              "Article 12 “Two-year review”, Decision (EU) 2022/696"
+            ]
+          ],
+          "caption": "Which ceiling applies is a matter of which catchment your land drains into, not of farm type or stocking ambition. Two neighbouring farms running identical systems can sit under different ceilings."
+        }
       },
       {
         "heading": "The rules you actually farm under",
@@ -1068,7 +1093,37 @@ const originalPosts: BlogPost[] = [
         "paragraphs": [
           "Teagasc's guidance describes the Irish planting season plainly: winter cereals are generally sown from mid-September to mid-November, and because growth is restricted after mid-November, little or no cereal is sown after that point.",
           "That gives roughly eight weeks. In a country where autumn rainfall decides whether a field travels at all, eight weeks of calendar can become a fortnight of actual opportunity. Planning as though you have the full window is how crops end up in the ground in conditions that cost more in establishment than the later date saves."
-        ]
+        ],
+        "table": {
+          "headers": [
+            "Window",
+            "Dates",
+            "Attributed to"
+          ],
+          "rows": [
+            [
+              "Winter cereals, general sowing",
+              "Mid-September to mid-November",
+              "Teagasc"
+            ],
+            [
+              "Winter cereals, for maximum yield",
+              "End of September to early November",
+              "Teagasc sowing guidance"
+            ],
+            [
+              "Winter wheat, optimum",
+              "Around 15 October",
+              "Shay Phelan, Teagasc Daily, from Oak Park trials"
+            ],
+            [
+              "Spring barley",
+              "Early to mid-March",
+              "John Galvin, Teagasc"
+            ]
+          ],
+          "caption": "Teagasc adds that with modern varieties sowing can occur up to February — a statement about what the crop tolerates, not what it rewards. One date is a centre of gravity, not a rule to farm to literally."
+        }
       },
       {
         "heading": "The yield window is narrower still",
@@ -1090,7 +1145,32 @@ const originalPosts: BlogPost[] = [
         "paragraphs": [
           "Teagasc's Sowing and Varieties guidance gives recommended seeding rates of 140 to 200 kg per hectare for winter wheat, 140 to 190 kg per hectare for winter barley, and 160 to 190 kg per hectare for winter oats, with target plant populations of 250 to 300 plants per square metre.",
           "Those are ranges for a reason. Rate rises with lateness, with a rougher seedbed, and with lower expected establishment. A figure from the bottom of the range sown into a difficult November seedbed is not a saving."
-        ]
+        ],
+        "table": {
+          "headers": [
+            "Crop",
+            "Seeding rate",
+            "Target plant population"
+          ],
+          "rows": [
+            [
+              "Winter wheat",
+              "140–200 kg/ha",
+              "250–300 plants/m²"
+            ],
+            [
+              "Winter barley",
+              "140–190 kg/ha",
+              "250–300 plants/m²"
+            ],
+            [
+              "Winter oats",
+              "160–190 kg/ha",
+              "250–300 plants/m²"
+            ]
+          ],
+          "caption": "Teagasc Sowing and Varieties guidance. These are ranges for a reason: rate rises with lateness, with a rougher seedbed, and with lower expected establishment."
+        }
       },
       {
         "heading": "Spring barley: early to mid-March",
@@ -1191,7 +1271,37 @@ const originalPosts: BlogPost[] = [
           "AAFC delivers AgriStability itself in Manitoba, New Brunswick, Nova Scotia, Newfoundland and Labrador, the Northwest Territories and Yukon. It is delivered provincially in British Columbia, Alberta, Saskatchewan, Ontario, Quebec and Prince Edward Island. The administrators are Agriculture Financial Services Corporation in Alberta, Saskatchewan Crop Insurance Corporation in Saskatchewan, Agricorp in Ontario, La Financière agricole du Québec in Quebec, and the PEI Agricultural Insurance Corporation in Prince Edward Island. British Columbia delivers through its Ministry of Agriculture and Food. If you find a page listing British Columbia among the federally delivered jurisdictions, check it against AAFC's main AgriStability page and the BC ministry's own AgriStability material; both put British Columbia in the provincial column.",
           "AgriInvest is close to the inverse. AAFC delivers it in the Northwest Territories, Yukon and every province except Quebec, where it is delivered by La Financière agricole du Québec. So an Alberta producer deals with AFSC for AgriStability and with AAFC for AgriInvest: two files, two administrators, two sets of correspondence. AgriInsurance is different again, delivered provincially in all ten provinces with no federal delivery option, and AAFC lists an administering body for each of the ten provinces and none for the territories. AgriRecovery is neither, because there is no standing program to be delivered at all.",
           "The reason is constitutional rather than administrative. Agriculture is a shared federal-provincial jurisdiction, and provinces designed and ran their own production insurance and income support long before the current framework existed. Successive frameworks aligned the funding and much of the program design; they did not consolidate the counters. The practical consequence is that an answer from a producer in the next province can be accurate for them and wrong for you."
-        ]
+        ],
+        "table": {
+          "headers": [
+            "Programme",
+            "Delivered by AAFC",
+            "Delivered provincially"
+          ],
+          "rows": [
+            [
+              "AgriStability",
+              "Manitoba, New Brunswick, Nova Scotia, Newfoundland and Labrador, Northwest Territories, Yukon",
+              "British Columbia, Alberta, Saskatchewan, Ontario, Quebec, Prince Edward Island"
+            ],
+            [
+              "AgriInvest",
+              "Northwest Territories, Yukon and every province except Quebec",
+              "Quebec — La Financière agricole du Québec"
+            ],
+            [
+              "AgriInsurance",
+              "No federal delivery option",
+              "All ten provinces; AAFC lists an administering body for each, and none for the territories"
+            ],
+            [
+              "AgriRecovery",
+              "Neither — there is no standing programme to be delivered",
+              "—"
+            ]
+          ],
+          "caption": "Provincial administrators named by AAFC: Agriculture Financial Services Corporation (Alberta), Saskatchewan Crop Insurance Corporation, Agricorp (Ontario), La Financière agricole du Québec, the PEI Agricultural Insurance Corporation, and the Ministry of Agriculture and Food in British Columbia."
+        }
       },
       {
         "heading": "AgriStability: the percentages, the margin and the fee",
@@ -1200,7 +1310,32 @@ const originalPosts: BlogPost[] = [
           "There is a fourth set of numbers on the open web, and it is the one most likely to mislead you. For the 2025 program year only, the compensation rate was raised from 80% to 90% and the maximum payment from $3 million to $6 million. The handbook states the limits in exactly those terms: 2025 program year only. The change was announced in late March 2025 in a federal response package to tariffs imposed by China, which took effect on March 20, 2025 and included 100% tariffs on canola oil, canola meal and peas and 25% tariffs on certain pork, fish and seafood products. For the 2026 program year the handbook figures are 80% and $3 million. If you read 90% and $6 million with no year attached, you are reading about 2025.",
           "The reference margin is an Olympic average: three of the previous five years, dropping the highest and the lowest. A participant without a five-year history uses the average of the three years immediately before the current program year. One historical point is worth knowing because older articles still discuss it — the Reference Margin Limit was removed. Federal, provincial and territorial ministers of agriculture agreed to remove it in March 2021, retroactive to the 2020 program year, and it does not appear in the Sustainable CAP guidelines or handbook.",
           "Beyond that, the margin calculation is genuinely complex. Structural change adjustments, inventory valuation, which expenses count as allowable — this is accountant territory, not something to work out from a web page, and we are not going to pretend otherwise. What is simple is the fee. It is 0.45% of your contribution reference margin multiplied by the 70% support level, which AAFC also expresses as $3.15 for every $1,000 of protected reference margin. The minimum fee is $45, and there is a $55 administrative cost share each year on top of it. Eligibility requires a minimum of six consecutive months of farming activity and a completed production cycle, unless you experienced a disaster, plus an income tax return reporting farming income or loss filed with the Canada Revenue Agency by the final filing deadline for the program year. AAFC excludes government-funded bodies including research stations, universities and colleges; landlords earning rental income for crop or livestock shares; former federal public office holders not in compliance with conflict of interest guidelines; and dissolved corporations."
-        ]
+        ],
+        "table": {
+          "headers": [
+            "Figure",
+            "What it is",
+            "What it does"
+          ],
+          "rows": [
+            [
+              "30%",
+              "The trigger",
+              "A payment is possible once your production margin falls below your historical reference margin by more than 30%. Nothing is paid on the first 30% of a decline."
+            ],
+            [
+              "80%",
+              "The compensation rate",
+              "The share of the decline beyond the 30% that the programme actually pays"
+            ],
+            [
+              "70%",
+              "The support level",
+              "Used in the fee formula and in the payment cap — the lesser of $3 million or 70% of the difference between the reference margin and the programme year margin"
+            ]
+          ],
+          "caption": "Figures for the 2026 programme year. For the 2025 programme year only, the compensation rate was raised to 90% and the maximum payment to $6 million. If you read 90% and $6 million with no year attached, you are reading about 2025."
+        }
       },
       {
         "heading": "Deadlines, late participation and interim payments",
@@ -1294,7 +1429,37 @@ const originalPosts: BlogPost[] = [
           "RMA's Manager's Bulletin MGR-25-006, issued 20 August 2025, sets out the immediate changes. The premium subsidy rate for the Supplemental Coverage Option went from 65 to 80 percent, and RMA applied the same 80 percent rate to the Enhanced Coverage Option, the Margin Coverage Option, the Hurricane Insurance Protection Wind Index and the Fire Insurance Protection Smoke Index. Whole-Farm Revenue Protection's maximum insurable coverage level rose from 85 to 90 percent. All of it took effect for policies with a sales closing date on or after 1 July 2025.",
           "The same bulletin widened the Beginning Farmer and Rancher definition to cover someone who has not actively operated and managed a farm or ranch for more than 10 crop years, up from 5. The additional premium subsidy rate that goes with it is 15 percent for the first two crop years, 13 percent for the third, 11 percent for the fourth, and 10 percent for the fifth through tenth. Amended BFR applications for 2026 crop year policies were due 30 November 2025.",
           "The change most often reported wrongly is the SCO coverage level. The 2025 law raises SCO's maximum from 86 to 90 percent and allows SCO to be bought regardless of the insured's ARC election with FSA — but not yet. RMA's Product Management Bulletin PM-26-036, dated 30 June 2026, implements it beginning with the 2027 crop year for crops with a 30 June 2026 contract change date, and beginning with the 2028 crop year for crops with earlier contract change dates. That is a genuinely complex rule and we are not going to flatten it: which year it reaches you depends on your crop's contract change date. For anyone reading in 2026, the older restriction still binds. Under the 2025 program year rules, electing ARC made a producer ineligible for SCO on planted acres, and producers enrolling seed cotton base in ARC or PLC were ineligible for STAX on planted cotton acres."
-        ]
+        ],
+        "table": {
+          "headers": [
+            "What changed",
+            "From",
+            "To"
+          ],
+          "rows": [
+            [
+              "Supplemental Coverage Option premium subsidy rate",
+              "65%",
+              "80%"
+            ],
+            [
+              "ECO, Margin Coverage Option, HIP-WI and FIP-SI subsidy rate",
+              "—",
+              "80%"
+            ],
+            [
+              "Whole-Farm Revenue Protection maximum coverage level",
+              "85%",
+              "90%"
+            ],
+            [
+              "Beginning Farmer and Rancher definition",
+              "not more than 5 crop years",
+              "not more than 10 crop years"
+            ]
+          ],
+          "caption": "RMA Manager’s Bulletin MGR-25-006, 20 August 2025. All of it took effect for policies with a sales closing date on or after 1 July 2025. The BFR additional premium subsidy runs 15% for the first two crop years, 13% for the third, 11% for the fourth and 10% for the fifth through tenth."
+        }
       },
       {
         "heading": "ARC and PLC pay on base acres, not on what you planted",
@@ -1311,7 +1476,62 @@ const originalPosts: BlogPost[] = [
           "PLC pays when a covered commodity's effective price falls below its effective reference price. FSA defines the first half plainly: \"The effective price equals the higher of the national market year average price (MYA) or the national average loan rate for the covered commodity.\" The second half is where people get lost. The effective reference price is \"the lesser of 115% of the reference price or an amount equal to the greater of the reference price or 88% of the average of MYA prices from the 5 preceding years, excluding the highest and lowest price.\" The 88 percent is a change from the previous 85 percent, made by the 2025 law.",
           "The 2026 numbers make the formula legible without writing it out twice. FSA's [2026 effective reference price table](https://www.fsa.usda.gov/sites/default/files/2026-08/2026_ERP_0.pdf), dated 12 August 2026, computes the year's figures from the 2020/21 to 2024/25 market year average prices. Wheat's statutory reference price is $6.35/bu and its effective reference price is also $6.35 — it sits on the statutory floor. Corn's statutory price is $4.10/bu but its effective price is $4.42, because recent market year averages were strong enough to lift it. Soybeans go from $10.00 to $10.71, grain sorghum from $4.40 to $4.67, barley from $5.45 to $5.58, oats from $2.65 to $3.05. Peanuts at $0.3150/lb, long grain rice at $0.1690/lb and seed cotton at $0.4200/lb are all at their statutory floors for 2026. Statutory and effective are different numbers, and for a grower the gap between them decides whether a price triggers a payment at all.",
           "The prices driving all of this come from one place. The source note on FSA's own table names USDA's National Agricultural Statistics Service, \"Agricultural Prices.\" Watching the market year average as it forms through the season is how a grower gets an early read on whether a covered commodity is heading toward a PLC trigger. We build [YieldAI Global](/products/yieldai-global), which is live and paid in the USA at $9.99 a month after a 30-day free trial and takes its US market prices from USDA. It reports prices. It does not file your paperwork, calculate your program payments, or advise you on an election — for those, FSA is the answer."
-        ]
+        ],
+        "table": {
+          "headers": [
+            "Commodity",
+            "Statutory reference price",
+            "2026 effective reference price"
+          ],
+          "rows": [
+            [
+              "Wheat",
+              "$6.35/bu",
+              "$6.35/bu"
+            ],
+            [
+              "Corn",
+              "$4.10/bu",
+              "$4.42/bu"
+            ],
+            [
+              "Soybeans",
+              "$10.00/bu",
+              "$10.71/bu"
+            ],
+            [
+              "Grain sorghum",
+              "$4.40/bu",
+              "$4.67/bu"
+            ],
+            [
+              "Barley",
+              "$5.45/bu",
+              "$5.58/bu"
+            ],
+            [
+              "Oats",
+              "$2.65/bu",
+              "$3.05/bu"
+            ],
+            [
+              "Peanuts",
+              "$0.3150/lb",
+              "$0.3150/lb"
+            ],
+            [
+              "Long grain rice",
+              "$0.1690/lb",
+              "$0.1690/lb"
+            ],
+            [
+              "Seed cotton",
+              "$0.4200/lb",
+              "$0.4200/lb"
+            ]
+          ],
+          "caption": "FSA’s 2026 effective reference price table, dated 12 August 2026, computed from the 2020/21 to 2024/25 market year average prices. Where the two columns match, the commodity sits on its statutory floor. Statutory and effective are different numbers, and the gap between them decides whether a price triggers a payment at all."
+        }
       },
       {
         "heading": "Payment limits, income tests and the entity rules",
@@ -1461,7 +1681,40 @@ const originalPosts: BlogPost[] = [
           "How you take the reading matters as much as the number. Manitoba Agriculture advises placing the thermometer at target seeding depth, reading morning and evening to get a daily average, repeating over several days for a multi-day average, and measuring in a number of locations in the field. Alberta Grains, the commission formed on 1 August 2023 when Alberta Barley and the Alberta Wheat Commission amalgamated, says soil temperature can be measured at 5 cm depth in mid-morning and that soil temperature is a better indicator of seedbed conditions than the calendar date. The Canola Council of Canada puts it more bluntly: calendar date is not a reliable indicator of soil temperature, and the variation between years and between fields can be very large.",
           "The floor may be lower than most rotations assume. Manitoba Agriculture reports that research in Alberta and Saskatchewan on ultra-early seeding of spring wheat found the optimal seeding time is when soil temperature is between 2C and 6C, citing Collier and colleagues (2020). Alberta Grains reports from the same body of ultra-early work that seeding at 2C to 4C gave higher yield and yield stability south of Calgary, and equivalent results north of Calgary, compared with seeding at 8C to 10C.",
           "Canola is where the published guidance stops agreeing, and the disagreement is real rather than sloppy. Manitoba Agriculture's fact sheet gives 5C as the germination minimum, while its delayed-seeding guidance points to soil temperature of 8C to 10C as the key factor for fast emergence. Those answer different questions. The Canola Council splits them explicitly: canola can germinate at 2C to 3C but does so slowly and unevenly over a period of weeks, while at 6C close to 100 per cent germination can occur within eight days; below 10C germination and emergence get progressively poorer; cold soils below 5C at seeding and throughout the two weeks following can increase mortality by 10 to 20 per cent; and given the yield benefit of seeding early, 4C to 5C is still a reasonable starting point. It is worth knowing that the eight-day figure rests on an early-1980s laboratory study at AAFC Beaverlodge using petri dishes at controlled temperatures, not on field conditions. The Council's practical advice is to plan to seed at 5C or above with warmer weather in the forecast, while accepting that from the second week of May onward growers may need to take good field conditions regardless of temperature."
-        ]
+        ],
+        "table": {
+          "headers": [
+            "Crop",
+            "Minimum soil temperature for germination"
+          ],
+          "rows": [
+            [
+              "Wheat, barley, oat",
+              "4C"
+            ],
+            [
+              "Peas",
+              "4C — the web version of the same table lists 5C"
+            ],
+            [
+              "Canola",
+              "5C"
+            ],
+            [
+              "Sunflower",
+              "6C"
+            ],
+            [
+              "Flax",
+              "9C"
+            ],
+            [
+              "Corn, edible beans, soybeans",
+              "10C"
+            ]
+          ],
+          "caption": "Manitoba Agriculture, Early Seeding Considerations. These are floors for germination, not targets for a good stand. Take the reading at target seeding depth, morning and evening, over several days and in several locations."
+        }
       },
       {
         "heading": "Why wheat goes in before canola",
@@ -1470,7 +1723,37 @@ const originalPosts: BlogPost[] = [
           "Canola has no equivalent buffer once it has emerged, and the Canola Council's frost guidance is written accordingly: it is about judging damage rather than waiting for regrowth. A light frost of 0C to -2C carries minimal risk of crop damage. A heavy frost that blackens cotyledons or leaves needs four to 10 days before the damage can be judged. Several days of near-freezing weather harden early-seeded canola, but exposure to warm weather can cost hardened plants that tolerance, leaving them, like unhardened later-sown canola, liable to be killed at only -3C to -4C. Rapidly growing seedlings are more susceptible than slow-growing ones. The Council advises that a field with at least 20 to 40 recovering plants per square metre, roughly two to four per square foot, and light weed pressure should not need reseeding.",
           "On which growth stage is more frost tolerant, the two agencies say different amounts rather than opposite things. Manitoba Agriculture's Spring Frost Damage bulletin states that canola at the cotyledon stage is more susceptible to frost damage than plants at the three to four-leaf stage, and attaches no temperature to that statement. The Canola Council says there is no firm evidence that cotyledons are more or less frost tolerant than true leaves: a 1980s research project found cotyledon-stage canola more susceptible, but reported field observations have stated the opposite, because the soil surface acts as a heat sink for the smaller plants. You will also see specific temperatures attached to those stages, commonly -4C at cotyledon and -7C once hardened at three to four leaf. Neither agency publishes those numbers and we could not trace them to a primary source, so we are leaving them out.",
           "The same anatomy shows up in seeding depth. Manitoba Agriculture gives 1.5 to 3 inches for spring wheat, with a target of 23 to 28 plants per square foot; 1.5 to 2 inches for barley at 22 to 25 plants per square foot; 1 to 2 inches for field peas at 7 to 8 plants per square foot; and 0.5 to 1.5 inches for canola, for a final stand of 7 to 11 plants per square foot. Alberta Grains gives an optimum of 1.5 to 2 inches, or 3.75 to 5 cm, for spring cereals. Canola goes into the shallow layer that warms and dries fastest, which is part of why its calendar sits differently from wheat's."
-        ]
+        ],
+        "table": {
+          "headers": [
+            "Crop",
+            "Seeding depth",
+            "Target plant stand"
+          ],
+          "rows": [
+            [
+              "Spring wheat",
+              "1.5–3 inches",
+              "23–28 plants per square foot"
+            ],
+            [
+              "Barley",
+              "1.5–2 inches",
+              "22–25 plants per square foot"
+            ],
+            [
+              "Field peas",
+              "1–2 inches",
+              "7–8 plants per square foot"
+            ],
+            [
+              "Canola",
+              "0.5–1.5 inches",
+              "7–11 plants per square foot, final stand"
+            ]
+          ],
+          "caption": "Manitoba Agriculture. Alberta Grains gives an optimum of 1.5 to 2 inches, or 3.75 to 5 cm, for spring cereals."
+        }
       },
       {
         "heading": "June 20 is a pivot date, not a universal deadline",
