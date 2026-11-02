@@ -248,10 +248,14 @@ const productsSchema = {
         name: 'YieldAI Global',
         applicationCategory: 'BusinessApplication',
         applicationSubCategory: 'AgTech · Crop Intelligence',
-        operatingSystem: 'Web',
+        // Android shipped to Google Play on 12 October 2026. This field read 'Web' for three
+        // weeks after that, which is the same stale-schema defect as the 40+ countries claim:
+        // the visible site was corrected, the machine-readable file was not.
+        operatingSystem: 'Web, Android',
+        installUrl: 'https://play.google.com/store/apps/details?id=com.yieldaiglobal.app',
         url: 'https://agrivisionai.org/products/yieldai-global',
         description:
-          'Flagship AI-powered agriculture platform, live in India, the USA & Canada — AI crop advice, government market prices, weather and forecasting, government-scheme guidance, yield prediction, and a voice assistant in the farmer\'s own language. Available at https://yieldaiglobal.com.',
+          'Flagship AI-powered agriculture platform, live in India, the USA & Canada — on the web at https://yieldaiglobal.com and on Android as "YieldAI Global: Farm Advisor" on Google Play. AI crop advice, government market prices, weather and forecasting, government-scheme guidance, yield prediction, and a voice assistant in the farmer\'s own language. There is no iOS app.',
         // Priced per market; one Offer each so no visitor is shown a price they cannot buy.
         offers: [
           { '@type': 'Offer', price: '149', priceCurrency: 'INR', eligibleRegion: { '@type': 'Country', name: 'IN' }, availability: 'https://schema.org/InStock', url: 'https://yieldaiglobal.com' },
@@ -271,7 +275,10 @@ const productsSchema = {
         name: 'CropVision',
         applicationCategory: 'BusinessApplication',
         applicationSubCategory: 'AgTech · Computer Vision',
-        operatingSystem: 'Web',
+        // Ships as the Disease Detection module inside YieldAI Global, so it reaches Android
+        // wherever the app does.
+        operatingSystem: 'Web, Android',
+        installUrl: 'https://play.google.com/store/apps/details?id=com.yieldaiglobal.app',
         url: 'https://agrivisionai.org/products/cropvision',
         description:
           'Live computer-vision module inside YieldAI Global — photograph a plant for a likely disease diagnosis with an honest confidence level and clear next steps.',

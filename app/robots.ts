@@ -20,7 +20,6 @@ const AI_CRAWLERS = [
   'ClaudeBot',         // Anthropic, training
   'Claude-SearchBot',  // Anthropic, search index
   'Claude-User',       // Anthropic, live fetch on a user's behalf
-  'anthropic-ai',
   'Google-Extended',   // Google, Gemini grounding
   'PerplexityBot',     // Perplexity index
   'Perplexity-User',   // Perplexity live fetch

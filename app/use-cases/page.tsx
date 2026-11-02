@@ -28,14 +28,12 @@ export const metadata: Metadata = {
     description:
       'Nine real uses, each mapped to the module behind it. No outcome statistics, because we have not measured any.',
     siteName: 'AGRIVISION AI',
-    images: [{ url: `${BASE}/opengraph-image.png`, width: 1200, height: 630, alt: 'AGRIVISION AI — use cases' }],
   },
   twitter: {
     card: 'summary_large_image',
     site: '@yieldaiglobal',
     title: 'AI use cases in agriculture — what YieldAI Global actually does',
     description: 'Nine real uses, each mapped to the module behind it.',
-    images: [`${BASE}/opengraph-image.png`],
   },
 };
 
