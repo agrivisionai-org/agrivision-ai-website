@@ -1,20 +1,20 @@
 import type { Metadata } from 'next';
 import { Logo } from '@/components/Logo';
 import { press } from './press-data';
-import { Globe, Mail, Linkedin, Twitter, Instagram, Github, Newspaper, Download, Building2, User } from 'lucide-react';
+import { Globe, Mail, Linkedin, Twitter, Instagram, Github, Newspaper, Building2, User } from 'lucide-react';
 import { Footer } from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Press Kit — Logos, Fact Sheet & Founder Bio',
+  title: 'Press Kit — Fact Sheet, Founder Bio & Quotes',
   description:
-    'Company boilerplate, fact sheet, founder bio, quotes, press release and downloadable logos — everything you need to cover AGRIVISION AI.',
+    'Company boilerplate, fact sheet, founder bio, quotes and press release — everything you need to cover AGRIVISION AI.',
   alternates: { canonical: 'https://agrivisionai.org/press' },
   openGraph: {
     type: 'website',
     url: 'https://agrivisionai.org/press',
     title: 'Press & Media Kit · AGRIVISION AI',
     description:
-      'Press resources for AGRIVISION AI — boilerplate, fact sheet, founder bio, quotes, brand assets, and media contact.',
+      'Press resources for AGRIVISION AI — boilerplate, fact sheet, founder bio, quotes, and media contact.',
     siteName: 'AGRIVISION AI',
     images: [{ url: 'https://agrivisionai.org/opengraph-image.png', width: 1200, height: 630, alt: 'AGRIVISION AI — press & media kit' }],
   },
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@yieldaiglobal',
     title: 'AGRIVISION AI — Press & Media Kit',
-    description: 'Boilerplate, fact sheet, founder bio, quotes, and brand assets.',
+    description: 'Boilerplate, fact sheet, founder bio, quotes, and media contact.',
     images: ['https://agrivisionai.org/opengraph-image.png'],
   },
 };
@@ -59,81 +59,19 @@ export default function PressPage() {
           <a href="mailto:hello@agrivisionai.org" className="font-semibold text-brand-primary underline-offset-2 hover:underline">hello@agrivisionai.org</a>.
         </p>
         <div className="mt-7 flex flex-wrap gap-3">
-          {/* SVG first: it is the only asset that survives print and large format. The PNGs
-              stay for anyone whose tooling will not take vector. */}
-          <a href="/press/agrivision-ai-logo.svg" download className="inline-flex items-center gap-2 rounded-full border border-brand-primary/30 bg-brand-primary/[0.06] px-4 py-2.5 text-sm font-semibold text-brand-primary transition-colors hover:border-brand-primary/60">
-            <Download className="h-4 w-4" /> Logo (SVG, vector)
-          </a>
-          <a href="/press/agrivision-ai-logo.png" download className="inline-flex items-center gap-2 rounded-full border border-ink-900/10 bg-white px-4 py-2.5 text-sm font-semibold text-ink-800 transition-colors hover:border-brand-primary/40 hover:text-brand-primary">
-            <Download className="h-4 w-4" /> Logo (wide PNG)
-          </a>
-          <a href="/press/agrivision-ai-logo-square.png" download className="inline-flex items-center gap-2 rounded-full border border-ink-900/10 bg-white px-4 py-2.5 text-sm font-semibold text-ink-800 transition-colors hover:border-brand-primary/40 hover:text-brand-primary">
-            <Download className="h-4 w-4" /> Logo (square)
-          </a>
           <a href="https://www.linkedin.com/company/agrivisionai/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full border border-ink-900/10 bg-white px-4 py-2.5 text-sm font-semibold text-ink-800 transition-colors hover:border-brand-primary/40 hover:text-brand-primary">
             <Linkedin className="h-4 w-4" /> Newsroom on LinkedIn
           </a>
         </div>
-
-        {/* Social variants. The dark files are not inversions: the master leaf gradient ends
-            near-black and disappears on a dark ground, so these carry a brightened gradient
-            and a paper wordmark. Avatars are leaf-only and circle-safe — the full lockup is
-            unreadable at avatar size, which is the mistake the old favicon made. */}
-        <div className="mt-8">
-          <div className="text-xs font-semibold uppercase tracking-[0.18em] text-ink-500">For social and dark backgrounds</div>
-          <div className="mt-4 flex flex-wrap gap-3">
-          <a href="/press/social/agrivision-ai-logo-dark.svg" download className="inline-flex items-center gap-2 rounded-full border border-ink-900/10 bg-white px-4 py-2.5 text-sm font-semibold text-ink-800 transition-colors hover:border-brand-primary/40 hover:text-brand-primary">
-            <Download className="h-4 w-4" /> Logo for dark (SVG)
-          </a>
-          <a href="/press/social/agrivision-ai-avatar-light.png" download className="inline-flex items-center gap-2 rounded-full border border-ink-900/10 bg-white px-4 py-2.5 text-sm font-semibold text-ink-800 transition-colors hover:border-brand-primary/40 hover:text-brand-primary">
-            <Download className="h-4 w-4" /> Avatar (light)
-          </a>
-          <a href="/press/social/agrivision-ai-avatar-dark.png" download className="inline-flex items-center gap-2 rounded-full border border-ink-900/10 bg-white px-4 py-2.5 text-sm font-semibold text-ink-800 transition-colors hover:border-brand-primary/40 hover:text-brand-primary">
-            <Download className="h-4 w-4" /> Avatar (dark)
-          </a>
-          <a href="/press/social/agrivision-ai-story-light.png" download className="inline-flex items-center gap-2 rounded-full border border-ink-900/10 bg-white px-4 py-2.5 text-sm font-semibold text-ink-800 transition-colors hover:border-brand-primary/40 hover:text-brand-primary">
-            <Download className="h-4 w-4" /> Story 9:16 (light)
-          </a>
-          <a href="/press/social/agrivision-ai-story-dark.png" download className="inline-flex items-center gap-2 rounded-full border border-ink-900/10 bg-white px-4 py-2.5 text-sm font-semibold text-ink-800 transition-colors hover:border-brand-primary/40 hover:text-brand-primary">
-            <Download className="h-4 w-4" /> Story 9:16 (dark)
-          </a>
-          </div>
-          <p className="mt-3 text-sm leading-relaxed text-ink-600">
-            Square 1:1 frames, 512px avatars and full usage notes are in{' '}
-            <a href="/press/social/README.md" className="font-medium text-brand-primary underline-offset-2 hover:underline">/press/social</a>.
-          </p>
-        </div>
-
-        {/* The marketing lockup carries the URL under the wordmark. Deliberately kept in its
-            own block and labelled: journalists covering us should take the clean logo above,
-            because a URL baked into a logo reads as an advert inside an article. This one is
-            for our own collateral and for partners co-promoting us. It is also inset inside
-            clear space — the master logo.svg is a tight bounding box whose final "I" sits on
-            the edge, which a printer would trim into. */}
-        <div className="mt-8">
-          <div className="text-xs font-semibold uppercase tracking-[0.18em] text-ink-500">Marketing lockup (logo with URL)</div>
-          <div className="mt-4 flex flex-wrap gap-3">
-          <a href="/press/social/agrivision-ai-marketing-lockup-light.svg" download className="inline-flex items-center gap-2 rounded-full border border-ink-900/10 bg-white px-4 py-2.5 text-sm font-semibold text-ink-800 transition-colors hover:border-brand-primary/40 hover:text-brand-primary">
-            <Download className="h-4 w-4" /> Lockup + URL (SVG, light)
-          </a>
-          <a href="/press/social/agrivision-ai-marketing-lockup-dark.svg" download className="inline-flex items-center gap-2 rounded-full border border-ink-900/10 bg-white px-4 py-2.5 text-sm font-semibold text-ink-800 transition-colors hover:border-brand-primary/40 hover:text-brand-primary">
-            <Download className="h-4 w-4" /> Lockup + URL (SVG, dark)
-          </a>
-          <a href="/press/social/agrivision-ai-marketing-lockup-light.png" download className="inline-flex items-center gap-2 rounded-full border border-ink-900/10 bg-white px-4 py-2.5 text-sm font-semibold text-ink-800 transition-colors hover:border-brand-primary/40 hover:text-brand-primary">
-            <Download className="h-4 w-4" /> Lockup + URL (PNG, light)
-          </a>
-          <a href="/press/social/agrivision-ai-marketing-lockup-dark.png" download className="inline-flex items-center gap-2 rounded-full border border-ink-900/10 bg-white px-4 py-2.5 text-sm font-semibold text-ink-800 transition-colors hover:border-brand-primary/40 hover:text-brand-primary">
-            <Download className="h-4 w-4" /> Lockup + URL (PNG, dark)
-          </a>
-          </div>
-          <p className="mt-3 text-sm leading-relaxed text-ink-600">
-            For flyers, banners, slide footers and partner collateral. If you are writing about us,
-            use the plain logo at the top of this page instead — this version carries our web
-            address, which does not belong inside an article. Versions with the background already
-            filled in are in{' '}
-            <a href="/press/social/README.md" className="font-medium text-brand-primary underline-offset-2 hover:underline">/press/social</a>.
-          </p>
-        </div>
+        {/* Logo files are no longer published from this page. The page still says so rather
+            than leaving journalists to guess, because a media kit that silently drops its
+            artwork reads as an oversight. The files remain under /public/press. */}
+        <p className="mt-4 text-sm leading-relaxed text-ink-600">
+          Logo and brand artwork are not published on this page. If you are covering us and need
+          them, email{' '}
+          <a href="mailto:hello@agrivisionai.org" className="font-medium text-brand-primary underline-offset-2 hover:underline">hello@agrivisionai.org</a>{' '}
+          and we will send the right files for your format.
+        </p>
       </section>
 
       {/* Quick facts grid */}

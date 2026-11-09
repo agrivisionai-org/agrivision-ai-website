@@ -1,7 +1,7 @@
 # Product Marketing Context
 
-**Document version:** v1
-**Last updated:** 2026-09-16
+**Document version:** v2
+**Last updated:** 2026-11-09
 
 > Auto-drafted from the repo (products-data.ts, blog-data.ts, README canonical facts,
 > public/llms.txt, careers/roles-data.ts). Sections marked **GAP** need the founder's
@@ -9,9 +9,9 @@
 > marketing skill reads this file and fabricated proof would propagate.
 
 ## Product Overview
-**One-liner:** AI crop intelligence for farmers and agricultural extension workers — crop advice, live government market prices, weather and scheme guidance, in the farmer's own language.
+**One-liner:** AI crop intelligence for farmers and agricultural extension workers — crop advice, government market prices, weather and scheme guidance, in the farmer's own language.
 
-**What it does:** YieldAI Global answers crop questions using AI grounded in ICAR, FAO and state agriculture department sources; surfaces live government market prices; forecasts weather; and explains which government support programmes a farmer is eligible for. CropVision, its vision layer, reads a photo of an affected plant and returns the likely disease with a stated confidence level.
+**What it does:** YieldAI Global answers crop questions using AI grounded in ICAR, FAO and state agriculture department sources; surfaces government market prices; forecasts weather; and explains which government support programmes a farmer is eligible for. CropVision, its vision layer, reads a photo of an affected plant and returns the likely disease with a stated confidence level.
 
 **Product category:** AI crop intelligence / farm advisory platform. How buyers actually search: "farming app", "crop disease app", "mandi price app", "farm advisory AI".
 
@@ -66,7 +66,7 @@
 - **It refuses.** Ask about chemical dosage and it declines, routing you to a local extension officer instead of guessing. A confident wrong answer can cost someone a season.
 - **Confidence levels, not verdicts.** CropVision returns the likely disease with how sure it is, rather than one unexplained answer.
 - **Official price sources, named.** mandi data (India), USDA (USA), StatCan (Canada) — not scraped aggregates.
-- **13 languages, built for a weak connection.** Designed for a mid-range Android phone, and for someone reading their second language.
+- **14 languages, built for a weak connection.** Designed for a mid-range Android phone, and for someone reading their second language.
 - **Publishes what is not true yet.** The site carries a page headed "YieldAI Global is not in Ireland yet" rather than a waitlist.
 
 **Why customers choose us:** It is the one that will tell you when it does not know.
@@ -115,7 +115,7 @@
 **Personality:** Honest, grounded, self-correcting, practical, unflashy
 
 ## Proof Points
-**Metrics:** 17 platform modules · 13 languages · live in 3 countries · 23 published guides
+**Metrics:** 17 platform modules · 14 languages · live in 3 countries · 23 published guides
 
 **Customers:** **GAP** — no named customers or logos yet
 
@@ -127,7 +127,7 @@
 | Grounded, not guessed | ICAR, FAO, state agriculture department sources |
 | Official prices | mandi, USDA, StatCan named explicitly |
 | Knows its limits | Declines dosage questions; publishes a "not in Ireland yet" page |
-| Actually reachable | 13 languages; built for mid-range Android on a weak connection |
+| Actually reachable | 14 languages; built for mid-range Android on a weak connection |
 
 ## Goals
 **Business goal:** Paid subscribers in the three live markets
@@ -138,4 +138,5 @@
 
 ## Changelog
 *Newest first. One line per revision: what changed and why.*
+- v2 (2026-11-09) — Corrected two stale facts that were propagating into generated marketing copy from this file. "live government market prices" dropped the word "live" in the one-liner and the What it does paragraph: only India's Agmarknet feed is daily, while USDA NASS and Statistics Canada are monthly. Language count corrected from 13 to 14 in three places, matching public/llms.txt (English plus 13 translations).
 - v1 (2026-09-16) — Initial context, auto-drafted from repo product/blog/README data for Instagram content work. Customer verbatims, testimonials and usage metrics left as explicit GAPs rather than invented.
