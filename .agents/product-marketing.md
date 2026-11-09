@@ -66,7 +66,7 @@
 - **It refuses.** Ask about chemical dosage and it declines, routing you to a local extension officer instead of guessing. A confident wrong answer can cost someone a season.
 - **Confidence levels, not verdicts.** CropVision returns the likely disease with how sure it is, rather than one unexplained answer.
 - **Official price sources, named.** mandi data (India), USDA (USA), StatCan (Canada) — not scraped aggregates.
-- **13 languages, built for a weak connection.** Designed for a mid-range Android phone, and for someone reading their second language.
+- **14 languages, built for a weak connection.** Designed for a mid-range Android phone, and for someone reading their second language. One caveat before promising this to a Portuguese-speaking audience: all 14 exist and the Portuguese catalogue is complete, but Portuguese is not currently selectable in the language switcher on yieldaiglobal.com, which offers 13. Until that ships, "14 languages" is true of the product and not yet reachable on the web for one of them.
 - **Publishes what is not true yet.** The site carries a page headed "YieldAI Global is not in Ireland yet" rather than a waitlist.
 
 **Why customers choose us:** It is the one that will tell you when it does not know.
@@ -115,7 +115,7 @@
 **Personality:** Honest, grounded, self-correcting, practical, unflashy
 
 ## Proof Points
-**Metrics:** 17 platform modules · 13 languages · live in 3 countries · 23 published guides
+**Metrics:** 17 platform modules · 14 languages · live in 3 countries · 23 published guides
 
 **Customers:** **GAP** — no named customers or logos yet
 
@@ -127,7 +127,7 @@
 | Grounded, not guessed | ICAR, FAO, state agriculture department sources |
 | Official prices | mandi, USDA, StatCan named explicitly |
 | Knows its limits | Declines dosage questions; publishes a "not in Ireland yet" page |
-| Actually reachable | 13 languages; built for mid-range Android on a weak connection |
+| Actually reachable | 14 languages; built for mid-range Android on a weak connection |
 
 ## Goals
 **Business goal:** Paid subscribers in the three live markets
@@ -138,5 +138,5 @@
 
 ## Changelog
 *Newest first. One line per revision: what changed and why.*
-- v2 (2026-11-09) — Corrected two stale facts that were propagating into generated marketing copy from this file. "live government market prices" dropped the word "live" in the one-liner and the What it does paragraph: only India's Agmarknet feed is daily, while USDA NASS and Statistics Canada are monthly. Language count was briefly changed 13 -> 14 here and reverted the same day: the live product at yieldaiglobal.com states 13 languages in four places and its switcher offers exactly 13, with no Portuguese. public/llms.txt claims 14 by counting a Portuguese catalogue the product does not offer, so llms.txt and the site are the ones that are wrong.
+- v2 (2026-11-09) — Corrected two stale facts that were propagating into generated marketing copy from this file. "live government market prices" dropped the word "live" in the one-liner and the What it does paragraph: only India's Agmarknet feed is daily, while USDA NASS and Statistics Canada are monthly. Language count settled at 14, after being changed 13 -> 14, reverted to 13, and changed back, all on the same day. The round trip happened because yieldaiglobal.com states 13 in four places and its switcher lists 13, so the running product looked like the authority. The founder confirmed Portuguese does ship and is simply missing from the web switcher, which makes 14 correct and the product site the surface that is behind. Do not re-derive this count from the switcher.
 - v1 (2026-09-16) — Initial context, auto-drafted from repo product/blog/README data for Instagram content work. Customer verbatims, testimonials and usage metrics left as explicit GAPs rather than invented.
