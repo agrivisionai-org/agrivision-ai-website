@@ -80,7 +80,7 @@ const USE_CASES = [
   {
     title: 'Check what a crop is worth before agreeing a sale',
     body: 'Government market prices for the relevant country, each carrying the date it was published. In India the figure is benchmarked against the Minimum Support Price, so a farmer can see whether an offer sits above or below the state floor.',
-    modules: ['Market Prices', 'Price Alerts'],
+    modules: ['Market Prices', 'Price Targets'],
   },
   {
     title: 'Find a government scheme and work out whether you qualify',
