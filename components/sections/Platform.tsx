@@ -15,7 +15,7 @@ import {
   Droplets,
   MessageCircle,
   CloudSun,
-  Bell,
+  Target,
   BarChart3,
   LineChart,
   Mic,
@@ -52,7 +52,7 @@ const GROUPS = [
     accent: '#C9922B',
     items: [
       { icon: BadgeIndianRupee, label: 'Market Prices' },
-      { icon: Bell, label: 'Price Alerts' },
+      { icon: Target, label: 'Price Targets' },
       { icon: Landmark, label: 'Government Schemes' },
     ],
   },
