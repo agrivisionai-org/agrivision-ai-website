@@ -546,9 +546,9 @@ export default function InvestorsPage() {
                 src="/images/investors/product-features.webp"
                 srcSet="/images/investors/product-features-800.webp 800w, /images/investors/product-features.webp 1400w"
                 sizes="(max-width: 1024px) 100vw, 60vw"
-                alt="The YieldAI Global feature set: AI Crop Advisor, Live Market Prices, Price Alerts, Live Weather and Irrigation, Extension Worker CRM, and Government Schemes"
+                alt="The YieldAI Global feature set as shown on yieldaiglobal.com: AI Crop Advisor, Government Market Prices (daily for India, monthly for the USA and Canada), Price Targets, Live Weather and Irrigation, Extension Worker CRM, and Government Schemes"
                 width={1400}
-                height={672}
+                height={665}
                 loading="lazy"
                 decoding="async"
                 className="w-full object-cover"
@@ -565,8 +565,9 @@ export default function InvestorsPage() {
               <a href="https://yieldaiglobal.com" target="_blank" rel="noopener noreferrer" className="font-medium text-brand-primary underline-offset-2 hover:underline">
                 yieldaiglobal.com
               </a>{' '}
-              taken in September 2026. They are the product&rsquo;s own published presentation, not an in-app recording
-              and not a mockup made for this page.
+              &mdash; the phone in September 2026, the feature grid in November 2026. They are the product&rsquo;s own
+              published presentation, not an in-app recording and not a mockup made for this page. The feature grid was
+              retaken because the product site corrected a capability title after the first capture.
             </p>
           </Reveal>
         </div>
