@@ -168,7 +168,7 @@ const originalPosts: BlogPost[] = [
       {
         "heading": "Update — July 2026: YieldAI Global is now live",
         "paragraphs": [
-          "A note added after the fact: since this essay was written, YieldAI Global has shipped. It is now live and available in India, the USA, and Canada at [yieldaiglobal.com](https://yieldaiglobal.com), with a free trial — AI crop advice, live government market prices, weather, and government-scheme guidance in the farmer's own language.",
+          "A note added after the fact: since this essay was written, YieldAI Global has shipped. It is now live and available in India, the USA, and Canada at [yieldaiglobal.com](https://yieldaiglobal.com), with a free trial — AI crop advice, government market prices, weather, and government-scheme guidance in the farmer's own language.",
           "I'm leaving the original post below exactly as it was written, pre-launch, because that honesty is the whole point of building in public. Everything under this line reflects where we were then, not where we are now."
         ]
       },
@@ -325,7 +325,7 @@ const originalPosts: BlogPost[] = [
         "heading": "Turn prices into decisions",
         "paragraphs": [
           "Data only helps if you act on it. Compare a few nearby mandis, look at the trend versus last week rather than a single day, and factor in transport cost to reach a higher-priced market. Sometimes the closer mandi at a slightly lower price nets you more.",
-          "This is one of the core things [YieldAI Global](/products/yieldai-global) does: it pulls live government market prices for your crop and shows them — with the 'as of' date — in your own language, so you are not digging through portals. It is live in India, the USA and Canada, with a free trial at [yieldaiglobal.com](https://yieldaiglobal.com)."
+          "This is one of the core things [YieldAI Global](/products/yieldai-global) does: it pulls government market prices for your crop and shows them — with the 'as of' date — in your own language, so you are not digging through portals. It is live in India, the USA and Canada, with a free trial at [yieldaiglobal.com](https://yieldaiglobal.com)."
         ]
       }
     ],
@@ -653,7 +653,7 @@ const originalPosts: BlogPost[] = [
         "heading": "How to try it for yourself",
         "paragraphs": [
           "The best way to judge whether AI helps is to ask it a real question from your own farm and see if the answer is useful, specific and honest. That is the bar we hold ourselves to.",
-          "YieldAI Global is our AI farming assistant, built to give crop advice, live government market prices, weather and scheme guidance grounded in real data, in your own language. It is live in India, the USA and Canada, with a free trial at [yieldaiglobal.com](https://yieldaiglobal.com) — try it with your own question."
+          "YieldAI Global is our AI farming assistant, built to give crop advice, government market prices, weather and scheme guidance grounded in real data, in your own language. It is live in India, the USA and Canada, with a free trial at [yieldaiglobal.com](https://yieldaiglobal.com) — try it with your own question."
         ]
       }
     ],
